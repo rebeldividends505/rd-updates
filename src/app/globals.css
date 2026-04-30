@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rd-red: #dc2626;
+  --rd-dark: #111827;
+  --rd-gold: #f59e0b;
+}
+
+body {
+  background: #f8fafc;
+  color: #111827;
+}
