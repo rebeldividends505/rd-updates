@@ -7,8 +7,8 @@ Day-by-day rules for the daily update package. Read this with
 
 | Day  | Type                          | Approx length   | Notes                                       |
 |------|-------------------------------|-----------------|---------------------------------------------|
-| MON  | Daily update                  | ~80 lines HTML  | Same simple structure as Wed/Thu/Fri        |
-| TUE  | **Webinar package**           | 774+ lines      | Built **Monday**, never on Tuesday          |
+| MON  | Daily update                  | ~80 lines HTML  | **Same format as Wed/Thu/Fri** — use wednesday-email-may06.html as reference. Was previously done by hand; now automated. |
+| TUE  | **Webinar package**           | 774+ lines      | Built **Monday** alongside Monday's own daily send. NEVER generated on Tuesday itself. This is the ONLY day with a different format. |
 | WED  | Replay recap                  | ~80 lines HTML  | Subject leads with replay                   |
 | THU  | Market hook + replay          | ~89 lines HTML  | Lead with HYPE technical angle              |
 | FRI-A| /forward/ promo               | ~81 lines HTML  | $150 thesis math, green CTA → /forward/     |
