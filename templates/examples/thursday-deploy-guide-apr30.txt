@@ -1,0 +1,63 @@
+═══════════════════════════════════════════════
+DEPLOYMENT GUIDE — Thursday April 30, 2026
+Week 105 — RD Thu Webinar Replay Re-push
+═══════════════════════════════════════════════
+
+PACKAGE CONTENTS
+────────────────
+  email-thu.html              ← email body for iContact
+  elementor-thu.html          ← Elementor page widget
+  reinvestor-chart-apr30.png  ← chart image (650px wide, 150 DPI)
+  sms-thu.txt                 ← SMS body + subject line
+  gen_chart_apr30.py          ← chart source (for reference only)
+  DEPLOY-thu.txt              ← this file
+
+THIS WEEK'S HOOK
+────────────────
+Webinar replay re-push leveraging HYPE technical setup.
+Subject: "HYPE coiling at $39 — next stop $60. Replay still live."
+Angle: HYPE coiling at strong technical level, +50% move ahead, 105
+consecutive dividends through every move. Replay covers Investor
+Portal demo + thesis.
+CTA: rebeldividends.com/startwebinar/   (NOTE: not /macro/ today)
+
+KEY NUMBERS TODAY (Thursday Apr 30)
+────────────────────────────────────
+Share Price:         $0.00166
+Day-over-Day:        -3.66% (RED #c41e3a)
+HYPE Price:          $39.15
+Week:                105
+
+Reinvestor ($100K):  $253K (+153%)
+Collector ($100K):   $185K (+85%)
+Reinvestor Edge:     $68K
+
+At HYPE $60:         RD share ~$0.00254 → $100K becomes ~$153K
+At HYPE $150:        RD share ~$0.00636 → $100K becomes ~$383K
+
+DEPLOYMENT STEPS
+────────────────
+1. Upload reinvestor-chart-apr30.png to WordPress media
+   URL: https://rebeldividends.com/wp-content/uploads/reinvestor-chart-apr30.png
+2. Paste email-thu.html into iContact source editor
+   Subject: HYPE coiling at $39 — next stop $60. Replay still live.
+3. Paste elementor-thu.html into the Elementor widget
+4. Send SMS via Brevo using sms-thu.txt body
+
+NOTES
+─────
+- All CTA links go to https://rebeldividends.com/startwebinar/ (not the
+  usual /macro/ for Thursday — Jason explicitly redirected to replay)
+- Day% color is RED (#c41e3a) since -3.66%
+- Header day% on the SMS uses Brevo standard format
+- Body copy hardcodes the $153K @ $60 and $383K @ $150 numbers — if
+  HYPE thesis numbers change, both email + elementor body need editing
+
+DISCLAIMER (already in email + elementor footer, do not modify)
+────────────────────────────────────────────────────────────────
+Past performance does not guarantee future results. Forward-looking
+projections are hypothetical. Crypto markets are highly volatile. This is
+not financial advice. Fund experienced significant losses during prior
+leveraged ETH strategy (2022–2024). All performance data reflects results
+only since the April 2024 pivot to unleveraged, spot HYPE strategy.
+Fee: 20% management fee on all dividends.

@@ -1,0 +1,65 @@
+═══════════════════════════════════════════════════════════════════════════════
+RD WED-MAY06 — DEPLOYMENT INSTRUCTIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+All prices baked in. Ready to send.
+
+  Today's data:
+    RD share start:  $0.00182
+    RD share end:    $0.00184
+    RD day over day: +1.07%
+    HYPE:            $43.70 → $44.40 (+1.61%)
+  
+  Length:        ~370 words / under 2 minute read
+  Charts:        1 (Reinvestor since pivot, updated for May 6)
+  CTA:           rebeldividends.com/startwebinar/
+
+═══════════════════════════════════════════════════════════════════════════════
+PACKAGE CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+  email-wed-icontact.html        Main email for iContact send
+  email-wed-elementor.html       Web/blog version
+  sms-subject-may06.txt          SMS + subject line
+  reinvestor-chart-may06.png     Updated chart (NEW — must upload)
+  DEPLOYMENT-GUIDE-MAY06.txt     This file
+
+═══════════════════════════════════════════════════════════════════════════════
+DEPLOYMENT STEPS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. UPLOAD CHART to WordPress:
+     /wp-content/uploads/2026/05/reinvestor-chart-may06.png
+
+2. SEND EMAIL (iContact):
+     - Open iContact, create new message
+     - Paste contents of email-wed-icontact.html into source/code editor
+     - Subject: Your RD update for Wednesday — and where we go from here.
+     - Send to investor list
+
+3. PUBLISH WEB VERSION:
+     - Open WordPress, create new blog post
+     - Paste contents of email-wed-elementor.html into Elementor HTML widget
+     - Publish
+
+4. SEND SMS (Brevo):
+     - Open sms-subject-may06.txt
+     - Copy SMS text and send to subscriber list
+
+═══════════════════════════════════════════════════════════════════════════════
+TALKING POINTS FOR DEAN ON CALLS
+═══════════════════════════════════════════════════════════════════════════════
+
+  - RD shares at $0.00184 this morning, up 1.07% overnight
+  - HYPE currently trading at $44.40
+  - Clean follow-through after yesterday's session
+  - Higher highs, higher lows, holding above the late-January breakout
+  - $60 takes HYPE back to its September 2025 ATH (already proved it could reach)
+  - From $44.40 that's roughly 35% upside just to revisit ground we've covered
+  - RD share price moves one-to-one with HYPE (spot exposure, no leverage)
+  - 106 consecutive weekly dividends, every 2026 distribution tax-free
+  - Reinvestor advantage: $82K on a $100K original investment, growing weekly
+  - $100K at the pivot is now $280K (Reinvestor) or $198K (Collector)
+  - Webinar replay covers the full thesis: rebeldividends.com/startwebinar/
+
+═══════════════════════════════════════════════════════════════════════════════

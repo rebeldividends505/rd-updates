@@ -1,0 +1,86 @@
+═══════════════════════════════════════════════
+DEPLOYMENT GUIDE — Friday May 1, 2026
+Week 105 — RD Fri Macro Tease (NO CTAs)
+═══════════════════════════════════════════════
+
+PACKAGE CONTENTS
+────────────────
+  email-fri.html              ← email body for iContact
+  elementor-fri.html          ← Elementor page widget
+  reinvestor-chart-may01.png  ← chart image (650px wide, 150 DPI)
+  sms-fri.txt                 ← SMS body + subject line
+  gen_chart_may01.py          ← chart source (for reference only)
+  DEPLOY-fri.txt              ← this file
+
+THIS WEEK'S HOOK
+────────────────
+Silver-trailing-gold trade framing. Pure macro tease — NO CTA buttons,
+NO links to /startwebinar/, /macro/, or /forward/.
+Subject: "Coiled. The silver-trailing-gold trade — except it's HYPE."
+Angle: Gold leads (140% run, 17% off ATH), BTC follows (38% off ATH),
+HYPE trails further with leverage to the catch-up. Nasdaq AT ATH
+confirming AI infrastructure repricing. Fed easing telegraphed.
+
+KEY NUMBERS TODAY (Friday May 1)
+─────────────────────────────────
+Share Price:         $0.00172
+Day-over-Day:        +3.7% (GREEN #4ade80)
+HYPE Price:          $40.62
+Week:                105
+
+Reinvestor ($100K):  $262K (+162%)
+Collector ($100K):   $187K (+87%)
+Reinvestor Edge:     $76K
+
+At HYPE $60:         RD share ~$0.00254 → ~$148K (+48%)
+At HYPE $150:        RD share $0.00676  → ~$393K (+293%)
+
+MACRO DATA SOURCES (verified May 1)
+────────────────────────────────────
+Gold:    ATH $5,595 on Jan 29, 2026; current ~$4,613 (~17% below)
+         140% run over 3 years per devere-group analysis
+         Bank targets year-end 2026: JPM $5,000-6,300, Goldman $5,400,
+         UBS $6,200, Wells Fargo $6,000-6,300
+         Q1 2026 central bank buying: 244 tonnes (World Gold Council)
+BTC:     ATH $126,198 on Oct 6, 2025; current ~$78,178 (~38% below)
+Nasdaq:  Closed Apr 30 at 24,892.31 (52-wk high 24,935 = ~AT ATH)
+         "Best month since COVID 2020" per CNBC
+M2:      Couldn't get hard point-in-time number. Email uses general
+         "Fed cuts telegraphed, balance sheets expanding" framing
+         instead of specific number — directionally fine.
+HYPE position: Even further below its highs than BTC (~38% off).
+         That's the leverage point in the catch-up trade.
+
+DEPLOYMENT STEPS
+────────────────
+1. Upload reinvestor-chart-may01.png to WordPress media
+   URL: https://rebeldividends.com/wp-content/uploads/reinvestor-chart-may01.png
+2. Paste email-fri.html into iContact source editor
+   Subject: Coiled. The silver-trailing-gold trade — except it's HYPE.
+3. Paste elementor-fri.html into the Elementor widget
+4. Send SMS via Brevo using sms-fri.txt body
+
+NOTES
+─────
+- NO CTA button this email — pure tease, "no link to anything today"
+  per Jason. Dean box footer kept (not a sales CTA).
+- Day% color is GREEN (#4ade80) since +3.7%
+- Rounding rules applied per Jason:
+  * Share price → 5 decimals: $0.00172
+  * HYPE price → 2 decimals: $40.62
+  * Day% → 1 decimal: +3.7%
+- Disclaimer expanded to include "Macro data points sourced from
+  public market data and analyst reports as of late April 2026"
+- "When BTC last reclaimed its highs, alts moved 3-5x" — this is
+  general crypto cycle pattern, not a specific dated claim. Safer
+  framing than naming specific past cycles.
+
+DISCLAIMER (already in email + elementor footer, do not modify)
+────────────────────────────────────────────────────────────────
+Past performance does not guarantee future results. Forward-looking
+projections are hypothetical. Crypto markets are highly volatile. This is
+not financial advice. Fund experienced significant losses during prior
+leveraged ETH strategy (2022–2024). All performance data reflects results
+only since the April 2024 pivot to unleveraged, spot HYPE strategy.
+Fee: 20% management fee on all dividends. Macro data sourced from public
+market data and analyst reports as of late April 2026.

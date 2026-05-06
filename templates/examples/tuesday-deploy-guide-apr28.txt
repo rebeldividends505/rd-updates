@@ -1,0 +1,129 @@
+═══════════════════════════════════════════════
+DEPLOYMENT GUIDE — Tuesday April 28, 2026
+Week 105 — RD Tue Webinar Package
+═══════════════════════════════════════════════
+
+PACKAGE CONTENTS
+────────────────
+  investor-update-apr28-icontact.html   ← email body for iContact
+  investor-update-apr28-elementor.html  ← Elementor page widget
+  reinvestor-chart-apr28.png            ← chart image (650px wide)
+  sms-subject-apr28.txt                 ← SMS body + subject line
+  gen_chart_apr28.py                    ← chart source (for reference only)
+  DEPLOYMENT-GUIDE-APR28.txt            ← this file
+
+THIS WEEK'S HOOK
+────────────────
+Sneak peek of the new Rebel Dividends Investor Portal (preview-only this week — full rollout when ready).
+/forward/ and /macro/ teaser boxes removed; tax-free standalone box removed.
+Volatility blurb removed. Investor Portal block placed at TOP (right under hero CTA).
+
+PENDING BEFORE DEPLOY
+─────────────────────
+⚠️  PENDING: webinar hero image (webinar-hero-apr28.png)
+            — option: reuse webinar-hero-apr14.png if no new asset
+⚠️  PENDING: webinar join link (replace #WEBINAR_LINK in email — 4 places)
+            — 4 places in iContact email, 1 place in SMS, 0 in Elementor
+
+KEY NUMBERS TODAY (Tuesday Apr 28, post late-day move)
+────────────────────────────────────────────────────────
+Share Price:         $0.001691
+Day-over-Day:        -4.88% (RED)
+Week-over-Week:      -3.92% (vs Apr 21 $0.00176)
+Dividend ROI:        1.18% ($0.00002 / $0.001691)
+HYPE Price:          $39.88
+Week:                105
+Portfolio Value:     $13,103,927.61
+Total Shares:        7,749,217,983
+
+April 2026 Dividends: 4 paid (Apr 7, 14, 21, 28) = $0.00008 total
+April 2026 mo return: -1.6% (close $0.001691 vs open $0.00180 plus div)
+
+Reinvestor ($100K):  $257K (+157%)
+Collector ($100K):   $186K (+86%)
+Reinvestor Edge:     $72K
+
+2026 YTD COMPARISON (verified Apr 27 web search):
+  RD Reinvestor:  +20.4%
+  RD Collector:   +5.6%
+  NVDA:           +8.6%   (Yahoo, Apr 24 ATH close $208)
+  SPY:            +4.4%   (financecharts.com)
+  QQQ:            +8.2%   (financecharts.com)
+  BTC:            -13%    (Fortune Apr 27, $77,698)
+
+Max Drawdown (Aug 2025 peak → Jan 2026 low, 5 months):
+  Collector:      -29%
+  Reinvestor:     -56%
+
+Best Single Month:
+  Collector:      +46% (May 2024)
+  Reinvestor:     +87% (May 2025)
+
+HYPERLIQUID FACTS (carried from Apr 21):
+  Position:           #1 decentralized perp exchange
+  Open interest:      70%+ of all decentralized perp OI
+  Buybacks:           Nearly $2B (43.4M HYPE = 4.3% of supply burned)
+  Employees:          11
+  Profit:             ~$900M
+  HIP-4:              Live on testnet, mainnet 2026
+  HYPE price:         $39.88 (verified Apr 28)
+
+CHANGES FROM APR 21 PACKAGE
+────────────────────────────
+✅ NEW LAYOUT:        Investor Portal block → Chart → Reinvestor/Collector cards
+✅ ADDED:             Investor Portal preview block
+✅ REMOVED:           /forward/ teaser box
+✅ REMOVED:           /macro/ teaser box
+✅ REMOVED:           Tax-free standalone promo box (kept in 4 reasons + footer)
+✅ REMOVED:           "Why Volatility Works in the Reinvestor's Favor" block
+✅ UPDATED:           Top webinar headline → "Live Demo: Your New Investor Portal —[BR]See Everything in Real Time"
+✅ UPDATED:           Mid-page CTA "Reserve My Seat" → "Join Live Webinar"
+✅ UPDATED:           Email subject + title tag + hero alt → portal-focused
+✅ UPDATED:           YTD numbers all verified Apr 27 web search
+✅ UPDATED:           Performance numbers re-audited per running track records
+
+NUMBERS UPDATED FROM APR 21
+────────────────────────────
+  Share price:        $0.00176 → $0.001691  (-3.9% wow)
+  Day delta:          -3.04% → -4.88% today
+  Portfolio value:    $13,244,080 → $13,103,928
+  Total shares:       7,657,507,714 → 7,749,217,983
+  Collector return:   +87% → +86% ($187K → $186K)
+  Reinvestor return:  +165% → +157% ($265K → $257K)
+  Reinvestor edge:    $77K → $72K
+  Week count:         104 → 105
+  April 2026 row:     close $0.00176/-2.2% → $0.001691/-1.6%
+  Dividend ROI:       1.13% → 1.18%
+  RD Reinvestor YTD:  +23.7% → +20.4%
+  RD Collector YTD:   +19.5% → +5.6% (was wrong; recomputed)
+  NVDA YTD:           +6.6% → +8.6%
+  QQQ YTD:            ~flat → +8.2%
+  SPY YTD:            +4.4% → +4.4% (unchanged)
+  BTC YTD:            -15% → -13%
+  Best Single Month:  Reinvestor +89% → +87% (corrected to actual peak)
+  YTD divs:           $2.18M → $2.34M
+  Grand Total divs:   $21.09M → $21.25M
+
+DEPLOYMENT STEPS
+────────────────
+1. Upload reinvestor-chart-apr28.png to WordPress media
+   URL: https://rebeldividends.com/wp-content/uploads/reinvestor-chart-apr28.png
+2. Replace #WEBINAR_LINK in investor-update-apr28-icontact.html (4 places)
+   with actual webinar join URL
+3. Replace [WEBINAR_LINK] in sms-subject-apr28.txt (1 place)
+4. Paste investor-update-apr28-icontact.html into iContact source editor
+5. Set subject line from sms-subject-apr28.txt
+6. Paste investor-update-apr28-elementor.html into Elementor widget on
+   the webinar signup page
+7. Send SMS via Brevo using sms-subject-apr28.txt body
+8. (Optional) upload webinar-hero-apr28.png to WP media — or update img src
+   in iContact email to reuse webinar-hero-apr14.png
+
+DISCLAIMER (already in email footer, do not modify)
+────────────────────────────────────────────────────
+Past performance does not guarantee future results. Forward-looking
+projections are hypothetical. Crypto markets are highly volatile. This is
+not financial advice. Fund experienced significant losses during prior
+leveraged ETH strategy (2022–2024). All performance data reflects results
+only since the April 2024 pivot to unleveraged, spot HYPE strategy.
+Fee: 20% management fee on all dividends.
