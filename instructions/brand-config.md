@@ -1,0 +1,122 @@
+# Rebel Dividends — Brand Config
+
+This file is the single source of truth for all brand facts, copy rules, contact
+info, and disclaimers. Read it before generating any daily output.
+
+## Company
+
+- **Legal name:** Rebel Dividends Corporation
+- **Marketing name:** Rebel Dividends
+- **Domain:** https://rebeldividends.com
+- **Updates site:** https://updates.rebeldividends.com
+- **Investor portal:** https://portal.rebeldividends.com
+- **Sender email:** support@rebeldividends.com
+- **Sender name (in mail clients):** Rebel Dividends
+- **Author of all daily content:** Jason Cox (sole author — never list anyone
+  else as author).
+
+## Closer / CTA contact
+
+- **Name:** Dean Gallagher
+- **Phone:** 505-322-7515
+- **Standard close box:** "Questions? Reply to this email or call Dean at
+  505-322-7515 and he'll take care of you."
+- Dean is the closer, not the author. Never reference Dean as the writer of the
+  update.
+
+## Underlying asset
+
+- **Ticker:** HYPE (Hyperliquid)
+- **Strategy:** Unleveraged, spot HYPE only. Pivoted from a leveraged ETH
+  strategy in **April 2024**.
+- The RD share price tracks HYPE 1:1 (spot, unleveraged) — when HYPE moves, the
+  share price moves with it.
+
+## Share price
+
+- **Formula (reference only — read from the sheet, do not recalculate):**
+  `RD_SHARE = 0.001776 × (HYPE_current / 39.41)`
+- **Source of truth:** Google Sheet cell P23 (current share price) and P24
+  (day %). The pipeline always reads these values rather than calculating.
+
+## Dividends
+
+- **Cadence:** Weekly, paid every Monday.
+- **Per-share amount:** $0.00002 per share, per week.
+- **Consecutive weekly dividend streak:** **106+** (increments by 1 every
+  Monday — see `instructions/current-week.md` for the canonical current count).
+- **2026 tax treatment:** All 2026 distributions classified as Return of
+  Capital under **IRC §301(c)(2)** — tax-free in 2026. Always note "consult
+  your CPA" when discussing tax treatment.
+
+## Performance benchmarks (since April 2024 pivot)
+
+Use these reference numbers when illustrating "$100K invested at the pivot":
+
+- **Reinvestor (DRIP):** ~$277K (+177%)
+- **Collector (cash dividends):** ~$196K (+96%)
+- The Reinvestor advantage over the Collector is the recurring talking point —
+  it widens every week as dividends compound.
+
+## Webinar
+
+- **Cadence:** Tuesdays at 3:30 PM ET (live).
+- **Replay URL:** https://www.rebeldividends.com/startwebinar/
+- The replay URL stays the same week-to-week; the embedded video changes.
+
+## Key landing pages
+
+- **/forward/:** https://rebeldividends.com/forward/ — "How HYPE hits $150 in
+  12 months." Used by Friday-A (forward promo) emails.
+- **/macro/:** https://rebeldividends.com/macro/ — Macro thesis page. Used by
+  Thursday default and Friday macro-tease editorials.
+
+## Image assets
+
+- **WordPress media URL format:**
+  `https://www.rebeldividends.com/wp-content/uploads/YYYY/MM/<filename>.png`
+- **Daily Reinvestor chart filename pattern:** `reinvestor-chart-MMDD.png` —
+  e.g. `reinvestor-chart-may06.png` for 2026-05-06.
+- Always use the lowercase three-letter month + day (no leading zero on day):
+  `may6`, `may16`, `jun03`-style is wrong; use `may6`, `may16`, `jun3`.
+
+## Distribution lists
+
+### Brevo (email)
+
+- **List ID 14** — RD Email List (177 contacts) — full broadcast list.
+- **List ID 15** — RD Investors (136 contacts) — current investors only.
+- **Test list ID 6** — used for internal QA when needed.
+
+### SimpleTexting (SMS)
+
+- **Test phone:** 5055956003 (Jason)
+- The live list ID is supplied via `SIMPLETEXTING_LIST_ID` env var.
+
+### Test recipients
+
+- **Test email:** jasonjamescox85@gmail.com
+- **Test phone:** 5055956003
+
+## Required disclaimer (always include verbatim in email footer)
+
+> Past performance does not guarantee future results. Forward-looking
+> projections are hypothetical. Crypto markets are highly volatile. This is not
+> financial advice. Fund experienced significant losses during prior leveraged
+> ETH strategy (2022–2024). All performance data reflects results only since
+> the April 2024 pivot to unleveraged, spot HYPE strategy. Fee: 20% management
+> fee on all dividends.
+
+The Wednesday/Thursday/Friday templates already split this into three short
+paragraphs (Disclaimer, Tax Treatment, Fee Structure). Either format is
+acceptable as long as every clause above is present.
+
+## Voice and tone
+
+- Plain, confident, slightly contrarian. No hype words ("moonshot", "rocket",
+  "to the moon") even when the asset is named HYPE.
+- Numbers carry the argument. Lead with the price, then the math, then the
+  thesis.
+- One CTA per email (except Friday macro-tease, which has none).
+- Never invent specifics — if a number isn't in the prices JSON or the sheet
+  cells listed in `format-guide.md`, don't include it.
