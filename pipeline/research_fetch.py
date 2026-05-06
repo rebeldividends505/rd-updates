@@ -37,7 +37,11 @@ def _gog_read(cell_range: str) -> list:
             f"gog sheets read {cell_range} failed: {proc.stderr.strip()}"
         )
     try:
-        return json.loads(proc.stdout)
+        data = json.loads(proc.stdout)
+        # gog returns {"range": "...", "values": [[...], ...]} — extract values
+        if isinstance(data, dict) and "values" in data:
+            return data["values"]
+        return data
     except json.JSONDecodeError as exc:
         raise RuntimeError(
             f"gog sheets read {cell_range} returned non-JSON: {exc}"
