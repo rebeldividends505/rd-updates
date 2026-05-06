@@ -94,8 +94,8 @@ When done, write a brief summary to outputs/$DATE/claude-summary.txt
 EOF
 
   echo "==> Running Claude Code generator..."
+  cd "$REPO_DIR"  # Claude Code auto-reads files from cwd; no --add-dir needed
   claude --permission-mode bypassPermissions --print \
-    --add-dir "$REPO_DIR" \
     "$(cat "$PROMPT_FILE")"
 fi
 
