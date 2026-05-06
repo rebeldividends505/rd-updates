@@ -1,10 +1,11 @@
 export const dynamic = "force-static";
 export const revalidate = 3600;
 
-const UPDATE_DATE = "Thursday, April 30, 2026";
-const HYPE_PRICE = 39.2;
-const RD_SHARE_PRICE = "0.001767";
-const DAY_THEME = "forward";
+const UPDATE_DATE = "Wednesday, May 6, 2026";
+const HYPE_PRICE = 43.0;
+const RD_SHARE_PRICE = "0.00184";
+const RD_DAY_CHANGE = "+1.07%";
+const DAY_THEME = "replay"; // "forward" | "macro" | "webinar" | "replay"
 
 export default function Home() {
   return (
@@ -25,45 +26,46 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-6 py-2 flex gap-6 text-sm font-medium">
           <span>HYPE <strong>${HYPE_PRICE}</strong></span>
           <span>RD Share <strong>${RD_SHARE_PRICE}</strong></span>
-          <span className="ml-auto text-red-200">Weekly dividends, paid every Friday</span>
+          <span className="text-red-200 font-semibold">{RD_DAY_CHANGE} today</span>
+          <span className="ml-auto text-red-200">106 consecutive weekly dividends</span>
         </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-6 py-10 space-y-8">
 
         <div>
-          <p className="text-red-600 font-semibold text-sm uppercase tracking-wide mb-1">Thursday Update</p>
+          <p className="text-red-600 font-semibold text-sm uppercase tracking-wide mb-1">Wednesday Update</p>
           <h1 className="text-3xl font-bold text-gray-900 leading-tight">
-            Hyperliquid Is Still the Most Important Trade of the Decade
+            Your RD Update for Wednesday — and Where We Go from Here
           </h1>
           <p className="text-gray-500 mt-2 text-sm">{UPDATE_DATE} · Rebel Dividends Daily Briefing</p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 space-y-5 text-gray-700 leading-relaxed">
-          <p dangerouslySetInnerHTML={{__html: `While the rest of the market debates the next rate cut, Rebel Dividends investors are collecting weekly dividends — and watching HYPE build a case for a run to <strong>$150 or higher</strong>.`}} />
-          <p dangerouslySetInnerHTML={{__html: `This is not a speculative call. It's a structural one.`}} />
-          <p dangerouslySetInnerHTML={{__html: `Hyperliquid is the only DEX in history that has reached <strong>top-5 derivatives volume globally</strong> without a venture capital raise. No VC unlock. No whale dumping. Just organic growth from real traders who choose it over every centralized alternative.`}} />
-          <p dangerouslySetInnerHTML={{__html: `The thesis is simple: when a platform generates $300M+ in annualized real revenue, controls its own chain, and its token is still trading at a fraction of what comparable platforms command — the only question is timing.`}} />
-          <p dangerouslySetInnerHTML={{__html: `Our model puts HYPE at <strong>$150+ within 12 months</strong>. That's not a moonshot — that's a valuation re-rating.`}} />
+          <p dangerouslySetInnerHTML={{__html: `Your shares are at <strong>$${RD_SHARE_PRICE}</strong> this morning, <strong>up ${RD_DAY_CHANGE} overnight</strong>. The underlying is HYPE, currently trading at <strong>$${HYPE_PRICE}</strong>. Clean follow-through after yesterday's session. Higher highs, higher lows, holding ground above the late-January breakout.`}} />
+          <p dangerouslySetInnerHTML={{__html: `<strong style="color:#16a34a;">When HYPE breaks $60, your share price moves roughly 40% from here.</strong> That's the math of spot exposure. One-to-one with the underlying. No leverage. No leaks. When HYPE moves, you move.`}} />
+          <p dangerouslySetInnerHTML={{__html: `$60 takes HYPE back to its September 2025 all-time high — a price it already proved it could reach and hold. The technical setup is clean. The buyback flywheel is mechanical. The track record is 106 consecutive weekly dividends since the April 2024 pivot, every 2026 distribution classified as Return of Capital under IRC §301(c)(2).`}} />
+          <p dangerouslySetInnerHTML={{__html: `<strong style="color:#dc2626;">$60 is the first stop. $150 is the thesis.</strong> If you missed yesterday's webinar, the replay covers the full macro picture: six macro forces aligning, the buyback math, and a signal from Hyperliquid's own documentation that nobody else is talking about.`}} />
         </div>
 
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
-          <p className="text-amber-800 font-semibold mb-1">Your RD share price today: <strong>${RD_SHARE_PRICE}</strong></p>
+          <p className="text-amber-800 font-semibold mb-1">Your RD share price today: <strong>${RD_SHARE_PRICE}</strong> ({RD_DAY_CHANGE})</p>
           <p className="text-amber-700 text-sm">
-            Based on HYPE at ${HYPE_PRICE}. Dividends paid every Friday. <a href="https://portal.rebeldividends.com" className="underline">View your portal →</a>
+            Based on HYPE at ${HYPE_PRICE}. Dividends paid every Monday. <a href="https://portal.rebeldividends.com" className="underline">View your portal →</a>
           </p>
         </div>
 
         <div className="bg-gray-900 rounded-2xl p-8 text-center text-white">
-          <p className="text-gray-400 text-sm uppercase tracking-wide mb-3">Featured</p>
-          <h2 className="text-2xl font-bold mb-2">How Hyperliquid Hits $150 in 12 Months or Less</h2>
+          <p className="text-gray-400 text-sm uppercase tracking-wide mb-3">Missed Yesterday?</p>
+          <h2 className="text-2xl font-bold mb-2">Watch the Webinar Replay</h2>
+          <p className="text-gray-400 text-sm mb-5">Macro forces, buyback flywheel, the Hyperliquid signal, and the full $150 thesis.</p>
           <a
-            href="https://rebeldividends.com/forward/"
+            href="https://www.rebeldividends.com/startwebinar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3 rounded-xl transition-colors text-lg"
+            className="inline-block bg-green-700 hover:bg-green-800 text-white font-bold px-8 py-3 rounded-xl transition-colors text-lg"
           >
-            Read the Full Breakdown →
+            Watch the Replay →
           </a>
         </div>
 
@@ -71,7 +73,7 @@ export default function Home() {
           {[
             { label: "HYPE Price", value: `$${HYPE_PRICE}` },
             { label: "RD Share Price", value: `$${RD_SHARE_PRICE}` },
-            { label: "Dividend Day", value: "Every Friday" },
+            { label: "Consecutive Dividends", value: "106" },
           ].map((stat) => (
             <div key={stat.label} className="bg-white border border-gray-100 rounded-xl p-5 text-center shadow-sm">
               <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
