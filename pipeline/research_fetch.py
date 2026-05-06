@@ -30,7 +30,7 @@ def _gog_read(cell_range: str) -> list:
 
     Raises RuntimeError on failure so the caller decides how to handle it.
     """
-    cmd = ["gog", "sheets", "read", SHEET_ID, cell_range, "-j"]
+    cmd = ["/opt/homebrew/bin/gog", "sheets", "read", SHEET_ID, cell_range, "-j"]
     proc = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
     if proc.returncode != 0:
         raise RuntimeError(
