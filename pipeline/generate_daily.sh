@@ -99,12 +99,13 @@ EOF
     "$(cat "$PROMPT_FILE")"
 fi
 
-# Deploy to web (copies elementor.html into public/daily/, updates page.tsx)
-ELEMENTOR_FILE="$OUTPUT_DIR/elementor.html"
-if [ -f "$ELEMENTOR_FILE" ]; then
-  python3 "$REPO_DIR/pipeline/deploy.py" --date "$DATE" --file "$ELEMENTOR_FILE"
+# Deploy to web (writes public/daily/latest.json; Next.js dynamic route renders
+# the day's email.html from outputs/<date>/ at build time)
+EMAIL_FILE="$OUTPUT_DIR/email.html"
+if [ -f "$EMAIL_FILE" ]; then
+  python3 "$REPO_DIR/pipeline/deploy.py" --date "$DATE"
 else
-  echo "[WARN] No elementor.html at $ELEMENTOR_FILE — skipping deploy"
+  echo "[WARN] No email.html at $EMAIL_FILE — skipping deploy"
 fi
 
 # Commit outputs (deploy.py already pushes; this catches anything it missed)
@@ -124,7 +125,7 @@ print(body[:300] if body else '(SMS body missing)')
 PYEOF
 )
 
-WEB_URL="https://updates.rebeldividends.com"
+WEB_URL="https://updates.rebeldividends.com/daily/$DATE"
 
 PREVIEW_MSG="⏳ *$DAY $DATE content ready for review:*
 
