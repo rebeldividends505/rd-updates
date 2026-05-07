@@ -190,7 +190,11 @@ def send_sms_simpletexting(
         payload = {"text": message, "contactPhone": phone}
     else:
         endpoint = "https://app2.simpletexting.com/v2/api/campaigns"
-        payload = {"text": message, "listId": list_id or SIMPLETEXTING_LIST_ID}
+        payload = {
+            "title": f"RD Daily {datetime.now().strftime('%Y-%m-%d')}",
+            "messageTemplate": {"text": message},
+            "listIds": [list_id or SIMPLETEXTING_LIST_ID],
+        }
 
     resp = requests.post(endpoint, json=payload, headers=headers, timeout=30)
     print(f"SimpleTexting: {resp.status_code} {resp.text[:200]}")
