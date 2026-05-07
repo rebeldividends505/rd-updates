@@ -11,18 +11,18 @@ image filenames before generating output.
 
 - **Week number (consecutive weekly dividends):** 106
 - **Week starts (Monday):** 2026-05-04
-- **Webinar live link:** [PLACEHOLDER — Jason provides each week]
+- **Webinar live link:** https://www.rebeldividends.com/startwebinar/
   *(Tuesday 3:30 PM ET stream URL; falls back to /startwebinar/ replay after
   the live ends.)*
-- **Tuesday hook / topic:** [PLACEHOLDER — Jason provides each week]
+- **Tuesday hook / topic:** Week 106 dividend confirmed — 106 consecutive weeks of uninterrupted income
   *(One-line headline of the Tuesday webinar — used by Wed/Thu recap copy.)*
-- **Friday mode:** [PLACEHOLDER — `forward` OR `macro-tease`]
+- **Friday mode:** forward
   *(`forward` = Friday-A /forward/ promo. `macro-tease` = Friday-B pure
   editorial, no CTA.)*
-- **Thursday CTA:** [PLACEHOLDER — `startwebinar` OR `macro`]
+- **Thursday CTA:** startwebinar
   *(Locks the Thursday CTA target. Default = `startwebinar` during webinar
   week, `macro` otherwise.)*
-- **Breaking news / current events to weave in:** [PLACEHOLDER — optional]
+- **Breaking news / current events to weave in:** HYPE holding above $42 despite broader market pressure; macro uncertainty from trade policy; BTC holding $96K range
   *(Anything in the macro tape that should be referenced in this week's
   copy: HYPE catalyst, regulatory news, ETH/BTC moves, etc.)*
 
