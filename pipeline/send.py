@@ -3,8 +3,9 @@
 RD Daily — Brevo email + SimpleTexting SMS delivery.
 
 Usage:
-  python3 send.py --date YYYY-MM-DD --test     # sends to Jason only
-  python3 send.py --date YYYY-MM-DD --live     # sends to full lists
+  python3 send.py --date YYYY-MM-DD --test      # sends to Jason only (morning preview)
+  python3 send.py --date YYYY-MM-DD --test-all  # sends to Jason + Ryan + Dean (after Jason approves)
+  python3 send.py --date YYYY-MM-DD --live      # sends to full lists (after go-live)
 
 Reads outputs/<date>/email.html and outputs/<date>/sms.txt.
 The sms.txt file format is:
@@ -45,14 +46,17 @@ BREVO_EMAIL_LIST = 4          # RD Investors - Email (full list)
 BREVO_INVESTOR_LIST = 5       # RD Investors - SMS (full list)
 BREVO_TEST_LIST = 6           # internal QA list
 
-# Test recipients: all 3 must receive test before any live send
-TEST_CONTACTS = [
+# Test recipients
+# --test      = Jason only (morning auto-run, before Jason approves)
+# --test-all  = all 3 (after Jason approves the content, before go-live)
+TEST_JASON_ONLY = [{"email": "jasonjamescox85@gmail.com", "phone": "5055956003", "name": "Jason"}]
+TEST_CONTACTS_ALL = [
     {"email": "jasonjamescox85@gmail.com", "phone": "5055956003", "name": "Jason"},
     {"email": "ryan@rebeldividends.com",   "phone": "5052808236", "name": "Ryan"},
     {"email": "dean@rebeldividends.com",   "phone": "5053227515", "name": "Dean"},
 ]
-TEST_EMAIL = TEST_CONTACTS[0]["email"]  # backward-compat alias
-TEST_PHONE = TEST_CONTACTS[0]["phone"]  # backward-compat alias
+TEST_EMAIL = TEST_JASON_ONLY[0]["email"]
+TEST_PHONE = TEST_JASON_ONLY[0]["phone"]
 
 SENDER_EMAIL = "support@rebeldividends.com"
 SENDER_NAME = "Rebel Dividends"
@@ -182,7 +186,8 @@ def send_sms_simpletexting(
 def main() -> int:
     parser = argparse.ArgumentParser(description="RD daily email + SMS sender")
     parser.add_argument("--date", required=True, help="YYYY-MM-DD")
-    parser.add_argument("--test", action="store_true", help="send to Jason only")
+    parser.add_argument("--test", action="store_true", help="send to Jason only (morning preview)")
+    parser.add_argument("--test-all", action="store_true", help="send to Jason + Ryan + Dean (after Jason approves)")
     parser.add_argument("--live", action="store_true", help="send to full lists")
     parser.add_argument(
         "--list",
@@ -192,8 +197,8 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    if not (args.test or args.live):
-        print("[ERROR] must pass --test or --live")
+    if not (args.test or getattr(args, 'test_all', False) or args.live):
+        print("[ERROR] must pass --test, --test-all, or --live")
         return 2
     if args.test and args.live:
         print("[ERROR] --test and --live are mutually exclusive")
@@ -217,8 +222,20 @@ def main() -> int:
     print(f"SMS preview: {(sms_body or '<empty>')[:140]}")
 
     if args.test:
-        print(f"--- Sending test to {len(TEST_CONTACTS)} recipients ---")
-        for contact in TEST_CONTACTS:
+        recipients = TEST_JASON_ONLY
+        print(f"--- TEST SEND — Jason only ---")
+        for contact in recipients:
+            print(f"  → {contact['name']} ({contact['email']} / {contact['phone']})")
+            send_email_brevo(subject, email_html, to_email=contact["email"], test=True)
+            if sms_body:
+                send_sms_simpletexting(sms_body, phone=contact["phone"], test=True)
+            else:
+                print(f"[INFO] no SMS body — skipping SMS for {contact['name']}")
+        return 0
+
+    if getattr(args, 'test_all', False):
+        print(f"--- TEST-ALL SEND — Jason + Ryan + Dean ---")
+        for contact in TEST_CONTACTS_ALL:
             print(f"  → {contact['name']} ({contact['email']} / {contact['phone']})")
             send_email_brevo(subject, email_html, to_email=contact["email"], test=True)
             if sms_body:

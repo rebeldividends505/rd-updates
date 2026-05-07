@@ -147,7 +147,7 @@ echo "==> Preview posted to Telegram. Awaiting Jason's approval before test send
 # approval_listen.py watches for the approved.flag (set by the approval flow)
 python3 "$REPO_DIR/pipeline/approval_listen.py" --date "$DATE" --wait-for-preview
 
-echo "==> Approval received. Sending test to Jason, Ryan, Dean..."
+echo "==> Approval received. Sending test to Jason only first..."
 python3 "$REPO_DIR/pipeline/send.py" --date "$DATE" --test
 
-echo "==> Test sent to all 3. Awaiting 'go live' signal."
+echo "==> Test sent to Jason. Awaiting Jason's approval before sending to Ryan + Dean."
