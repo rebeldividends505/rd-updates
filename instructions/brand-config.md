@@ -127,3 +127,34 @@ acceptable as long as every clause above is present.
 - One CTA per email (except Friday macro-tease, which has none).
 - Never invent specifics — if a number isn't in the prices JSON or the sheet
   cells listed in `format-guide.md`, don't include it.
+
+## Content Strategy Rules (HARDCODED — May 7, 2026 — DO NOT OVERRIDE)
+
+### The Core Thesis
+- BTC and HYPE are **extremely undervalued** relative to macro forces — coiled to pop
+- $60 = HYPE's September 2025 ATH — already been there, just getting back
+- **Anything below $60 is a buying opportunity. Full stop.**
+- 106+ consecutive weekly dividends, all tax-free under IRC §301(c)(2)
+- Reinvestors up ~177% since April 2024 pivot ($100K → $277K)
+
+### The Macro Argument (use every day)
+- BTC has decoupled from global M2 money supply — when M2 catches up, BTC explodes
+- Hyperliquid: #1 decentralized perp exchange, ~70% market share, $180B+ monthly volume
+- $1.3B HYPE bought back and burned (4.17% of supply); 97% of protocol fees go to token holders
+- 388M HYPE tokens in community rewards wallet (untouched) — last airdrop took HYPE $4→$35 in 23 days
+- Hyperliquid removed "points program ended" from their documentation — signals something coming
+
+### Writing Rules (confirmed by Jason)
+1. Write for **investors**, not traders — simple, powerful language
+2. **NO technical analysis** — no support/resistance/RSI/chart patterns/holding levels
+3. Focus on **BTC + macro fundamentals** — NOT Coinbase/Solana/Ethereum comparisons
+4. On red stock days: use SOXL/AI overbought angle — rotate profits into RD
+5. Always reiterate Tuesday's macro thesis in every other day's content
+6. **Push Dean CTA hard**: "Call Dean: 505-322-7515" — Dean closes, Dean is the CTA
+7. Author = Jason Cox always. Dean = closer/CTA box only, never mentioned as author.
+
+### Content Angle by Market Condition
+- **HYPE up:** Momentum building, thesis playing out, great time to add or switch to reinvesting
+- **HYPE down:** Discount window, below $60 = opportunity, coiled to pop
+- **Stocks red (SOXL/AI down):** Rotate stock profits into RD — AI at 35-45x earnings, overbought
+- **Every day:** $60 target, 106+ consecutive dividends, call Dean 505-322-7515
