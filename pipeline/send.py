@@ -142,7 +142,8 @@ def send_email_brevo(
             "htmlContent": html_body,
         }
     else:
-        endpoint = "https://api.brevo.com/v3/emailCampaigns"
+        # Create campaign
+        create_endpoint = "https://api.brevo.com/v3/emailCampaigns"
         payload = {
             "sender": {"name": SENDER_NAME, "email": SENDER_EMAIL},
             "name": f"RD Daily — {datetime.now().strftime('%Y-%m-%d %H:%M')}",
@@ -150,6 +151,19 @@ def send_email_brevo(
             "htmlContent": html_body,
             "recipients": {"listIds": list_ids or [BREVO_EMAIL_LIST]},
         }
+        resp = requests.post(create_endpoint, json=payload, headers=headers, timeout=30)
+        print(f"Brevo campaign create: {resp.status_code} {resp.text[:200]}")
+        if resp.status_code >= 300:
+            return False
+        campaign_id = resp.json().get("id")
+        if not campaign_id:
+            print("[ERROR] No campaign ID returned")
+            return False
+        # Send campaign immediately
+        send_endpoint = f"https://api.brevo.com/v3/emailCampaigns/{campaign_id}/sendNow"
+        send_resp = requests.post(send_endpoint, headers=headers, timeout=30)
+        print(f"Brevo campaign sendNow: {send_resp.status_code} {send_resp.text[:200]}")
+        return send_resp.status_code < 300
 
     resp = requests.post(endpoint, json=payload, headers=headers, timeout=30)
     print(f"Brevo: {resp.status_code} {resp.text[:200]}")
