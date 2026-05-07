@@ -158,3 +158,12 @@ acceptable as long as every clause above is present.
 - **HYPE down:** Discount window, below $60 = opportunity, coiled to pop
 - **Stocks red (SOXL/AI down):** Rotate stock profits into RD — AI at 35-45x earnings, overbought
 - **Every day:** $60 target, 106+ consecutive dividends, call Dean 505-322-7515
+
+### SMS Formula (LOCKED — May 7, 2026)
+1. **RD share price + day %** — always first: `RD $0.00179 (-2.8%).`
+2. **One brief thesis blurb** — the day's angle (macro, rotation, undervalued)
+3. **Call Dean: 505-322-7515** — every SMS, no exceptions
+4. **Reply STOP to opt out** — always last
+- Do NOT lead with dividend count
+- Under 160 chars preferred
+- Example: `RD $0.00179 (-2.8%). BTC + HYPE coiled vs macro. Great time to add or rotate. Call Dean: 505-322-7515. Reply STOP to opt out.`
