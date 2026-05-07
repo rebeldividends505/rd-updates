@@ -46,9 +46,18 @@ cron 7:31 AM MST
             • copies elementor.html → public/daily/<slug>.html
             • patches constants in src/app/page.tsx from deploy-notes.md
             • git add, commit, push  (Vercel auto-deploys ~60s later)
-       7. pipeline/send.py --test   → Brevo email + SimpleTexting SMS to Jason
-       8. pipeline/approval_listen.py polls for approved.flag
-       9. (after approval) pipeline/send.py --live → full Brevo/SimpleTexting lists
+       7. Post SMS preview + web URL to Jason's Telegram group for review
+       8. pipeline/approval_listen.py waits for Jason's chat approval
+       9. (after 'approve') pipeline/send.py --test → email + SMS to Jason, Ryan, Dean
+      10. pipeline/approval_listen.py waits for 'go live'
+      11. (after 'go live') pipeline/send.py --live → full Brevo/SimpleTexting lists
+
+## Test contacts (as of May 7, 2026)
+| Name  | Email                     | Phone       |
+|-------|---------------------------|-------------|
+| Jason | jasonjamescox85@gmail.com | 5055956003  |
+| Ryan  | ryan@rebeldividends.com   | 5052808236  |
+| Dean  | dean@rebeldividends.com   | 5053227515  |
 ```
 
 ## Day cadence

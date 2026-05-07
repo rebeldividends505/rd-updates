@@ -113,7 +113,41 @@ git add outputs/ src/ public/ || true
 git commit -m "Daily output — $DATE ($DAY)" || echo "    (nothing extra to commit)"
 git push origin main || echo "    (nothing to push)"
 
-# Send test email + SMS to Jason
+# Post preview to Jason in Telegram group chat BEFORE sending test
+# Jason must approve here before test goes to Dean/Jason/Ryan
+SMS_PREVIEW=$(python3 - <<PYEOF 2>/dev/null
+import sys; sys.path.insert(0, '$REPO_DIR/pipeline')
+from send import parse_sms_body, load_output
+out = load_output('$DATE')
+body = parse_sms_body(out.get('sms_txt', ''))
+print(body[:300] if body else '(SMS body missing)')
+PYEOF
+)
+
+WEB_URL="https://updates.rebeldividends.com"
+
+PREVIEW_MSG="⏳ *$DAY $DATE content ready for review:*
+
+*SMS Preview:*
+$SMS_PREVIEW
+
+*Web page:* $WEB_URL
+
+Reply 'approve' to send test to Dean/Jason/Ryan
+Reply 'edit: [text]' to revise
+Reply 'go live' to send to full investor list after test"
+
+openclaw message send \
+  --channel telegram \
+  --target '-5275068164' \
+  --message "$PREVIEW_MSG" || echo "[WARN] Telegram preview failed — check openclaw"
+
+echo "==> Preview posted to Telegram. Awaiting Jason's approval before test send."
+
+# approval_listen.py watches for the approved.flag (set by the approval flow)
+python3 "$REPO_DIR/pipeline/approval_listen.py" --date "$DATE" --wait-for-preview
+
+echo "==> Approval received. Sending test to Jason, Ryan, Dean..."
 python3 "$REPO_DIR/pipeline/send.py" --date "$DATE" --test
 
-echo "==> Done — test sent to Jason. Awaiting approval."
+echo "==> Test sent to all 3. Awaiting 'go live' signal."

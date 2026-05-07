@@ -18,6 +18,16 @@ import argparse
 import json
 import os
 import sys
+from pathlib import Path
+
+# Load .env from repo root (never committed; holds API keys)
+_ENV_PATH = Path(__file__).parent.parent / ".env"
+if _ENV_PATH.exists():
+    for _line in _ENV_PATH.read_text().splitlines():
+        _line = _line.strip()
+        if _line and not _line.startswith("#") and "=" in _line:
+            _k, _v = _line.split("=", 1)
+            os.environ.setdefault(_k.strip(), _v.strip())
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
@@ -31,12 +41,18 @@ SIMPLETEXTING_API_KEY = os.environ.get("SIMPLETEXTING_API_KEY", "")
 SIMPLETEXTING_LIST_ID = os.environ.get("SIMPLETEXTING_LIST_ID", "")
 
 # Brevo lists — see instructions/brand-config.md
-BREVO_EMAIL_LIST = 14         # RD Email List (177 contacts)
-BREVO_INVESTOR_LIST = 15      # RD Investors (136 contacts)
+BREVO_EMAIL_LIST = 4          # RD Investors - Email (full list)
+BREVO_INVESTOR_LIST = 5       # RD Investors - SMS (full list)
 BREVO_TEST_LIST = 6           # internal QA list
 
-TEST_EMAIL = "jasonjamescox85@gmail.com"
-TEST_PHONE = "5055956003"
+# Test recipients: all 3 must receive test before any live send
+TEST_CONTACTS = [
+    {"email": "jasonjamescox85@gmail.com", "phone": "5055956003", "name": "Jason"},
+    {"email": "ryan@rebeldividends.com",   "phone": "5052808236", "name": "Ryan"},
+    {"email": "dean@rebeldividends.com",   "phone": "5053227515", "name": "Dean"},
+]
+TEST_EMAIL = TEST_CONTACTS[0]["email"]  # backward-compat alias
+TEST_PHONE = TEST_CONTACTS[0]["phone"]  # backward-compat alias
 
 SENDER_EMAIL = "support@rebeldividends.com"
 SENDER_NAME = "Rebel Dividends"
@@ -201,11 +217,14 @@ def main() -> int:
     print(f"SMS preview: {(sms_body or '<empty>')[:140]}")
 
     if args.test:
-        send_email_brevo(subject, email_html, to_email=TEST_EMAIL, test=True)
-        if sms_body:
-            send_sms_simpletexting(sms_body, phone=TEST_PHONE, test=True)
-        else:
-            print("[INFO] no SMS body parsed — skipping test SMS")
+        print(f"--- Sending test to {len(TEST_CONTACTS)} recipients ---")
+        for contact in TEST_CONTACTS:
+            print(f"  → {contact['name']} ({contact['email']} / {contact['phone']})")
+            send_email_brevo(subject, email_html, to_email=contact["email"], test=True)
+            if sms_body:
+                send_sms_simpletexting(sms_body, phone=contact["phone"], test=True)
+            else:
+                print(f"[INFO] no SMS body — skipping SMS for {contact['name']}")
         return 0
 
     list_id = BREVO_EMAIL_LIST if args.list == "email" else BREVO_INVESTOR_LIST
