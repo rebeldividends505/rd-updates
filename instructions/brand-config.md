@@ -80,23 +80,29 @@ Use these reference numbers when illustrating "$100K invested at the pivot":
 - Always use the lowercase three-letter month + day (no leading zero on day):
   `may6`, `may16`, `jun03`-style is wrong; use `may6`, `may16`, `jun3`.
 
-## Distribution lists
+## Distribution lists (VERIFIED May 7, 2026 — DO NOT CHANGE WITHOUT VERIFICATION)
 
-### Brevo (email)
+### Brevo (email + SMS)
 
-- **List ID 14** — RD Email List (177 contacts) — full broadcast list.
-- **List ID 15** — RD Investors (136 contacts) — current investors only.
-- **Test list ID 6** — used for internal QA when needed.
+- **List ID 4** — RD Investors - Email — FULL broadcast email list.
+- **List ID 5** — RD Investors - SMS — FULL broadcast SMS list.
+- **List ID 6** — RD TEST - Email (internal QA only).
+- **List ID 7** — RD TEST - SMS (internal QA only).
+- Lists 14 and 15 **DO NOT EXIST** — do not use.
 
-### SimpleTexting (SMS)
+### SimpleTexting (SMS fallback)
 
-- **Test phone:** 5055956003 (Jason)
-- The live list ID is supplied via `SIMPLETEXTING_LIST_ID` env var.
+- API Key env var: `SIMPLETEXTING_API_KEY`
+- Live list ID: `656def0f0d113f14b617af55` (also via `SIMPLETEXTING_LIST_ID` env var)
+- Account phone: 5615896099
 
-### Test recipients
+### Test recipients (ALL 3 must receive test before any full send)
 
-- **Test email:** jasonjamescox85@gmail.com
-- **Test phone:** 5055956003
+| Name  | Email                     | Phone      |
+|-------|---------------------------|------------|
+| Jason | jasonjamescox85@gmail.com | 5055956003 |
+| Ryan  | ryan@rebeldividends.com   | 5052808236 |
+| Dean  | dean@rebeldividends.com   | 5053227515 |
 
 ## Required disclaimer (always include verbatim in email footer)
 
