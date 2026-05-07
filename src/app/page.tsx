@@ -1,8 +1,8 @@
 export const dynamic = "force-static";
 export const revalidate = 3600;
 
-const UPDATE_DATE = "Wednesday, May 6, 2026";
-const HYPE_PRICE = 43.0;
+const UPDATE_DATE = "Thursday, May 7, 2026";
+const HYPE_PRICE = 4.80;
 const RD_SHARE_PRICE = "0.00184";
 const RD_DAY_CHANGE = "+1.07%";
 const DAY_THEME = "replay"; // "forward" | "macro" | "webinar" | "replay"
