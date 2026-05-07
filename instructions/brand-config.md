@@ -77,8 +77,9 @@ Use these reference numbers when illustrating "$100K invested at the pivot":
   `https://www.rebeldividends.com/wp-content/uploads/YYYY/MM/<filename>.png`
 - **Daily Reinvestor chart filename pattern:** `reinvestor-chart-MMDD.png` —
   e.g. `reinvestor-chart-may06.png` for 2026-05-06.
-- Always use the lowercase three-letter month + day (no leading zero on day):
-  `may6`, `may16`, `jun03`-style is wrong; use `may6`, `may16`, `jun3`.
+- Use lowercase three-letter month + **two-digit day with leading zero**:
+  `may06`, `may16`, `jun03` — this matches the actual WordPress uploads on the server.
+  `may6` (no leading zero) returns 404 — always use two digits for the day.
 
 ## Distribution lists (VERIFIED May 7, 2026 — DO NOT CHANGE WITHOUT VERIFICATION)
 
