@@ -162,8 +162,9 @@ acceptable as long as every clause above is present.
 ### SMS Formula (LOCKED — May 7, 2026)
 1. **RD share price + day %** — always first: `RD $0.00179 (-2.8%).`
 2. **One brief thesis blurb** — the day's angle (macro, rotation, undervalued)
-3. **Call Dean: 505-322-7515** — every SMS, no exceptions
-4. **Reply STOP to opt out** — always last
+3. **Page link:** `updates.rebeldividends.com` — always include
+4. **Call Dean: 505-322-7515** — every SMS, no exceptions
+5. **Reply STOP to opt out** — always last
 - Do NOT lead with dividend count
-- Under 160 chars preferred
-- Example: `RD $0.00179 (-2.8%). BTC + HYPE coiled vs macro. Great time to add or rotate. Call Dean: 505-322-7515. Reply STOP to opt out.`
+- 2 segments (320 chars) is acceptable
+- Example: `RD $0.00179 (-2.8%). Stocks most overbought in history. HYPE 40% from ATH. Rotate now: updates.rebeldividends.com. Call Dean: 505-322-7515. Reply STOP to opt out.`
