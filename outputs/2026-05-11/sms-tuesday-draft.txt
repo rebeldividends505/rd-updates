@@ -1,0 +1,10 @@
+SUBJECT: Oil is holding BTC back. AI stocks are the most overvalued since dot-com. Here's what's coming.
+
+SMS (REPLACE PRICE/PCT TUESDAY MORNING):
+Rebel Dividends: $0.00XXX (-X.X%). Oil is holding BTC down. AI stocks are the most overvalued since dot-com. When that rotates — and it will — we could be 50%+ higher. Here's why, live today 3:30 PM ET. Call Dean: 505-322-7515. Reply STOP.
+
+NOTES:
+- Replace $0.00XXX with Tuesday's actual share price (5 decimals)
+- Replace -X.X% with actual day % (sign + 1 decimal)
+- 193 chars = 2 SMS segments
+- Send AFTER Jason approves email + test send flow
