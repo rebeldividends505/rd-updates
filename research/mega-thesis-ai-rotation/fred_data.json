@@ -1,0 +1,118 @@
+{
+  "consumer_confidence_umich": {
+    "series_id": "UMCSENT",
+    "latest_date": "2026-03-01",
+    "latest_value": 53.3,
+    "six_months_ago": {
+      "date": "2025-09-01",
+      "value": 55.1
+    },
+    "year_ago": {
+      "date": "2025-03-01",
+      "value": 57.0
+    },
+    "n_obs": 51
+  },
+  "credit_card_delinquency_pct": {
+    "series_id": "DRCCLACBS",
+    "error": "500 Server Error: Internal Server Error for url: https://api.stlouisfed.org/fred/series/observations?series_id=DRCCLACBS&api_key=699edbb7c275f4109b632da133c01632&file_type=json&observation_start=2022-01-01"
+  },
+  "personal_savings_rate_pct": {
+    "series_id": "PSAVERT",
+    "latest_date": "2026-03-01",
+    "latest_value": 3.6,
+    "six_months_ago": {
+      "date": "2025-09-01",
+      "value": 4.3
+    },
+    "year_ago": {
+      "date": "2025-03-01",
+      "value": 5.1
+    },
+    "n_obs": 51
+  },
+  "nonfarm_payrolls_thousands": {
+    "series_id": "PAYEMS",
+    "latest_date": "2026-04-01",
+    "latest_value": 158736.0,
+    "six_months_ago": {
+      "date": "2025-10-01",
+      "value": 158408.0
+    },
+    "year_ago": {
+      "date": "2025-04-01",
+      "value": 158485.0
+    },
+    "n_obs": 52
+  },
+  "core_pce_index": {
+    "series_id": "PCEPILFE",
+    "latest_date": "2026-03-01",
+    "latest_value": 129.279,
+    "six_months_ago": {
+      "date": "2025-09-01",
+      "value": 126.954
+    },
+    "year_ago": {
+      "date": "2025-03-01",
+      "value": 125.267
+    },
+    "n_obs": 51
+  },
+  "real_gdp_growth_qoq_saar": {
+    "series_id": "A191RL1Q225SBEA",
+    "latest_date": "2026-01-01",
+    "latest_value": 2.0,
+    "six_months_ago": {
+      "date": "2024-07-01",
+      "value": 3.3
+    },
+    "year_ago": {
+      "date": "2023-01-01",
+      "value": 2.9
+    },
+    "n_obs": 17
+  },
+  "retail_sales_yoy_pct": {
+    "series_id": "RSAFS",
+    "latest_date": "2026-03-01",
+    "latest_value": 752063.0,
+    "six_months_ago": {
+      "date": "2025-09-01",
+      "value": 732192.0
+    },
+    "year_ago": {
+      "date": "2025-03-01",
+      "value": 723350.0
+    },
+    "n_obs": 51
+  },
+  "unemployment_rate": {
+    "series_id": "UNRATE",
+    "latest_date": "2026-04-01",
+    "latest_value": 4.3,
+    "six_months_ago": {
+      "date": "2025-09-01",
+      "value": 4.4
+    },
+    "year_ago": {
+      "date": "2025-03-01",
+      "value": 4.2
+    },
+    "n_obs": 51
+  },
+  "initial_claims": {
+    "series_id": "ICSA",
+    "latest_date": "2026-05-02",
+    "latest_value": 200000.0,
+    "six_months_ago": {
+      "date": "2026-03-21",
+      "value": 211000.0
+    },
+    "year_ago": {
+      "date": "2026-02-07",
+      "value": 230000.0
+    },
+    "n_obs": 227
+  }
+}

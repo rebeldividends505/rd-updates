@@ -1,0 +1,79 @@
+{
+  "NVDA": {
+    "start_date": "2025-09-25",
+    "start_price": 177.69,
+    "end_date": "2026-05-11",
+    "end_price": 219.44,
+    "change_pct": 23.5
+  },
+  "MSFT": {
+    "start_date": "2025-09-25",
+    "start_price": 507.03,
+    "end_date": "2026-05-11",
+    "end_price": 412.66,
+    "change_pct": -18.61
+  },
+  "GOOGL": {
+    "start_date": "2025-09-25",
+    "start_price": 245.79,
+    "end_date": "2026-05-11",
+    "end_price": 388.64,
+    "change_pct": 58.12
+  },
+  "META": {
+    "start_date": "2025-09-25",
+    "start_price": 748.91,
+    "end_date": "2026-05-11",
+    "end_price": 598.86,
+    "change_pct": -20.04
+  },
+  "AMZN": {
+    "start_date": "2025-09-25",
+    "start_price": 218.15,
+    "end_date": "2026-05-11",
+    "end_price": 268.99,
+    "change_pct": 23.31
+  },
+  "AMD": {
+    "start_date": "2025-09-25",
+    "start_price": 161.27,
+    "end_date": "2026-05-11",
+    "end_price": 458.79,
+    "change_pct": 184.49
+  },
+  "PLTR": {
+    "start_date": "2025-09-25",
+    "start_price": 179.12,
+    "end_date": "2026-05-11",
+    "end_price": 136.89,
+    "change_pct": -23.58
+  },
+  "AVGO": {
+    "start_date": "2025-09-25",
+    "start_price": 336.1,
+    "end_date": "2026-05-11",
+    "end_price": 428.43,
+    "change_pct": 27.47
+  },
+  "SOXL": {
+    "start_date": "2025-09-25",
+    "start_price": 33.85,
+    "end_date": "2026-05-11",
+    "end_price": 190.42,
+    "change_pct": 462.54
+  },
+  "MSTR": {
+    "start_date": "2025-09-25",
+    "start_price": 300.7,
+    "end_date": "2026-05-11",
+    "end_price": 195.94,
+    "change_pct": -34.84
+  },
+  "X:BTCUSD": {
+    "start_date": "2025-09-25",
+    "start_price": 109035.72,
+    "end_date": "2026-05-10",
+    "end_price": 82141.68,
+    "change_pct": -24.67
+  }
+}
