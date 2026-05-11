@@ -1,0 +1,19 @@
+Generated the full 2026-05-11 Monday daily package plus the May 12 Tuesday webinar package on the same run (per format-guide: Tuesday packages are built Mondays).
+
+Monday set: email.html, elementor.html, sms.txt, deploy-notes.md.
+- Today is Monday, May 11, 2026. RD share price $0.00171, down 4.7% on the day (red). HYPE at $41.33. Week 107 dividend paid this morning.
+- Subject: "Your RD update for Monday — week 107 paid, HYPE on sale."
+- Hook: weekly streak (107 consecutive Mondays since the April 2024 pivot) plus the "$41 = ~31% below the $60 September ATH = the buying window we keep flagging" angle. CTA = startwebinar (tomorrow 3:30 PM ET).
+- Reinvestor chart URL: https://www.rebeldividends.com/wp-content/uploads/2026/05/reinvestor-chart-may11.png.
+
+Tuesday set: tuesday-email.html, tuesday-elementor.html, tuesday-sms.txt.
+- Adapted from the May 5 / Week 106 production template. Updated to Week 107, May 12 date, today's stats dashboard (share $0.00171, weekly return -0.3% from prices.tuesday_data, dividend $0.00002, dividend ROI 1.18%, total shares 7,837,347,441, portfolio $13,104,913.26, cash balance $772,265.04).
+- Macro section unchanged in substance (six forces, tactical playbook, yen carry catalyst, why-Hyperliquid, $60/$150/$350-500 targets) — these are durable beats and are still on-thesis.
+- Updated the Hyperliquid-doc-edit section to "one week later, still gone, no public clarification" framing. Updated catalysts box: Warsh Senate vote moved from "Week of May 11" to "this week," removed Saylor earnings (already happened) and HYPE token unlock (already happened May 6).
+- Reinvestor chart URL: reinvestor-chart-may12.png (will need to be built Tuesday morning with the actual May 12 share price).
+- All four #WEBINAR_LINK placeholders left intact for Tuesday morning replacement with the live webinar URL.
+
+Important flags for Jason in deploy-notes:
+1. instructions/current-week.md was not refreshed this Monday — it still shows Week 106 / week-of 2026-05-04. I incremented to Week 107 per brand-config rule ("increments by 1 every Monday") and the May 5 Tuesday template explicitly anchoring Week 106 to last Monday. Please refresh current-week.md (week number, Tuesday hook, Friday mode, Thursday CTA) before next week's run.
+2. prices.json week_number was null — pipeline did not pass an override.
+3. Tuesday morning workflow before sending: refresh share price / day% / weekly return / portfolio value into the Tuesday stats dashboard (currently seeded with Monday's numbers), build reinvestor-chart-may12.png, verify Hyperliquid doc-edit page is still in the edited state, replace #WEBINAR_LINK in 4 places.
