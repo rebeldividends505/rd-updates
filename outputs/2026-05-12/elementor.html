@@ -38,10 +38,14 @@ img { max-width: 100% !important; height: auto !important; }
     padding: 8px 16px !important;
     overflow: visible !important;
   }
-  /* Stat rows: shrink to fit single line */
-  .stat-cell { padding: 5px 10px !important; }
-  .stat-label { font-size: 13px !important; }
-  .stat-value { font-size: 13px !important; font-weight: 700 !important; }
+  /* Stat rows: fit on mobile without overflow */
+  .stat-cell { padding: 6px 8px !important; }
+  .stat-label { font-size: 12px !important; white-space: nowrap !important; }
+  .stat-value { font-size: 12px !important; font-weight: 700 !important; white-space: nowrap !important; text-align: right !important; }
+  /* Prevent any table from overflowing viewport */
+  table { table-layout: fixed !important; }
+  /* Allow stat label/value to wrap if truly needed */
+  .stat-label, .stat-value { overflow: hidden !important; text-overflow: ellipsis !important; }
   .cta-btn { display: block !important; width: 90% !important; margin: 0 auto !important; padding: 16px 20px !important; font-size: 17px !important; }
   .body-17 { font-size: 17px !important; }
   .h2-26 { font-size: 22px !important; }
@@ -61,7 +65,7 @@ img { max-width: 100% !important; height: auto !important; }
 <tr><td bgcolor="#000000" style="background-color:#000000;padding:10px 20px 8px;border-bottom:4px solid #ff6600;">
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr><td bgcolor="#000000" style="background-color:#000000;font-size:26px;font-weight:700;color:#ffffff;text-align:center;letter-spacing:1px;padding-bottom:5px;">INVESTOR UPDATE</td></tr>
-<tr><td bgcolor="#000000" style="background-color:#000000;font-size:16px;color:#cccccc;text-align:center;padding-bottom:8px;">Rebel Dividends &bull; May 12, 2026 &bull; Week&nbsp;107</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;font-size:15px;color:#cccccc;text-align:center;padding-bottom:8px;word-break:normal;">Rebel Dividends &bull; May 12, 2026 &bull; Week 107</td></tr>
 <tr><td bgcolor="#000000" style="background-color:#000000;">
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr><td colspan="2" bgcolor="#111111" style="background-color:#111111;text-align:center;padding:10px 20px 6px;">
