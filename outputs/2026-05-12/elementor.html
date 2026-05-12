@@ -57,16 +57,26 @@
 /* =============== /V15 =============== */
 
 @media screen and (max-width: 600px) {
-  .rd-container { width: 100% !important; padding: 0 12px !important; box-sizing: border-box !important; }
-  .rd-stat-grid { display: block !important; }
-  .rd-stat-cell { display: block !important; width: 100% !important; margin-bottom: 12px !important; }
-  .rd-milestone { font-size: 64px !important; }
-  .rd-hero-text { font-size: 18px !important; padding: 0 8px !important; }
-  .rd-cta-btn { padding: 16px 24px !important; font-size: 16px !important; width: 90% !important; }
-  .rd-header-title { font-size: 20px !important; letter-spacing: 0.5px !important; }
-  .rd-header-subtitle { font-size: 12px !important; word-wrap: break-word !important; }
-  .rd-rotation-mini { padding: 12px !important; }
+  .rd-container { width: 100% !important; padding: 0 8px !important; box-sizing: border-box !important; }
+  .rd-stat-grid { display: table-row !important; }
+  .rd-stat-cell { display: table-cell !important; width: 50% !important; padding: 4px 4px !important; }
+  .rd-stat-cell > div { padding: 10px 6px !important; }
+  .rd-stat-cell .rd-stat-value { font-size: 22px !important; }
+  .rd-milestone { font-size: 56px !important; }
+  .rd-milestone-wrap { padding: 12px !important; margin-bottom: 10px !important; }
+  .rd-hero-text { font-size: 14px !important; padding: 0 4px !important; }
+  .rd-cta-btn { padding: 14px 20px !important; font-size: 15px !important; width: 85% !important; margin-bottom: 6px !important; }
+  .rd-header-title { font-size: 18px !important; letter-spacing: 0.5px !important; margin-bottom: 2px !important; }
+  .rd-header-subtitle { font-size: 11px !important; word-wrap: break-word !important; margin-bottom: 12px !important; }
+  .rd-rotation-mini { padding: 10px 8px !important; margin-bottom: 12px !important; }
   .rd-rotation-mini img { max-width: 100% !important; }
+  .rd-rotation-box { padding: 8px 4px !important; }
+  .rd-rotation-value { font-size: 20px !important; }
+  .rd-rotation-label { font-size: 8px !important; }
+  .rd-rotation-sublabel { font-size: 8px !important; }
+  .rd-rotation-arrow { font-size: 22px !important; }
+  .rd-rotation-title { font-size: 10px !important; margin-bottom: 10px !important; }
+  .rd-rotation-caption { font-size: 11px !important; margin-top: 8px !important; }
 }
 </style>
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
@@ -79,7 +89,7 @@
 <div class="rd-header-subtitle" style="font-size:14px;color:#888888;margin-bottom:20px;">Rebel Dividends • May 12, 2026 • Week 107</div>
 
 <!-- Milestone Celebration -->
-<div style="background:linear-gradient(135deg,#0a7c42 0%,#16a34a 100%);background-color:#0a7c42;padding:20px;border-radius:8px;margin-bottom:20px;">
+<div class="rd-milestone-wrap" style="background:linear-gradient(135deg,#0a7c42 0%,#16a34a 100%);background-color:#0a7c42;padding:20px;border-radius:8px;margin-bottom:20px;">
 <div style="font-size:13px;letter-spacing:2px;color:#ffffff;opacity:0.9;margin-bottom:8px;">&#10003; MILESTONE &mdash; WEEK 107</div>
 <div class="rd-milestone" style="font-size:84px;font-weight:800;color:#ffffff;line-height:1;margin-bottom:8px;">107</div>
 <div style="font-size:16px;color:#ffffff;opacity:0.95;">Consecutive Weekly Dividends Paid &mdash; Not One Missed Since April 2024</div>
@@ -91,13 +101,13 @@
 <td class="rd-stat-cell" width="50%" style="padding:12px 8px;vertical-align:top;">
 <div style="background-color:#111111;border-radius:6px;padding:16px;text-align:center;">
 <div style="font-size:12px;color:#888888;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;">Return Since Pivot</div>
-<div style="font-size:32px;font-weight:700;color:#4ade80;">+165%</div>
+<div class="rd-stat-value" style="font-size:32px;font-weight:700;color:#4ade80;">+165%</div>
 </div>
 </td>
 <td class="rd-stat-cell" width="50%" style="padding:12px 8px;vertical-align:top;">
 <div style="background-color:#111111;border-radius:6px;padding:16px;text-align:center;">
 <div style="font-size:12px;color:#888888;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;">Weekly Dividends</div>
-<div style="font-size:24px;font-weight:700;color:#4ade80;">107 &mdash; Zero Missed</div>
+<div class="rd-stat-value" style="font-size:24px;font-weight:700;color:#4ade80;">107 &mdash; Zero Missed</div>
 </div>
 </td>
 </tr>
@@ -105,13 +115,13 @@
 <td class="rd-stat-cell" width="50%" style="padding:12px 8px;vertical-align:top;">
 <div style="background-color:#111111;border-radius:6px;padding:16px;text-align:center;">
 <div style="font-size:12px;color:#888888;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;">Portfolio Value</div>
-<div style="font-size:28px;font-weight:700;color:#4ade80;">$13.1M</div>
+<div class="rd-stat-value" style="font-size:28px;font-weight:700;color:#4ade80;">$13.1M</div>
 </div>
 </td>
 <td class="rd-stat-cell" width="50%" style="padding:12px 8px;vertical-align:top;">
 <div style="background-color:#111111;border-radius:6px;padding:16px;text-align:center;">
 <div style="font-size:12px;color:#888888;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;">Share Price</div>
-<div style="font-size:28px;font-weight:700;color:#ffffff;">$0.00171</div>
+<div class="rd-stat-value" style="font-size:28px;font-weight:700;color:#ffffff;">$0.00171</div>
 </div>
 </td>
 </tr>
@@ -120,39 +130,39 @@
 <!-- Rotation Mini-Chart Above Fold -->
 <table class="rd-rotation-mini" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 100%);border:2px solid #ff6600;border-radius:10px;margin-bottom:20px;">
 <tr><td style="padding:18px 16px;text-align:center;">
-<div style="font-size:12px;letter-spacing:3px;color:#ff6600;font-weight:700;text-transform:uppercase;margin-bottom:14px;">&#128293; THE ROTATION IS HAPPENING NOW</div>
+<div class="rd-rotation-title" style="font-size:12px;letter-spacing:3px;color:#ff6600;font-weight:700;text-transform:uppercase;margin-bottom:14px;">&#128293; THE ROTATION IS HAPPENING NOW</div>
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
 <td width="28%" style="text-align:center;vertical-align:middle;">
-<div style="background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);border-radius:8px;padding:14px 8px;">
-<div style="font-size:10px;letter-spacing:1px;color:#fca5a5;margin-bottom:4px;">AI STOCKS</div>
-<div style="font-size:28px;font-weight:800;color:#ffffff;">-6%</div>
-<div style="font-size:10px;color:#fca5a5;margin-top:2px;">SOX TODAY</div>
+<div class="rd-rotation-box" style="background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);border-radius:8px;padding:14px 8px;">
+<div class="rd-rotation-label" style="font-size:10px;letter-spacing:1px;color:#fca5a5;margin-bottom:4px;">AI STOCKS</div>
+<div class="rd-rotation-value" style="font-size:28px;font-weight:800;color:#ffffff;">-6%</div>
+<div class="rd-rotation-sublabel" style="font-size:10px;color:#fca5a5;margin-top:2px;">SOX TODAY</div>
 </div>
 </td>
 <td width="11%" style="text-align:center;vertical-align:middle;">
-<div style="font-size:32px;color:#ff6600;font-weight:700;">➜</div>
+<div class="rd-rotation-arrow" style="font-size:32px;color:#ff6600;font-weight:700;">➜</div>
 </td>
 <td width="28%" style="text-align:center;vertical-align:middle;">
-<div style="background:linear-gradient(135deg,#1e293b 0%,#334155 100%);border-radius:8px;padding:14px 8px;">
-<div style="font-size:10px;letter-spacing:1px;color:#94a3b8;margin-bottom:4px;">BITCOIN</div>
-<div style="font-size:22px;font-weight:800;color:#ffffff;">37% OFF</div>
-<div style="font-size:10px;color:#94a3b8;margin-top:2px;">COILED TO POP</div>
+<div class="rd-rotation-box" style="background:linear-gradient(135deg,#1e293b 0%,#334155 100%);border-radius:8px;padding:14px 8px;">
+<div class="rd-rotation-label" style="font-size:10px;letter-spacing:1px;color:#94a3b8;margin-bottom:4px;">BITCOIN</div>
+<div class="rd-rotation-value" style="font-size:22px;font-weight:800;color:#ffffff;">37% OFF</div>
+<div class="rd-rotation-sublabel" style="font-size:10px;color:#94a3b8;margin-top:2px;">COILED TO POP</div>
 </div>
 </td>
 <td width="11%" style="text-align:center;vertical-align:middle;">
-<div style="font-size:32px;color:#ff6600;font-weight:700;">➜</div>
+<div class="rd-rotation-arrow" style="font-size:32px;color:#ff6600;font-weight:700;">➜</div>
 </td>
 <td width="28%" style="text-align:center;vertical-align:middle;">
-<div style="background:linear-gradient(135deg,#064e3b 0%,#047857 100%);border-radius:8px;padding:14px 8px;">
-<div style="font-size:10px;letter-spacing:1px;color:#6ee7b7;margin-bottom:4px;">HYPE TARGET</div>
-<div style="font-size:28px;font-weight:800;color:#ffffff;">$60</div>
-<div style="font-size:10px;color:#6ee7b7;margin-top:2px;">+48% FROM HERE</div>
+<div class="rd-rotation-box" style="background:linear-gradient(135deg,#064e3b 0%,#047857 100%);border-radius:8px;padding:14px 8px;">
+<div class="rd-rotation-label" style="font-size:10px;letter-spacing:1px;color:#6ee7b7;margin-bottom:4px;">HYPE TARGET</div>
+<div class="rd-rotation-value" style="font-size:28px;font-weight:800;color:#ffffff;">$60</div>
+<div class="rd-rotation-sublabel" style="font-size:10px;color:#6ee7b7;margin-top:2px;">+48% FROM HERE</div>
 </div>
 </td>
 </tr>
 </table>
-<div style="font-size:13px;color:#d1d5db;margin-top:12px;font-weight:500;">Capital exits overbought AI → Rotates to undervalued crypto → <span style="color:#4ade80;font-weight:700;">RD catches the bid</span></div>
+<div class="rd-rotation-caption" style="font-size:13px;color:#d1d5db;margin-top:12px;font-weight:500;">Capital exits overbought AI → Rotates to undervalued crypto → <span style="color:#4ade80;font-weight:700;">RD catches the bid</span></div>
 </td></tr>
 </table>
 
