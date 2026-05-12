@@ -18,40 +18,40 @@ img { max-width: 100% !important; height: auto !important; }
   td { word-break: normal !important; overflow-wrap: normal !important; }
   .hero-h { font-size: 24px !important; line-height: 1.3 !important; }
   .big-num { font-size: 22px !important; }
-  /* Every Monday fix: full-width stacked cell, font sized to fit on one line */
+  /* Every Monday fix: stack cells full-width so text is never squeezed into 50% column */
   .every-monday {
-    font-size: 22px !important;
+    font-size: 24px !important;
     white-space: nowrap !important;
     overflow: visible !important;
     word-break: keep-all !important;
     overflow-wrap: normal !important;
-    display: inline-block !important;
+    display: block !important;
+    width: 100% !important;
   }
   .milestone-num { font-size: 60px !important; }
-  .milestone-label { font-size: 11px !important; letter-spacing: 1px !important; }
-  /* Stack the MTD Return / Dividends two-col row vertically */
+  .milestone-label { font-size: 13px !important; letter-spacing: 1px !important; }
+  /* Stack the MTD Return / Dividends two-col row vertically — MUST remove fixed table-layout */
   .stats-two-col-td {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
     text-align: center !important;
-    padding: 8px 16px !important;
+    padding: 10px 16px !important;
     overflow: visible !important;
+    box-sizing: border-box !important;
   }
-  /* Stat rows: fit on mobile without overflow */
-  .stat-cell { padding: 6px 8px !important; }
-  .stat-label { font-size: 12px !important; white-space: nowrap !important; }
-  .stat-value { font-size: 12px !important; font-weight: 700 !important; white-space: nowrap !important; text-align: right !important; }
-  /* Prevent any table from overflowing viewport */
-  table { table-layout: fixed !important; }
-  /* Allow stat label/value to wrap if truly needed */
-  .stat-label, .stat-value { overflow: hidden !important; text-overflow: ellipsis !important; }
-  .cta-btn { display: block !important; width: 90% !important; margin: 0 auto !important; padding: 16px 20px !important; font-size: 17px !important; }
+  /* CRITICAL: do NOT use fixed table-layout — it breaks stacked cell widths */
+  table { table-layout: auto !important; }
+  /* Stat rows: readable for 55+ audience */
+  .stat-cell { padding: 8px 10px !important; }
+  .stat-label { font-size: 14px !important; white-space: nowrap !important; }
+  .stat-value { font-size: 15px !important; font-weight: 700 !important; white-space: nowrap !important; text-align: right !important; }
+  .cta-btn { display: block !important; width: 90% !important; margin: 0 auto !important; padding: 16px 20px !important; font-size: 18px !important; }
   .body-17 { font-size: 17px !important; }
   .h2-26 { font-size: 22px !important; }
   .h3-22 { font-size: 19px !important; }
   .ind-cell { padding: 10px 8px !important; font-size: 14px !important; }
-  .stats-sublabel { font-size: 11px !important; letter-spacing: 0 !important; }
+  .stats-sublabel { font-size: 13px !important; letter-spacing: 0 !important; }
 }
 </style>
 </head>
