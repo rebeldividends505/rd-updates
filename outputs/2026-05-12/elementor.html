@@ -6,10 +6,10 @@
 <title>Investor Update — Rebel Dividends | May 12, 2026 — The Goldilocks Rotation</title>
 <style>
 * { box-sizing: border-box; }
-html { overflow-x: hidden; }
-body { overflow-x: hidden !important; margin: 0; padding: 0; }
+html { overflow-x: hidden; max-width: 100%; }
+body { overflow-x: hidden !important; margin: 0; padding: 0; max-width: 100%; }
 table { table-layout: auto; }
-img { max-width: 100% !important; height: auto !important; }
+img { max-width: 100% !important; height: auto !important; width: auto; }
 .milestone-num { font-size: 80px; font-weight: 700; color: #4ade80; line-height: 1; display: block; }
 @media screen and (max-width: 600px) {
   table[width="680"] { width: 100% !important; max-width: 100% !important; }
@@ -45,12 +45,13 @@ img { max-width: 100% !important; height: auto !important; }
   /* Stat rows: readable for 55+ audience, no truncation */
   .stat-cell { padding: 4px 8px !important; }
   .stat-label { font-size: 13px !important; white-space: normal !important; }
-  /* CRITICAL FIX v2: overflow:visible so values render; nowrap keeps them on one line */
-  .stat-value { font-size: 13px !important; font-weight: 700 !important; white-space: nowrap !important; text-align: right !important; overflow: visible !important; }
-  .cta-btn { display: block !important; width: 88% !important; margin: 0 auto !important; padding: 14px 12px !important; font-size: 15px !important; white-space: nowrap !important; text-align: center !important; }
+  /* CRITICAL FIX v3: explicit column widths + normal white-space prevent values being pushed off-screen */
+  .stat-value { font-size: 12px !important; font-weight: 700 !important; white-space: normal !important; text-align: right !important; overflow: visible !important; width: 44% !important; }
+  .stat-label { font-size: 12px !important; white-space: normal !important; width: 56% !important; }
+  .cta-btn { display: block !important; width: 90% !important; max-width: 320px !important; margin: 0 auto !important; padding: 14px 12px !important; font-size: 15px !important; white-space: normal !important; text-align: center !important; box-sizing: border-box !important; }
   /* Header/subtitle size fix — prevents "INVESTOR UPDA..." truncation */
-  .rd-inv-header { font-size: 20px !important; letter-spacing: 0 !important; }
-  .rd-inv-sub { font-size: 12px !important; }
+  .rd-inv-header { font-size: 18px !important; letter-spacing: 0 !important; word-break: normal !important; }
+  .rd-inv-sub { font-size: 11px !important; word-break: normal !important; }
   .rd-ms-sub { font-size: 11px !important; line-height: 1.4 !important; }
   .body-17 { font-size: 17px !important; }
   .h2-26 { font-size: 22px !important; }
@@ -62,8 +63,10 @@ img { max-width: 100% !important; height: auto !important; }
   .milestone-block-td { padding: 4px 12px 2px !important; }
   .cta-inner-td { padding: 6px 12px 8px !important; }
   /* Prevent 3-col tables from causing horizontal overflow */
-  .trigger-col { width: 32% !important; font-size: 12px !important; padding: 8px 6px !important; }
-  .trigger-col .trigger-title { font-size: 13px !important; }
+  .trigger-col { width: 32% !important; font-size: 11px !important; padding: 6px 4px !important; }
+  .trigger-col .trigger-title { font-size: 12px !important; }
+  /* Nuclear option: prevent any single td from being wider than viewport */
+  td { max-width: 100vw; }
   /* Track record: 5-col table scrolls horizontally on mobile */
   .track-record-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; display: block !important; width: 100% !important; }
   .track-record-scroll table { min-width: 480px !important; font-size: 11px !important; }
@@ -185,27 +188,29 @@ img { max-width: 100% !important; height: auto !important; }
 <tr><td bgcolor="#ffffff" style="background-color:#ffffff;padding:32px 24px 8px 24px;">
 <div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:8px;">The Timing &bull; Every Trigger Inside 90 Days</div>
 <div style="font-size:24px;font-weight:700;color:#000000;line-height:1.25;margin-bottom:14px;" class="h3-22">Three Triggers in the Next 9 Days. One Fires the Rotation.</div>
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;margin-bottom:8px;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;margin-bottom:8px;min-width:300px;">
 <tr>
-<td width="33%" valign="top" bgcolor="#fff8f0" style="background-color:#fff8f0;border:1px solid #ff6600;padding:12px;text-align:center;">
+<td width="33%" class="trigger-col" valign="top" bgcolor="#fff8f0" style="background-color:#fff8f0;border:1px solid #ff6600;padding:12px;text-align:center;">
 <div style="font-size:11px;letter-spacing:1px;color:#ff6600;font-weight:700;text-transform:uppercase;">May 14-15</div>
-<div style="font-size:16px;font-weight:700;color:#000000;line-height:1.25;margin-top:4px;">Trump-Xi Summit</div>
+<div class="trigger-title" style="font-size:16px;font-weight:700;color:#000000;line-height:1.25;margin-top:4px;">Trump-Xi Summit</div>
 <div style="font-size:13px;color:#333;line-height:1.4;margin-top:4px;">Trade deal or tariff shock</div>
 </td>
 <td width="4" style="width:4px;">&nbsp;</td>
-<td width="33%" valign="top" bgcolor="#fff8f0" style="background-color:#fff8f0;border:1px solid #ff6600;padding:12px;text-align:center;">
+<td width="33%" class="trigger-col" valign="top" bgcolor="#fff8f0" style="background-color:#fff8f0;border:1px solid #ff6600;padding:12px;text-align:center;">
 <div style="font-size:11px;letter-spacing:1px;color:#ff6600;font-weight:700;text-transform:uppercase;">May 16</div>
-<div style="font-size:16px;font-weight:700;color:#000000;line-height:1.25;margin-top:4px;">Big Options Expiry</div>
+<div class="trigger-title" style="font-size:16px;font-weight:700;color:#000000;line-height:1.25;margin-top:4px;">Big Options Expiry</div>
 <div style="font-size:13px;color:#333;line-height:1.4;margin-top:4px;">Forces hedge fund repositioning</div>
 </td>
 <td width="4" style="width:4px;">&nbsp;</td>
-<td width="33%" valign="top" bgcolor="#fff8f0" style="background-color:#fff8f0;border:1px solid #ff6600;padding:12px;text-align:center;">
+<td width="33%" class="trigger-col" valign="top" bgcolor="#fff8f0" style="background-color:#fff8f0;border:1px solid #ff6600;padding:12px;text-align:center;">
 <div style="font-size:11px;letter-spacing:1px;color:#ff6600;font-weight:700;text-transform:uppercase;">May 20</div>
-<div style="font-size:16px;font-weight:700;color:#000000;line-height:1.25;margin-top:4px;">NVIDIA Earnings</div>
+<div class="trigger-title" style="font-size:16px;font-weight:700;color:#000000;line-height:1.25;margin-top:4px;">NVIDIA Earnings</div>
 <div style="font-size:13px;color:#333;line-height:1.4;margin-top:4px;">First real test of AI demand</div>
 </td>
 </tr>
 </table>
+</div>
 </td></tr>
 
 <tr><td bgcolor="#ffffff" style="background-color:#ffffff;padding:0 24px 18px 24px;">
