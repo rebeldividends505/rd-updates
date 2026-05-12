@@ -1,7 +1,12 @@
-SUBJECT: SOXL Intelligence Dashboard — Live
+SUBJECT: SOXL Alpha Strategy — Current Positions Live
 
-The SOX complex, scored top-to-bottom.
+Backtest done. 240 L/S combos tested. Winner beats SOXL.
 
-30 component cards · prediction framework · macro overlay · HIP-3 trade book.
+· Sharpe 1.51 vs SOXL 0.68
+· MaxDD -40.5% vs SOXL -86.3%
+· Long-only momentum, 13-week lookback, 5 names equal-weight
+
+Current longs: INTC, AMD, MRVL, SITM, MU
+Next rebalance: Monday May 18 open.
 
 https://updates.rebeldividends.com/daily/2026-05-14

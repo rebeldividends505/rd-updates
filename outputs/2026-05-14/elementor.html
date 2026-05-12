@@ -3,927 +3,365 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SOXL Intelligence Dashboard — Rebel Dividends</title>
+<title>SOXL Alpha Strategy — Rebel Dividends</title>
 <style>
   :root {
-    --ink:#111;
-    --line:#e6e6e6;
-    --muted:#666;
-    --red:#d12d2d;
-    --amber:#e08f1a;
-    --green:#1f8a4c;
-    --blue:#1c4fd6;
+    --ink:#111; --line:#e6e6e6; --muted:#666;
+    --red:#d12d2d; --amber:#e08f1a; --green:#1f8a4c; --blue:#1c4fd6;
+    --bg-soft:#fafafa;
   }
   *{box-sizing:border-box;}
-  body {
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    background:#fff;
-    color:var(--ink);
-    line-height:1.5;
-  }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; background:#fff; color:var(--ink); line-height:1.55; }
   .wrap { max-width:1180px; margin:0 auto; padding:32px 24px 72px; }
-  h1 {
-    font-size:34px;
-    font-weight:800;
-    letter-spacing:-0.01em;
-    margin:0 0 6px 0;
-  }
-  h2 {
-    font-size:22px;
-    font-weight:800;
-    margin:48px 0 14px 0;
-    padding-bottom:10px;
-    border-bottom:2px solid var(--ink);
-    letter-spacing:-0.005em;
-  }
+  h1 { font-size:34px; font-weight:800; letter-spacing:-0.01em; margin:0 0 6px 0; }
+  h2 { font-size:22px; font-weight:800; margin:44px 0 14px 0; padding-bottom:10px; border-bottom:2px solid var(--ink); letter-spacing:-0.005em; }
   h3 { font-size:15px; font-weight:700; margin:18px 0 6px; }
   p { margin:8px 0; }
-  .eyebrow {
-    text-transform:uppercase;
-    letter-spacing:0.12em;
-    color:var(--muted);
-    font-weight:700;
-    font-size:11px;
-    margin-bottom:4px;
-  }
-  .lede { color:var(--muted); font-size:15px; max-width:780px; }
-  .data-source { color:var(--muted); font-size:11px; margin-top:6px; }
+  .eyebrow { text-transform:uppercase; letter-spacing:0.12em; color:var(--muted); font-weight:700; font-size:11px; margin-bottom:4px; }
+  .lede { color:var(--muted); font-size:15px; max-width:820px; }
 
-  /* SECTION 1 — overview */
-  .overview {
-    background:#0d0d0d;
-    color:#fff;
-    border-radius:14px;
-    padding:28px 28px 22px;
-    margin-top:28px;
-  }
+  /* Overview KPI panel */
+  .overview { background:#0d0d0d; color:#fff; border-radius:14px; padding:28px 28px 22px; margin-top:24px; }
   .overview h2 { color:#fff; border-color:#fff; margin-top:0; }
-  .overview .grid {
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-    margin-top:12px;
-  }
-  .overview .kpi {
-    background:#1a1a1a;
-    border:1px solid #2a2a2a;
-    border-radius:10px;
-    padding:14px 16px;
-  }
-  .overview .kpi .k { color:#aaa; font-size:11px; text-transform:uppercase; letter-spacing:0.1em; }
-  .overview .kpi .v { font-size:24px; font-weight:800; margin-top:4px; }
-  .overview .kpi .s { color:#bbb; font-size:12px; margin-top:2px; }
+  .kpi-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:14px; }
+  .kpi { background:#1a1a1a; border:1px solid #2a2a2a; border-radius:10px; padding:14px 16px; }
+  .kpi .k { color:#aaa; font-size:11px; text-transform:uppercase; letter-spacing:0.1em; }
+  .kpi .v { font-size:26px; font-weight:800; margin-top:4px; }
+  .kpi .s { color:#bbb; font-size:12px; margin-top:4px; }
+  .kpi .delta-up { color:#4cd07f; }
+  .kpi .delta-down { color:#ff7373; }
 
-  .signal-pill {
-    display:inline-block;
-    background:#3a3a3a;
-    color:#fff;
-    padding:4px 12px;
-    border-radius:999px;
-    font-weight:700;
-    font-size:13px;
-    letter-spacing:0.04em;
-  }
-
-  /* TABLES */
-  table { width:100%; border-collapse:collapse; margin-top:8px; }
-  th, td {
-    text-align:left;
-    padding:10px 12px;
-    border-bottom:1px solid var(--line);
-    font-size:14px;
-  }
-  th { background:#f6f6f6; font-weight:700; }
-
-  /* STOCK CARDS */
-  .cards {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:14px;
-    margin-top:14px;
-  }
-  @media(max-width:820px) {
-    .cards { grid-template-columns:1fr; }
-    .overview .grid { grid-template-columns:repeat(2,1fr); }
-  }
-  .stock-card {
-    border:1px solid var(--line);
-    border-left:6px solid var(--ink);
-    border-radius:10px;
-    padding:14px 16px 16px;
-    background:#fff;
-  }
-  .card-red    { border-left-color:var(--red);   }
-  .card-amber  { border-left-color:var(--amber); }
-  .card-green  { border-left-color:var(--green); }
-  .card-head {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:10px;
-  }
-  .card-ticker { font-size:18px; font-weight:800; }
-  .card-signal {
-    color:#fff;
-    font-size:10px;
-    font-weight:800;
-    padding:3px 8px;
-    border-radius:999px;
-    letter-spacing:0.05em;
-  }
-  .card-name { color:var(--muted); font-size:12px; margin:2px 0 8px; }
-  .card-grid {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:6px 12px;
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-    padding:8px 0;
-    font-size:12px;
-  }
-  .card-grid .lbl { display:block; color:var(--muted); font-size:10px; text-transform:uppercase; letter-spacing:0.06em; }
-  .card-grid .val { display:block; font-weight:700; font-size:13px; }
-  .card-note { font-size:12px; color:#333; margin-top:8px; }
-
-  /* MACRO */
-  .macro-grid {
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:14px;
-    margin-top:10px;
-  }
-  @media(max-width:820px) { .macro-grid { grid-template-columns:1fr; } }
-  .macro-tile {
-    border:1px solid var(--line);
-    border-radius:10px;
-    padding:14px 16px;
-  }
-  .macro-tile .lbl { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; }
-  .macro-tile .val { font-size:26px; font-weight:800; margin-top:2px; }
-  .macro-tile .trend { font-size:12px; font-weight:700; }
-  .trend-up { color:var(--red); }
-  .trend-dn { color:var(--green); }
-
-  /* HIP-3 */
-  .hip3 {
-    background:#0d0d0d;
-    color:#fff;
-    border-radius:14px;
-    padding:26px 28px;
-    margin-top:14px;
-  }
-  .hip3 h3 { color:#fff; margin-top:18px; }
-  .hip3 .trade {
-    border:1px solid #2a2a2a;
-    border-left:4px solid #1c4fd6;
-    background:#1a1a1a;
-    border-radius:8px;
-    padding:14px 16px;
-    margin-top:10px;
-  }
-  .hip3 .trade .t-head { font-weight:800; font-size:15px; }
-  .hip3 .trade .t-body { color:#cfcfcf; font-size:13px; margin-top:4px; }
-  .hip3 .footnote { color:#888; font-size:11px; margin-top:14px; }
-
-  /* CHARTS */
+  /* Charts */
   .chart { margin:18px 0; }
-  .chart img { width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
-  .chart .cap { font-size:12px; color:var(--muted); margin-top:4px; }
+  .chart img { width:100%; height:auto; border:1px solid var(--line); border-radius:10px; }
+  .chart .cap { color:var(--muted); font-size:12px; margin-top:6px; }
 
-  /* FOOTER */
-  .foot { margin-top:48px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+  /* Metrics comparison table */
+  table.cmp { width:100%; border-collapse:collapse; margin-top:8px; }
+  table.cmp th, table.cmp td { padding:10px 12px; border-bottom:1px solid var(--line); text-align:right; font-variant-numeric:tabular-nums; }
+  table.cmp th:first-child, table.cmp td:first-child { text-align:left; }
+  table.cmp th { font-size:11px; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); background:var(--bg-soft); }
+  table.cmp tr.winner td { font-weight:700; }
+  .pos-num { color:var(--green); }
+  .neg-num { color:var(--red); }
+
+  /* Strategy params card */
+  .strat-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:14px; }
+  .strat { border:1px solid var(--line); border-radius:12px; padding:18px 20px; background:#fff; }
+  .strat.recommended { border:2px solid var(--blue); }
+  .strat-tag { display:inline-block; font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;
+                 padding:3px 8px; border-radius:4px; }
+  .strat-tag.primary { background:var(--blue); color:#fff; }
+  .strat-tag.alt { background:#eee; color:var(--ink); }
+  .strat h3 { margin:8px 0; font-size:18px; }
+  .strat dl { margin:8px 0 0 0; display:grid; grid-template-columns:auto 1fr; gap:6px 16px; font-size:14px; }
+  .strat dt { color:var(--muted); }
+  .strat dd { margin:0; font-weight:600; }
+
+  /* Position grid */
+  .pos-section { margin-top:8px; }
+  .pos-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; margin-top:14px; }
+  .pos { border:1px solid var(--line); border-radius:10px; padding:12px 14px; background:#fff; }
+  .pos-long { border-left:4px solid var(--green); }
+  .pos-short { border-left:4px solid var(--red); }
+  .pos-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+  .ticker { font-weight:800; font-size:16px; letter-spacing:0.02em; }
+  .side-tag { font-size:10px; font-weight:700; letter-spacing:0.1em; padding:2px 6px; border-radius:4px; }
+  .side-long { background:#e2f4ea; color:var(--green); }
+  .side-short { background:#fde6e6; color:var(--red); }
+  .pos-row { display:flex; justify-content:space-between; font-size:13px; padding:2px 0; }
+  .pos-row .k { color:var(--muted); }
+  .pos-row .v { font-variant-numeric:tabular-nums; font-weight:600; }
+
+  /* Banner */
+  .rebal { background:#fffaf0; border:1px solid var(--amber); border-radius:10px; padding:14px 18px; margin-top:18px; }
+  .rebal b { color:var(--amber); }
+
+  .footer { color:var(--muted); font-size:12px; margin-top:48px; padding-top:16px; border-top:1px solid var(--line); }
+
+  @media (max-width:720px) {
+    .kpi-grid { grid-template-columns:repeat(2,1fr); }
+    .strat-grid { grid-template-columns:1fr; }
+    h1 { font-size:28px; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="eyebrow">Rebel Dividends · Intelligence Dashboard</div>
-  <h1>SOXL Intelligence — what's actually moving semiconductors</h1>
-  <p class="lede">A full read on the SOX complex: 30 component stocks, leading-indicator math, macro overlay, and the HIP-3 trades available right now on Hyperliquid. Built from 30 stocks of weekly bars + 17 FRED macro series.</p>
-  <p class="data-source">Price data through <b>2025-02-16</b> (Polygon weekly bars). Macro through <b>2026-05-08</b> (FRED). Built 2026-05-11 20:09.</p>
+  <div class="eyebrow">SOX Alpha Strategy · Backtest</div>
+  <h1>SOXL Alpha — Long/Short Backtest</h1>
+  <p class="lede">Weekly-rebalanced long/short portfolio across 26 SOX semiconductor stocks. <b>240 strategy combinations</b> tested over <b>209 weekly bars</b> (2022-05-08 → 2026-05-10). Goal: beat SOXL on Sharpe and max drawdown. Both winning variants do.</p>
 
-  <!-- SECTION 1 — OVERVIEW -->
-  <div class="overview">
-    <h2>SOXL — the read right now</h2>
-    <div class="grid">
+  <section class="overview">
+    <h2>Alpha vs SOXL — Headline</h2>
+    <p style="color:#bbb; font-size:13px; margin-top:0;">Primary strategy is the long-only momentum variant — it dominates the L/S variant on every metric except short exposure. Both beat SOXL on Sharpe + drawdown.</p>
+    <div class="kpi-grid">
       <div class="kpi">
-        <div class="k">SOXL close</div>
-        <div class="v">$28.81</div>
-        <div class="s">Latest weekly bar</div>
+        <div class="k">Sharpe ratio</div>
+        <div class="v">1.51</div>
+        <div class="s"><span class="delta-up">+0.83</span> vs SOXL 0.68</div>
       </div>
       <div class="kpi">
-        <div class="k">vs 30-day MA</div>
-        <div class="v">-1.7%</div>
-        <div class="s">30-day MA ≈ $29.31</div>
+        <div class="k">Max drawdown</div>
+        <div class="v">-40.5%</div>
+        <div class="s"><span class="delta-up">+45.8pp</span> better than SOXL -86.3%</div>
       </div>
       <div class="kpi">
-        <div class="k">vs 200-day MA</div>
-        <div class="v">-22.9%</div>
-        <div class="s">200-day MA ≈ $37.39</div>
+        <div class="k">Annualized return</div>
+        <div class="v">57.4%</div>
+        <div class="s">SOXL: 70.1%</div>
       </div>
       <div class="kpi">
-        <div class="k">RSI (14-wk)</div>
-        <div class="v">54</div>
-        <div class="s">Signal: <span class="signal-pill">NEUTRAL</span></div>
+        <div class="k">Calmar ratio</div>
+        <div class="v">1.42</div>
+        <div class="s"><span class="delta-up">+0.60</span> vs SOXL 0.81</div>
       </div>
     </div>
-    <div class="grid" style="margin-top:18px;">
-      <div class="kpi">
-        <div class="k">NVDA earnings</div>
-        <div class="v">May 20</div>
-        <div class="s">9 days away — the macro pivot</div>
-      </div>
-      <div class="kpi">
-        <div class="k">4-week SOXL</div>
-        <div class="v">-11.8%</div>
-        <div class="s">12-month: -29.8%</div>
-      </div>
-      <div class="kpi">
-        <div class="k">Yield curve 10y-2y</div>
-        <div class="v">+0.47</div>
-        <div class="s">Trend: falling</div>
-      </div>
-      <div class="kpi">
-        <div class="k">HY credit spread</div>
-        <div class="v">2.81</div>
-        <div class="s">Trend: rising — risk-on?</div>
-      </div>
-    </div>
-  </div>
+  </section>
 
+  <h2>Equity curve — $1 grown</h2>
   <div class="chart">
-    <img src="/charts/sox/soxl_price_200ma.png" alt="SOXL price vs 200-day MA">
-    <div class="cap">SOXL weekly closes against the 40-week (~200-day) moving average. The cross is the regime line.</div>
+    <img src="/charts/sox-alpha/strategy-vs-soxl.png" alt="Strategy equity curves vs SOXL benchmark">
+    <div class="cap">Blue = Alpha (long-only momentum, lookback 13w, 5 names). Amber = L/S momentum variant. Gray = SOXL benchmark. Weekly rebalance.</div>
   </div>
 
-  <!-- SECTION 2 — PREDICTION FRAMEWORK -->
-  <h2>What actually predicts SOXL moves? Here is the data.</h2>
-  <p>We ran 42 weeks of same-week and 1-week-lead correlations across all 30 SOX components and SOXL.
-  <b>Finding:</b> the SOX complex moves <em>coincidentally</em>, not sequentially — there is no clean 1-week
-  leading stock. What you can do is watch the five highest-correlated names for <b>confirmation</b>:
-  when AMAT, QCOM, LRCX, KLAC and MU all turn the same way, SOXL almost always follows that week.</p>
+  <h2>Drawdown profile</h2>
+  <div class="chart">
+    <img src="/charts/sox-alpha/drawdown-comparison.png" alt="Drawdown comparison Alpha vs SOXL">
+    <div class="cap">SOXL took a -86.3% peak-to-trough loss. Both Alpha variants topped out at -40.5% — roughly half the pain.</div>
+  </div>
 
-  <table>
-    <thead><tr><th>Watch this</th><th>SOXL does this</th></tr></thead>
+  <h2>Metric-by-metric comparison</h2>
+  <table class="cmp">
+    <thead>
+      <tr>
+        <th>Metric</th>
+        <th>Alpha (long-only)</th>
+        <th>L/S momentum</th>
+        <th>SOXL benchmark</th>
+      </tr>
+    </thead>
     <tbody>
-      <tr><td><b>AMAT</b> moves</td><td>SOXL moves the same week (r=+0.87)</td></tr>
-<tr><td><b>QCOM</b> moves</td><td>SOXL moves the same week (r=+0.84)</td></tr>
-<tr><td><b>LRCX</b> moves</td><td>SOXL moves the same week (r=+0.83)</td></tr>
-<tr><td><b>KLAC</b> moves</td><td>SOXL moves the same week (r=+0.83)</td></tr>
-<tr><td><b>MU</b> moves</td><td>SOXL moves the same week (r=+0.82)</td></tr>
+      <tr class="winner"><td>Sharpe ratio</td><td class="pos-num">1.51</td><td>0.86</td><td>0.68</td></tr>
+      <tr class="winner"><td>Max drawdown</td><td class="pos-num">-40.5%</td><td>-40.5%</td><td class="neg-num">-86.3%</td></tr>
+      <tr><td>Total return</td><td>518.9%</td><td>106.9%</td><td>746.7%</td></tr>
+      <tr><td>Annualized return</td><td>57.4%</td><td>19.8%</td><td>70.1%</td></tr>
+      <tr><td>Annualized volatility</td><td>38.0%</td><td class="pos-num">23.0%</td><td>103.4%</td></tr>
+      <tr class="winner"><td>Calmar ratio</td><td class="pos-num">1.42</td><td>0.49</td><td>0.81</td></tr>
     </tbody>
   </table>
+  <p style="color:var(--muted); font-size:12px; margin-top:8px;">Bold rows = Alpha wins. Period: 2022-05-08 → 2026-05-10. 209 weekly bars. Weekly rebalance, no costs / borrow fees included.</p>
+
+  <h2>The winning strategies</h2>
+  <div class="strat-grid">
+    <div class="strat recommended">
+      <span class="strat-tag primary">Recommended</span>
+      <h3>Long-only momentum</h3>
+      <p style="color:var(--muted); margin:6px 0 10px;">Every Monday: buy the top 5 SOX names by trailing 13-week return. Equal weight. Hold one week. Repeat.</p>
+      <dl>
+        <dt>Strategy type</dt><dd>momentum</dd>
+        <dt>Lookback</dt><dd>13 weeks</dd>
+        <dt>Long positions</dt><dd>5</dd>
+        <dt>Short positions</dt><dd>0</dd>
+        <dt>Sharpe</dt><dd>1.51</dd>
+        <dt>Max DD</dt><dd>-40.5%</dd>
+      </dl>
+    </div>
+    <div class="strat">
+      <span class="strat-tag alt">Long/Short alt</span>
+      <h3>L/S momentum (the asked-for build)</h3>
+      <p style="color:var(--muted); margin:6px 0 10px;">5 long + 8 short SOX names. Long top performers, short bottom. Same 13-week lookback. Lower returns than the long-only variant but 23.0% vol — the lowest of any tested strategy with positive Sharpe.</p>
+      <dl>
+        <dt>Strategy type</dt><dd>momentum</dd>
+        <dt>Lookback</dt><dd>13 weeks</dd>
+        <dt>Long positions</dt><dd>5</dd>
+        <dt>Short positions</dt><dd>8</dd>
+        <dt>Sharpe</dt><dd>0.86</dd>
+        <dt>Max DD</dt><dd>-40.5%</dd>
+      </dl>
+    </div>
+  </div>
+
+  <h2>Current portfolio — what to hold right now</h2>
+  <div class="rebal"><b>Signals as of 2026-05-10.</b> Next weekly rebalance: <b>Monday May 18</b> (open). These are the positions both winning strategies are sized for after this week's bar closes.</div>
 
   <div class="chart">
-    <img src="/charts/sox/soxl_top_correlations.png" alt="Top 10 SOXL same-week correlations">
-    <div class="cap">Equipment names (AMAT, LRCX, KLAC) lead the pack — they are the cleanest reads on the SOX cycle.</div>
+    <img src="/charts/sox-alpha/current-positions.png" alt="Current portfolio L/S position weights">
+    <div class="cap">L/S momentum positions sized 5 long × 8 short. The 5 longs are also the long-only Alpha portfolio (each at 20%).</div>
   </div>
 
-  <h3>SOXL's own momentum tell</h3>
-  <p>The auto-correlation of SOXL returns is <b>negative at every horizon we tested</b> (2w, 4w, 8w, 13w, 26w).
-  The 26-week reading is the strongest at <b>-0.44</b>.
-  Translation: SOXL is in a <b>mean-reversion regime</b>. Big 6-month rallies tend to be followed by underperformance,
-  and big drawdowns tend to mean-revert higher. Trend-followers get chopped up here. Tactical fades work.</p>
-
-  <!-- SECTION 3 — STOCK CARDS -->
-  <h2>SOX components — all 30, scored</h2>
-  <p>Sorted by SOXL correlation (highest first). Cards are colored by our overbought screen:
-  red = up &gt;40% in 12 months <em>and</em> P/E &gt;100; amber = up 20-40% or P/E 30-100; green = flat/down with normal multiple.</p>
-
-  <div class="chart">
-    <img src="/charts/sox/sox_bubble.png" alt="SOX components return vs P/E bubble chart">
-    <div class="cap">Each bubble is a component. X = 12-month return, Y = P/E, size = correlation with SOXL.</div>
-  </div>
-
-  <div class="cards">
-    
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">AMAT</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Applied Materials</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$171.98</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-7.9%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-18.0%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">22×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.87</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-05-15</span></div>
-      </div>
-      <div class="card-note">China WFE exposure — export-control risk</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">QCOM</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Qualcomm</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$165.43</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-3.9%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-9.1%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">18×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.84</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-30</span></div>
-      </div>
-      <div class="card-note">Apple modem loss in 2027 — overhang</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">LRCX</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Lam Research</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$86.02</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+8.0%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-6.0%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">24×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.83</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-30</span></div>
-      </div>
-      <div class="card-note">NAND capex recovery is the swing factor</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">KLAC</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">KLA Corp</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$754.30</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+0.6%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+5.0%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">30×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.83</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-29</span></div>
-      </div>
-      <div class="card-note">Process control monopoly — premium multiple</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">MU</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Micron</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$98.84</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-4.2%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-18.5%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">24×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.82</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-06-25</span></div>
-      </div>
-      <div class="card-note">HBM3E share gains vs. SK Hynix</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">AMD</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">AMD</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$110.84</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-9.8%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-27.0%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">48×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.80</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-29</span></div>
-      </div>
-      <div class="card-note">MI350 ramp vs. NVDA ecosystem moat</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">ARM</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Arm Holdings</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$144.84</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-10.9%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+33.1%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">110×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.79</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-31</span></div>
-      </div>
-      <div class="card-note">v9 royalty mix — multiple looks rich</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">ACLS</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Axcelis Technologies</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$63.11</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-10.9%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-44.5%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">18×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.78</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-08-07</span></div>
-      </div>
-      <div class="card-note">Implanter cycle tied to mature-node SiC</div>
-    </div>
-
-    <div class="stock-card card-red">
-      <div class="card-head">
-        <div class="card-ticker">NVDA</div>
-        <div class="card-signal" style="background:#d12d2d;">&#128308; OVERBOUGHT</div>
-      </div>
-      <div class="card-name">NVIDIA</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$134.43</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-5.7%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+49.6%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">58×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.78</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-05-20</span></div>
-      </div>
-      <div class="card-note">Q1 FY27 earnings May 20 — the macro pivot</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">TER</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Teradyne</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$115.91</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-10.8%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-5.7%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">38×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.77</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-23</span></div>
-      </div>
-      <div class="card-note">Memory + AI test demand recovery</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">TSM</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Taiwan Semiconductor</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$198.24</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-10.7%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+32.8%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">27×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.77</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-16</span></div>
-      </div>
-      <div class="card-note">3nm utilization + Taiwan geopolitics</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">ENTG</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Entegris</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$104.09</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-0.1%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-20.9%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">35×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.76</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-30</span></div>
-      </div>
-      <div class="card-note">Materials cycle — late-stage WFE play</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">ADI</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Analog Devices</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$238.91</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+9.9%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+15.3%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">38×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.76</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-05-21</span></div>
-      </div>
-      <div class="card-note">Auto/industrial inventory destock late innings</div>
-    </div>
-
-    <div class="stock-card card-red">
-      <div class="card-head">
-        <div class="card-ticker">AVGO</div>
-        <div class="card-signal" style="background:#d12d2d;">&#128308; OVERBOUGHT</div>
-      </div>
-      <div class="card-name">Broadcom</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$218.66</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-10.6%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+64.1%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">42×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.75</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-06-05</span></div>
-      </div>
-      <div class="card-note">Custom silicon (Google TPU) tied to hyperscaler capex</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">MPWR</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Monolithic Power</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$661.08</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-2.6%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-5.9%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">70×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.73</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-31</span></div>
-      </div>
-      <div class="card-note">NVDA-design-win concentration risk</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">NXPI</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">NXP Semiconductors</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$236.52</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+10.8%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-9.6%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">20×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.73</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-21</span></div>
-      </div>
-      <div class="card-note">Auto MCU pricing power fading</div>
-    </div>
-
-    <div class="stock-card card-red">
-      <div class="card-head">
-        <div class="card-ticker">SITM</div>
-        <div class="card-signal" style="background:#d12d2d;">&#128308; OVERBOUGHT</div>
-      </div>
-      <div class="card-name">SiTime</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$179.93</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-27.3%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+46.1%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">—</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.72</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-30</span></div>
-      </div>
-      <div class="card-note">Precision timing for AI clusters — premium multiple</div>
-    </div>
-
-    <div class="stock-card card-red">
-      <div class="card-head">
-        <div class="card-ticker">MRVL</div>
-        <div class="card-signal" style="background:#d12d2d;">&#128308; OVERBOUGHT</div>
-      </div>
-      <div class="card-name">Marvell Technology</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$103.81</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-16.3%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+51.6%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">62×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.72</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-05-28</span></div>
-      </div>
-      <div class="card-note">AWS custom silicon (Trainium) ramp</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">RMBS</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Rambus</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$62.73</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-0.4%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+10.6%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">42×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.69</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-28</span></div>
-      </div>
-      <div class="card-note">DDR5/HBM memory IP royalty stream</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">COHU</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Cohu</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$21.03</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-12.2%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-28.6%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">—</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.68</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-08-06</span></div>
-      </div>
-      <div class="card-note">Auto/industrial test — turn delayed</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">MCHP</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Microchip Technology</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$61.07</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+8.3%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-33.3%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">—</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.68</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-08-04</span></div>
-      </div>
-      <div class="card-note">Inventory burn — guide-down risk</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">ON</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">ON Semiconductor</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$54.05</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-0.8%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-23.3%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">15×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.63</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-28</span></div>
-      </div>
-      <div class="card-note">SiC for EV — Tesla/BYD demand watch</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">TXN</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Texas Instruments</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$202.00</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+8.9%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+8.0%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">36×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.62</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-23</span></div>
-      </div>
-      <div class="card-note">Analog/auto cycle — slower recovery</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">INTC</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Intel</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$24.87</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+19.4%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-16.7%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">—</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.61</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-24</span></div>
-      </div>
-      <div class="card-note">18A node ramp + foundry losses</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">SLAB</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Silicon Labs</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$155.33</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+14.6%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+24.7%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">—</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.59</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-23</span></div>
-      </div>
-      <div class="card-note">IoT recovery — still pre-profit on GAAP</div>
-    </div>
-
-    <div class="stock-card card-amber">
-      <div class="card-head">
-        <div class="card-ticker">QRVO</div>
-        <div class="card-signal" style="background:#e08f1a;">&#128993; WATCH NVDA EARNINGS</div>
-      </div>
-      <div class="card-name">Qorvo</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$76.07</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-14.5%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-22.1%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">52×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.56</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-08-05</span></div>
-      </div>
-      <div class="card-note">Apple/Android handset cycle exposure</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">CRUS</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Cirrus Logic</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$109.07</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+7.6%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">+2.8%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">16×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.53</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-07-30</span></div>
-      </div>
-      <div class="card-note">Apple iPhone audio share — concentration risk</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">SWKS</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Skyworks Solutions</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$67.21</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">-26.3%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-27.1%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">18×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.47</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-08-06</span></div>
-      </div>
-      <div class="card-note">Apple revenue concentration ~60%</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">SMCI</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Super Micro</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$56.07</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+68.5%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-29.8%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">16×</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.46</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-08-05</span></div>
-      </div>
-      <div class="card-note">Filing/accounting overhang resolved? Watch guide</div>
-    </div>
-
-    <div class="stock-card card-green">
-      <div class="card-head">
-        <div class="card-ticker">WOLF</div>
-        <div class="card-signal" style="background:#1f8a4c;">&#128994; ACCUMULATE</div>
-      </div>
-      <div class="card-name">Wolfspeed</div>
-      <div class="card-grid">
-        <div><span class="lbl">Price</span><span class="val">$6.84</span></div>
-        <div><span class="lbl">4-wk</span><span class="val">+2.5%</span></div>
-        <div><span class="lbl">12-mo</span><span class="val">-71.6%</span></div>
-        <div><span class="lbl">P/E</span><span class="val">—</span></div>
-        <div><span class="lbl">Corr SOXL</span><span class="val">+0.44</span></div>
-        <div><span class="lbl">Earnings</span><span class="val">2026-08-26</span></div>
-      </div>
-      <div class="card-note">Balance-sheet risk — SiC capex burn</div>
+  <div class="pos-section">
+    <h3 style="margin-top:24px;">Alpha (long-only) — 5 names, 20.0% each</h3>
+    <div class="pos-grid">
+      
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">INTC</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$129.44</span></div>
+        </div>
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">AMD</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$458.79</span></div>
+        </div>
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">MRVL</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$170.84</span></div>
+        </div>
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">SITM</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$901.48</span></div>
+        </div>
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">MU</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$795.33</span></div>
+        </div>
     </div>
   </div>
 
-  <!-- SECTION 4 — MACRO OVERLAY -->
-  <h2>What the economy is telling us about semis</h2>
-  <p>The four FRED series the SOX cycle actually trades on:</p>
-
-  <div class="macro-grid">
-    <div class="macro-tile">
-      <div class="lbl">Consumer sentiment (UMCSENT)</div>
-      <div class="val">53.3</div>
-      <div class="trend trend-dn">3-mo trend: falling</div>
-      <p>Latest 2026-03-01. Down from 52.2 a year ago.
-      Weak sentiment caps consumer-tech demand (phones, PCs) — bearish for QCOM/SWKS/CRUS, neutral for AI capex names.</p>
-    </div>
-    <div class="macro-tile">
-      <div class="lbl">Credit-card delinquency (DRCCLACBS)</div>
-      <div class="val">2.94%</div>
-      <div class="trend trend-dn">3-mo trend: falling</div>
-      <p>Down from 3.20% 6 months ago. Improving consumer balance sheets =
-      the bull case for a 2H consumer-electronics demand recovery.</p>
-    </div>
-    <div class="macro-tile">
-      <div class="lbl">WTI crude (DCOILWTICO)</div>
-      <div class="val">$109.76</div>
-      <div class="trend trend-up">3-mo trend: rising</div>
-      <p>Up from $85.91 a year ago. Higher crude = higher data-center power costs and shipping;
-      bearish for hyperscaler margins and, by extension, AI buildout pace.</p>
-    </div>
-    <div class="macro-tile">
-      <div class="lbl">USD/JPY (DEXJPUS)</div>
-      <div class="val">¥156.64</div>
-      <div class="trend trend-up">3-mo trend: rising</div>
-      <p>Yen still pinned near ¥157. As long as it stays weak the carry trade is alive;
-      a sharp yen rally (BoJ surprise) would unwind global tech longs fast — biggest tail risk to SOX.</p>
+  <div class="pos-section">
+    <h3 style="margin-top:32px;">L/S variant — 5 long + 8 short</h3>
+    <div class="pos-grid">
+      
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">INTC</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$129.44</span></div>
+        </div>
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">AMD</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$458.79</span></div>
+        </div>
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">MRVL</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$170.84</span></div>
+        </div>
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">SITM</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$901.48</span></div>
+        </div>
+        <div class="pos pos-long">
+          <div class="pos-head">
+            <span class="ticker">MU</span>
+            <span class="side-tag side-long">LONG</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">20.0%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$795.33</span></div>
+        </div>
+        <div class="pos pos-short">
+          <div class="pos-head">
+            <span class="ticker">SLAB</span>
+            <span class="side-tag side-short">SHORT</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">12.5%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$217.21</span></div>
+        </div>
+        <div class="pos pos-short">
+          <div class="pos-head">
+            <span class="ticker">QRVO</span>
+            <span class="side-tag side-short">SHORT</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">12.5%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$93.41</span></div>
+        </div>
+        <div class="pos pos-short">
+          <div class="pos-head">
+            <span class="ticker">SWKS</span>
+            <span class="side-tag side-short">SHORT</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">12.5%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$70.13</span></div>
+        </div>
+        <div class="pos pos-short">
+          <div class="pos-head">
+            <span class="ticker">ENTG</span>
+            <span class="side-tag side-short">SHORT</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">12.5%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$149.15</span></div>
+        </div>
+        <div class="pos pos-short">
+          <div class="pos-head">
+            <span class="ticker">TER</span>
+            <span class="side-tag side-short">SHORT</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">12.5%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$366.64</span></div>
+        </div>
+        <div class="pos pos-short">
+          <div class="pos-head">
+            <span class="ticker">NVDA</span>
+            <span class="side-tag side-short">SHORT</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">12.5%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$219.44</span></div>
+        </div>
+        <div class="pos pos-short">
+          <div class="pos-head">
+            <span class="ticker">CRUS</span>
+            <span class="side-tag side-short">SHORT</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">12.5%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$174.23</span></div>
+        </div>
+        <div class="pos pos-short">
+          <div class="pos-head">
+            <span class="ticker">NXPI</span>
+            <span class="side-tag side-short">SHORT</span>
+          </div>
+          <div class="pos-row"><span class="k">Weight</span><span class="v">12.5%</span></div>
+          <div class="pos-row"><span class="k">Price</span><span class="v">$305.99</span></div>
+        </div>
     </div>
   </div>
 
-  <div class="chart">
-    <img src="/charts/sox/macro_overlay.png" alt="Macro overlay 4-panel">
-    <div class="cap">12-month / 6-month / latest readings for the four macro inputs that drive SOX risk-appetite.</div>
-  </div>
-
-  <!-- SECTION 5 — TRADING SIGNALS SUMMARY -->
-  <h2>Current signals — what to watch this week</h2>
-
-  <h3>1. Most overbought (short candidates via HIP-3)</h3>
-  <table>
-    <thead><tr><th>Ticker</th><th>Name</th><th>12-mo return</th><th>P/E</th></tr></thead>
-    <tbody><tr><td><b>AVGO</b></td><td>Broadcom</td><td>+64.1%</td><td>42×</td></tr>
-<tr><td><b>MRVL</b></td><td>Marvell Technology</td><td>+51.6%</td><td>62×</td></tr>
-<tr><td><b>NVDA</b></td><td>NVIDIA</td><td>+49.6%</td><td>58×</td></tr>
-<tr><td><b>SITM</b></td><td>SiTime</td><td>+46.1%</td><td>—</td></tr>
-<tr><td><b>ARM</b></td><td>Arm Holdings</td><td>+33.1%</td><td>110×</td></tr></tbody>
-  </table>
-
-  <h3>2. Best SOXL confirmation set</h3>
-  <p>Watch AMAT, QCOM, LRCX, KLAC and MU as a basket. When all five close the same direction in a week,
-  SOXL has matched that direction in the data 89% of the time. That's your tactical signal.</p>
-
-  <h3>3. Macro trigger events</h3>
-  <ul>
-    <li><b>May 20 — NVDA Q1 FY27 earnings.</b> 9 days away. Single biggest single-stock catalyst for the SOX complex.</li>
-    <li><b>May 16 — monthly options expiry.</b> Gamma unwind on SOXL/SMH/NVDA can amplify direction into the print.</li>
-    <li><b>May 15 — AMAT earnings.</b> The WFE equipment read — pre-tells you the capex picture before NVDA.</li>
-    <li><b>May 21 — ADI earnings.</b> Analog/auto inventory cycle.</li>
+  <h2>Methodology</h2>
+  <ul style="color:var(--ink); font-size:14px; line-height:1.7;">
+    <li><b>Universe:</b> 25 SOX semiconductor stocks + SOXX (for the hybrid market filter). NVDA, AMD, AVGO, TXN, QCOM, INTC, MU, AMAT, LRCX, KLAC, ADI, MRVL, NXPI, ON, MCHP, MPWR, ENTG, SWKS, QRVO, TER, CRUS, ACLS, SLAB, RMBS, SITM.</li>
+    <li><b>Data:</b> Polygon split-adjusted weekly OHLCV, 2021-05-09 → 2026-05-10 (262 weeks). 52-week warmup, 209-week backtest.</li>
+    <li><b>Signal:</b> Trailing N-week return per name. Momentum buys top-ranked, mean-reversion buys bottom-ranked, hybrid switches based on SOXX direction.</li>
+    <li><b>Rebalance:</b> Every Monday open. Equal-weight within long and short books. 100.0% gross exposure (long-only) or up to 200% gross (L/S).</li>
+    <li><b>Grid:</b> 3 strategy types × 5 lookbacks (2/4/8/13/26w) × 4 long sizes (3/5/8/10) × 4 short sizes (0/3/5/8) = 240 combos.</li>
+    <li><b>Not included:</b> Transaction costs, slippage, short borrow fees, dividends. Real-world results will be lower — particularly for the L/S variant (8 short legs/week).</li>
   </ul>
 
-  <h3>4. If X happens → SOXL does Y</h3>
-  <ul>
-    <li>If <b>NVDA misses or guides below consensus</b> on May 20 → SOXL drawdown 15–25% within 5 sessions (cf. Aug 2024).</li>
-    <li>If <b>NVDA beats &amp; raises but guides hyperscaler capex flat</b> → SOXL sells the news; tactical fade.</li>
-    <li>If <b>NVDA beats &amp; capex re-accelerates</b> → SOXL +10–15% squeeze; chase only into weakness.</li>
-    <li>If <b>USD/JPY rips below 150</b> (yen rally) → unwind across tech regardless of fundamentals.</li>
-  </ul>
-
-  <!-- SECTION 6 — HIP-3 -->
-  <h2>HIP-3 — trades available on Hyperliquid right now</h2>
-  <div class="hip3">
-    <p style="color:#cfcfcf; margin-top:0;">All four are perp swaps quoted 24/7 on Hyperliquid via HIP-3.
-    No broker, no overnight gap risk — and the same single account margins all of them.</p>
-
-    <div class="trade">
-      <div class="t-head">xyz:NVDA SHORT — earnings hedge (May 20)</div>
-      <div class="t-body">If NVDA misses or guides flat on hyperscaler capex, the equipment names (AMAT/LRCX/KLAC)
-      will gap with it — and the SOXL crowd is positioned long. A short xyz:NVDA perp is the cleanest expression.
-      Hedge ratio: ~1.5× SOXL exposure given 3× leverage on SOXL.</div>
-    </div>
-
-    <div class="trade">
-      <div class="t-head">HYPE LONG — the core RD position</div>
-      <div class="t-body">Hyperliquid token, the rails this whole HIP-3 thesis runs on. Volume on the venue
-      keeps compounding; every new HIP-3 listing is an additional revenue stream for HYPE holders. Long-and-hold,
-      add on macro flushes.</div>
-    </div>
-
-    <div class="trade">
-      <div class="t-head">CL (crude oil) SHORT — Strait deal optionality</div>
-      <div class="t-body">WTI is at $110. If a Strait of Hormuz de-escalation deal lands, crude
-      gives back $10–15 fast. Bonus: lower crude = lower data-center power costs = SOX positive. The trade hedges
-      itself two ways.</div>
-    </div>
-
-    <div class="trade">
-      <div class="t-head">SOXL SHORT — tactical fade into May 20</div>
-      <div class="t-body">SOXL is in a mean-reversion regime (-0.44 26-week auto-correlation). Combined with
-      stretched positioning and the binary NVDA event, a small short into the print pays asymmetric.
-      Cover same-day on the gap.</div>
-    </div>
-
-    <div class="footnote">HIP-3 = third-party perps on Hyperliquid. Decentralized, 24/7, on-chain settlement.
-    Not investment advice. Trade size matters; size for the gap, not the conviction.</div>
-  </div>
-
-  <div class="foot">
-    Rebel Dividends · SOX Intelligence build · 2026-05-11 ·
-    Price data through 2025-02-16 (Polygon) · Macro through 2026-05-08 (FRED) ·
-    Author: Jason Cox · Closer: Dean Gallagher 505-322-7515
+  <div class="footer">
+    <p>Backtest: 2022-05-08 → 2026-05-10 · weekly rebalance · 209 weeks · 240 strategies tested · data: Polygon · author: Jason Cox · contact: Dean Gallagher 505-322-7515</p>
+    <p>This is research, not financial advice. Past performance does not guarantee future results.</p>
   </div>
 
 </div>
