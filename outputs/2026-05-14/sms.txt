@@ -1,12 +1,3 @@
-SUBJECT: SOXL Alpha Strategy — Current Positions Live
+SUBJECT: SOX -6%, SOXL -20%. The unwind just started.
 
-Backtest done. 240 L/S combos tested. Winner beats SOXL.
-
-· Sharpe 1.51 vs SOXL 0.68
-· MaxDD -40.5% vs SOXL -86.3%
-· Long-only momentum, 13-week lookback, 5 names equal-weight
-
-Current longs: INTC, AMD, MRVL, SITM, MU
-Next rebalance: Monday May 18 open.
-
-https://updates.rebeldividends.com/daily/2026-05-14
+SMS: RD: SOX -6%, SOXL -20% today. The unwind we've been writing about is happening live. Webinar 3:30 PM ET walks through every chart + the math. https://www.rebeldividends.com/startwebinar/ Reply STOP to opt out.
