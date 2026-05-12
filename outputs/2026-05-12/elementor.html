@@ -45,7 +45,7 @@ img { max-width: 100% !important; height: auto !important; }
   /* Stat rows: readable for 55+ audience, no truncation */
   .stat-cell { padding: 6px 8px !important; }
   .stat-label { font-size: 13px !important; white-space: normal !important; max-width: 55% !important; }
-  .stat-value { font-size: 13px !important; font-weight: 700 !important; white-space: normal !important; text-align: right !important; word-break: keep-all !important; }
+  .stat-value { font-size: 13px !important; font-weight: 700 !important; white-space: normal !important; text-align: right !important; word-break: break-word !important; overflow-wrap: break-word !important; max-width: 45% !important; }
   .cta-btn { display: block !important; width: 90% !important; margin: 0 auto !important; padding: 16px 20px !important; font-size: 18px !important; }
   .body-17 { font-size: 17px !important; }
   .h2-26 { font-size: 22px !important; }
@@ -59,6 +59,9 @@ img { max-width: 100% !important; height: auto !important; }
   /* Prevent 3-col tables from causing horizontal overflow */
   .trigger-col { width: 32% !important; font-size: 12px !important; padding: 8px 6px !important; }
   .trigger-col .trigger-title { font-size: 13px !important; }
+  /* Track record: 5-col table scrolls horizontally on mobile */
+  .track-record-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; display: block !important; width: 100% !important; }
+  .track-record-scroll table { min-width: 480px !important; font-size: 11px !important; }
 }
 </style>
 </head>
@@ -69,24 +72,24 @@ img { max-width: 100% !important; height: auto !important; }
 <table cellpadding="0" cellspacing="0" border="0" style="max-width:680px;width:100%;background:#ffffff;">
 
 <!-- ==================== 1. STATS BAR (black, keep from template) ==================== -->
-<tr><td bgcolor="#000000" class="hero-outer-td" style="background-color:#000000;padding:8px 20px 6px;border-bottom:4px solid #ff6600;">
+<tr><td bgcolor="#000000" class="hero-outer-td" style="background-color:#000000;padding:4px 20px 4px;border-bottom:4px solid #ff6600;">
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr><td bgcolor="#000000" style="background-color:#000000;font-size:26px;font-weight:700;color:#ffffff;text-align:center;letter-spacing:1px;padding-bottom:5px;">INVESTOR UPDATE</td></tr>
 <tr><td bgcolor="#000000" style="background-color:#000000;font-size:15px;color:#cccccc;text-align:center;padding-bottom:8px;word-break:normal;">Rebel Dividends &bull; May 12, 2026 &bull; Week 107</td></tr>
 <tr><td bgcolor="#000000" style="background-color:#000000;">
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr><td colspan="2" bgcolor="#111111" class="milestone-block-td" style="background-color:#111111;text-align:center;padding:8px 16px 4px;">
+<tr><td colspan="2" bgcolor="#111111" class="milestone-block-td" style="background-color:#111111;text-align:center;padding:4px 16px 2px;">
 <div class="milestone-label" style="font-size:16px;color:#4ade80;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:4px;">&#x2714; MILESTONE &mdash; Week 107</div>
-<div class="milestone-num" style="font-size:80px;font-weight:700;color:#4ade80;line-height:1;">107</div>
+<div class="milestone-num" style="font-size:72px;font-weight:700;color:#4ade80;line-height:1;">107</div>
 <div style="font-size:17px;color:#cccccc;margin-top:4px;line-height:1.3;font-weight:600;">Consecutive Weekly Dividends Paid &mdash; Not One Missed Since April 2024</div>
 </td></tr>
 <tr><td colspan="2" bgcolor="#000000" style="background-color:#000000;height:3px;font-size:1px;">&nbsp;</td></tr>
 <tr>
-<td width="50%" bgcolor="#111111" class="stats-two-col-td" style="background-color:#111111;text-align:center;padding:6px 10px;width:50%;">
+<td width="50%" bgcolor="#111111" class="stats-two-col-td" style="background-color:#111111;text-align:center;padding:4px 10px;width:50%;">
 <div class="stats-sublabel" style="font-size:13px;color:#999999;margin-bottom:2px;letter-spacing:1px;text-transform:uppercase;">May MTD Return</div>
 <div style="font-size:26px;font-weight:700;color:#4ade80;" class="big-num">+2.3%</div>
 </td>
-<td width="50%" bgcolor="#111111" class="stats-two-col-td" style="background-color:#111111;text-align:center;padding:6px 10px;width:50%;">
+<td width="50%" bgcolor="#111111" class="stats-two-col-td" style="background-color:#111111;text-align:center;padding:4px 10px;width:50%;">
 <div class="stats-sublabel" style="font-size:13px;color:#999999;margin-bottom:2px;letter-spacing:1px;text-transform:uppercase;">Dividends</div>
 <div style="font-size:26px;font-weight:700;color:#ffffff;white-space:nowrap;" class="big-num every-monday">Every Monday</div>
 </td>
@@ -96,13 +99,13 @@ img { max-width: 100% !important; height: auto !important; }
 <tr><td bgcolor="#000000" style="background-color:#000000;height:2px;font-size:1px;">&nbsp;</td></tr>
 <tr><td bgcolor="#000000" style="background-color:#000000;">
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr><td class="stat-cell stat-label" bgcolor="#000000" style="background-color:#000000;padding:6px 14px;border-bottom:1px solid #333333;color:#cccccc;font-size:16px;">Weekly Dividends</td><td class="stat-cell stat-value" bgcolor="#000000" style="background-color:#000000;padding:6px 14px;border-bottom:1px solid #333333;color:#4ade80;font-size:17px;font-weight:700;text-align:right;">107 — Zero Missed</td></tr>
-<tr><td class="stat-cell stat-label" bgcolor="#000000" style="background-color:#000000;padding:6px 14px;border-bottom:1px solid #333333;color:#cccccc;font-size:16px;">Portfolio Value</td><td class="stat-cell stat-value" bgcolor="#000000" style="background-color:#000000;padding:6px 14px;border-bottom:1px solid #333333;color:#4ade80;font-size:17px;font-weight:700;text-align:right;">$13.1M</td></tr>
-<tr><td class="stat-cell stat-label" bgcolor="#000000" style="background-color:#000000;padding:6px 14px;border-bottom:1px solid #333333;color:#cccccc;font-size:16px;">Return Since Pivot</td><td class="stat-cell stat-value" bgcolor="#000000" style="background-color:#000000;padding:6px 14px;border-bottom:1px solid #333333;color:#4ade80;font-size:17px;font-weight:700;text-align:right;">+165%</td></tr>
-<tr><td class="stat-cell stat-label" bgcolor="#000000" style="background-color:#000000;padding:6px 14px;color:#cccccc;font-size:16px;">Share Price</td><td class="stat-cell stat-value" bgcolor="#000000" style="background-color:#000000;padding:6px 14px;color:#ffffff;font-size:17px;font-weight:600;text-align:right;">$0.00171</td></tr>
+<tr><td class="stat-cell stat-label" bgcolor="#000000" style="background-color:#000000;padding:5px 14px;border-bottom:1px solid #333333;color:#cccccc;font-size:16px;">Weekly Dividends</td><td class="stat-cell stat-value" bgcolor="#000000" style="background-color:#000000;padding:5px 14px;border-bottom:1px solid #333333;color:#4ade80;font-size:17px;font-weight:700;text-align:right;">107 — Zero Missed</td></tr>
+<tr><td class="stat-cell stat-label" bgcolor="#000000" style="background-color:#000000;padding:5px 14px;border-bottom:1px solid #333333;color:#cccccc;font-size:16px;">Portfolio Value</td><td class="stat-cell stat-value" bgcolor="#000000" style="background-color:#000000;padding:5px 14px;border-bottom:1px solid #333333;color:#4ade80;font-size:17px;font-weight:700;text-align:right;">$13.1M</td></tr>
+<tr><td class="stat-cell stat-label" bgcolor="#000000" style="background-color:#000000;padding:5px 14px;border-bottom:1px solid #333333;color:#cccccc;font-size:16px;">Return Since Pivot</td><td class="stat-cell stat-value" bgcolor="#000000" style="background-color:#000000;padding:5px 14px;border-bottom:1px solid #333333;color:#4ade80;font-size:17px;font-weight:700;text-align:right;">+165%</td></tr>
+<tr><td class="stat-cell stat-label" bgcolor="#000000" style="background-color:#000000;padding:5px 14px;color:#cccccc;font-size:16px;">Share Price</td><td class="stat-cell stat-value" bgcolor="#000000" style="background-color:#000000;padding:5px 14px;color:#ffffff;font-size:17px;font-weight:600;text-align:right;">$0.00171</td></tr>
 </table>
 </td></tr>
-<tr><td bgcolor="#000000" class="cta-inner-td" style="background-color:#000000;padding:10px 20px 12px;text-align:center;">
+<tr><td bgcolor="#000000" class="cta-inner-td" style="background-color:#000000;padding:8px 20px 8px;text-align:center;">
 <a href="https://www.rebeldividends.com/startwebinar/" class="cta-btn" style="display:inline-block;background-color:#ff6600;color:#ffffff;font-size:19px;font-weight:700;padding:14px 48px;text-decoration:none;border-radius:4px;letter-spacing:0.5px;">&#128308; JOIN LIVE WEBINAR &rarr;</a>
 </td></tr>
 </table>
@@ -392,7 +395,7 @@ img { max-width: 100% !important; height: auto !important; }
 <div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Track Record &bull; 107 Consecutive Weeks</div>
 <div style="font-size:24px;font-weight:700;color:#000000;line-height:1.25;margin-bottom:16px;" class="h3-22">Every Month Since The Pivot. Every Dividend Paid.</div>
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-size:13px;">
+<div class="track-record-scroll"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-size:13px;">
 <tr bgcolor="#000000">
 <td bgcolor="#000000" style="background-color:#000000;padding:9px;border:1px solid #333;color:#ffffff;font-weight:600;">Month</td>
 <td bgcolor="#000000" style="background-color:#000000;padding:9px;border:1px solid #333;color:#ffffff;font-weight:600;">Open</td>
@@ -426,7 +429,7 @@ img { max-width: 100% !important; height: auto !important; }
 <tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Mar 2026</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00180</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+25.9%</td></tr>
 <tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2026</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00180</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.001691</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-1.6%</td></tr>
 <tr bgcolor="#f0fff4"><td bgcolor="#f0fff4" style="padding:8px;border:1px solid #e0e0e0;font-weight:700;">May 2026 (MTD)</td><td bgcolor="#f0fff4" style="padding:8px;border:1px solid #e0e0e0;font-weight:700;">$0.001691</td><td bgcolor="#f0fff4" style="padding:8px;border:1px solid #e0e0e0;font-weight:700;">$0.00171</td><td bgcolor="#f0fff4" style="padding:8px;border:1px solid #e0e0e0;font-weight:700;">$0.00004</td><td bgcolor="#f0fff4" style="padding:8px;border:1px solid #e0e0e0;font-weight:700;color:#0a7c42;">+2.3%</td></tr>
-</table>
+</table></div>
 </td></tr>
 
 <!-- ==================== 12. FINAL CTA ==================== -->
