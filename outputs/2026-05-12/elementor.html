@@ -58,25 +58,26 @@
 
 @media screen and (max-width: 600px) {
   .rd-container { width: 100% !important; padding: 0 8px !important; box-sizing: border-box !important; }
-  .rd-stat-grid { display: table-row !important; }
-  .rd-stat-cell { display: table-cell !important; width: 50% !important; padding: 4px 4px !important; }
-  .rd-stat-cell > div { padding: 10px 6px !important; }
-  .rd-stat-cell .rd-stat-value { font-size: 22px !important; }
-  .rd-milestone { font-size: 56px !important; }
-  .rd-milestone-wrap { padding: 12px !important; margin-bottom: 10px !important; }
+  .rd-stat-grid-secondary { display: none !important; }
+  .rd-stat-cell { padding: 6px 4px !important; }
+  .rd-stat-cell > div { padding: 12px 8px !important; }
+  .rd-stat-cell .rd-stat-value { font-size: 24px !important; }
+  .rd-milestone { font-size: 52px !important; }
+  .rd-milestone-wrap { padding: 14px 12px !important; margin-bottom: 12px !important; }
+  .rd-milestone-subtitle { font-size: 13px !important; }
   .rd-hero-text { font-size: 14px !important; padding: 0 4px !important; }
-  .rd-cta-btn { padding: 14px 20px !important; font-size: 15px !important; width: 85% !important; margin-bottom: 6px !important; }
-  .rd-header-title { font-size: 18px !important; letter-spacing: 0.5px !important; margin-bottom: 2px !important; }
-  .rd-header-subtitle { font-size: 11px !important; word-wrap: break-word !important; margin-bottom: 12px !important; }
-  .rd-rotation-mini { padding: 10px 8px !important; margin-bottom: 12px !important; }
+  .rd-cta-btn { padding: 16px 28px !important; font-size: 16px !important; width: 90% !important; margin-bottom: 8px !important; }
+  .rd-header-title { font-size: 18px !important; letter-spacing: 0.5px !important; margin-bottom: 3px !important; }
+  .rd-header-subtitle { font-size: 11px !important; word-wrap: break-word !important; margin-bottom: 14px !important; }
+  .rd-rotation-mini { padding: 12px 10px !important; margin-bottom: 14px !important; }
   .rd-rotation-mini img { max-width: 100% !important; }
-  .rd-rotation-box { padding: 8px 4px !important; }
-  .rd-rotation-value { font-size: 20px !important; }
-  .rd-rotation-label { font-size: 8px !important; }
-  .rd-rotation-sublabel { font-size: 8px !important; }
-  .rd-rotation-arrow { font-size: 22px !important; }
-  .rd-rotation-title { font-size: 10px !important; margin-bottom: 10px !important; }
-  .rd-rotation-caption { font-size: 11px !important; margin-top: 8px !important; }
+  .rd-rotation-box { padding: 10px 6px !important; }
+  .rd-rotation-value { font-size: 22px !important; }
+  .rd-rotation-label { font-size: 9px !important; }
+  .rd-rotation-sublabel { font-size: 9px !important; }
+  .rd-rotation-arrow { font-size: 24px !important; }
+  .rd-rotation-title { font-size: 11px !important; margin-bottom: 12px !important; }
+  .rd-rotation-caption { font-size: 12px !important; margin-top: 10px !important; }
 }
 </style>
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
@@ -92,7 +93,7 @@
 <div class="rd-milestone-wrap" style="background:linear-gradient(135deg,#0a7c42 0%,#16a34a 100%);background-color:#0a7c42;padding:20px;border-radius:8px;margin-bottom:20px;">
 <div style="font-size:13px;letter-spacing:2px;color:#ffffff;opacity:0.9;margin-bottom:8px;">&#10003; MILESTONE &mdash; WEEK 107</div>
 <div class="rd-milestone" style="font-size:84px;font-weight:800;color:#ffffff;line-height:1;margin-bottom:8px;">107</div>
-<div style="font-size:16px;color:#ffffff;opacity:0.95;">Consecutive Weekly Dividends Paid &mdash; Not One Missed Since April 2024</div>
+<div class="rd-milestone-subtitle" style="font-size:16px;color:#ffffff;opacity:0.95;">Consecutive Weekly Dividends Paid &mdash; Not One Missed Since April 2024</div>
 </div>
 
 <!-- Stats Grid - Strengths First -->
@@ -111,7 +112,7 @@
 </div>
 </td>
 </tr>
-<tr class="rd-stat-grid">
+<tr class="rd-stat-grid rd-stat-grid-secondary">
 <td class="rd-stat-cell" width="50%" style="padding:12px 8px;vertical-align:top;">
 <div style="background-color:#111111;border-radius:6px;padding:16px;text-align:center;">
 <div style="font-size:12px;color:#888888;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;">Portfolio Value</div>
