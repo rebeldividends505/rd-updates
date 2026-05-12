@@ -6,8 +6,8 @@
 <title>Investor Update — Rebel Dividends | May 12, 2026 — The Goldilocks Rotation</title>
 <style>
 * { box-sizing: border-box; }
-html { overflow-x: hidden; max-width: 100%; }
-body { overflow-x: hidden !important; margin: 0; padding: 0; max-width: 100%; }
+html { overflow-x: hidden; max-width: 100vw; width: 100%; }
+body { overflow-x: hidden !important; margin: 0; padding: 0; max-width: 100vw; width: 100%; }
 table { table-layout: auto; }
 img { max-width: 100% !important; height: auto !important; width: auto; }
 .milestone-num { font-size: 80px; font-weight: 700; color: #4ade80; line-height: 1; display: block; }
@@ -42,12 +42,10 @@ img { max-width: 100% !important; height: auto !important; width: auto; }
   }
   /* CRITICAL: do NOT use fixed table-layout — it breaks stacked cell widths */
   table { table-layout: auto !important; }
-  /* Stat rows: readable for 55+ audience, no truncation */
-  .stat-cell { padding: 4px 8px !important; }
-  .stat-label { font-size: 13px !important; white-space: normal !important; }
-  /* CRITICAL FIX v3: explicit column widths + normal white-space prevent values being pushed off-screen */
-  .stat-value { font-size: 12px !important; font-weight: 700 !important; white-space: normal !important; text-align: right !important; overflow: visible !important; width: 44% !important; }
-  .stat-label { font-size: 12px !important; white-space: normal !important; width: 56% !important; }
+  /* CRITICAL FIX v4: stacked stat rows — label above value, full-width, never cut off */
+  .stat-cell { display: block !important; width: 100% !important; box-sizing: border-box !important; padding: 0 !important; }
+  .stat-label { font-size: 11px !important; color: #999999 !important; text-transform: uppercase !important; letter-spacing: 0.5px !important; padding: 5px 14px 1px 14px !important; border-bottom: none !important; white-space: normal !important; text-align: left !important; width: 100% !important; }
+  .stat-value { font-size: 16px !important; font-weight: 700 !important; text-align: left !important; white-space: normal !important; width: 100% !important; padding: 1px 14px 7px 14px !important; border-bottom: 1px solid #333333 !important; }
   .cta-btn { display: block !important; width: 90% !important; max-width: 320px !important; margin: 0 auto !important; padding: 14px 12px !important; font-size: 15px !important; white-space: normal !important; text-align: center !important; box-sizing: border-box !important; }
   /* Header/subtitle size fix — prevents "INVESTOR UPDA..." truncation */
   .rd-inv-header { font-size: 18px !important; letter-spacing: 0 !important; word-break: normal !important; }
@@ -59,9 +57,10 @@ img { max-width: 100% !important; height: auto !important; width: auto; }
   .ind-cell { padding: 10px 8px !important; font-size: 14px !important; }
   .stats-sublabel { font-size: 11px !important; letter-spacing: 0 !important; }
   /* Hero tightening on mobile to push chart above fold */
-  .hero-outer-td { padding: 4px 12px 2px !important; }
-  .milestone-block-td { padding: 4px 12px 2px !important; }
-  .cta-inner-td { padding: 6px 12px 8px !important; }
+  .hero-outer-td { padding: 2px 8px 2px !important; }
+  .milestone-block-td { padding: 2px 8px 2px !important; }
+  .cta-inner-td { padding: 4px 8px 6px !important; }
+  .stats-two-col-td { padding: 2px 8px !important; }
   /* Prevent 3-col tables from causing horizontal overflow */
   .trigger-col { width: 32% !important; font-size: 11px !important; padding: 6px 4px !important; }
   .trigger-col .trigger-title { font-size: 12px !important; }
@@ -71,10 +70,19 @@ img { max-width: 100% !important; height: auto !important; width: auto; }
   .track-record-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; display: block !important; width: 100% !important; }
   .track-record-scroll table { min-width: 480px !important; font-size: 11px !important; }
 }
+/* Desktop hero compaction: reduce hero height ~60px to push chart above 900px fold */
+@media screen and (min-width: 601px) {
+  .hero-outer-td { padding-top: 3px !important; padding-bottom: 3px !important; }
+  .milestone-block-td { padding-top: 2px !important; padding-bottom: 2px !important; }
+  .stats-two-col-td { padding-top: 2px !important; padding-bottom: 2px !important; }
+  .cta-inner-td { padding-top: 3px !important; padding-bottom: 4px !important; }
+  .stat-cell { padding-top: 3px !important; padding-bottom: 3px !important; }
+  .milestone-num { font-size: 48px !important; }
+}
 </style>
 </head>
 <body style="margin:0;padding:0;background-color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:17px;color:#1a1a1a;line-height:1.7;">
-<div style="overflow-x:hidden;max-width:100%;background:#ffffff;">
+<div style="overflow-x:hidden;max-width:100vw;width:100%;background:#ffffff;">
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
 <tr><td align="center" bgcolor="#ffffff">
 <table cellpadding="0" cellspacing="0" border="0" style="max-width:680px;width:100%;background:#ffffff;">
