@@ -1,11 +1,15 @@
 <style>
 @media screen and (max-width: 600px) {
-  .rd-container { width: 100% !important; padding: 0 12px !important; }
+  .rd-container { width: 100% !important; padding: 0 12px !important; box-sizing: border-box !important; }
   .rd-stat-grid { display: block !important; }
   .rd-stat-cell { display: block !important; width: 100% !important; margin-bottom: 12px !important; }
-  .rd-milestone { font-size: 72px !important; }
-  .rd-hero-text { font-size: 20px !important; padding: 0 12px !important; }
+  .rd-milestone { font-size: 64px !important; }
+  .rd-hero-text { font-size: 18px !important; padding: 0 8px !important; }
   .rd-cta-btn { padding: 16px 24px !important; font-size: 16px !important; width: 90% !important; }
+  .rd-header-title { font-size: 20px !important; letter-spacing: 0.5px !important; }
+  .rd-header-subtitle { font-size: 12px !important; word-wrap: break-word !important; }
+  .rd-rotation-mini { padding: 12px !important; }
+  .rd-rotation-mini img { max-width: 100% !important; }
 }
 </style>
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
@@ -14,8 +18,8 @@
 
 <!-- ==================== MILESTONE HERO ==================== -->
 <tr><td bgcolor="#000000" style="background-color:#000000;padding:30px 20px 25px;text-align:center;">
-<div style="font-size:24px;font-weight:700;color:#ffffff;letter-spacing:1px;margin-bottom:5px;">INVESTOR UPDATE</div>
-<div style="font-size:14px;color:#888888;margin-bottom:20px;">Rebel Dividends &bull; May 12, 2026 &bull; Week 107</div>
+<div class="rd-header-title" style="font-size:24px;font-weight:700;color:#ffffff;letter-spacing:1px;margin-bottom:5px;">INVESTOR UPDATE</div>
+<div class="rd-header-subtitle" style="font-size:14px;color:#888888;margin-bottom:20px;">Rebel Dividends • May 12, 2026 • Week 107</div>
 
 <!-- Milestone Celebration -->
 <div style="background:linear-gradient(135deg,#0a7c42 0%,#16a34a 100%);background-color:#0a7c42;padding:20px;border-radius:8px;margin-bottom:20px;">
@@ -55,6 +59,28 @@
 </td>
 </tr>
 </table>
+
+<!-- Rotation Mini-Chart Above Fold -->
+<div class="rd-rotation-mini" style="background-color:#111111;border-radius:8px;padding:16px;margin-bottom:20px;text-align:center;">
+<div style="font-size:11px;letter-spacing:2px;color:#ff6600;font-weight:700;text-transform:uppercase;margin-bottom:8px;">&#128200; THE ROTATION THESIS</div>
+<div style="display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;">
+<div style="text-align:center;">
+<div style="font-size:11px;color:#888888;margin-bottom:2px;">SOX TODAY</div>
+<div style="font-size:18px;font-weight:700;color:#c41e3a;">-6%</div>
+</div>
+<div style="font-size:24px;color:#ff6600;">→</div>
+<div style="text-align:center;">
+<div style="font-size:11px;color:#888888;margin-bottom:2px;">BTC</div>
+<div style="font-size:18px;font-weight:700;color:#ffffff;">37% OFF ATH</div>
+</div>
+<div style="font-size:24px;color:#ff6600;">→</div>
+<div style="text-align:center;">
+<div style="font-size:11px;color:#888888;margin-bottom:2px;">HYPE TARGET</div>
+<div style="font-size:18px;font-weight:700;color:#4ade80;">$60</div>
+</div>
+</div>
+<div style="font-size:12px;color:#888888;margin-top:8px;">AI stocks correct → Capital rotates → Crypto catches bid</div>
+</div>
 
 <!-- Primary CTA -->
 <a class="rd-cta-btn" href="https://www.rebeldividends.com/startwebinar/?utm_source=email&amp;utm_medium=brevo&amp;utm_campaign=may12" style="display:inline-block;background-color:#4ade80;color:#000000;font-size:18px;font-weight:700;padding:18px 48px;text-decoration:none;border-radius:6px;margin-bottom:10px;">JOIN LIVE WEBINAR &rarr;</a>
