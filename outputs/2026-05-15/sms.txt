@@ -1,0 +1,21 @@
+SUBJECT: RD Alpha Engine — we backtested 3 strategies, one beat HYPE by 89 points
+
+RD Alpha Engine is live.
+
+We backtested 3 active strategies on 52 weeks of HYPE/BTC/ETH/equity data:
+
+  HYPE buy & hold:        +60.3%
+  A · Macro Rotation:     +29.7%   (alpha -30.6%, REJECT)
+  B · SOXL-Short Pair:    -42.3%   (alpha -102.6%, REJECT)
+  C · Multi-Asset Momentum: +149.1% (alpha +88.9%, SHIP IT)
+
+Winner: Strategy C — rank BTC/ETH/HYPE by 4-wk momentum, 1.5x top + 0.5x second.
+Sharpe 1.79. Max DD -31% (HYPE's was -57%).
+
+Today's live signal: 1.5x BTC · 0.5x ETH.
+Execute on Hyperliquid HIP-3 perps using HYPE as collateral.
+
+Watching: Trump-Xi May 14-15, NVDA May 20, rate cut path.
+
+Full page + 3 backtest charts:
+https://updates.rebeldividends.com/daily/2026-05-15

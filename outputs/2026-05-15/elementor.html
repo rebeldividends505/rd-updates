@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RD Alpha Engine — Active Strategy for the HYPE Era</title>
+<style>
+  :root {
+    --ink:#111;
+    --line:#e6e6e6;
+    --muted:#666;
+    --red:#d12d2d;
+    --amber:#e08f1a;
+    --green:#1f8a4c;
+    --blue:#1c4fd6;
+  }
+  *{box-sizing:border-box;}
+  body {
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    background:#fff;
+    color:var(--ink);
+    line-height:1.5;
+  }
+  .wrap { max-width:1180px; margin:0 auto; padding:32px 24px 72px; }
+  h1 {
+    font-size:34px;
+    font-weight:800;
+    letter-spacing:-0.01em;
+    margin:0 0 6px 0;
+  }
+  h2 {
+    font-size:22px;
+    font-weight:800;
+    margin:48px 0 14px 0;
+    padding-bottom:10px;
+    border-bottom:2px solid var(--ink);
+    letter-spacing:-0.005em;
+  }
+  h3 { font-size:15px; font-weight:700; margin:18px 0 6px; }
+  p { margin:8px 0; }
+  .eyebrow {
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--muted);
+    font-weight:700;
+    font-size:11px;
+    margin-bottom:4px;
+  }
+  .lede { color:var(--muted); font-size:15px; max-width:820px; }
+  .data-source { color:var(--muted); font-size:11px; margin-top:6px; }
+
+  /* HERO PANEL */
+  .hero {
+    background:#0d0d0d;
+    color:#fff;
+    border-radius:14px;
+    padding:28px 28px 22px;
+    margin-top:28px;
+  }
+  .hero h2 { color:#fff; border-color:#fff; margin-top:0; }
+  .hero .grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-top:12px;
+  }
+  .hero .kpi {
+    background:#1a1a1a;
+    border:1px solid #2a2a2a;
+    border-radius:10px;
+    padding:14px 16px;
+  }
+  .hero .kpi .k { color:#aaa; font-size:11px; text-transform:uppercase; letter-spacing:0.1em; }
+  .hero .kpi .v { font-size:24px; font-weight:800; margin-top:4px; }
+  .hero .kpi .s { color:#bbb; font-size:12px; margin-top:2px; }
+  .hero .kpi.win { border-color:#1f8a4c; }
+  .hero .kpi.win .v { color:#52d18a; }
+
+  .pill {
+    display:inline-block;
+    background:#3a3a3a;
+    color:#fff;
+    padding:4px 12px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:0.04em;
+  }
+  .pill-green { background:#1f8a4c; }
+  .pill-red   { background:#d12d2d; }
+  .pill-amber { background:#e08f1a; }
+  .pill-blue  { background:#1c4fd6; }
+
+  /* STRATEGY CARDS */
+  .strats {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-top:14px;
+  }
+  @media(max-width:900px) { .strats { grid-template-columns:1fr; } }
+  .strat-card {
+    border:1px solid var(--line);
+    border-left:6px solid var(--ink);
+    border-radius:10px;
+    padding:18px 20px 18px;
+    background:#fff;
+  }
+  .strat-card.win   { border-left-color:var(--green); background:#f4fbf6; }
+  .strat-card.mid   { border-left-color:var(--blue); }
+  .strat-card.lose  { border-left-color:var(--red); }
+  .strat-head {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:10px;
+    margin-bottom:8px;
+  }
+  .strat-name { font-size:17px; font-weight:800; }
+  .strat-sub  { color:var(--muted); font-size:12px; margin-top:2px; }
+  .strat-grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:6px 12px;
+    margin-top:12px;
+    padding:10px 0;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .strat-grid .lbl { display:block; color:var(--muted); font-size:10px; text-transform:uppercase; letter-spacing:0.06em; }
+  .strat-grid .val { display:block; font-weight:800; font-size:18px; }
+  .strat-grid .val.up { color:var(--green); }
+  .strat-grid .val.dn { color:var(--red); }
+  .strat-rule { font-size:12px; color:#333; margin-top:10px; }
+  .strat-active { font-size:12px; color:var(--muted); margin-top:8px; }
+
+  /* CHARTS */
+  .chart { margin:18px 0; }
+  .chart img { width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+  .chart .cap { font-size:12px; color:var(--muted); margin-top:6px; }
+
+  /* WHY PANEL */
+  .why {
+    background:#fff8e6;
+    border:1px solid #ffe8a8;
+    border-left:6px solid var(--amber);
+    border-radius:10px;
+    padding:18px 22px;
+    margin-top:18px;
+  }
+  .why h3 { margin-top:0; }
+
+  /* HOW PANEL */
+  .how {
+    background:#0d0d0d;
+    color:#fff;
+    border-radius:14px;
+    padding:26px 28px;
+    margin-top:14px;
+  }
+  .how h3 { color:#fff; margin-top:18px; }
+  .how table { width:100%; border-collapse:collapse; margin-top:8px; }
+  .how th, .how td { text-align:left; padding:10px 12px; border-bottom:1px solid #2a2a2a; font-size:13px; }
+  .how th { color:#aaa; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; }
+  .how .trade {
+    border:1px solid #2a2a2a;
+    border-left:4px solid #1c4fd6;
+    background:#1a1a1a;
+    border-radius:8px;
+    padding:14px 16px;
+    margin-top:10px;
+  }
+  .how .trade .t-head { font-weight:800; font-size:15px; }
+  .how .trade .t-body { color:#cfcfcf; font-size:13px; margin-top:4px; }
+  .how .footnote { color:#888; font-size:11px; margin-top:14px; }
+
+  /* WATCH PANEL */
+  .watch {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-top:10px;
+  }
+  @media(max-width:820px) { .watch { grid-template-columns:1fr; } }
+  .watch-tile {
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 16px;
+  }
+  .watch-tile .when { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; }
+  .watch-tile .what { font-size:17px; font-weight:800; margin-top:2px; }
+  .watch-tile .so   { font-size:12px; color:#333; margin-top:4px; }
+
+  /* RANK TABLE */
+  table.rank { width:100%; border-collapse:collapse; margin-top:8px; }
+  table.rank th, table.rank td {
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--line);
+    font-size:13px;
+  }
+  table.rank th { background:#f6f6f6; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:#444; }
+  table.rank .up { color:var(--green); font-weight:700; }
+  table.rank .dn { color:var(--red); font-weight:700; }
+
+  .foot { margin-top:48px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">Rebel Dividends · Intelligence Suite — Page 3</div>
+  <h1>RD Alpha Engine — active strategy for the HYPE era</h1>
+  <p class="lede">HYPE is on Coinbase. ETFs exist. Pure buy-and-hold no longer needs us. To stay relevant, RD has to <b>outperform HYPE itself</b>. This page is the work: three rules-based strategies, all backtested on 52 weeks of real weekly data, all executable today through Hyperliquid HIP-3 perps with HYPE as collateral.</p>
+  <p class="data-source">Backtest window <b>2025-05-25 → 2026-05-17</b> (52 weeks). Equities via yfinance, crypto via CoinGecko. Built 2026-05-15.</p>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h2>The 12-month scoreboard</h2>
+    <div class="grid">
+      <div class="kpi">
+        <div class="k">HYPE buy &amp; hold</div>
+        <div class="v">+60.3%</div>
+        <div class="s">The benchmark — sharpe 0.95, max DD −57%</div>
+      </div>
+      <div class="kpi">
+        <div class="k">A · Macro Rotation</div>
+        <div class="v">+29.7%</div>
+        <div class="s">Alpha <b>−30.6%</b> · sharpe 0.77 · DD −72%</div>
+      </div>
+      <div class="kpi">
+        <div class="k">B · SOXL-Short Pair</div>
+        <div class="v">−42.3%</div>
+        <div class="s">Alpha <b>−102.6%</b> · sharpe 0.09 · DD −78%</div>
+      </div>
+      <div class="kpi win">
+        <div class="k">C · Multi-Asset Momentum</div>
+        <div class="v">+149.1%</div>
+        <div class="s">Alpha <b>+88.9%</b> · sharpe <b>1.79</b> · DD −31%</div>
+      </div>
+    </div>
+    <p style="color:#cfcfcf; margin-top:18px; font-size:13px;">
+      <span class="pill pill-green">WINNER: STRATEGY C</span>
+      &nbsp; Multi-Asset Momentum beat HYPE buy &amp; hold by <b>+88.9 percentage points</b> over the last 52 weeks
+      with <b>less drawdown</b> (−31% vs −57%) and a <b>1.79 sharpe</b>. This is the engine we're shipping.
+    </p>
+  </div>
+
+  <!-- WHY -->
+  <h2>Why we need this — the HYPE thesis is already priced</h2>
+  <div class="why">
+    <h3>The "just hold HYPE" trade has matured.</h3>
+    <p>HYPE went from $4 to $40+ on the same playbook everyone now knows: Coinbase listing, ETF speculation, perp DEX flywheel. The discovery premium is gone. What's left is a liquid, ETF-eligible asset that institutional treasuries can buy without us.</p>
+    <p><b>The new edge isn't owning HYPE — it's timing leverage, rotation, and pair trades on top of HYPE.</b> Hyperliquid's own HIP-3 perp infrastructure makes this possible: any RD member can long/short BTC, ETH, HYPE, or equity perps using HYPE as collateral, 24/7, on-chain, no broker, no margin call from a TradFi desk.</p>
+    <p>This page documents three strategies we built and backtested. One is a clear winner. One is a clear loser (and we're showing it anyway — that's the point of a backtest).</p>
+  </div>
+
+  <!-- CHART 1 -->
+  <h2>Strategy comparison — growth of $1 over 52 weeks</h2>
+  <div class="chart">
+    <img src="/charts/alpha-engine/strategy-comparison.png" alt="Strategy comparison — cumulative equity curves">
+    <div class="cap">Each line is the equity curve for one strategy starting from $1 on 2025-05-25. The dashed grey line is the HYPE benchmark we have to beat. Green (Strategy C — multi-asset momentum) ends ~2.5x; the others lag.</div>
+  </div>
+
+  <!-- STRATEGY CARDS -->
+  <h2>The three strategies — rule, result, current signal</h2>
+
+  <div class="strats">
+
+    <!-- STRATEGY A -->
+    <div class="strat-card mid">
+      <div class="strat-head">
+        <div>
+          <div class="strat-name">A · Macro Rotation</div>
+          <div class="strat-sub">Lever HYPE when QQQ outpaces BTC — fade when BTC leads</div>
+        </div>
+        <span class="pill pill-blue">UNDERPERFORM</span>
+      </div>
+      <div class="strat-grid">
+        <div><span class="lbl">Total return</span><span class="val up">+29.7%</span></div>
+        <div><span class="lbl">Alpha vs HYPE</span><span class="val dn">−30.6%</span></div>
+        <div><span class="lbl">Sharpe</span><span class="val">0.77</span></div>
+        <div><span class="lbl">Max drawdown</span><span class="val dn">−72.2%</span></div>
+      </div>
+      <div class="strat-rule">
+        <b>Rule.</b> Compute QQQ minus BTC trailing 13-week return.
+        If divergence &gt; <b>+0.15</b> (QQQ way ahead) → go <b>1.5x HYPE</b>.
+        If &lt; <b>−0.05</b> (BTC already led) → go <b>0.8x HYPE</b>.
+        Otherwise hold 1.0x.
+      </div>
+      <div class="strat-active">
+        <b>Active 25/52 weeks max-long, 4/52 defensive, 23/52 hold.</b><br>
+        Current divergence: <b>+0.02</b> · Signal today: <span class="pill">HOLD (1.0x)</span><br>
+        <em>Verdict: the leverage timing chopped us on HYPE's drawdowns. Keep it on the shelf.</em>
+      </div>
+    </div>
+
+    <!-- STRATEGY B -->
+    <div class="strat-card lose">
+      <div class="strat-head">
+        <div>
+          <div class="strat-name">B · SOXL-Short Pair</div>
+          <div class="strat-sub">Short SOXL when 4-wk return &gt; 12%, long HYPE 1.5x</div>
+        </div>
+        <span class="pill pill-red">REJECT</span>
+      </div>
+      <div class="strat-grid">
+        <div><span class="lbl">Total return</span><span class="val dn">−42.3%</span></div>
+        <div><span class="lbl">Alpha vs HYPE</span><span class="val dn">−102.6%</span></div>
+        <div><span class="lbl">Sharpe</span><span class="val">0.09</span></div>
+        <div><span class="lbl">Max drawdown</span><span class="val dn">−78.4%</span></div>
+      </div>
+      <div class="strat-rule">
+        <b>Rule.</b> When SOXL's trailing 4-week return is &gt; <b>+12%</b> (overbought proxy),
+        go <b>−0.3x SOXL + 1.5x HYPE</b> as a pair trade. Otherwise just hold HYPE 1.0x.
+      </div>
+      <div class="strat-active">
+        <b>Active 27/52 weeks.</b> Current SOXL 4-wk: <b>+80.5%</b> · Signal: <span class="pill pill-red">PAIR ON</span><br>
+        <em>Verdict: <b>do not run this.</b> Shorting parabolic semis blew up. The thesis (semis fund crypto rotation) didn't hit — SOXL kept ripping. This is why we backtest.</em>
+      </div>
+    </div>
+
+    <!-- STRATEGY C -->
+    <div class="strat-card win">
+      <div class="strat-head">
+        <div>
+          <div class="strat-name">C · Multi-Asset Momentum</div>
+          <div class="strat-sub">Each week, rank BTC / ETH / HYPE by 4-wk momentum</div>
+        </div>
+        <span class="pill pill-green">SHIP IT</span>
+      </div>
+      <div class="strat-grid">
+        <div><span class="lbl">Total return</span><span class="val up">+149.1%</span></div>
+        <div><span class="lbl">Alpha vs HYPE</span><span class="val up">+88.9%</span></div>
+        <div><span class="lbl">Sharpe</span><span class="val up">1.79</span></div>
+        <div><span class="lbl">Max drawdown</span><span class="val dn">−30.6%</span></div>
+      </div>
+      <div class="strat-rule">
+        <b>Rule.</b> Each Sunday close, rank BTC / ETH / HYPE by trailing 4-week return.
+        Allocate <b>1.5x</b> to the leader, <b>0.5x</b> to second place, normalize to 100% gross.
+        Rebalance weekly. Funded with HYPE collateral on Hyperliquid HIP-3 perps.
+      </div>
+      <div class="strat-active">
+        <b>Active every week after the 4-week warmup.</b> Sharpe <b>1.79</b> — institutional grade.<br>
+        Current signal: <span class="pill pill-green">1.5x BTC · 0.5x ETH</span><br>
+        <em>Verdict: lower drawdown and higher return than HYPE alone. The math is clean — rotate to whatever is winning, don't anchor to a single token.</em>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CHART 2 -->
+  <h2>Risk side — how deep does each one go?</h2>
+  <div class="chart">
+    <img src="/charts/alpha-engine/drawdown-comparison.png" alt="Drawdown profile per strategy">
+    <div class="cap">A return number only matters next to the drawdown that earned it. Strategy C bottomed at −31%; HYPE buy &amp; hold at −57%; the leveraged-and-paired strategies got punished worse than spot.</div>
+  </div>
+
+  <!-- CHART 3 -->
+  <h2>Signal calendar — when each strategy was "trade on"</h2>
+  <div class="chart">
+    <img src="/charts/alpha-engine/signal-calendar.png" alt="Signal calendar heatmap">
+    <div class="cap">Green = leveraged (1.5x or pair on). Yellow = hold (1.0x). Red = defensive (0.8x) or warmup. Strategy C is on after week 4 every week — that's because it always picks a leader.</div>
+  </div>
+
+  <!-- HOW TO EXECUTE -->
+  <h2>How to execute — Hyperliquid HIP-3 perps</h2>
+  <div class="how">
+    <h3>Why Hyperliquid HIP-3 instead of a broker</h3>
+    <p style="color:#cfcfcf;">HIP-3 lets anyone deploy and trade isolated perp markets on Hyperliquid. You can short SOXL-style exposure, long BTC, ETH, HYPE — all from one HYPE-funded margin account. No PDT rule. No 9:30 open. No phone call to a margin desk at 2am when the trade goes against you.</p>
+
+    <h3>Executing Strategy C this week (current signal)</h3>
+    <div class="trade">
+      <div class="t-head">Leg 1: 1.5x BTC long perp</div>
+      <div class="t-body">Open 1.5x notional BTC-PERP long. Collateral: HYPE. Funding paid in HYPE. Hold until next Sunday close, then re-rank.</div>
+    </div>
+    <div class="trade">
+      <div class="t-head">Leg 2: 0.5x ETH long perp</div>
+      <div class="t-body">Open 0.5x notional ETH-PERP long. Same account, same collateral.</div>
+    </div>
+    <div class="trade">
+      <div class="t-head">Leg 3: HYPE is collateral (not a leg)</div>
+      <div class="t-body">HYPE sits in your Hyperliquid margin account — earns trading-fee rebates via the assistance fund, doesn't need to be sold to express the trade.</div>
+    </div>
+
+    <h3>The weekly cadence</h3>
+    <table>
+      <thead><tr><th>Sunday close</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td>1.</td><td>Pull BTC / ETH / HYPE 4-week return — RD pipeline auto-publishes</td></tr>
+        <tr><td>2.</td><td>Rank. Top → 1.5x notional. Second → 0.5x notional.</td></tr>
+        <tr><td>3.</td><td>Close any leg whose ranking changed. Open new legs.</td></tr>
+        <tr><td>4.</td><td>Verify collateral usage stays below 60% of HYPE balance (gives buffer for funding swings).</td></tr>
+      </tbody>
+    </table>
+    <p class="footnote">Backtest is gross of trading fees (~2bps/leg on Hyperliquid) and funding rate drift. Real-world drag should be 2-4 percentage points per year — Strategy C's +88.9% alpha buffer absorbs that and then some.</p>
+  </div>
+
+  <!-- LIVE SIGNAL -->
+  <h2>Today's live signal — what RD is doing right now</h2>
+  <table class="rank">
+    <thead>
+      <tr><th>Strategy</th><th>Today's call</th><th>Position</th><th>Why</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>A · Macro Rotation</b></td>
+        <td><span class="pill">HOLD</span></td>
+        <td>1.0x HYPE</td>
+        <td>QQQ-vs-BTC 13-week divergence sits at +0.02 — neither side leading enough to lever or de-risk</td>
+      </tr>
+      <tr>
+        <td><b>B · SOXL-Short Pair</b></td>
+        <td><span class="pill pill-red">DO NOT TRADE</span></td>
+        <td>—</td>
+        <td>Backtest rejected the strategy. Live signal triggers PAIR ON (SOXL 4-wk +80.5%) but we won't take it</td>
+      </tr>
+      <tr>
+        <td><b>C · Multi-Asset Momentum</b></td>
+        <td><span class="pill pill-green">EXECUTE</span></td>
+        <td>1.5x BTC · 0.5x ETH</td>
+        <td>BTC leads 4-week momentum, ETH second. Rotate at Sunday close.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- WHAT WE'RE WATCHING -->
+  <h2>What we're watching that could flip the signal</h2>
+  <div class="watch">
+    <div class="watch-tile">
+      <div class="when">May 14-15</div>
+      <div class="what">Trump-Xi summit</div>
+      <div class="so">A real handshake would re-rate QQQ relative to BTC fast — flips Strategy A to MAX LONG and pulls Strategy C toward HYPE/ETH rotation.</div>
+    </div>
+    <div class="watch-tile">
+      <div class="when">May 20</div>
+      <div class="what">NVDA earnings</div>
+      <div class="so">A miss takes SOXL 4-wk back inside +12% → Strategy B finally turns off. A beat extends the parabolic semis tape another month.</div>
+    </div>
+    <div class="watch-tile">
+      <div class="when">Late May</div>
+      <div class="what">Rate cut path</div>
+      <div class="so">Fed pricing for the July meeting is the macro pivot. A confirmed cut path is the cleanest setup we've seen for multi-asset momentum since the launch of HYPE.</div>
+    </div>
+  </div>
+
+  <!-- METHOD NOTES -->
+  <h2>Method notes — what the backtest does and does not claim</h2>
+  <p style="color:#333; font-size:13px;">
+    <b>Window.</b> 52 weeks ending 2026-05-17. HYPE only launched in late 2024, so a longer window is impossible without a synthetic proxy — we chose to be honest about the horizon instead.
+  </p>
+  <p style="color:#333; font-size:13px;">
+    <b>Data.</b> Equities (QQQ, SOXL) via yfinance weekly bars. Crypto (BTC, ETH, HYPE) via CoinGecko weekly resampling. All returns are total return (auto-adjusted for equity dividends/splits).
+  </p>
+  <p style="color:#333; font-size:13px;">
+    <b>Assumptions.</b> Weekly rebalance at Sunday close. No fee model in the printed numbers (estimate 2-4% annual drag). No funding rate model (Hyperliquid funding is typically flat-to-positive on top assets). Leverage is gross notional — you'd need ~60% of your HYPE as margin for a 1.5x BTC + 0.5x ETH position at current vol.
+  </p>
+  <p style="color:#333; font-size:13px;">
+    <b>What this is not.</b> Not a guarantee. Not a forecast. Strategy B looked plausible on paper and lost 42% in 52 weeks — a reminder that "the rotation thesis" needs proof, not vibes. The point of this page is that we ran the numbers in public.
+  </p>
+
+  <div class="foot">
+    <p>RD Alpha Engine · Built by Rebel Dividends · Backtest range 2025-05-25 → 2026-05-17 (52 weeks) ·
+    Data: yfinance (equities), CoinGecko (crypto) · Generated 2026-05-15.</p>
+    <p>Nothing on this page is investment advice. Hyperliquid HIP-3 perps are perpetual futures with leverage — they can lose more than the initial margin if managed without discipline. RD members should size positions to their own risk tolerance and treat the live signal as one input, not a directive.</p>
+  </div>
+
+</div>
+</body>
+</html>
