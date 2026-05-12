@@ -1,11 +1,88 @@
 <style>
+/* ===================== V15 — VISUAL POLISH PASS ===================== */
+/* Base hardening for both desktop + mobile */
+.rd-container img { max-width: 100% !important; height: auto !important; display: block !important; border: 0 !important; }
+.rd-container table { max-width: 100% !important; }
+.rd-container { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+/* Numbered-badge cells (V8 "What This Update Covers" list) */
+.rd-numbered-cell { padding-right: 12px !important; padding-left: 0 !important; }
+
+/* Data tables — apply nowrap to numeric/short cells on monthly only (kept tight) */
+.rd-monthly-table td.rd-num { white-space: nowrap !important; }
+
+/* ==================== MOBILE (≤600px) ==================== */
 @media screen and (max-width: 600px) {
-  .rd-container { width: 100% !important; padding: 0 12px !important; }
+  .rd-container { width: 100% !important; padding: 0 !important; }
+
+  /* Stats grid */
   .rd-stat-grid { display: block !important; }
-  .rd-stat-cell { display: block !important; width: 100% !important; margin-bottom: 12px !important; }
+  .rd-stat-cell { display: block !important; width: 100% !important; margin-bottom: 12px !important; padding: 6px 12px !important; }
   .rd-milestone { font-size: 72px !important; }
   .rd-hero-text { font-size: 20px !important; padding: 0 12px !important; }
   .rd-cta-btn { padding: 16px 24px !important; font-size: 16px !important; width: 90% !important; }
+
+  /* All images full-width, never clipped */
+  .rd-container img { width: 100% !important; max-width: 100% !important; height: auto !important; }
+
+  /* Tables flow within viewport */
+  .rd-container table { table-layout: auto !important; width: 100% !important; max-width: 100% !important; }
+
+  /* Numbered-list badge column — collapse padding so text gets the room */
+  .rd-numbered-cell, td[width="36"], td[width="28"] {
+    width: 32px !important; min-width: 28px !important;
+    padding: 2px 8px 0 0 !important;
+  }
+
+  /* Generic data-table compaction */
+  .rd-data-table td, .rd-data-table th {
+    padding: 7px 5px !important;
+    font-size: 11.5px !important;
+    line-height: 1.35 !important;
+  }
+  .rd-data-table td.rd-num,
+  .rd-data-table th.rd-num {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Monthly track record table — special compaction */
+  .rd-monthly-table { font-size: 10.5px !important; }
+  .rd-monthly-table td, .rd-monthly-table th {
+    padding: 5px 4px !important;
+    font-size: 10.5px !important;
+    line-height: 1.3 !important;
+    white-space: nowrap !important;
+  }
+  .rd-monthly-table td:first-child, .rd-monthly-table th:first-child {
+    white-space: normal !important;
+  }
+
+  /* Historic-episodes / scenario tables — allow wrap to prevent overflow */
+  .rd-hist-table th, .rd-hist-table td {
+    padding: 7px 4px !important;
+    font-size: 10.5px !important;
+    line-height: 1.3 !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal !important;
+  }
+  .rd-hist-table th { font-size: 10px !important; letter-spacing: 0.2px; }
+
+  /* YTD scoreboard etc. — keep ticker readable */
+  .rd-ytd-table td, .rd-ytd-table th {
+    padding: 8px 6px !important;
+    font-size: 12px !important;
+  }
+
+  /* Reinvest projection table — slim, allow text wrap to prevent overflow */
+  .rd-projection-table td, .rd-projection-table th {
+    padding: 6px 3px !important;
+    font-size: 10px !important;
+    line-height: 1.3 !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal !important;
+  }
 }
 </style>
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
@@ -140,25 +217,25 @@
 <tr><td bgcolor="#ffffff" style="background-color:#ffffff;padding:18px 20px;">
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
-<td width="36" valign="top" style="padding:2px 12px 0 0;"><div style="display:inline-block;background-color:#c41e3a;color:#ffffff;font-size:14px;font-weight:700;width:28px;height:28px;line-height:28px;text-align:center;border-radius:14px;">1</div></td>
+<td class="rd-numbered-cell" width="36" valign="top" style="padding:2px 12px 0 0;"><div style="display:inline-block;background-color:#c41e3a;color:#ffffff;font-size:14px;font-weight:700;width:28px;height:28px;line-height:28px;text-align:center;border-radius:14px;">1</div></td>
 <td valign="top" style="padding-bottom:14px;">
 <div style="font-size:16px;font-weight:700;color:#0a0a0a;line-height:1.35;margin-bottom:4px;">The Setup &mdash; AI Stocks Stretched Like It's 2000</div>
 <div style="font-size:14px;color:#333333;line-height:1.6;">SOX <strong>+53% above its 200-day MA today</strong> (yesterday +64%), the widest gap since March 2000. Seven prior episodes &mdash; every one resolved with a meaningful drawdown. NVDA P/C ratio 0.36, IV rank 34, $22.5B parked in SOXL. <strong>The correction has begun.</strong></div>
 </td></tr>
 <tr>
-<td width="36" valign="top" style="padding:2px 12px 0 0;"><div style="display:inline-block;background-color:#fbbf24;color:#0a0a0a;font-size:14px;font-weight:700;width:28px;height:28px;line-height:28px;text-align:center;border-radius:14px;">2</div></td>
+<td class="rd-numbered-cell" width="36" valign="top" style="padding:2px 12px 0 0;"><div style="display:inline-block;background-color:#fbbf24;color:#0a0a0a;font-size:14px;font-weight:700;width:28px;height:28px;line-height:28px;text-align:center;border-radius:14px;">2</div></td>
 <td valign="top" style="padding-bottom:14px;">
 <div style="font-size:16px;font-weight:700;color:#0a0a0a;line-height:1.35;margin-bottom:4px;">The Pressure &mdash; Two Different Inflations Stacked</div>
 <div style="font-size:14px;color:#333333;line-height:1.6;">Today's CPI: 3.8% headline / 2.8% core &mdash; and the SOX dropped 6% within minutes of the print. The headline jumped 1.4pp; the core moved 0.2pp. <strong>The bounce is the war, not the economy.</strong> But the structural inflation underneath &mdash; <strong>DRAM up 90% in Q1, another 58-63% expected Q2</strong> &mdash; is eating hyperscaler margins. Either path: rate cuts coming.</div>
 </td></tr>
 <tr>
-<td width="36" valign="top" style="padding:2px 12px 0 0;"><div style="display:inline-block;background-color:#0a7c42;color:#ffffff;font-size:14px;font-weight:700;width:28px;height:28px;line-height:28px;text-align:center;border-radius:14px;">3</div></td>
+<td class="rd-numbered-cell" width="36" valign="top" style="padding:2px 12px 0 0;"><div style="display:inline-block;background-color:#0a7c42;color:#ffffff;font-size:14px;font-weight:700;width:28px;height:28px;line-height:28px;text-align:center;border-radius:14px;">3</div></td>
 <td valign="top" style="padding-bottom:14px;">
 <div style="font-size:16px;font-weight:700;color:#0a0a0a;line-height:1.35;margin-bottom:4px;">The Release &mdash; BTC Lags. HYPE Catches Up With Leverage.</div>
 <div style="font-size:14px;color:#333333;line-height:1.6;">BTC 37% off ATH, below 200-day MA. Hyperliquid generates <strong>$50.95M weekly protocol fees, 97% flowing to buybacks</strong>. Cumulative buybacks: <strong>$1.3B, 4.17% of supply burned</strong>. HIP-4 prediction markets live May 3. Grayscale custody named April. The flywheel is mechanical.</div>
 </td></tr>
 <tr>
-<td width="36" valign="top" style="padding:2px 12px 0 0;"><div style="display:inline-block;background-color:#0a7c42;color:#ffffff;font-size:14px;font-weight:700;width:28px;height:28px;line-height:28px;text-align:center;border-radius:14px;">4</div></td>
+<td class="rd-numbered-cell" width="36" valign="top" style="padding:2px 12px 0 0;"><div style="display:inline-block;background-color:#0a7c42;color:#ffffff;font-size:14px;font-weight:700;width:28px;height:28px;line-height:28px;text-align:center;border-radius:14px;">4</div></td>
 <td valign="top" style="padding-bottom:0;">
 <div style="font-size:16px;font-weight:700;color:#0a0a0a;line-height:1.35;margin-bottom:4px;">What It Means For Your Shares</div>
 <div style="font-size:14px;color:#333333;line-height:1.6;">The target ladder: <strong>$60 (90d), $90 (180d), $180 (1y), $360 (2y)</strong>. The math from each target to RD share price. The reinvest-vs-collect projection on a volatile path. <strong>Reinvestors win by $60K-$80K on a $100K position over 2 years</strong> in this kind of tape.</div>
@@ -205,9 +282,9 @@
 <tr><td bgcolor="#f0fdf4" style="background-color:#f0fdf4;padding:24px 26px;">
 <div style="font-size:22px;font-weight:700;color:#0f172a;line-height:1.3;margin-bottom:14px;">What We're Doing</div>
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:14px;">
-<tr><td width="28" valign="top" style="padding:6px 12px 0 0;font-size:16px;font-weight:700;color:#16a34a;">1.</td><td valign="top" style="padding-bottom:12px;font-size:16px;line-height:1.65;color:#1a1a1a;"><strong>Reinvesting every weekly dividend</strong> &mdash; the volatile-path math favors reinvestors in this kind of tape.</td></tr>
-<tr><td width="28" valign="top" style="padding:6px 12px 0 0;font-size:16px;font-weight:700;color:#16a34a;">2.</td><td valign="top" style="padding-bottom:12px;font-size:16px;line-height:1.65;color:#1a1a1a;"><strong>Adding to HYPE on weakness</strong> &mdash; the lagging asset wakes up last, and the buyback flywheel keeps turning.</td></tr>
-<tr><td width="28" valign="top" style="padding:6px 12px 0 0;font-size:16px;font-weight:700;color:#16a34a;">3.</td><td valign="top" style="padding-bottom:0;font-size:16px;line-height:1.65;color:#1a1a1a;"><strong>Deploying HIP-3 perps</strong> &mdash; new venue for protocol fees, scheduled to launch into this rotation.</td></tr>
+<tr><td class="rd-numbered-cell" width="28" valign="top" style="padding:6px 12px 0 0;font-size:16px;font-weight:700;color:#16a34a;">1.</td><td valign="top" style="padding-bottom:12px;font-size:16px;line-height:1.65;color:#1a1a1a;"><strong>Reinvesting every weekly dividend</strong> &mdash; the volatile-path math favors reinvestors in this kind of tape.</td></tr>
+<tr><td class="rd-numbered-cell" width="28" valign="top" style="padding:6px 12px 0 0;font-size:16px;font-weight:700;color:#16a34a;">2.</td><td valign="top" style="padding-bottom:12px;font-size:16px;line-height:1.65;color:#1a1a1a;"><strong>Adding to HYPE on weakness</strong> &mdash; the lagging asset wakes up last, and the buyback flywheel keeps turning.</td></tr>
+<tr><td class="rd-numbered-cell" width="28" valign="top" style="padding:6px 12px 0 0;font-size:16px;font-weight:700;color:#16a34a;">3.</td><td valign="top" style="padding-bottom:0;font-size:16px;line-height:1.65;color:#1a1a1a;"><strong>Deploying HIP-3 perps</strong> &mdash; new venue for protocol fees, scheduled to launch into this rotation.</td></tr>
 </table>
 <div style="font-size:13px;line-height:1.55;color:#555555;font-style:italic;margin-bottom:10px;">This is not a recommendation. Past performance does not guarantee future results. See full disclosures below.</div>
 <div style="font-size:16px;line-height:1.55;color:#0a0a0a;font-weight:700;">Questions? Call Dean: <span style="color:#ff6600;">(505) 322-7515</span></div>
@@ -244,20 +321,20 @@
 </table>
 
 <!-- DATA TABLE: prior episodes -->
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:25px;border-collapse:collapse;font-size:13px;">
+<table class="rd-data-table rd-hist-table" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:25px;border-collapse:collapse;font-size:13px;">
 <tr bgcolor="#1a1a1a">
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;">Episode</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Gap to 200d</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">SOX drawdown</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Time to trough</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Gap to 200d</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">SOX drawdown</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Time to trough</td>
 </tr>
-<tr><td style="padding:8px 10px;border:1px solid #e0e0e0;">March 2000 (dot-com)</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+111%</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-85%</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">30 months</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;">Nov 2007 (GFC)</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+28%</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-55%</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">14 months</td></tr>
-<tr><td style="padding:8px 10px;border:1px solid #e0e0e0;">Dec 2017</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+22%</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-25%</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">10 months</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;">Feb 2020 (COVID)</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+18%</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-32%</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">1 month</td></tr>
-<tr><td style="padding:8px 10px;border:1px solid #e0e0e0;">Nov 2021</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+20%</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-45%</td><td style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">12 months</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;">Jul 2024</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+25%</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-28%</td><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">2 months</td></tr>
-<tr bgcolor="#fff4ed"><td bgcolor="#fff4ed" style="padding:10px;border:1px solid #ff6600;border-top:3px solid #ff6600;font-weight:700;">TODAY (May 12, 2026)</td><td bgcolor="#fff4ed" style="padding:10px;border:1px solid #ff6600;border-top:3px solid #ff6600;text-align:right;font-weight:700;color:#c41e3a;">+53% (yesterday +64%)</td><td bgcolor="#fff4ed" style="padding:10px;border:1px solid #ff6600;border-top:3px solid #ff6600;text-align:right;font-weight:700;color:#0a7c42;">SOX -6% today / SOXL -19%</td><td bgcolor="#fff4ed" style="padding:10px;border:1px solid #ff6600;border-top:3px solid #ff6600;text-align:right;font-weight:700;">In progress</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #e0e0e0;">March 2000 (dot-com)</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+111%</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-85%</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">30 months</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;">Nov 2007 (GFC)</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+28%</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-55%</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">14 months</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #e0e0e0;">Dec 2017</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+22%</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-25%</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">10 months</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;">Feb 2020 (COVID)</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+18%</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-32%</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">1 month</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #e0e0e0;">Nov 2021</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+20%</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-45%</td><td class="rd-num" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">12 months</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;">Jul 2024</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">+25%</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:600;">-28%</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px 10px;border:1px solid #e0e0e0;text-align:right;">2 months</td></tr>
+<tr bgcolor="#fff4ed"><td bgcolor="#fff4ed" style="padding:10px;border:1px solid #ff6600;border-top:3px solid #ff6600;font-weight:700;">TODAY (May 12, 2026)</td><td class="rd-num" bgcolor="#fff4ed" style="padding:10px;border:1px solid #ff6600;border-top:3px solid #ff6600;text-align:right;font-weight:700;color:#c41e3a;">+53% (yesterday +64%)</td><td class="rd-num" bgcolor="#fff4ed" style="padding:10px;border:1px solid #ff6600;border-top:3px solid #ff6600;text-align:right;font-weight:700;color:#0a7c42;">SOX -6% today / SOXL -19%</td><td class="rd-num" bgcolor="#fff4ed" style="padding:10px;border:1px solid #ff6600;border-top:3px solid #ff6600;text-align:right;font-weight:700;">In progress</td></tr>
 </table>
 
 <!-- PULL QUOTE -->
@@ -491,18 +568,18 @@ $60 is a price HYPE has already touched (Sept 2025 ATH). $90 puts Hyperliquid at
 </table>
 
 <!-- HYPE TARGET TABLE -->
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:25px;font-size:13px;">
+<table class="rd-data-table rd-hist-table" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:25px;font-size:13px;">
 <tr bgcolor="#1a1a1a">
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;">Scenario</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Timeline</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">% from today</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Implied FDV</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Timeline</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">% from today</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Implied FDV</td>
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:left;">Anchor</td>
 </tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$60</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">90 days</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+47%</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$60B</td><td style="padding:10px;border:1px solid #e0e0e0;">Sept 2025 ATH; above Coinbase</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$90</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">180 days</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+121%</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$90B</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">~32% of Ethereum FDV</td></tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$180</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">1 year</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+343%</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$180B</td><td style="padding:10px;border:1px solid #e0e0e0;">~65% of Ethereum</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$360</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">2 years</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+786%</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$360B</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Full-cycle bull / category winner</td></tr>
+<tr><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$60</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">90 days</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+47%</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$60B</td><td style="padding:10px;border:1px solid #e0e0e0;">Sept 2025 ATH; above Coinbase</td></tr>
+<tr bgcolor="#f8f8f8"><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$90</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">180 days</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+121%</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$90B</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">~32% of Ethereum FDV</td></tr>
+<tr><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$180</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">1 year</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+343%</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$180B</td><td style="padding:10px;border:1px solid #e0e0e0;">~65% of Ethereum</td></tr>
+<tr bgcolor="#f8f8f8"><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$360</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">2 years</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+786%</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$360B</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Full-cycle bull / category winner</td></tr>
 </table>
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:25px;">
@@ -517,15 +594,15 @@ $60 is a price HYPE has already touched (Sept 2025 ATH). $90 puts Hyperliquid at
 </td></tr>
 </table>
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:25px;font-size:13px;">
+<table class="rd-data-table rd-hist-table" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:25px;font-size:13px;">
 <tr bgcolor="#1a1a1a">
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;">BTC Scenario</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Timeline</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Timeline</td>
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:left;">What It Means</td>
 </tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$100K</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">Base</td><td style="padding:10px;border:1px solid #e0e0e0;">Reclaims mid-2024 trend level</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$150K</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">12 months</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">New ATH +19% (modest post-halving re-acceleration)</td></tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$300K</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">12 months (bull)</td><td style="padding:10px;border:1px solid #e0e0e0;">Full rotation completes; gold + bonds shed flow into BTC</td></tr>
+<tr><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$100K</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">Base</td><td style="padding:10px;border:1px solid #e0e0e0;">Reclaims mid-2024 trend level</td></tr>
+<tr bgcolor="#f8f8f8"><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$150K</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">12 months</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">New ATH +19% (modest post-halving re-acceleration)</td></tr>
+<tr><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$300K</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">12 months (bull)</td><td style="padding:10px;border:1px solid #e0e0e0;">Full rotation completes; gold + bonds shed flow into BTC</td></tr>
 </table>
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:25px;">
@@ -548,20 +625,20 @@ Here's the math. We project the HYPE target ladder forward and translate to Rebe
 </td></tr>
 </table>
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:18px;font-size:13px;">
+<table class="rd-data-table rd-projection-table" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:18px;font-size:13px;">
 <tr bgcolor="#1a1a1a">
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;">Time</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">HYPE Px</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">RD Share Px</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Reinvestor</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Collector</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Edge</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">HYPE Px</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">RD Share Px</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Reinvestor</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Collector</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Edge</td>
 </tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;">Today (May 12)</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$40.65</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0.00165</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$100K</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$100K</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">90 days</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$60</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0.00245</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$152K</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$148K + $4K div</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">tracking</td></tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;">180 days</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$90</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0.00367</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$226K</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$222K + $10K div</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">tracking</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">1 year</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$180</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0.00735</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$465K</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$443K + $24K div</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">slight reinvestor</td></tr>
-<tr bgcolor="#f0fff4"><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;font-weight:700;">2 years (volatile)</td><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;">$360</td><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;">$0.01469</td><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;color:#0a7c42;">~$1.04M</td><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;color:#ff6600;">$880K + $76K div = $956K</td><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;color:#0a7c42;">+$80K</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;">Today (May 12)</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$40.65</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0.00165</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$100K</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$100K</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0</td></tr>
+<tr bgcolor="#f8f8f8"><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">90 days</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$60</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0.00245</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$152K</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$148K + $4K div</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">tracking</td></tr>
+<tr><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;">180 days</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$90</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0.00367</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$226K</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$222K + $10K div</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">tracking</td></tr>
+<tr bgcolor="#f8f8f8"><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">1 year</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$180</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$0.00735</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$465K</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$443K + $24K div</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">slight reinvestor</td></tr>
+<tr bgcolor="#f0fff4"><td class="rd-num" bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;font-weight:700;">2 years (volatile)</td><td class="rd-num" bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;">$360</td><td class="rd-num" bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;">$0.01469</td><td class="rd-num" bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;color:#0a7c42;">~$1.04M</td><td class="rd-num" bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;color:#ff6600;">$880K + $76K div = $956K</td><td class="rd-num" bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;font-weight:700;color:#0a7c42;">+$80K</td></tr>
 </table>
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:25px;">
@@ -622,21 +699,21 @@ Here's the math. We project the HYPE target ladder forward and translate to Rebe
 </td></tr>
 </table>
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:18px;font-size:13px;">
+<table class="rd-data-table rd-projection-table" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:18px;font-size:13px;">
 <tr bgcolor="#1a1a1a">
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;">Asset</td>
-<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">2026 YTD</td>
+<td class="rd-num" bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">2026 YTD</td>
 </tr>
-<tr bgcolor="#fffbeb"><td bgcolor="#fffbeb" style="padding:10px;border:1px solid #fbbf24;font-weight:700;">RD Reinvestors</td><td bgcolor="#fffbeb" style="padding:10px;border:1px solid #fbbf24;text-align:right;color:#c41e3a;font-weight:700;">-0.3%</td></tr>
-<tr bgcolor="#fffbeb"><td bgcolor="#fffbeb" style="padding:10px;border:1px solid #fbbf24;font-weight:700;">RD Collectors</td><td bgcolor="#fffbeb" style="padding:10px;border:1px solid #fbbf24;text-align:right;color:#0a7c42;font-weight:700;">+2.1%</td></tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;">Gold (GLD)</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+8.2%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Silver (SLV)</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+18.6%</td></tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;">Nvidia (NVDA)</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+16.6%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Micron (MU)</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+151.6%</td></tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;">S&amp;P 500 (SPY)</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+7.5%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Nasdaq 100 (QQQ)</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+13.8%</td></tr>
-<tr><td style="padding:10px;border:1px solid #e0e0e0;">Bitcoin (BTC)</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:700;">-8.3%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">McDonald's (MCD)</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:700;">-9.3%</td></tr>
+<tr bgcolor="#fffbeb"><td bgcolor="#fffbeb" style="padding:10px;border:1px solid #fbbf24;font-weight:700;">RD Reinvestors</td><td class="rd-num" bgcolor="#fffbeb" style="padding:10px;border:1px solid #fbbf24;text-align:right;color:#c41e3a;font-weight:700;">-0.3%</td></tr>
+<tr bgcolor="#fffbeb"><td bgcolor="#fffbeb" style="padding:10px;border:1px solid #fbbf24;font-weight:700;">RD Collectors</td><td class="rd-num" bgcolor="#fffbeb" style="padding:10px;border:1px solid #fbbf24;text-align:right;color:#0a7c42;font-weight:700;">+2.1%</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;">Gold (GLD)</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+8.2%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Silver (SLV)</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+18.6%</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;">Nvidia (NVDA)</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+16.6%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Micron (MU)</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+151.6%</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;">S&amp;P 500 (SPY)</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+7.5%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Nasdaq 100 (QQQ)</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+13.8%</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;">Bitcoin (BTC)</td><td class="rd-num" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:700;">-8.3%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">McDonald's (MCD)</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:700;">-9.3%</td></tr>
 </table>
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:25px;">
@@ -692,7 +769,7 @@ RD reinvestors are roughly flat YTD &mdash; ahead of Bitcoin and tracking gold a
 <tr><td bgcolor="#ffffff" style="background-color:#ffffff;font-size:16px;line-height:1.7;color:#1a1a1a;padding-bottom:15px;">Since our April 2024 pivot, Rebel Dividends has paid <strong>107 consecutive weeks</strong> of dividends. Every month, every close, every dividend is below.</td></tr>
 </table>
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-size:13px;">
+<table class="rd-data-table rd-monthly-table" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-size:13px;">
 <tr bgcolor="#1a1a1a">
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Month</td>
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Open</td>
@@ -700,38 +777,38 @@ RD reinvestors are roughly flat YTD &mdash; ahead of Bitcoin and tracking gold a
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Div</td>
 <td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Mo. Return</td>
 </tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00297</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00269</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00030</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-9.4%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">May 2024</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00265</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00353</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00055</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+33.2%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Jun 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00311</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00225</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00030</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-27.7%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jul 2024</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00238</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00234</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00042</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-1.7%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Aug 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00147</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00175</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00024</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+19.0%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Sep 2024</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00154</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00153</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00009</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-0.6%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Oct 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00237</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00005</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+65.7%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Nov 2024</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00241</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00275</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00007</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+14.1%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Dec 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00337</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00337</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00020</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+0.0%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jan 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00367</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00302</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-17.7%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Feb 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00295</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00286</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-3.1%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Mar 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00246</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00182</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-26.0%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00159</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00223</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+40.3%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">May 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00246</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00408</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00009</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+65.9%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Jun 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00338</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00353</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00012</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+4.4%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jul 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00406</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00364</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-10.3%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Aug 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00301</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00387</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00012</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+28.6%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Sep 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00400</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00352</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-12.0%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Oct 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00352</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00318</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00013</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-9.7%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Nov 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00278</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00191</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00018</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-31.3%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Dec 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00191</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00174</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-8.9%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jan 2026</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00174</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00131</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-24.7%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Feb 2026</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00131</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+9.2%</td></tr>
-<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Mar 2026</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00180</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+25.9%</td></tr>
-<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2026</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00180</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.001691</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-1.6%</td></tr>
-<tr bgcolor="#fff4ed"><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">May 2026 (MTD)</td><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.001691</td><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.00165</td><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.00004</td><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;color:#c41e3a;">-2.4%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2024</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00297</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00269</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00030</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-9.4%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">May 2024</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00265</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00353</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00055</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+33.2%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Jun 2024</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00311</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00225</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00030</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-27.7%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jul 2024</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00238</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00234</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00042</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-1.7%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Aug 2024</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00147</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00175</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00024</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+19.0%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Sep 2024</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00154</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00153</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00009</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-0.6%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Oct 2024</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00237</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00005</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+65.7%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Nov 2024</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00241</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00275</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00007</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+14.1%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Dec 2024</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00337</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00337</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00020</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+0.0%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jan 2025</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00367</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00302</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-17.7%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Feb 2025</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00295</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00286</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-3.1%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Mar 2025</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00246</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00182</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-26.0%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2025</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00159</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00223</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+40.3%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">May 2025</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00246</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00408</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00009</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+65.9%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Jun 2025</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00338</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00353</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00012</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+4.4%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jul 2025</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00406</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00364</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-10.3%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Aug 2025</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00301</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00387</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00012</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+28.6%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Sep 2025</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00400</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00352</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-12.0%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Oct 2025</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00352</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00318</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00013</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-9.7%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Nov 2025</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00278</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00191</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00018</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-31.3%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Dec 2025</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00191</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00174</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-8.9%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jan 2026</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00174</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00131</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-24.7%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Feb 2026</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00131</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+9.2%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Mar 2026</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00180</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td class="rd-num" bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+25.9%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2026</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00180</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.001691</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td class="rd-num" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-1.6%</td></tr>
+<tr bgcolor="#fff4ed"><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">May 2026 (MTD)</td><td class="rd-num" bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.001691</td><td class="rd-num" bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.00165</td><td class="rd-num" bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.00004</td><td class="rd-num" bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;color:#c41e3a;">-2.4%</td></tr>
 <tr>
 <td bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;">Summary</td>
-<td bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;">$0.00297</td>
-<td bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;">$0.00165</td>
-<td bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;color:#0a7c42;">$0.00218</td>
-<td bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;color:#0a7c42;">Reinvestor +165%</td>
+<td class="rd-num" bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;">$0.00297</td>
+<td class="rd-num" bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;">$0.00165</td>
+<td class="rd-num" bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;color:#0a7c42;">$0.00218</td>
+<td class="rd-num" bgcolor="#f0fff4" style="background-color:#f0fff4;padding:12px 8px;border:1px solid #e0e0e0;border-top:3px solid #0a7c42;font-size:14px;font-weight:700;color:#0a7c42;">Reinvestor +165%</td>
 </tr>
 </table>
 
