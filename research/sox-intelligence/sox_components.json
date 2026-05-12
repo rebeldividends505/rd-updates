@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "NVDA",
+    "source": "fallback"
+  },
+  {
+    "symbol": "AMD",
+    "source": "fallback"
+  },
+  {
+    "symbol": "AVGO",
+    "source": "fallback"
+  },
+  {
+    "symbol": "TXN",
+    "source": "fallback"
+  },
+  {
+    "symbol": "QCOM",
+    "source": "fallback"
+  },
+  {
+    "symbol": "INTC",
+    "source": "fallback"
+  },
+  {
+    "symbol": "MU",
+    "source": "fallback"
+  },
+  {
+    "symbol": "AMAT",
+    "source": "fallback"
+  },
+  {
+    "symbol": "LRCX",
+    "source": "fallback"
+  },
+  {
+    "symbol": "KLAC",
+    "source": "fallback"
+  },
+  {
+    "symbol": "ADI",
+    "source": "fallback"
+  },
+  {
+    "symbol": "MRVL",
+    "source": "fallback"
+  },
+  {
+    "symbol": "NXPI",
+    "source": "fallback"
+  },
+  {
+    "symbol": "ON",
+    "source": "fallback"
+  },
+  {
+    "symbol": "MCHP",
+    "source": "fallback"
+  },
+  {
+    "symbol": "TSM",
+    "source": "fallback"
+  },
+  {
+    "symbol": "ARM",
+    "source": "fallback"
+  },
+  {
+    "symbol": "SMCI",
+    "source": "fallback"
+  },
+  {
+    "symbol": "MPWR",
+    "source": "fallback"
+  },
+  {
+    "symbol": "ENTG",
+    "source": "fallback"
+  },
+  {
+    "symbol": "SWKS",
+    "source": "fallback"
+  },
+  {
+    "symbol": "QRVO",
+    "source": "fallback"
+  },
+  {
+    "symbol": "TER",
+    "source": "fallback"
+  },
+  {
+    "symbol": "COHU",
+    "source": "fallback"
+  },
+  {
+    "symbol": "WOLF",
+    "source": "fallback"
+  },
+  {
+    "symbol": "ACLS",
+    "source": "fallback"
+  },
+  {
+    "symbol": "SLAB",
+    "source": "fallback"
+  },
+  {
+    "symbol": "CRUS",
+    "source": "fallback"
+  },
+  {
+    "symbol": "RMBS",
+    "source": "fallback"
+  },
+  {
+    "symbol": "SITM",
+    "source": "fallback"
+  }
+]

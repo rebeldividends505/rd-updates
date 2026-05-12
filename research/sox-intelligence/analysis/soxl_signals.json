@@ -1,0 +1,202 @@
+{
+  "generated_at": "2026-05-11T19:54:11.954488",
+  "tickers_analyzed": 30,
+  "soxl_component_correlations": {
+    "AMAT": 0.873,
+    "QCOM": 0.84,
+    "LRCX": 0.833,
+    "KLAC": 0.832,
+    "MU": 0.817,
+    "AMD": 0.797,
+    "ARM": 0.789,
+    "ACLS": 0.783,
+    "NVDA": 0.779,
+    "TER": 0.773,
+    "TSM": 0.772,
+    "ENTG": 0.757,
+    "ADI": 0.755,
+    "AVGO": 0.753,
+    "MPWR": 0.728,
+    "NXPI": 0.727,
+    "SITM": 0.725,
+    "MRVL": 0.72,
+    "RMBS": 0.69,
+    "COHU": 0.68,
+    "MCHP": 0.675,
+    "ON": 0.631,
+    "TXN": 0.618,
+    "INTC": 0.614,
+    "SLAB": 0.59,
+    "QRVO": 0.559,
+    "CRUS": 0.526,
+    "SWKS": 0.472,
+    "SMCI": 0.463,
+    "WOLF": 0.436
+  },
+  "leading_indicators": {
+    "NVDA": {
+      "same_week_corr": 0.779,
+      "lead_1wk_corr": -0.101,
+      "leads_soxl": false
+    },
+    "AMD": {
+      "same_week_corr": 0.797,
+      "lead_1wk_corr": -0.03,
+      "leads_soxl": false
+    },
+    "AVGO": {
+      "same_week_corr": 0.753,
+      "lead_1wk_corr": -0.131,
+      "leads_soxl": false
+    },
+    "TXN": {
+      "same_week_corr": 0.618,
+      "lead_1wk_corr": -0.335,
+      "leads_soxl": false
+    },
+    "QCOM": {
+      "same_week_corr": 0.84,
+      "lead_1wk_corr": -0.155,
+      "leads_soxl": false
+    },
+    "INTC": {
+      "same_week_corr": 0.614,
+      "lead_1wk_corr": -0.279,
+      "leads_soxl": false
+    },
+    "MU": {
+      "same_week_corr": 0.817,
+      "lead_1wk_corr": -0.082,
+      "leads_soxl": false
+    },
+    "AMAT": {
+      "same_week_corr": 0.873,
+      "lead_1wk_corr": -0.039,
+      "leads_soxl": false
+    },
+    "LRCX": {
+      "same_week_corr": 0.833,
+      "lead_1wk_corr": -0.073,
+      "leads_soxl": false
+    },
+    "KLAC": {
+      "same_week_corr": 0.832,
+      "lead_1wk_corr": -0.095,
+      "leads_soxl": false
+    },
+    "ADI": {
+      "same_week_corr": 0.755,
+      "lead_1wk_corr": -0.253,
+      "leads_soxl": false
+    },
+    "MRVL": {
+      "same_week_corr": 0.72,
+      "lead_1wk_corr": -0.239,
+      "leads_soxl": false
+    },
+    "NXPI": {
+      "same_week_corr": 0.727,
+      "lead_1wk_corr": -0.161,
+      "leads_soxl": false
+    },
+    "ON": {
+      "same_week_corr": 0.631,
+      "lead_1wk_corr": -0.214,
+      "leads_soxl": false
+    },
+    "MCHP": {
+      "same_week_corr": 0.675,
+      "lead_1wk_corr": -0.197,
+      "leads_soxl": false
+    },
+    "TSM": {
+      "same_week_corr": 0.772,
+      "lead_1wk_corr": -0.028,
+      "leads_soxl": false
+    },
+    "ARM": {
+      "same_week_corr": 0.789,
+      "lead_1wk_corr": -0.077,
+      "leads_soxl": false
+    },
+    "SMCI": {
+      "same_week_corr": 0.463,
+      "lead_1wk_corr": -0.038,
+      "leads_soxl": false
+    },
+    "MPWR": {
+      "same_week_corr": 0.728,
+      "lead_1wk_corr": -0.234,
+      "leads_soxl": false
+    },
+    "ENTG": {
+      "same_week_corr": 0.757,
+      "lead_1wk_corr": -0.064,
+      "leads_soxl": false
+    },
+    "SWKS": {
+      "same_week_corr": 0.472,
+      "lead_1wk_corr": -0.34,
+      "leads_soxl": false
+    },
+    "QRVO": {
+      "same_week_corr": 0.559,
+      "lead_1wk_corr": -0.278,
+      "leads_soxl": false
+    },
+    "TER": {
+      "same_week_corr": 0.773,
+      "lead_1wk_corr": 0.051,
+      "leads_soxl": false
+    },
+    "COHU": {
+      "same_week_corr": 0.68,
+      "lead_1wk_corr": -0.354,
+      "leads_soxl": false
+    },
+    "WOLF": {
+      "same_week_corr": 0.436,
+      "lead_1wk_corr": -0.03,
+      "leads_soxl": false
+    },
+    "ACLS": {
+      "same_week_corr": 0.783,
+      "lead_1wk_corr": -0.046,
+      "leads_soxl": false
+    },
+    "SLAB": {
+      "same_week_corr": 0.59,
+      "lead_1wk_corr": -0.39,
+      "leads_soxl": false
+    },
+    "CRUS": {
+      "same_week_corr": 0.526,
+      "lead_1wk_corr": 0.01,
+      "leads_soxl": false
+    },
+    "RMBS": {
+      "same_week_corr": 0.69,
+      "lead_1wk_corr": -0.19,
+      "leads_soxl": false
+    },
+    "SITM": {
+      "same_week_corr": 0.725,
+      "lead_1wk_corr": -0.286,
+      "leads_soxl": false
+    }
+  },
+  "soxl_momentum_autocorrelation": {
+    "2w_momentum_predicts_next": -0.194,
+    "4w_momentum_predicts_next": -0.284,
+    "8w_momentum_predicts_next": -0.292,
+    "13w_momentum_predicts_next": -0.352,
+    "26w_momentum_predicts_next": -0.437
+  },
+  "key_findings": [
+    "Highest SOXL same-week correlation: AMAT (+0.87); top 5: AMAT (+0.87), QCOM (+0.84), LRCX (+0.83), KLAC (+0.83), MU (+0.82)",
+    "No component shows a clean 1-week lead over SOXL \u2014 coincident moves dominate.",
+    "SOXL momentum signal: 26w_momentum_predicts_next has strongest auto-correlation (-0.44); mean-reversion regime.",
+    "Yield curve 10y-2y: 0.47 (falling)",
+    "HY spread: 2.81 (rising)"
+  ]
+}

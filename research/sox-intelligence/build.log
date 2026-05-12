@@ -1,0 +1,107 @@
+[19:50:10] === SOX intel build start: 2026-05-11T19:50:10.518690 ===
+[19:50:10] STEP 1: SOX components
+[19:50:11]   FMP failed (403); using fallback list
+[19:50:11] Total tickers to process: 34 (30 SOX + 4 benchmarks)
+[19:50:11] STEP 2: weekly prices 2024-05-11 → 2026-05-11
+[19:50:12]   ✓ NVDA: 42 weeks
+[19:50:13]   ✓ AMD: 42 weeks
+[19:50:14]   ✓ AVGO: 42 weeks
+[19:50:15]   ✓ TXN: 42 weeks
+[19:50:16]   ✓ QCOM: 42 weeks
+[19:50:18]   ✓ INTC: 42 weeks
+[19:50:19]   ✓ MU: 42 weeks
+[19:50:20]   ✓ AMAT: 42 weeks
+[19:50:21]   ✓ LRCX: 42 weeks
+[19:50:22]   ✓ KLAC: 42 weeks
+[19:50:23]   ✓ ADI: 42 weeks
+[19:50:24]   ✓ MRVL: 42 weeks
+[19:50:25]   ✓ NXPI: 42 weeks
+[19:50:26]   ✓ ON: 42 weeks
+[19:50:27]   ✓ MCHP: 42 weeks
+[19:50:28]   ✓ TSM: 42 weeks
+[19:50:30]   ✓ ARM: 42 weeks
+[19:50:31]   ✓ SMCI: 42 weeks
+[19:50:32]   ✓ MPWR: 42 weeks
+[19:50:33]   ✓ ENTG: 42 weeks
+[19:50:34]   ✓ SWKS: 42 weeks
+[19:50:35]   ✓ QRVO: 42 weeks
+[19:50:36]   ✓ TER: 42 weeks
+[19:50:37]   ✓ COHU: 42 weeks
+[19:50:38]   ✓ WOLF: 42 weeks
+[19:50:39]   ✓ ACLS: 42 weeks
+[19:50:40]   ✓ SLAB: 42 weeks
+[19:50:41]   ✓ CRUS: 42 weeks
+[19:50:42]   ✓ RMBS: 42 weeks
+[19:50:43]   ✓ SITM: 42 weeks
+[19:50:44]   ✓ SOXL: 42 weeks
+[19:50:45]   ✓ SOXX: 42 weeks
+[19:50:46]   ✓ QQQ: 42 weeks
+[19:50:47]   ✓ SPY: 42 weeks
+[19:50:48] STEP 3: earnings + ratios
+[19:50:54]   ✓ NVDA: no data
+[19:51:00]   ✓ AMD: no data
+[19:51:06]   ✓ AVGO: no data
+[19:51:13]   ✓ TXN: no data
+[19:51:19]   ✓ QCOM: no data
+[19:51:25]   ✓ INTC: no data
+[19:51:32]   ✓ MU: no data
+[19:51:38]   ✓ AMAT: no data
+[19:51:44]   ✓ LRCX: no data
+[19:51:51]   ✓ KLAC: no data
+[19:51:57]   ✓ ADI: no data
+[19:52:03]   ✓ MRVL: no data
+[19:52:09]   ✓ NXPI: no data
+[19:52:16]   ✓ ON: no data
+[19:52:22]   ✓ MCHP: no data
+[19:52:28]   ✓ TSM: no data
+[19:52:35]   ✓ ARM: no data
+[19:52:41]   ✓ SMCI: no data
+[19:52:47]   ✓ MPWR: no data
+[19:52:53]   ✓ ENTG: no data
+[19:53:00]   ✓ SWKS: no data
+[19:53:06]   ✓ QRVO: no data
+[19:53:12]   ✓ TER: no data
+[19:53:19]   ✓ COHU: no data
+[19:53:25]   ✓ WOLF: no data
+[19:53:31]   ✓ ACLS: no data
+[19:53:37]   ✓ SLAB: no data
+[19:53:44]   ✓ CRUS: no data
+[19:53:50]   ✓ RMBS: no data
+[19:53:56]   ✓ SITM: no data
+[19:53:56] STEP 4: FRED macro
+[19:53:58]   ✓ consumer_sentiment: 53.3000 (falling)
+[19:53:59]   ✓ credit_card_delinquency: 2.9400 (falling)
+[19:53:59]   ✓ personal_savings_rate: 3.6000 (falling)
+[19:54:00]   ✓ nonfarm_payrolls: 158736.0000 (rising)
+[19:54:00]   ✓ core_pce_inflation: 129.2790 (rising)
+[19:54:01]   ✓ recession_indicator: 0.0000 (falling)
+[19:54:02]   ✓ fed_funds_rate: 3.6300 (falling)
+[19:54:04]   ✓ yield_curve_10y_2y: 0.4700 (falling)
+[19:54:05]   ✓ unemployment_rate: 4.3000 (falling)
+[19:54:06]   ✓ industrial_production: 101.7898 (rising)
+[19:54:07]   ✓ retail_sales: 752063.0000 (rising)
+[19:54:07]   ✓ consumer_credit: 5140540.7200 (rising)
+[19:54:08]   ✓ cpi_all_items: 330.2930 (rising)
+[19:54:08]   ✓ wti_crude_oil_price: 109.7600 (rising)
+[19:54:09]   ✓ usd_jpy_exchange: 156.6400 (rising)
+[19:54:10]   ✓ high_yield_spread: 2.8100 (rising)
+[19:54:11]   ✓ effective_fed_funds_rate: 3.6300 (falling)
+[19:54:11] STEP 5: SOXL signal analysis
+[19:54:11]   top same-week correlations:
+[19:54:11]     AMAT: +0.873
+[19:54:11]     QCOM: +0.840
+[19:54:11]     LRCX: +0.833
+[19:54:11]     KLAC: +0.832
+[19:54:11]     MU: +0.817
+[19:54:11]     AMD: +0.797
+[19:54:11]     ARM: +0.789
+[19:54:11]     ACLS: +0.783
+[19:54:11]     NVDA: +0.779
+[19:54:11]     TER: +0.773
+[19:54:11]   SOXL 2w momentum → next-week corr: -0.194
+[19:54:11]   SOXL 4w momentum → next-week corr: -0.284
+[19:54:11]   SOXL 8w momentum → next-week corr: -0.292
+[19:54:11]   SOXL 13w momentum → next-week corr: -0.352
+[19:54:11]   SOXL 26w momentum → next-week corr: -0.437
+[19:54:11]   wrote analysis with 5 findings
+[19:54:11] === SOX intel build done: 2026-05-11T19:54:11.954839 ===

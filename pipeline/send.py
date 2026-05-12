@@ -42,7 +42,7 @@ SIMPLETEXTING_API_KEY = os.environ.get("SIMPLETEXTING_API_KEY", "")
 SIMPLETEXTING_LIST_ID = os.environ.get("SIMPLETEXTING_LIST_ID", "")
 
 # Brevo lists — see instructions/brand-config.md
-BREVO_EMAIL_LIST = 4          # RD Investors - Email (full list)
+BREVO_EMAIL_LIST = 15  # RD - Investors (ai@ account)
 BREVO_INVESTOR_LIST = 5       # RD Investors - SMS (full list)
 BREVO_TEST_LIST = 6           # internal QA list
 

@@ -1,0 +1,100 @@
+{
+  "btc_weekly": {
+    "name": "BTC",
+    "first_date": "2024-05-05",
+    "first": 60805,
+    "peak_date": "2025-09-28",
+    "peak": 122458.56,
+    "trough_date": "2024-09-01",
+    "trough": 54156.33,
+    "current_date": "2026-05-10",
+    "current": 81676.68,
+    "drawdown_from_peak_pct": -33.3,
+    "ytd_or_period_pct": 34.33,
+    "n_bars": 106
+  },
+  "qqq_weekly": {
+    "name": "QQQ",
+    "first_date": "2023-12-31",
+    "first": 396.75,
+    "peak_date": "2026-05-10",
+    "peak": 713.29,
+    "trough_date": "2023-12-31",
+    "trough": 396.75,
+    "current_date": "2026-05-10",
+    "current": 713.29,
+    "drawdown_from_peak_pct": 0.0,
+    "ytd_or_period_pct": 79.78,
+    "n_bars": 124
+  },
+  "uso_weekly": {
+    "name": "USO (oil ETF)",
+    "first_date": "2023-12-31",
+    "first": 69.03,
+    "peak_date": "2026-04-26",
+    "peak": 142.8,
+    "trough_date": "2025-04-27",
+    "trough": 64.01,
+    "current_date": "2026-05-10",
+    "current": 138.66,
+    "drawdown_from_peak_pct": -2.9,
+    "ytd_or_period_pct": 100.87,
+    "n_bars": 124
+  },
+  "usdjpy_weekly": {
+    "name": "USDJPY",
+    "first_date": "2024-05-05",
+    "first": 155.77,
+    "peak_date": "2024-06-23",
+    "peak": 160.87,
+    "trough_date": "2024-09-08",
+    "trough": 140.83,
+    "current_date": "2026-05-10",
+    "current": 157.18,
+    "drawdown_from_peak_pct": -2.29,
+    "ytd_or_period_pct": 0.91,
+    "n_bars": 106
+  },
+  "btc_largest_weekly_drops": [
+    {
+      "week_end": "2026-02-01",
+      "close": 69244.74,
+      "pct": -11.96
+    },
+    {
+      "week_end": "2026-01-25",
+      "close": 78648,
+      "pct": -11.71
+    },
+    {
+      "week_end": "2025-11-16",
+      "close": 84679.9,
+      "pct": -11.37
+    },
+    {
+      "week_end": "2025-02-23",
+      "close": 86018.76,
+      "pct": -10.94
+    },
+    {
+      "week_end": "2024-07-28",
+      "close": 60674.93,
+      "pct": -10.64
+    },
+    {
+      "week_end": "2025-10-05",
+      "close": 110768.89,
+      "pct": -9.55
+    }
+  ],
+  "oct_2025_btc_summary": {
+    "oct_start_close": 118659.97,
+    "oct_low_close": 106463.3,
+    "oct_low_date": "2025-10-17",
+    "oct_end_close": 109552.7,
+    "oct_drawdown_pct": -10.28
+  },
+  "btc_usdjpy_daily_corr_aug_dec_2025": -0.7168873599762366,
+  "btc_oil_daily_return_corr_2024_2026": -0.0024526441947258573,
+  "btc_qqq_daily_return_corr_2024_2026": 0.4280368553983967
+}

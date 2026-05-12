@@ -1,0 +1,188 @@
+{
+  "as_of": "2026-05-10",
+  "next_rebalance": "2026-05-18",
+  "backtest_start": "2022-05-08",
+  "backtest_end": "2026-05-10",
+  "n_weeks": 209,
+  "universe": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "TXN",
+    "QCOM",
+    "INTC",
+    "MU",
+    "AMAT",
+    "LRCX",
+    "KLAC",
+    "ADI",
+    "MRVL",
+    "NXPI",
+    "ON",
+    "MCHP",
+    "MPWR",
+    "ENTG",
+    "SWKS",
+    "QRVO",
+    "TER",
+    "CRUS",
+    "ACLS",
+    "SLAB",
+    "RMBS",
+    "SITM",
+    "SOXX"
+  ],
+  "soxl_benchmark": {
+    "total_return": 7.466874166296124,
+    "ann_return": 0.7014573205952634,
+    "ann_vol": 1.0340976469203547,
+    "sharpe": 0.6783279341987412,
+    "max_drawdown": -0.8634657491398186,
+    "calmar": 0.8123742271121381
+  },
+  "primary": {
+    "params": {
+      "type": "momentum",
+      "lookback": 13,
+      "n_long": 5,
+      "n_short": 0
+    },
+    "metrics": {
+      "total_return": 5.188719290682696,
+      "ann_return": 0.5738136408492867,
+      "ann_vol": 0.3804519935634043,
+      "sharpe": 1.5082419084594902,
+      "max_drawdown": -0.405083888325018,
+      "calmar": 1.4165303962642144
+    },
+    "current_positions": [
+      {
+        "ticker": "INTC",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 129.44
+      },
+      {
+        "ticker": "AMD",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 458.79
+      },
+      {
+        "ticker": "MRVL",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 170.84
+      },
+      {
+        "ticker": "SITM",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 901.48
+      },
+      {
+        "ticker": "MU",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 795.33
+      }
+    ]
+  },
+  "long_short": {
+    "params": {
+      "type": "momentum",
+      "lookback": 13,
+      "n_long": 5,
+      "n_short": 8
+    },
+    "metrics": {
+      "total_return": 1.0691876605148145,
+      "ann_return": 0.1983183752105424,
+      "ann_vol": 0.2301049874923182,
+      "sharpe": 0.8618603941262376,
+      "max_drawdown": -0.4050355992262149,
+      "calmar": 0.4896319622013776
+    },
+    "current_positions": [
+      {
+        "ticker": "INTC",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 129.44
+      },
+      {
+        "ticker": "AMD",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 458.79
+      },
+      {
+        "ticker": "MRVL",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 170.84
+      },
+      {
+        "ticker": "SITM",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 901.48
+      },
+      {
+        "ticker": "MU",
+        "weight": 0.2,
+        "side": "LONG",
+        "price": 795.33
+      },
+      {
+        "ticker": "SLAB",
+        "weight": -0.125,
+        "side": "SHORT",
+        "price": 217.21
+      },
+      {
+        "ticker": "QRVO",
+        "weight": -0.125,
+        "side": "SHORT",
+        "price": 93.41
+      },
+      {
+        "ticker": "SWKS",
+        "weight": -0.125,
+        "side": "SHORT",
+        "price": 70.13
+      },
+      {
+        "ticker": "ENTG",
+        "weight": -0.125,
+        "side": "SHORT",
+        "price": 149.15
+      },
+      {
+        "ticker": "TER",
+        "weight": -0.125,
+        "side": "SHORT",
+        "price": 366.64
+      },
+      {
+        "ticker": "NVDA",
+        "weight": -0.125,
+        "side": "SHORT",
+        "price": 219.44
+      },
+      {
+        "ticker": "CRUS",
+        "weight": -0.125,
+        "side": "SHORT",
+        "price": 174.23
+      },
+      {
+        "ticker": "NXPI",
+        "weight": -0.125,
+        "side": "SHORT",
+        "price": 305.99
+      }
+    ]
+  },
+  "n_strategies_tested": 240
+}

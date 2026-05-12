@@ -1,0 +1,155 @@
+{
+  "consumer_sentiment": {
+    "series_id": "UMCSENT",
+    "latest": 53.3,
+    "latest_date": "2026-03-01",
+    "6m_ago": 53.6,
+    "12m_ago": 52.2,
+    "trend_3m": "falling",
+    "data_points": 23
+  },
+  "credit_card_delinquency": {
+    "series_id": "DRCCLACBS",
+    "latest": 2.94,
+    "latest_date": "2025-10-01",
+    "6m_ago": 3.2,
+    "12m_ago": null,
+    "trend_3m": "falling",
+    "data_points": 7
+  },
+  "personal_savings_rate": {
+    "series_id": "PSAVERT",
+    "latest": 3.6,
+    "latest_date": "2026-03-01",
+    "6m_ago": 4.0,
+    "12m_ago": 5.5,
+    "trend_3m": "falling",
+    "data_points": 23
+  },
+  "nonfarm_payrolls": {
+    "series_id": "PAYEMS",
+    "latest": 158736.0,
+    "latest_date": "2026-04-01",
+    "6m_ago": 158449.0,
+    "12m_ago": 158498.0,
+    "trend_3m": "rising",
+    "data_points": 24
+  },
+  "core_pce_inflation": {
+    "series_id": "PCEPILFE",
+    "latest": 129.279,
+    "latest_date": "2026-03-01",
+    "6m_ago": 127.243,
+    "12m_ago": 125.502,
+    "trend_3m": "rising",
+    "data_points": 23
+  },
+  "recession_indicator": {
+    "series_id": "USREC",
+    "latest": 0.0,
+    "latest_date": "2026-04-01",
+    "6m_ago": 0.0,
+    "12m_ago": 0.0,
+    "trend_3m": "falling",
+    "data_points": 24
+  },
+  "fed_funds_rate": {
+    "series_id": "DFF",
+    "latest": 3.63,
+    "latest_date": "2026-05-08",
+    "6m_ago": 3.64,
+    "12m_ago": 3.64,
+    "trend_3m": "falling",
+    "data_points": 728
+  },
+  "yield_curve_10y_2y": {
+    "series_id": "T10Y2Y",
+    "latest": 0.47,
+    "latest_date": "2026-05-11",
+    "6m_ago": 0.5,
+    "12m_ago": 0.53,
+    "trend_3m": "falling",
+    "data_points": 498
+  },
+  "unemployment_rate": {
+    "series_id": "UNRATE",
+    "latest": 4.3,
+    "latest_date": "2026-04-01",
+    "6m_ago": 4.5,
+    "12m_ago": 4.2,
+    "trend_3m": "falling",
+    "data_points": 23
+  },
+  "industrial_production": {
+    "series_id": "INDPRO",
+    "latest": 101.7898,
+    "latest_date": "2026-03-01",
+    "6m_ago": 101.2195,
+    "12m_ago": 101.1279,
+    "trend_3m": "rising",
+    "data_points": 23
+  },
+  "retail_sales": {
+    "series_id": "RSAFS",
+    "latest": 752063.0,
+    "latest_date": "2026-03-01",
+    "6m_ago": 731051.0,
+    "12m_ago": 721789.0,
+    "trend_3m": "rising",
+    "data_points": 23
+  },
+  "consumer_credit": {
+    "series_id": "TOTALSL",
+    "latest": 5140540.72,
+    "latest_date": "2026-03-01",
+    "6m_ago": 5080672.43,
+    "12m_ago": 5038646.21,
+    "trend_3m": "rising",
+    "data_points": 23
+  },
+  "cpi_all_items": {
+    "series_id": "CPIAUCSL",
+    "latest": 330.293,
+    "latest_date": "2026-03-01",
+    "6m_ago": 324.245,
+    "12m_ago": 319.785,
+    "trend_3m": "rising",
+    "data_points": 22
+  },
+  "wti_crude_oil_price": {
+    "series_id": "DCOILWTICO",
+    "latest": 109.76,
+    "latest_date": "2026-05-04",
+    "6m_ago": 99.89,
+    "12m_ago": 85.91,
+    "trend_3m": "rising",
+    "data_points": 491
+  },
+  "usd_jpy_exchange": {
+    "series_id": "DEXJPUS",
+    "latest": 156.64,
+    "latest_date": "2026-05-08",
+    "6m_ago": 156.76,
+    "12m_ago": 159.44,
+    "trend_3m": "rising",
+    "data_points": 498
+  },
+  "high_yield_spread": {
+    "series_id": "BAMLH0A0HYM2",
+    "latest": 2.81,
+    "latest_date": "2026-05-08",
+    "6m_ago": 2.77,
+    "12m_ago": 2.86,
+    "trend_3m": "rising",
+    "data_points": 523
+  },
+  "effective_fed_funds_rate": {
+    "series_id": "EFFR",
+    "latest": 3.63,
+    "latest_date": "2026-05-08",
+    "6m_ago": 3.64,
+    "12m_ago": 3.64,
+    "trend_3m": "falling",
+    "data_points": 498
+  }
+}

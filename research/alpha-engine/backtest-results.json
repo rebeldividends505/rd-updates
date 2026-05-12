@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-05-12",
+  "strategies": {
+    "macro_rotation": {
+      "label": "Macro Rotation",
+      "total_return": 0.29676944087739066,
+      "cagr": 0.29676944087739066,
+      "ann_vol": 1.1406814698760646,
+      "sharpe": 0.7660502447710291,
+      "max_drawdown": -0.7220563460680458,
+      "weeks": 52,
+      "alpha_vs_hype": -0.305810831883905,
+      "latest_signal": 1.0,
+      "latest_signal_label": "HOLD (1.0x)",
+      "latest_qqq_btc_div": 0.016155895064230763,
+      "weeks_max_long": 25,
+      "weeks_defensive": 4,
+      "weeks_hold": 23
+    },
+    "buy_hold_hype": {
+      "label": "HYPE buy & hold",
+      "total_return": 0.6025802727612957,
+      "cagr": 0.6025802727612957,
+      "ann_vol": 0.9243386560407819,
+      "sharpe": 0.9496852442157608,
+      "max_drawdown": -0.574332525024759,
+      "weeks": 52
+    },
+    "soxl_short_hype_long": {
+      "label": "SOXL-Short + HYPE",
+      "total_return": -0.423146468877983,
+      "cagr": -0.423146468877983,
+      "ann_vol": 1.1695491327711676,
+      "sharpe": 0.09300417862971501,
+      "max_drawdown": -0.7836263747869637,
+      "weeks": 52,
+      "alpha_vs_hype": -1.0257267416392786,
+      "latest_signal_label": "PAIR ON (short SOXL, long HYPE 1.5x)",
+      "latest_soxl_4w": 0.8045974285695163,
+      "weeks_pair_on": 27,
+      "weeks_pair_off": 25
+    },
+    "multi_asset_momentum": {
+      "label": "Multi-Asset Momentum",
+      "total_return": 1.4912958150372413,
+      "cagr": 1.4912958150372413,
+      "ann_vol": 0.6106332900306766,
+      "sharpe": 1.7949555598038787,
+      "max_drawdown": -0.30573318491439017,
+      "weeks": 52,
+      "alpha_vs_hype": 0.8887155422759456,
+      "latest_signal_label": "1.5x BTC / 0.5x ETH",
+      "universe": [
+        "BTC",
+        "ETH",
+        "HYPE"
+      ]
+    }
+  },
+  "winner": {
+    "key": "multi_asset_momentum",
+    "label": "Multi-Asset Momentum",
+    "total_return": 1.4912958150372413,
+    "cagr": 1.4912958150372413,
+    "ann_vol": 0.6106332900306766,
+    "sharpe": 1.7949555598038787,
+    "max_drawdown": -0.30573318491439017,
+    "weeks": 52,
+    "alpha_vs_hype": 0.8887155422759456,
+    "latest_signal_label": "1.5x BTC / 0.5x ETH",
+    "universe": [
+      "BTC",
+      "ETH",
+      "HYPE"
+    ]
+  },
+  "data_range": {
+    "start": "2025-05-25",
+    "end": "2026-05-17",
+    "weeks": 52
+  },
+  "instruments_loaded": [
+    "AMD",
+    "BTC",
+    "ETH",
+    "GLD",
+    "HYPE",
+    "MU",
+    "NVDA",
+    "QQQ",
+    "SOXL",
+    "SOXX",
+    "USO"
+  ]
+}
