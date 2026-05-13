@@ -10,7 +10,7 @@ investor-update-may19-email.html   — table fragment (no DOCTYPE),
 investor-update-may19-webpage.html — full HTML w/ DOCTYPE, for
                                      /daily/2026-05-25/ Elementor page
 sms-subject-may19.txt              — 4 subject options + 2 SMS bodies
-charts/                            — 30 PNG chart assets
+charts/                            — 31 PNG chart assets
 DEPLOYMENT-NOTES.txt               — this file
 
 
@@ -73,7 +73,7 @@ All chart references in HTML use absolute paths:
 https://updates.rebeldividends.com/charts/2026-05-19/<filename>.png
 
 Before deploy:
-- Upload all 30 PNGs in charts/ to public/charts/2026-05-19/ in the repo
+- Upload all 31 PNGs in charts/ to public/charts/2026-05-19/ in the repo
 - Or via Vercel: ensure folder pushed at deploy time
 
 
@@ -110,7 +110,7 @@ SANITY CHECKLIST (before zip / approval)
 [ ] Target ladder math recomputed (today_share × target_hype / today_hype)
 [ ] Week number = 108 (not 107)
 [ ] Date Tuesday May 19, 2026 (not May 13)
-[ ] All ~30 chart PNGs present in charts/ folder
+[ ] All 31 chart PNGs present in charts/ folder
 [ ] 15 hero number cards render correctly (large numbers, dark bg)
 [ ] No DOCTYPE/html/head/body tags in email file
 [ ] No "we called the top" / "sell sell sell" / "guaranteed" language
@@ -124,9 +124,14 @@ SANITY CHECKLIST (before zip / approval)
 [ ] Section "The Safety Case" SOXL vs RD comparison present
 [ ] Section "Forward Macro" 5-pillar chart + calendar present
 [ ] Reply STOP NOT in SMS body (SimpleTexting auto-appends)
+[ ] May 15 OPEX coincidence call-out present in gamma trap section
+[ ] SOXL -45 to -60% single-day callout present in Safety Case
+[ ] Early Warning Dashboard section present with chart
+[ ] 9x leverage-squared amplification fact present in gamma trap opener
+[ ] Reinvestor return = +169% consistent across all references (or matches Tuesday chart)
 
 
-CHART INVENTORY (30 files)
+CHART INVENTORY (31 files)
 --------------------------
 Hero Number Cards (15):
   hero-2-6-trillion.png
@@ -161,6 +166,7 @@ Comparison / Analytical / Explainer (15):
   forward-macro-5-pillars.png      ← THE 5-PILLAR FRAMEWORK
   rotation-trade-table.png
   catalyst-calendar-2026.png
+  early-warning-dashboard.png       ← THE 6-SIGNAL MONITOR
 
 
 NOTES / RISKS
