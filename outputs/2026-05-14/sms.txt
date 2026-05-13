@@ -1,3 +1,12 @@
-SUBJECT: Live 3:30 ET: AI top, CPI truth, BTC rotation, HYPE target ladder
+SUBJECT (email subject line): A Smart Time To Take Profits On Gold, Silver, And Energy — And Buy The RD Dip
 
-SMS: Rebel Dividends: $0.00165 (-3.13%). The unwind is live—SOX -6%, SOXL -20%. $60 HYPE is the next leg up (already touched Sept '25). Live webinar 3:30 PM ET: https://www.rebeldividends.com/startwebinar/ Reply STOP to opt out.
+SMS:
+Rebel Dividends: $0.00165. Gold +8%, Silver +19%, Energy ripped on the war — real gains worth protecting. With Fed cuts on the horizon, we think it's a smart window to trim and rotate into crypto. RD at $0.00165 is the cheapest since Q4 '24. Full macro thesis: https://rebeldividends.com/macro/ Deep-dive: https://updates.rebeldividends.com/daily/2026-05-25
+
+---
+TEMPLATE NOTES:
+- Update share price from RD Daily Gmail
+- SimpleTexting auto-adds "Reply STOP to opt out"
+- Char count above ~330 — may run 2 segments; trim if needed
+- Shorter version if needed:
+  "Rebel Dividends: $0.00165 — cheapest since Q4 '24. Gold/silver/energy worked through Q1, but Fed cuts soften that setup. We're taking some profit and adding to RD. Full thesis: https://rebeldividends.com/macro/"

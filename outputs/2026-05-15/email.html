@@ -1,60 +1,193 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>RD Alpha Engine — Active Strategy for the HYPE Era</title>
-</head>
-<body style="margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:#fff;color:#111;">
-<div style="max-width:680px;margin:0 auto;padding:28px 22px;">
+<!-- SUBJECT: Weekend Math: Your $0.00165 Share When HYPE Hits $60. $90. $180. $360. -->
+<!-- TEMPLATE DATA TO SWAP DAILY (Friday May 15, 2026):
+     {SHARE_PRICE} = update from Gmail "RD Daily" email
+     {DAY_PCT} + {DAY_PCT_COLOR}
+     {HYPE_PRICE} from CoinGecko
+     {WEEK_NUM} = "107"
+     {CHART_FILENAME} = "reinvestor-chart-may15.png" (regenerate)
+     IMPORTANT: if share price or HYPE change, recompute the target ladder math below.
+       Formula per row: today_share × (target_hype / today_hype)
+-->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:700px;margin:0 auto;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;border-collapse:collapse;" bgcolor="#ffffff">
 
-  <div style="text-transform:uppercase;letter-spacing:0.12em;color:#666;font-weight:700;font-size:11px;margin-bottom:6px;">
-    Rebel Dividends · Intelligence Suite — Page 3
-  </div>
-  <h1 style="font-size:28px;font-weight:800;margin:0 0 8px 0;letter-spacing:-0.01em;">
-    RD Alpha Engine — active strategy for the HYPE era
-  </h1>
-  <p style="color:#666;font-size:15px;margin:8px 0 16px 0;">
-    HYPE is on Coinbase. ETFs exist. To stay relevant, RD has to outperform HYPE itself.
-    We built three rules-based strategies, backtested them over 52 weeks, and one is a clear winner.
-  </p>
+<!-- ===== HEADER ===== -->
+<tr><td bgcolor="#0a0a0a" style="background-color:#0a0a0a;padding:18px 22px;border-bottom:4px solid #ff6600;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="color:#ffffff;font-size:18px;font-weight:700;letter-spacing:1px;">REBEL DIVIDENDS</td>
+<td style="text-align:right;color:#cccccc;font-size:13px;">Friday, May 15, 2026 &bull; Week 107</td>
+</tr>
+<tr><td colspan="2" style="padding-top:12px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td bgcolor="#111111" style="background-color:#111111;padding:12px 14px;width:50%;">
+<div style="color:#888888;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;">Share Price</div>
+<div style="color:#ffffff;font-size:22px;font-weight:700;margin-top:2px;">$0.00165</div>
+</td>
+<td bgcolor="#111111" style="background-color:#111111;padding:12px 14px;width:50%;border-left:1px solid #2a2a2a;">
+<div style="color:#888888;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;">Day Over Day</div>
+<div style="color:#4ade80;font-size:22px;font-weight:700;margin-top:2px;">+0.00%</div>
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
 
-  <div style="background:#0d0d0d;color:#fff;border-radius:12px;padding:22px 22px 14px;margin:18px 0;">
-    <h2 style="color:#fff;border-bottom:2px solid #fff;margin-top:0;padding-bottom:8px;font-size:18px;">The 12-month scoreboard</h2>
-    <table style="width:100%;border-collapse:collapse;font-size:14px;color:#fff;">
-      <tr><td style="padding:6px 0;border-bottom:1px solid #2a2a2a;">HYPE buy &amp; hold</td><td style="text-align:right;padding:6px 0;border-bottom:1px solid #2a2a2a;font-weight:800;">+60.3%</td></tr>
-      <tr><td style="padding:6px 0;border-bottom:1px solid #2a2a2a;">A · Macro Rotation</td><td style="text-align:right;padding:6px 0;border-bottom:1px solid #2a2a2a;font-weight:800;color:#bbb;">+29.7% <span style="color:#d12d2d;">(−30.6%)</span></td></tr>
-      <tr><td style="padding:6px 0;border-bottom:1px solid #2a2a2a;">B · SOXL-Short Pair</td><td style="text-align:right;padding:6px 0;border-bottom:1px solid #2a2a2a;font-weight:800;color:#d12d2d;">−42.3% <span>(−102.6%)</span></td></tr>
-      <tr><td style="padding:6px 0;color:#52d18a;font-weight:800;">C · Multi-Asset Momentum</td><td style="text-align:right;padding:6px 0;font-weight:800;color:#52d18a;">+149.1% (+88.9%)</td></tr>
-    </table>
-    <p style="color:#cfcfcf;font-size:12px;margin-top:12px;">Numbers in parens = alpha vs HYPE buy &amp; hold. Strategy C wins on return, sharpe (1.79), and drawdown (−31% vs HYPE's −57%).</p>
-  </div>
+<!-- 20px spacer -->
+<tr><td style="height:20px;line-height:20px;font-size:1px;">&nbsp;</td></tr>
 
-  <h2 style="font-size:18px;font-weight:800;border-bottom:2px solid #111;padding-bottom:8px;margin-top:28px;">Today's live signal</h2>
-  <p style="font-size:15px;">
-    Strategy C (the winner) ranks BTC / ETH / HYPE by 4-week momentum every Sunday close.
-    Top gets 1.5x notional, second gets 0.5x notional. Today's call:
-    <b>1.5x BTC · 0.5x ETH</b>. Execute via Hyperliquid HIP-3 perps using HYPE as collateral.
-  </p>
+<!-- ===== HEADLINE + LEDE ===== -->
+<tr><td style="padding:0 24px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Forward Friday &bull; Pour A Coffee. Read The Whole Thing.</div>
+<h2 style="font-size:26px;line-height:1.25;color:#0a0a0a;margin:0 0 14px 0;font-weight:700;">Weekend Math: Your $0.00165 Share When HYPE Hits $60. $90. $180. $360.</h2>
+<p style="font-size:15px;line-height:1.7;color:#1a1a1a;margin:0 0 14px 0;">It's Friday. The setup we walked through on Tuesday's webinar is two days old. The S&amp;P still sits near highs even as the SOX trade has shown some cooling, the AI capex story is being questioned, and BTC sits 37% off its peak. The week was noisy. <strong>The math underneath is quiet.</strong></p>
+<p style="font-size:15px;line-height:1.7;color:#1a1a1a;margin:0 0 14px 0;">Here's what we want you to do this weekend: pour a coffee, open the <a href="https://rebeldividends.com/forward/" style="color:#0a7c42;text-decoration:underline;font-weight:700;">/forward/ page</a>, and read the full thesis on how Hyperliquid could get to $150 in 12 months or less. Then come back to this email and look at one table: <strong>what every rung of the target ladder would do to your RD share if the case plays through.</strong></p>
+<p style="font-size:15px;line-height:1.7;color:#1a1a1a;margin:0;">The RD share moves with HYPE. Always has. <strong>And the share is currently $0.00165 &mdash; the cheapest it's been since Q4 2024.</strong> The weekly dividend keeps coming. Week 107 just paid. <strong>We think this is a smart window to be adding to RD, not waiting on the sidelines.</strong> The math below shows what each rung of the HYPE ladder would mean for the share &mdash; price only, dividends pay on top.</p>
+</td></tr>
 
-  <h2 style="font-size:18px;font-weight:800;border-bottom:2px solid #111;padding-bottom:8px;margin-top:28px;">What we're watching</h2>
-  <ul style="font-size:14px;line-height:1.6;">
-    <li><b>May 14-15 — Trump-Xi summit.</b> A real handshake re-rates QQQ vs BTC fast.</li>
-    <li><b>May 20 — NVDA earnings.</b> Could finally cool SOXL's parabolic 4-week run (+80.5%).</li>
-    <li><b>Late May — rate cut path.</b> Fed pricing for July is the macro pivot.</li>
-  </ul>
+<!-- 25px spacer -->
+<tr><td style="height:25px;line-height:25px;font-size:1px;">&nbsp;</td></tr>
 
-  <p style="margin-top:22px;">
-    <a href="https://updates.rebeldividends.com/daily/2026-05-15"
-       style="display:inline-block;background:#111;color:#fff;text-decoration:none;font-weight:800;padding:12px 22px;border-radius:8px;font-size:14px;">
-      Open the full Alpha Engine page →
-    </a>
-  </p>
+<!-- ===== THE TARGET LADDER FOR THE SHARE ===== -->
+<tr><td style="padding:0 24px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:6px;">The HYPE Target Ladder, Translated To Your Share</div>
+<div style="font-size:20px;font-weight:700;color:#0a0a0a;margin-bottom:12px;line-height:1.3;">Four Scenarios. None Require A Miracle. All Anchored To Peer Market Caps.</div>
 
-  <p style="color:#666;font-size:11px;margin-top:36px;border-top:1px solid #e6e6e6;padding-top:12px;">
-    Backtest window 2025-05-25 → 2026-05-17 (52 weeks). Data: yfinance + CoinGecko weekly bars.
-    Nothing here is investment advice. Hyperliquid perps are leveraged instruments — size to your own risk tolerance.
-  </p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-size:13px;">
+<tr bgcolor="#0a0a0a">
+<td bgcolor="#0a0a0a" style="padding:10px;color:#ffffff;font-weight:600;">Scenario</td>
+<td bgcolor="#0a0a0a" style="padding:10px;color:#ffffff;font-weight:600;text-align:right;">HYPE</td>
+<td bgcolor="#0a0a0a" style="padding:10px;color:#ffffff;font-weight:600;text-align:right;">RD Share</td>
+<td bgcolor="#0a0a0a" style="padding:10px;color:#ffffff;font-weight:600;text-align:right;">% from $0.00165</td>
+<td bgcolor="#0a0a0a" style="padding:10px;color:#ffffff;font-weight:600;">Anchor</td>
+</tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">90 days</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$60</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;font-weight:700;">$0.00244</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+47.7%</td><td style="padding:10px;border:1px solid #e0e0e0;">Sept 2025 ATH; above Coinbase</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">180 days</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$90</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;font-weight:700;">$0.00365</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+121.4%</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">~32% of Ethereum FDV</td></tr>
+<tr bgcolor="#fffbeb"><td bgcolor="#fffbeb" style="padding:12px 10px;border:1px solid #fbbf24;border-top:3px solid #ff6600;font-weight:700;">12 months</td><td bgcolor="#fffbeb" style="padding:12px 10px;border:1px solid #fbbf24;border-top:3px solid #ff6600;text-align:right;font-weight:700;">$150</td><td bgcolor="#fffbeb" style="padding:12px 10px;border:1px solid #fbbf24;border-top:3px solid #ff6600;text-align:right;font-weight:700;color:#ff6600;">$0.00609</td><td bgcolor="#fffbeb" style="padding:12px 10px;border:1px solid #fbbf24;border-top:3px solid #ff6600;text-align:right;color:#0a7c42;font-weight:700;">+269.0%</td><td bgcolor="#fffbeb" style="padding:12px 10px;border:1px solid #fbbf24;border-top:3px solid #ff6600;font-weight:700;">/forward/ base case</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">1 year</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$180</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;font-weight:700;">$0.00731</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+342.7%</td><td style="padding:10px;border:1px solid #e0e0e0;">~65% of Ethereum</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">2 years</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">$360</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;font-weight:700;">$0.01462</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+786.1%</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Full-cycle bull; category winner</td></tr>
+</table>
+<p style="font-size:12px;line-height:1.55;color:#666666;font-style:italic;margin:10px 0 0 0;">Math: today's $0.00165 share &times; (HYPE target / $40.65 current HYPE). Price scenarios only; dividends pay on top. <a href="https://rebeldividends.com/forward/" style="color:#0a7c42;">The /forward/ page</a> shows the full $100K case with reinvestor compounding stacked in.</p>
+</td></tr>
 
+<!-- 25px spacer -->
+<tr><td style="height:25px;line-height:25px;font-size:1px;">&nbsp;</td></tr>
+
+<!-- ===== WHAT ABOUT THE CASH ON THE SIDELINES ===== -->
+<tr><td style="padding:0 24px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fffbeb;border-left:6px solid #92400e;">
+<tr><td style="padding:18px 22px;">
+<div style="font-size:11px;letter-spacing:2px;color:#92400e;font-weight:700;text-transform:uppercase;margin-bottom:6px;">A Note On The Capital You Already Have</div>
+<div style="font-size:18px;line-height:1.4;color:#0a0a0a;font-weight:700;margin-bottom:10px;">The dollars in gold, silver, and energy did their job. The question is whether they have another leg.</div>
+<p style="font-size:14px;line-height:1.65;color:#1a1a1a;margin:0 0 8px 0;">Gold +8.2% YTD. Silver +18.6% YTD. Both built their gains on inflation fear and war premium &mdash; <strong>two backdrops that historically fade when the Fed cuts</strong>. Energy stocks ran on the same Iran story. None of those three has the same forward catalyst stack that crypto has into the back half: Fed easing, election-cycle liquidity, ETF approvals, and the cleanest fundamentals in the asset class.</p>
+<p style="font-size:14px;line-height:1.65;color:#1a1a1a;margin:0;">If you're sitting on profits in those positions, this weekend is a fair time to think about whether they still have another leg up &mdash; or whether some of that capital might be better deployed into the lagging asset with more beta to the next move. <strong>That's the question we're asking with our own book. Not advice for yours.</strong></p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 25px spacer -->
+<tr><td style="height:25px;line-height:25px;font-size:1px;">&nbsp;</td></tr>
+
+<!-- ===== PRIMARY CTA — /forward/ PAGE ===== -->
+<tr><td align="center" style="padding:0 24px;">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#0a7c42" style="background-color:#0a7c42;border-radius:6px;">
+<a href="https://rebeldividends.com/forward/" style="display:inline-block;padding:16px 32px;font-size:17px;font-weight:700;color:#ffffff;text-decoration:none;letter-spacing:0.5px;">Read &ldquo;How HYPE Hits $150 In 12 Months Or Less&rdquo; &rarr;</a>
+</td></tr>
+</table>
+<div style="font-size:12px;color:#666666;margin-top:8px;">The five catalysts, the math, and the $100K case in full</div>
+</td></tr>
+
+<!-- 25px spacer -->
+<tr><td style="height:25px;line-height:25px;font-size:1px;">&nbsp;</td></tr>
+
+<!-- ===== CHART ===== -->
+<tr><td style="padding:0 24px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:6px;">The Track Record Underneath The Math</div>
+<div style="font-size:18px;font-weight:700;color:#0a0a0a;margin-bottom:10px;line-height:1.3;">$100K Invested At The Pivot: Reinvestor $265K. Collector $192K.</div>
+<img src="https://rebeldividends.com/wp-content/uploads/reinvestor-chart-may15.png" alt="Reinvestor vs Collector since April 2024 pivot" width="650" style="width:100%;max-width:650px;height:auto;display:block;border:0;">
+<p style="font-size:14px;line-height:1.65;color:#444444;margin:10px 0 0 0;font-style:italic;">The reinvestor advantage compounds quietly through every drawdown. The chart includes the August 2025 ATH, the January 2026 capitulation, and last week's pullback. <strong>Reinvestors still beat Collectors by 73 percentage points.</strong></p>
+</td></tr>
+
+<!-- 25px spacer -->
+<tr><td style="height:25px;line-height:25px;font-size:1px;">&nbsp;</td></tr>
+
+<!-- ===== FIVE CATALYSTS ===== -->
+<tr><td style="padding:0 24px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:6px;">What's On The Page &mdash; The Five Catalysts For The $150 Case</div>
+<div style="font-size:18px;font-weight:700;color:#0a0a0a;margin-bottom:12px;line-height:1.3;">None Are Speculative. Each One Is Already Underway.</div>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td style="padding-bottom:10px;">
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;"><strong style="color:#0a7c42;">1. Season 3 builders launching on Hyperliquid.</strong> New protocols deploying = new fee streams = bigger buyback engine.</div>
+</td></tr>
+<tr><td style="padding-bottom:10px;">
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;"><strong style="color:#0a7c42;">2. HIP-4 prediction markets live since May 2.</strong> Opens a $325B market that competitors fragment for $42B today.</div>
+</td></tr>
+<tr><td style="padding-bottom:10px;">
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;"><strong style="color:#0a7c42;">3. RWA and spot-ETF expansion on-chain.</strong> Grayscale custody partnership (April 2026), 21Shares + Bitwise ETF filings pending.</div>
+</td></tr>
+<tr><td style="padding-bottom:10px;">
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;"><strong style="color:#0a7c42;">4. Fed rate cuts.</strong> Consensus expectations have moved to September and December. <strong>Cuts historically reduce the appeal of defensive positions.</strong></div>
+</td></tr>
+<tr><td>
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;"><strong style="color:#0a7c42;">5. Institutional rotation post-cut.</strong> The dollars in gold, the dollars in semis, the dollars in energy &mdash; all looking for the next setup at the same time.</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 25px spacer -->
+<tr><td style="height:25px;line-height:25px;font-size:1px;">&nbsp;</td></tr>
+
+<!-- ===== SECONDARY CTAs ===== -->
+<tr><td style="padding:0 24px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="50%" style="padding-right:8px;vertical-align:top;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0a0a0a;">
+<tr><td style="padding:16px 18px;">
+<div style="font-size:11px;color:#ff6600;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Tuesday's Webinar</div>
+<div style="font-size:15px;font-weight:700;color:#ffffff;margin-bottom:10px;line-height:1.4;">The full broadcast walk-through &mdash; every chart, every assumption.</div>
+<a href="https://rebeldividends.com/startwebinar/" style="display:inline-block;padding:10px 16px;background:#ff6600;color:#ffffff;font-size:13px;font-weight:700;text-decoration:none;border-radius:3px;letter-spacing:0.3px;">Watch Replay &rarr;</a>
+</td></tr>
+</table>
+</td>
+<td width="50%" style="padding-left:8px;vertical-align:top;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0a0a0a;">
+<tr><td style="padding:16px 18px;">
+<div style="font-size:11px;color:#4ade80;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">The Full Deep-Dive</div>
+<div style="font-size:15px;font-weight:700;color:#ffffff;margin-bottom:10px;line-height:1.4;">Every chart from this week's thesis on one page.</div>
+<a href="https://updates.rebeldividends.com/daily/2026-05-25" style="display:inline-block;padding:10px 16px;background:#4ade80;color:#0a0a0a;font-size:13px;font-weight:700;text-decoration:none;border-radius:3px;letter-spacing:0.3px;">Open Page &rarr;</a>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</td></tr>
+
+<!-- 25px spacer -->
+<tr><td style="height:25px;line-height:25px;font-size:1px;">&nbsp;</td></tr>
+
+<!-- ===== DEAN BOX ===== -->
+<tr><td style="padding:0 24px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f8f8f8;border:2px solid #000000;">
+<tr><td style="padding:20px 22px;text-align:center;">
+<div style="font-size:18px;font-weight:700;color:#0a0a0a;margin-bottom:6px;">Weekend questions? Reach Dean.</div>
+<div style="font-size:22px;font-weight:700;color:#0a0a0a;margin-bottom:4px;">505-322-7515</div>
+<div style="font-size:14px;color:#444444;">dean@rebeldividends.com</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 25px spacer -->
+<tr><td style="height:25px;line-height:25px;font-size:1px;">&nbsp;</td></tr>
+
+<!-- ===== DISCLAIMER ===== -->
+<tr><td style="padding:0 24px 30px 24px;">
+<div style="font-size:11px;line-height:1.65;color:#888888;">
+<strong style="color:#666666;">Forward-Looking Statements:</strong> The HYPE target ladder &mdash; $60, $90, $150, $180, $360 &mdash; and the corresponding RD share-price math are hypothetical scenarios based on historical token-issuance and crypto-cycle patterns, not predictions, recommendations, or guarantees. Actual prices could be materially lower, including zero. Past performance does not guarantee future results. References to selling, trimming, or rotating gold, silver, energy, or any other position reflect Rebel Dividends Corporation's own views and positioning &mdash; not recommendations for any individual investor. Selling decisions depend on your tax situation, risk tolerance, and time horizon. Cryptocurrency markets are highly volatile with substantial risk of partial or total loss. This is not financial advice. Consult qualified advisors before any investment decision. Rebel Dividends Corporation experienced significant losses during its prior leveraged ETH strategy (2022&ndash;2024). All performance figures reflect results since the April 2024 pivot to unleveraged, spot HYPE strategy. Fee: 20% management fee on all dividends distributed. Distributions characterized as Return of Capital under IRC &sect;301(c)(2) reduce shareholder cost basis &mdash; consult a tax advisor.
 </div>
-</body>
-</html>
+</td></tr>
+
+</table>

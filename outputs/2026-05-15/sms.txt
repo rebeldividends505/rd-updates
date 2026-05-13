@@ -1,21 +1,13 @@
-SUBJECT: RD Alpha Engine — we backtested 3 strategies, one beat HYPE by 89 points
+SUBJECT (email subject line): Weekend Math: Your $0.00165 Share When HYPE Hits $60. $90. $180. $360.
 
-RD Alpha Engine is live.
+SMS:
+Rebel Dividends: $0.00165 — cheapest since Q4 '24. Weekend math: at $60 HYPE the share = $0.00244 (+48%). At $150, +269%. We think this is a smart spot to add to RD. Pour a coffee and read "How HYPE Hits $150 in 12 Months or Less": https://rebeldividends.com/forward/ Deep-dive: https://updates.rebeldividends.com/daily/2026-05-25
 
-We backtested 3 active strategies on 52 weeks of HYPE/BTC/ETH/equity data:
-
-  HYPE buy & hold:        +60.3%
-  A · Macro Rotation:     +29.7%   (alpha -30.6%, REJECT)
-  B · SOXL-Short Pair:    -42.3%   (alpha -102.6%, REJECT)
-  C · Multi-Asset Momentum: +149.1% (alpha +88.9%, SHIP IT)
-
-Winner: Strategy C — rank BTC/ETH/HYPE by 4-wk momentum, 1.5x top + 0.5x second.
-Sharpe 1.79. Max DD -31% (HYPE's was -57%).
-
-Today's live signal: 1.5x BTC · 0.5x ETH.
-Execute on Hyperliquid HIP-3 perps using HYPE as collateral.
-
-Watching: Trump-Xi May 14-15, NVDA May 20, rate cut path.
-
-Full page + 3 backtest charts:
-https://updates.rebeldividends.com/daily/2026-05-15
+---
+TEMPLATE NOTES:
+- Update share price + HYPE math from RD Daily Gmail
+- Recompute the share-price target if HYPE or share moved meaningfully
+- SimpleTexting auto-adds "Reply STOP"
+- Char count above ~310 — within 2-segment limit
+- Shorter version if needed:
+  "Rebel Dividends: $0.00165 — cheapest since Q4 '24. At $150 HYPE your share = $0.00609 (+269%). We think it's a smart spot to add. Read the case: https://rebeldividends.com/forward/"
