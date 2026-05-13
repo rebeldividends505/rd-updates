@@ -1,0 +1,184 @@
+==============================================================
+REBEL DIVIDENDS — TUESDAY MAY 19, 2026 WEBINAR PACKAGE (v2)
+PRE-BUILD COMPLETE: May 13, 2026
+==============================================================
+
+PACKAGE CONTENTS
+----------------
+investor-update-may19-email.html   — table fragment (no DOCTYPE),
+                                     for iContact / Brevo paste-in
+investor-update-may19-webpage.html — full HTML w/ DOCTYPE, for
+                                     /daily/2026-05-25/ Elementor page
+sms-subject-may19.txt              — 4 subject options + 2 SMS bodies
+charts/                            — 30 PNG chart assets
+DEPLOYMENT-NOTES.txt               — this file
+
+
+TUESDAY MORNING REFRESH CHECKLIST
+---------------------------------
+Every value flagged with <!-- PLACEHOLDER: ... --> in the HTML must be
+updated BEFORE deployment. Search both HTML files for "PLACEHOLDER".
+
+[1] Share Price — pull from RD Daily Gmail subject "RD Daily: $X.XX | Tuesday May 19"
+    Currently set to: $0.00165
+    Updates in: webpage line ~70, email line ~14
+
+[2] Day-Over-Day Return — pull from same Gmail
+    Currently set to: "TBD" (green)
+    Updates in: webpage line ~78, email line ~21
+
+[3] HYPE / BTC prices — CoinGecko Tuesday morning
+    Currently: HYPE $40.07, BTC $80,658
+    Updates in: webpage stats table, email stats table
+
+[4] Portfolio Value / Total Shares / Total Dividends Paid
+    Currently: ~$13.5M / ~7.87B / $21.5M+
+    Refresh from project notes once known
+
+[5] HYPE target ladder — recompute if HYPE moves >5% from $40.07
+    Formula: today_share × (target_hype / today_hype)
+    Targets: $60 / $90 / $150 / $180 / $360
+    Currently uses HYPE $40.07 / share $0.00165 baseline
+    If recomputed: rebuild charts/hype-target-ladder-may19.png
+
+[6] Reinvestor chart — re-run if share price changes from $0.00165:
+    python3 pipeline/gen_pivot_chart.py --date 2026-05-19 --price <NEW> --monthly-div 0.00004
+    Then copy public/charts/2026-05-19/reinvest-since-pivot-may19.png
+    → charts/reinvestor-chart-may19.png
+
+
+TUESDAY MORNING DATA VERIFICATION
+---------------------------------
+[ ] Confirm Warsh confirmation status — has the Senate Chair vote happened?
+    Search: "Kevin Warsh Fed Chair confirmation"
+    If confirmed as CHAIR before Tuesday: lead "What Changed This Week" with
+    the confirmation. If still Board-only: lead with Powell exit Friday +
+    Chair vote imminent.
+
+[ ] Re-verify McElligott data — has a follow-up note been published?
+    Search: "McElligott Nomura site:zerohedge.com" (date sort)
+    If a "gamma cracks" event (SOXL/SMH single-session unwind) occurred
+    between May 13-19: lead the whole webinar with that. Don't sensationalize.
+
+[ ] THYP first-week volume — BeInCrypto / Nasdaq search
+
+[ ] Saylor / Strategy follow-up — any new disclosure?
+
+[ ] BTC ETF flows last 4 weeks — Farside or CoinDesk
+
+
+URL / IMAGE PATH MAP
+--------------------
+All chart references in HTML use absolute paths:
+https://updates.rebeldividends.com/charts/2026-05-19/<filename>.png
+
+Before deploy:
+- Upload all 30 PNGs in charts/ to public/charts/2026-05-19/ in the repo
+- Or via Vercel: ensure folder pushed at deploy time
+
+
+WEBPAGE DEPLOY
+--------------
+1. Copy investor-update-may19-webpage.html → public/daily/2026-05-25.html
+2. Patch src/app/page.tsx constants (share price, HYPE, BTC, week)
+   via pipeline/deploy.py reading deploy-notes.md
+3. Commit + push → Vercel auto-deploys
+
+
+EMAIL DEPLOY (iContact / Brevo)
+-------------------------------
+1. Open iContact / Brevo
+2. New campaign → paste investor-update-may19-email.html into HTML editor
+3. Set subject from sms-subject-may19.txt (pick one)
+4. Preview on mobile + desktop
+5. Send test to Jason/Ryan/Dean first
+
+
+SMS DEPLOY (SimpleTexting)
+--------------------------
+1. New broadcast
+2. Paste body from sms-subject-may19.txt (primary or short alt)
+3. SimpleTexting auto-appends "Reply STOP" — do NOT include manually
+4. Verify URL preview unfurls
+5. Test to Jason/Ryan/Dean first
+
+
+SANITY CHECKLIST (before zip / approval)
+----------------------------------------
+[ ] Share price matches Tuesday's RD Daily Gmail exactly
+[ ] HYPE / BTC prices match Tuesday morning API pull
+[ ] Target ladder math recomputed (today_share × target_hype / today_hype)
+[ ] Week number = 108 (not 107)
+[ ] Date Tuesday May 19, 2026 (not May 13)
+[ ] All ~30 chart PNGs present in charts/ folder
+[ ] 15 hero number cards render correctly (large numbers, dark bg)
+[ ] No DOCTYPE/html/head/body tags in email file
+[ ] No "we called the top" / "sell sell sell" / "guaranteed" language
+[ ] Disclaimer present with McElligott + comparison-table carve-outs
+[ ] Webinar time correct: 3:30 PM ET / 1:30 PM MDT, Tuesday May 19
+[ ] All URLs working: /startwebinar/, /macro/, /forward/, /daily/2026-05-25
+[ ] Powell exit date Friday May 15 confirmed in copy
+[ ] Warsh status updated to match Tuesday morning truth
+[ ] THYP ETF launch date May 12 confirmed
+[ ] Section "Why RD Is The Best Investment" RD row highlighted green
+[ ] Section "The Safety Case" SOXL vs RD comparison present
+[ ] Section "Forward Macro" 5-pillar chart + calendar present
+[ ] Reply STOP NOT in SMS body (SimpleTexting auto-appends)
+
+
+CHART INVENTORY (30 files)
+--------------------------
+Hero Number Cards (15):
+  hero-2-6-trillion.png
+  hero-177-billion.png
+  hero-108-weeks.png
+  hero-share-price.png
+  hero-gold-ath.png
+  hero-silver-ytd.png
+  hero-powell-out.png
+  hero-warsh-in.png
+  hero-thyp-etf.png
+  hero-bull-bear-green.png
+  hero-saylor-buying.png
+  hero-dividends-paid.png
+  hero-reinvestor-return.png
+  hero-hype-target.png
+  hero-six-days.png
+
+Comparison / Analytical / Explainer (15):
+  reinvestor-chart-may19.png       (gen_pivot_chart.py output)
+  ytd-comparison-may19.png
+  best-investment-comparison.png   ← THE PITCH TABLE
+  safety-comparison.png
+  gold-from-ath.png
+  btc-vs-rd-since-pivot.png
+  hype-target-ladder-may19.png
+  108-week-dividend-streak.png
+  warsh-fed-timeline.png
+  gamma-trap-explainer.png
+  levered-etf-aum-growth.png
+  sp-call-volume-record.png
+  forward-macro-5-pillars.png      ← THE 5-PILLAR FRAMEWORK
+  rotation-trade-table.png
+  catalyst-calendar-2026.png
+
+
+NOTES / RISKS
+-------------
+* If a major McElligott follow-up note publishes between May 13 and 19:
+  it becomes the lead. Restructure "What Changed This Week" so the new
+  event is the first block, gamma-trap explainer moves to second.
+
+* Tone: measured / advisory. NOT "we called the top" or "sell sell sell."
+  All forward-looking content framed as "our analysis" or "McElligott's
+  view" with the appropriate carve-out.
+
+* Author always Jason Cox. Dean Gallagher 505-322-7515 / dean@rebeldividends.com
+  is closer + contact box, never byline.
+
+* Test recipients (as of May 7, 2026):
+  Jason  jasonjamescox85@gmail.com  5055956003
+  Ryan   ryan@rebeldividends.com    5052808236
+  Dean   dean@rebeldividends.com    5053227515
+
+End of file.
