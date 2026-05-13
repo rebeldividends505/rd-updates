@@ -1,0 +1,311 @@
+{
+  "initial_capital": 100000.0,
+  "pivot_price": 0.00297,
+  "initial_shares": 33670033.67003367,
+  "final": {
+    "reinvestor_value": 255808.26,
+    "collector_value": 185185.19,
+    "reinvestor_advantage": 70623.07,
+    "reinvestor_pct_gain": 155.80826000000002,
+    "collector_pct_gain": 85.18519
+  },
+  "history": [
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024 (start)",
+      "close": 0.00297,
+      "monthly_div": 0.0,
+      "reinvestor_shares": 33670033.67003367,
+      "reinvestor_value": 100000.0,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 0.0,
+      "collector_value": 100000.0
+    },
+    {
+      "date": "2024-04-28",
+      "label": "Apr 2024",
+      "close": 0.00269,
+      "monthly_div": 0.0003,
+      "reinvestor_shares": 37425056.01,
+      "reinvestor_value": 100673.4,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 10101.01,
+      "collector_value": 100673.4
+    },
+    {
+      "date": "2024-05-28",
+      "label": "May 2024",
+      "close": 0.00353,
+      "monthly_div": 0.00055,
+      "reinvestor_shares": 43256155.39,
+      "reinvestor_value": 152694.23,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 28619.53,
+      "collector_value": 147474.75
+    },
+    {
+      "date": "2024-06-28",
+      "label": "Jun 2024",
+      "close": 0.00225,
+      "monthly_div": 0.0003,
+      "reinvestor_shares": 49023642.78,
+      "reinvestor_value": 110303.2,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 38720.54,
+      "collector_value": 114478.11
+    },
+    {
+      "date": "2024-07-28",
+      "label": "Jul 2024",
+      "close": 0.00234,
+      "monthly_div": 0.00042,
+      "reinvestor_shares": 57822758.15,
+      "reinvestor_value": 135305.25,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 52861.95,
+      "collector_value": 131649.83
+    },
+    {
+      "date": "2024-08-28",
+      "label": "Aug 2024",
+      "close": 0.00175,
+      "monthly_div": 0.00024,
+      "reinvestor_shares": 65752736.41,
+      "reinvestor_value": 115067.29,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 60942.76,
+      "collector_value": 119865.32
+    },
+    {
+      "date": "2024-09-28",
+      "label": "Sep 2024",
+      "close": 0.00153,
+      "monthly_div": 9e-05,
+      "reinvestor_shares": 69620544.43,
+      "reinvestor_value": 106519.43,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 63973.06,
+      "collector_value": 115488.22
+    },
+    {
+      "date": "2024-10-28",
+      "label": "Oct 2024",
+      "close": 0.00237,
+      "monthly_div": 5e-05,
+      "reinvestor_shares": 71089332.29,
+      "reinvestor_value": 168481.72,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 65656.57,
+      "collector_value": 145454.55
+    },
+    {
+      "date": "2024-11-28",
+      "label": "Nov 2024",
+      "close": 0.00275,
+      "monthly_div": 7e-05,
+      "reinvestor_shares": 72898878.93,
+      "reinvestor_value": 200471.92,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 68013.47,
+      "collector_value": 160606.06
+    },
+    {
+      "date": "2024-12-28",
+      "label": "Dec 2024",
+      "close": 0.00337,
+      "monthly_div": 0.0002,
+      "reinvestor_shares": 77225221.89,
+      "reinvestor_value": 260249.0,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 74747.47,
+      "collector_value": 188215.49
+    },
+    {
+      "date": "2025-01-28",
+      "label": "Jan 2025",
+      "close": 0.00302,
+      "monthly_div": 0.0001,
+      "reinvestor_shares": 79782348.44,
+      "reinvestor_value": 240942.69,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 78114.48,
+      "collector_value": 179797.98
+    },
+    {
+      "date": "2025-02-28",
+      "label": "Feb 2025",
+      "close": 0.00286,
+      "monthly_div": 8e-05,
+      "reinvestor_shares": 82014022.53,
+      "reinvestor_value": 234560.1,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 80808.08,
+      "collector_value": 177104.38
+    },
+    {
+      "date": "2025-03-28",
+      "label": "Mar 2025",
+      "close": 0.00182,
+      "monthly_div": 0.0001,
+      "reinvestor_shares": 86520287.5,
+      "reinvestor_value": 157466.92,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 84175.08,
+      "collector_value": 145454.55
+    },
+    {
+      "date": "2025-04-28",
+      "label": "Apr 2025",
+      "close": 0.00223,
+      "monthly_div": 8e-05,
+      "reinvestor_shares": 89624154.32,
+      "reinvestor_value": 199861.86,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 86868.69,
+      "collector_value": 161952.86
+    },
+    {
+      "date": "2025-05-28",
+      "label": "May 2025",
+      "close": 0.00408,
+      "monthly_div": 9e-05,
+      "reinvestor_shares": 91601157.72,
+      "reinvestor_value": 373732.72,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 89898.99,
+      "collector_value": 227272.73
+    },
+    {
+      "date": "2025-06-28",
+      "label": "Jun 2025",
+      "close": 0.00353,
+      "monthly_div": 0.00012,
+      "reinvestor_shares": 94715078.1,
+      "reinvestor_value": 334344.23,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 93939.39,
+      "collector_value": 212794.61
+    },
+    {
+      "date": "2025-07-28",
+      "label": "Jul 2025",
+      "close": 0.00364,
+      "monthly_div": 8e-05,
+      "reinvestor_shares": 96796728.16,
+      "reinvestor_value": 352340.09,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 96633.0,
+      "collector_value": 219191.92
+    },
+    {
+      "date": "2025-08-28",
+      "label": "Aug 2025",
+      "close": 0.00387,
+      "monthly_div": 0.00012,
+      "reinvestor_shares": 99798177.1,
+      "reinvestor_value": 386218.95,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 100673.4,
+      "collector_value": 230976.43
+    },
+    {
+      "date": "2025-09-28",
+      "label": "Sep 2025",
+      "close": 0.00352,
+      "monthly_div": 8e-05,
+      "reinvestor_shares": 102066317.49,
+      "reinvestor_value": 359273.44,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 103367.0,
+      "collector_value": 221885.52
+    },
+    {
+      "date": "2025-10-28",
+      "label": "Oct 2025",
+      "close": 0.00318,
+      "monthly_div": 0.00013,
+      "reinvestor_shares": 106238839.9,
+      "reinvestor_value": 337839.51,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 107744.11,
+      "collector_value": 214814.81
+    },
+    {
+      "date": "2025-11-28",
+      "label": "Nov 2025",
+      "close": 0.00191,
+      "monthly_div": 0.00018,
+      "reinvestor_shares": 116250877.17,
+      "reinvestor_value": 222039.18,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 113804.71,
+      "collector_value": 178114.48
+    },
+    {
+      "date": "2025-12-28",
+      "label": "Dec 2025",
+      "close": 0.00174,
+      "monthly_div": 0.0001,
+      "reinvestor_shares": 122931962.06,
+      "reinvestor_value": 213901.61,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 117171.72,
+      "collector_value": 175757.58
+    },
+    {
+      "date": "2026-01-28",
+      "label": "Jan 2026",
+      "close": 0.00131,
+      "monthly_div": 8e-05,
+      "reinvestor_shares": 130439257.46,
+      "reinvestor_value": 170875.43,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 119865.32,
+      "collector_value": 163973.06
+    },
+    {
+      "date": "2026-02-28",
+      "label": "Feb 2026",
+      "close": 0.00143,
+      "monthly_div": 8e-05,
+      "reinvestor_shares": 137736558.57,
+      "reinvestor_value": 196963.28,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 122558.92,
+      "collector_value": 170707.07
+    },
+    {
+      "date": "2026-03-28",
+      "label": "Mar 2026",
+      "close": 0.0018,
+      "monthly_div": 0.0001,
+      "reinvestor_shares": 145388589.61,
+      "reinvestor_value": 261699.46,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 125925.93,
+      "collector_value": 186531.99
+    },
+    {
+      "date": "2026-04-28",
+      "label": "Apr 2026",
+      "close": 0.001691,
+      "monthly_div": 8e-05,
+      "reinvestor_shares": 152266819.75,
+      "reinvestor_value": 257483.19,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 128619.53,
+      "collector_value": 185555.56
+    },
+    {
+      "date": "2026-05-15",
+      "label": "May 2026 MTD",
+      "close": 0.00164,
+      "monthly_div": 4e-05,
+      "reinvestor_shares": 155980644.62,
+      "reinvestor_value": 255808.26,
+      "collector_shares": 33670033.67003367,
+      "collector_cash": 129966.33,
+      "collector_value": 185185.19
+    }
+  ]
+}
