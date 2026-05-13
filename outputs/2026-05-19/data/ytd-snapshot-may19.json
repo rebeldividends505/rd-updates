@@ -1,0 +1,51 @@
+{
+  "SLV": {
+    "ytd_pct": 23.2,
+    "start_close": 64.42,
+    "latest_close": 79.35,
+    "start_date": "2025-12-31",
+    "latest_date": "2026-05-13"
+  },
+  "GLD": {
+    "ytd_pct": 8.6,
+    "start_close": 396.31,
+    "latest_close": 430.5,
+    "start_date": "2025-12-31",
+    "latest_date": "2026-05-13"
+  },
+  "XLE": {
+    "ytd_pct": 29.7,
+    "start_close": 44.42,
+    "latest_close": 57.63,
+    "start_date": "2025-12-31",
+    "latest_date": "2026-05-13"
+  },
+  "NVDA": {
+    "ytd_pct": 21.1,
+    "start_close": 186.49,
+    "latest_close": 225.83,
+    "start_date": "2025-12-31",
+    "latest_date": "2026-05-13"
+  },
+  "SPY": {
+    "ytd_pct": 9.2,
+    "start_close": 680.06,
+    "latest_close": 742.31,
+    "start_date": "2025-12-31",
+    "latest_date": "2026-05-13"
+  },
+  "QQQ": {
+    "ytd_pct": 16.5,
+    "start_close": 613.54,
+    "latest_close": 714.71,
+    "start_date": "2025-12-31",
+    "latest_date": "2026-05-13"
+  },
+  "BTC-USD": {
+    "ytd_pct": -9.3,
+    "start_close": 87508.83,
+    "latest_close": 79367.65,
+    "start_date": "2025-12-31",
+    "latest_date": "2026-05-13"
+  }
+}

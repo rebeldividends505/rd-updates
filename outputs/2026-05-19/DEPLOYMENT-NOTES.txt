@@ -188,3 +188,84 @@ NOTES / RISKS
   Dean   dean@rebeldividends.com    5053227515
 
 End of file.
+
+
+==============================================================
+v3.1 OPUS AUDIT FIX-ORDER — APPLIED 2026-05-13
+==============================================================
+
+ALL 5 FIXES APPLIED to BOTH email.html AND elementor.html:
+
+[Fix 1] YTD Scoreboard prose reframe
+    Old: "Silver +21.9% YTD. Gold +16.5%. Energy +12.8%. NVDA +17%.
+          RD Reinvestors roughly flat. The lagging-asset rotation
+          hasn't fully arrived yet — that's the point of today's show."
+    New (with live API values): "Silver +23.2% YTD. Gold +8.6%.
+         Energy +29.7%. NVDA +21.1%. ... Flat YTD isn't a problem.
+         It's the entry."
+
+[Fix 2] Math fix in 5 Catalysts table
+    Old: "Warsh era starts 3 days before our webinar"
+    New: "Warsh era starts the Friday before today's broadcast"
+
+[Fix 3] Inserted "If you have cash to deploy:" green callout
+    Location: in "What We're Doing In Our Book" section, after the
+    gray italic "Not advice for yours" carve-out.
+
+[Fix 4] Eyebrow label swap on Why RD section
+    Old: "The Pitch" (elementor: "The Pitch • Compare Your Options")
+    New: "The Case For RD Right Now"
+
+[Fix 5] Inserted "And If We're Early?" dark callout
+    Location: in Early Warning Dashboard section, after the chart
+    image, before the gray italic footer. Closes the timing-anxiety
+    objection by leaning on the dividend structure
+    (dividends #109, #110, #111, #112).
+
+
+==============================================================
+API-1 YTD DATA PULL — yfinance, executed 2026-05-13
+==============================================================
+
+Source file: data/ytd-snapshot-may19.json
+Date range: 2025-12-31 close → 2026-05-13 close
+
+  SLV (Silver):   +23.2%   (was +21.9% in brief — small bump, OK)
+  GLD (Gold):     +8.6%    (was +16.5% in brief — DOWN 7.9pp, FLAG)
+  XLE (Energy):   +29.7%   (was +12.8% in brief — UP 16.9pp, FLAG)
+  NVDA:           +21.1%   (was +17% in brief — UP 4.1pp, OK)
+  SPY:            +9.2%    (reference)
+  QQQ:            +16.5%   (reference)
+  BTC-USD:        -9.3%    (reference, confirms BTC weakness)
+
+>>> JASON: Two values moved >5pp from the brief's May 13 baseline:
+    Gold (-7.9pp) and Energy (+16.9pp).
+    The reframe paragraph in Fix 1 was updated with the LIVE values.
+    Narrative still works — energy/silver/NVDA are clearly the
+    lagging-asset leaders this cycle; gold lagging more than expected
+    actually softens the "everything ran except us" tension. No
+    sentence-level rewrite needed but flagging for your read.
+
+>>> ALSO: Re-pull all of these again Tuesday morning May 19 before
+    going live. The above values are from the May 13 close. Values
+    may shift again by Tuesday.
+
+
+==============================================================
+API-2/API-3/API-4/API-5 — STATUS
+==============================================================
+
+API-2 (Early Warning Dashboard live readings) — DEFERRED to
+      Tuesday May 19 morning refresh pipeline. Dashboard PNG
+      currently uses TBD placeholders per pre-build design.
+
+API-3 (HYPE / BTC sanity check) — DEFERRED to Tuesday morning.
+      Stats panel currently shows HYPE $40.07 / BTC $80,658
+      from May 13. If HYPE moves >5% by Tuesday, recompute
+      HYPE target ladder values.
+
+API-4 (McElligott walk-back check) — MANUAL Perplexity check
+      required Tuesday morning. Log result here.
+
+API-5 (Share price from RD Daily Gmail) — UNCHANGED from v2
+      checklist. 5:30 AM MDT Tuesday Gmail is source of truth.
