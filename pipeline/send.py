@@ -28,7 +28,7 @@ if _ENV_PATH.exists():
         _line = _line.strip()
         if _line and not _line.startswith("#") and "=" in _line:
             _k, _v = _line.split("=", 1)
-            os.environ.setdefault(_k.strip(), _v.strip())
+            os.environ[_k.strip()] = _v.strip()  # always override shell env
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
@@ -58,7 +58,7 @@ TEST_CONTACTS_ALL = [
 TEST_EMAIL = TEST_JASON_ONLY[0]["email"]
 TEST_PHONE = TEST_JASON_ONLY[0]["phone"]
 
-SENDER_EMAIL = "support@rebeldividends.com"
+SENDER_EMAIL = "ai@rebeldividends.com"
 SENDER_NAME = "Rebel Dividends"
 
 
