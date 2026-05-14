@@ -1,0 +1,20 @@
+Thursday May 14, 2026 — Week 106 replay re-push package.
+
+Generated email.html, elementor.html, sms.txt, and deploy-notes.md for the
+standard Thursday format (~85 lines HTML, market hook + replay CTA). RD share
+$0.00164 (flat, +0.0%, gray header), HYPE $40.13, chart pulled from the
+WordPress /2026/05/reinvestor-chart-may14.png path.
+
+Hook: HYPE holding $40 flat — coiled 40% below the September 2025 ATH while
+stocks wobble on trade policy and BTC sits in the $96K range. Framed as
+accumulation, not weakness. CTA is /startwebinar/ (locked to `startwebinar`
+in current-week.md, not /macro/, since Tuesday's Week 106 replay is still
+live). Body walks through the spot 1:1 exposure math ($60 → ~$150K on $100K,
+$150 → ~$374K Reinvestor), reiterates 106 consecutive tax-free dividends
+under IRC §301(c)(2), and pushes Dean's number hard in both the contact box
+and the SMS.
+
+No Tuesday package generated (today is Thursday). All formatting follows
+brand-config.md and format-guide.md: 5-decimal share price, 2-decimal HYPE,
+1-decimal signed day%, gray #888888 for the flat reading, full footer
+disclaimer in three paragraphs, Dean box verbatim.

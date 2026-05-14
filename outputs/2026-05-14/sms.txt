@@ -1,12 +1,3 @@
-SUBJECT (email subject line): A Smart Time To Take Profits On Gold, Silver, And Energy — And Buy The RD Dip
+SUBJECT: HYPE flat at $40 — coiled below ATH. Replay still live.
 
-SMS:
-Rebel Dividends: $0.00165. Gold +8%, Silver +19%, Energy ripped on the war — real gains worth protecting. With Fed cuts on the horizon, we think it's a smart window to trim and rotate into crypto. RD at $0.00165 is the cheapest since Q4 '24. Full macro thesis: https://rebeldividends.com/macro/ Deep-dive: https://updates.rebeldividends.com/daily/2026-05-25
-
----
-TEMPLATE NOTES:
-- Update share price from RD Daily Gmail
-- SimpleTexting auto-adds "Reply STOP to opt out"
-- Char count above ~330 — may run 2 segments; trim if needed
-- Shorter version if needed:
-  "Rebel Dividends: $0.00165 — cheapest since Q4 '24. Gold/silver/energy worked through Q1, but Fed cuts soften that setup. We're taking some profit and adding to RD. Full thesis: https://rebeldividends.com/macro/"
+SMS: RD $0.00164 (+0.0%). HYPE $40.13, holding tight 40% below its Sept ATH while stocks wobble on trade policy. $60 retest = ~50% move. 106 consecutive dividends, tax-free in 2026. Replay: updates.rebeldividends.com. Call Dean: 505-322-7515. Reply STOP to opt out.
