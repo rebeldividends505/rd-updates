@@ -1,20 +1,23 @@
-Thursday May 14, 2026 — Week 106 replay re-push package.
+Thursday May 14, 2026 — Week 106 replay re-push package (rebuilt with confirmed EOD prices).
 
-Generated email.html, elementor.html, sms.txt, and deploy-notes.md for the
-standard Thursday format (~85 lines HTML, market hook + replay CTA). RD share
-$0.00164 (flat, +0.0%, gray header), HYPE $40.13, chart pulled from the
-WordPress /2026/05/reinvestor-chart-may14.png path.
+Rewrote email.html, elementor.html, and sms.txt to reflect confirmed end-of-day
+prices: RD share $0.00172 (up from the $0.00164 open), day +5.0% in GREEN
+(#4ade80), HYPE at $41.19. Header chip flipped from gray flat to green up.
+Chart URL set to https://updates.rebeldividends.com/charts/2026-05-14/reinvest-since-pivot-may14.png
+verbatim in both email and elementor (elementor previously pointed at the
+WordPress /wp-content/uploads/ path — now unified with the email).
 
-Hook: HYPE holding $40 flat — coiled 40% below the September 2025 ATH while
-stocks wobble on trade policy and BTC sits in the $96K range. Framed as
-accumulation, not weakness. CTA is /startwebinar/ (locked to `startwebinar`
-in current-week.md, not /macro/, since Tuesday's Week 106 replay is still
-live). Body walks through the spot 1:1 exposure math ($60 → ~$150K on $100K,
-$150 → ~$374K Reinvestor), reiterates 106 consecutive tax-free dividends
-under IRC §301(c)(2), and pushes Dean's number hard in both the contact box
-and the SMS.
+Tone flipped from "flat/coiled below ATH" to the HYPE-up angle per
+brand-config Content Angle rules: momentum building, thesis playing out,
+breaking up out of accumulation. New H2: "HYPE Pushes Through $41. The
+Thesis Is Playing Out." Math updated to $41 → $60 = 46% move (was $40 →
+$60 = 50%) and "~38% below September ATH" (was 40%). Reinvestor figure
+nudged to ~$280K+ vs $196K Collector = $84K edge.
 
-No Tuesday package generated (today is Thursday). All formatting follows
-brand-config.md and format-guide.md: 5-decimal share price, 2-decimal HYPE,
-1-decimal signed day%, gray #888888 for the flat reading, full footer
-disclaimer in three paragraphs, Dean box verbatim.
+CTA stays /startwebinar/ per current-week.md "Thursday CTA: startwebinar"
+(Week 106 replay still live). Secondary /macro/ reference woven into the
+$150 thesis paragraph as an inline anchor — gives Thursday the
+"/macro/ + startwebinar" dual surface the prompt asked for without
+violating the one-button rule. Dean CTA box, three-paragraph disclaimer,
+and 106 consecutive dividend / IRC §301(c)(2) tax-free framing all
+preserved verbatim. Author = Jason Cox.
