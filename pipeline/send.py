@@ -58,8 +58,9 @@ TEST_CONTACTS_ALL = [
 TEST_EMAIL = TEST_JASON_ONLY[0]["email"]
 TEST_PHONE = TEST_JASON_ONLY[0]["phone"]
 
-SENDER_EMAIL = "ai@rebeldividends.com"
+SENDER_EMAIL = "support@rebeldividends.com"
 SENDER_NAME = "Rebel Dividends"
+BREVO_SENDER_ID = 10  # Brevo sender ID for support@rebeldividends.com (use ID for campaigns to avoid DMARC issues)
 
 
 def load_output(date_str: str) -> dict[str, str]:
@@ -145,7 +146,7 @@ def send_email_brevo(
         # Create campaign
         create_endpoint = "https://api.brevo.com/v3/emailCampaigns"
         payload = {
-            "sender": {"name": SENDER_NAME, "email": SENDER_EMAIL},
+            "sender": {"id": BREVO_SENDER_ID},  # use ID to avoid DMARC campaign rejection
             "name": f"RD Daily — {datetime.now().strftime('%Y-%m-%d %H:%M')}",
             "subject": subject,
             "htmlContent": html_body,
