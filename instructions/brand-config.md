@@ -159,12 +159,12 @@ acceptable as long as every clause above is present.
 - **Stocks red (SOXL/AI down):** Rotate stock profits into RD — AI at 35-45x earnings, overbought
 - **Every day:** $60 target, 106+ consecutive dividends, call Dean 505-322-7515
 
-### SMS Formula (LOCKED — May 7, 2026)
-1. **RD share price + day %** — always first: `RD $0.00179 (-2.8%).`
+### SMS Formula (LOCKED — May 14, 2026)
+1. **Always start with `Rebel Dividends:` — NOT `RD:`** — then share price + day %: `Rebel Dividends: $0.00179 (-2.8%).`
 2. **One brief thesis blurb** — the day's angle (macro, rotation, undervalued)
 3. **Page link:** `updates.rebeldividends.com` — always include
 4. **Call Dean: 505-322-7515** — every SMS, no exceptions
 5. **Reply STOP to opt out** — always last
 - Do NOT lead with dividend count
 - 2 segments (320 chars) is acceptable
-- Example: `RD $0.00179 (-2.8%). Stocks most overbought in history. HYPE 40% from ATH. Rotate now: updates.rebeldividends.com. Call Dean: 505-322-7515. Reply STOP to opt out.`
+- Example: `Rebel Dividends: $0.00179 (-2.8%). Stocks most overbought in history. HYPE 40% from ATH. Rotate now: updates.rebeldividends.com. Call Dean: 505-322-7515. Reply STOP to opt out.`
