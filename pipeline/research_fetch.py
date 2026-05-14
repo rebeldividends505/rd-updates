@@ -21,7 +21,7 @@ from typing import Optional
 SHEET_ID = "1g4N5EEctfd_cu_PPA3FGb8cHxF5OgVOR2qs0b63z82A"
 COINGECKO_URL = (
     "https://api.coingecko.com/api/v3/simple/price"
-    "?ids=hyperliquid&vs_currencies=usd"
+    "?ids=hyperliquid,bitcoin&vs_currencies=usd"
 )
 
 
@@ -89,28 +89,29 @@ def fetch_share_price() -> tuple[str, str]:
     return _format_share_price(flat[0]), _format_day_pct(flat[1])
 
 
-def fetch_hype_price() -> str:
-    """Fetch HYPE spot price (USD), 2 decimals. Tries CoinGecko then Yahoo."""
+def fetch_hype_price() -> tuple[str, str]:
+    """Fetch HYPE and BTC spot prices (USD). Returns (hype_str, btc_str)."""
+    import urllib.request as _ur
     try:
-        import urllib.request
-
-        with urllib.request.urlopen(COINGECKO_URL, timeout=10) as resp:
+        with _ur.urlopen(COINGECKO_URL, timeout=10) as resp:
             data = json.loads(resp.read().decode())
-        price = float(data["hyperliquid"]["usd"])
-        return f"{price:.2f}"
-    except Exception as exc:  # noqa: BLE001 — fallback path
+        hype = float(data["hyperliquid"]["usd"])
+        btc = float(data["bitcoin"]["usd"])
+        return f"{hype:.2f}", f"{btc:,.0f}"
+    except Exception as exc:  # noqa: BLE001
         print(f"[research_fetch] CoinGecko failed: {exc}", file=sys.stderr)
 
+    # Fallback: yfinance for both
     try:
         import yfinance  # type: ignore
-
-        ticker = yfinance.Ticker("HYPE-USD")
-        hist = ticker.history(period="1d")
-        if hist.empty:
-            raise RuntimeError("yfinance returned empty history")
-        price = float(hist["Close"].iloc[-1])
-        return f"{price:.2f}"
-    except Exception as exc:  # noqa: BLE001 — surface to caller
+        hype_hist = yfinance.Ticker("HYPE-USD").history(period="1d")
+        btc_hist = yfinance.Ticker("BTC-USD").history(period="1d")
+        if hype_hist.empty:
+            raise RuntimeError("yfinance returned empty history for HYPE")
+        hype_price = float(hype_hist["Close"].iloc[-1])
+        btc_price = float(btc_hist["Close"].iloc[-1]) if not btc_hist.empty else 0
+        return f"{hype_price:.2f}", f"{btc_price:,.0f}" if btc_price else "unknown"
+    except Exception as exc:  # noqa: BLE001
         raise RuntimeError(f"HYPE price unavailable: {exc}")
 
 
@@ -172,7 +173,7 @@ def main() -> int:
         return 1
 
     try:
-        hype_price = fetch_hype_price()
+        hype_price, btc_price = fetch_hype_price()
     except RuntimeError as exc:
         print(f"[research_fetch] FATAL: {exc}", file=sys.stderr)
         return 1
@@ -185,6 +186,7 @@ def main() -> int:
         "share_price": share_price,
         "day_pct": day_pct,
         "hype_price": hype_price,
+        "btc_price": btc_price,
         "week_number": read_week_number(),
         "tuesday_data": tuesday_data,
         "fetched_at": now.replace(microsecond=0).isoformat(),
