@@ -1,13 +1,4 @@
-SUBJECT (email subject line): Weekend Math: Your $0.00165 Share When HYPE Hits $60. $90. $180. $360.
+SUBJECT: ETFs, Coinbase, a16z — the big money is showing up
 
 SMS:
-Rebel Dividends: $0.00165 — cheapest since Q4 '24. Weekend math: at $60 HYPE the share = $0.00244 (+48%). At $150, +269%. We think this is a smart spot to add to RD. Pour a coffee and read "How HYPE Hits $150 in 12 Months or Less": https://rebeldividends.com/forward/ Deep-dive: https://updates.rebeldividends.com/daily/2026-05-25
-
----
-TEMPLATE NOTES:
-- Update share price + HYPE math from RD Daily Gmail
-- Recompute the share-price target if HYPE or share moved meaningfully
-- SimpleTexting auto-adds "Reply STOP"
-- Char count above ~310 — within 2-segment limit
-- Shorter version if needed:
-  "Rebel Dividends: $0.00165 — cheapest since Q4 '24. At $150 HYPE your share = $0.00609 (+269%). We think it's a smart spot to add. Read the case: https://rebeldividends.com/forward/"
+Rebel Dividends: $0.00183 (+6.03%). HYPE $44.11 — ETFs launched + Coinbase deal. The big money is showing up. Call Dean: 505-322-7515. Reply STOP to opt out.
