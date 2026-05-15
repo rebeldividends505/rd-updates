@@ -147,7 +147,7 @@ def send_email_brevo(
         create_endpoint = "https://api.brevo.com/v3/emailCampaigns"
         payload = {
             "sender": {"id": BREVO_SENDER_ID},  # use ID to avoid DMARC campaign rejection
-            "name": f"RD Daily — {datetime.now().strftime('%Y-%m-%d %H:%M')}",
+            "name": f"RD Daily - {datetime.now().strftime('%Y-%m-%d %H:%M')}",
             "subject": subject,
             "htmlContent": html_body,
             "recipients": {"listIds": list_ids or [BREVO_EMAIL_LIST]},
