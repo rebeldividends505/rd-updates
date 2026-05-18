@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-05-18T17:54:05.203818",
+  "hype_price": 47.55,
+  "hype_24h_change": 5.382885481506762,
+  "btc_price": 76931,
+  "btc_24h_change": -0.6394999688166237,
+  "equities": {
+    "SOXL": {
+      "ytd_pct": 221.2,
+      "peak_pct": 303.1,
+      "peak_date": "2026-05-11"
+    },
+    "GLD": {
+      "ytd_pct": 5.1,
+      "peak_pct": 24.5,
+      "peak_date": "2026-01-29"
+    },
+    "SLV": {
+      "ytd_pct": 6.4,
+      "peak_pct": 60.6,
+      "peak_date": "2026-01-28"
+    },
+    "XLE": {
+      "ytd_pct": 33.6,
+      "peak_pct": 37.9,
+      "peak_date": "2026-03-27"
+    },
+    "NVDA": {
+      "ytd_pct": 17.7,
+      "peak_pct": 24.8,
+      "peak_date": "2026-05-14"
+    },
+    "SPY": {
+      "ytd_pct": 8.4,
+      "peak_pct": 9.8,
+      "peak_date": "2026-05-14"
+    }
+  },
+  "hype_build_delta_pct": 5.8548530721282175
+}
