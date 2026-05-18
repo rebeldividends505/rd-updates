@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Korea Semiconductor Export Tracker — SOX Leading Indicator</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #e5e7eb; font-family: Arial, 'Helvetica Neue', sans-serif; font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 20px; }
+.header { border-bottom: 3px solid #ff6600; padding-bottom: 16px; margin-bottom: 24px; }
+.header h1 { font-size: 22px; color: #fff; font-weight: 700; }
+.header p { color: #888; font-size: 13px; margin-top: 4px; }
+.signal-box { border: 2px solid; border-radius: 6px; padding: 20px 24px; margin-bottom: 28px; }
+.signal-box.red { border-color: #c41e3a; background: #1a0005; }
+.signal-box.yellow { border-color: #fbbf24; background: #1a1500; }
+.signal-box.green { border-color: #0a7c42; background: #001a0a; }
+.signal-label { font-size: 11px; letter-spacing: 2px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+.signal-box.red .signal-label { color: #c41e3a; }
+.signal-box.yellow .signal-label { color: #fbbf24; }
+.signal-box.green .signal-label { color: #4ade80; }
+.signal-headline { font-size: 22px; font-weight: 800; color: #fff; line-height: 1.25; margin-bottom: 10px; }
+.signal-body { font-size: 14px; line-height: 1.7; color: #ccc; }
+.section-title { font-size: 11px; letter-spacing: 2px; color: #ff6600; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
+.data-table { width: 100%; border-collapse: collapse; margin-bottom: 28px; font-size: 13px; }
+.data-table th { background: #1a1a1a; color: #ccc; padding: 10px 12px; border: 1px solid #333; font-weight: 600; text-align: left; }
+.data-table td { padding: 10px 12px; border: 1px solid #222; }
+.data-table tr:nth-child(even) { background: #111; }
+.data-table tr.latest td { background: #1a1000; border-color: #ff6600; font-weight: 700; }
+.data-table tr.flash td { background: #001a10; border-color: #4ade80; }
+.up { color: #4ade80; font-weight: 700; }
+.down { color: #c41e3a; font-weight: 700; }
+.neutral { color: #fbbf24; font-weight: 700; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+.stat-card { background: #111; border: 1px solid #333; border-radius: 4px; padding: 16px 18px; }
+.stat-card .label { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.stat-card .value { font-size: 28px; font-weight: 700; color: #fff; }
+.stat-card .change { font-size: 13px; margin-top: 2px; }
+.explanation { background: #111; border-left: 4px solid #ff6600; padding: 16px 18px; margin-bottom: 28px; font-size: 14px; line-height: 1.7; color: #ccc; }
+.calendar-item { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px solid #1a1a1a; }
+.cal-date { font-size: 12px; color: #888; min-width: 100px; font-weight: 600; }
+.cal-event { font-size: 13px; color: #ccc; }
+.cal-event strong { color: #fff; }
+.footer { font-size: 11px; color: #555; text-align: center; padding-top: 20px; border-top: 1px solid #1a1a1a; margin-top: 32px; line-height: 1.7; }
+.updated { font-size: 11px; color: #555; text-align: right; margin-bottom: 16px; }
+@media(max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+  <h1>🇰🇷 Korea Semiconductor Export Tracker</h1>
+  <p>SOX / SOXL Leading Indicator &bull; Updated when new data is released &bull; Rebel Dividends Research</p>
+</div>
+
+<div class="updated" id="updated-time">Last updated: May 18, 2026 — 1:30 PM MDT</div>
+
+<!-- CURRENT SIGNAL -->
+<div class="signal-label" style="color:#ff6600;margin-bottom:8px;">CURRENT SIGNAL</div>
+<div class="signal-box red" id="signal-box">
+  <div class="signal-label">🔴 CAUTION — REDUCE SOXL</div>
+  <div class="signal-headline">Export Growth At Supercycle Peak. Stock Market Already Pricing The Turn. Reduce On Strength.</div>
+  <div class="signal-body">Korea semiconductor export YoY growth peaked at +182.5% in the April flash and +151.4% in March full-month data — the highest readings of this AI-driven supercycle. Historically, SOX tops 1-3 months <em>after</em> this kind of blow-off in export data. The SOX already gave up 6% in one session last week, suggesting equities are pricing the end ahead of the macro data. SOXL's 3x daily-reset mechanics mean volatility decay works against holders even in sideways markets. <strong>Reduce SOXL on any strength. Do not add.</strong> Watch May 21 flash — if semi exports decelerate below +130% YoY, cut remaining position.</div>
+</div>
+
+<!-- KEY STATS -->
+<div class="grid-2">
+  <div class="stat-card">
+    <div class="label">Latest Semi Export YoY</div>
+    <div class="value up">+182.5%</div>
+    <div class="change neutral">April 1-20 flash (released Apr 21)</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">MoM Rate Change Signal</div>
+    <div class="value down">⚠️ Decelerating</div>
+    <div class="change" style="color:#ccc;">Total exports: March +49.2% → April +48.0%</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">SOX vs 200-Day MA</div>
+    <div class="value down">+53% (peak +64%)</div>
+    <div class="change down">Widest since dot-com peak Mar 2000</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">SOXL YTD Return</div>
+    <div class="value neutral">+291%</div>
+    <div class="change down">-19% in single session last week</div>
+  </div>
+</div>
+
+<!-- HISTORICAL DATA TABLE -->
+<div class="section-title">Korea Semiconductor Export YoY Growth — Monthly History</div>
+<table class="data-table" id="data-table">
+  <thead>
+    <tr><th>Period</th><th>Type</th><th>Semi Export YoY</th><th>Total Export YoY</th><th>SOX Level (approx)</th><th>Signal</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Jun 2024</td><td>Full</td><td class="up">+50.4%</td><td class="up">+5.1%</td><td>5,200</td><td>🟢 Buy</td></tr>
+    <tr><td>Jul 2024</td><td>Full</td><td class="up">+38.4%</td><td class="up">+13.9%</td><td>5,800</td><td>🟢 Buy</td></tr>
+    <tr><td>Aug 2024</td><td>Full</td><td class="up">+38.8%</td><td class="up">+11.4%</td><td>5,100</td><td>🟡 Hold</td></tr>
+    <tr><td>Sep 2024</td><td>Full</td><td class="up">+51.2%</td><td class="up">+7.5%</td><td>5,500</td><td>🟢 Buy</td></tr>
+    <tr><td>Oct 2024</td><td>Full</td><td class="up">+40.3%</td><td class="up">+4.6%</td><td>5,700</td><td>🟡 Hold</td></tr>
+    <tr><td>Nov 2024</td><td>Full</td><td class="up">+32.4%</td><td class="up">+1.4%</td><td>5,900</td><td>🟡 Hold</td></tr>
+    <tr><td>Dec 2024</td><td>Full</td><td class="up">+43.1%</td><td class="up">+6.6%</td><td>5,800</td><td>🟡 Hold</td></tr>
+    <tr><td>Jan 2026</td><td>Full</td><td class="up">+82.4%</td><td class="up">+10.3%</td><td>6,100</td><td>🟡 Hold</td></tr>
+    <tr><td>Feb 2026</td><td>Full</td><td class="up">+109.7%</td><td class="up">+10.6%</td><td>6,500</td><td>🟡 Hold</td></tr>
+    <tr><td>Mar 2026</td><td>Full</td><td class="up">+151.4%</td><td class="up">+49.2%</td><td>6,800</td><td>🟡 Hold (late)</td></tr>
+    <tr class="flash"><td>Apr 1-20</td><td>Flash ⚡</td><td class="up">+182.5%</td><td class="up">+49.4%</td><td>6,700</td><td>🟡 Late cycle</td></tr>
+    <tr class="latest"><td>Apr 2026</td><td>Full ← Latest</td><td class="up">+125.9% ICT</td><td class="neutral">+48.0%</td><td>6,700→6,300</td><td>🔴 Reduce</td></tr>
+    <tr style="background:#1a0a00;"><td>May 1-20</td><td style="color:#ff6600;font-weight:700;">⏳ Next Flash (May 21)</td><td colspan="3" style="color:#666;font-style:italic;">— data releases May 21, 2026 —</td><td>🎯 KEY DATA POINT</td></tr>
+  </tbody>
+</table>
+
+<!-- HOW TO READ THIS -->
+<div class="section-title">How To Read This Data</div>
+<div class="explanation">
+  <strong style="color:#fff;">The leading indicator logic:</strong> Samsung and SK Hynix represent ~70% of global DRAM/HBM production. When their export data moves, it reflects actual hyperscaler purchase orders — weeks before earnings guidance and months before analyst revisions. The SOX index tends to peak 1-3 months <em>after</em> Korean semi export growth peaks.<br><br>
+  <strong style="color:#fff;">What to watch:</strong> The <em>rate of change</em> matters more than the absolute level. +182% looks great until it becomes +140%, then +90%, then +40%. Each step down in YoY growth rate is a step down in the cycle. The blow-off top in exports (March/April 2026) historically precedes the SOX top by 1-3 months — and the SOX already started correcting before the macro data peaked.<br><br>
+  <strong style="color:#fff;">The SOXL-specific problem:</strong> At 85% annualized volatility and 3x daily leverage, SOXL loses ~20% per year to volatility decay even if SOX goes sideways. You need a genuinely rising SOX just to break even. Late-cycle entry into SOXL is a negative-expected-value trade on a long enough horizon.
+</div>
+
+<!-- SIGNAL FRAMEWORK -->
+<div class="section-title">Signal Framework</div>
+<table class="data-table">
+  <thead><tr><th>Signal</th><th>Korea Semi Export YoY Condition</th><th>SOX Condition</th><th>SOXL Action</th></tr></thead>
+  <tbody>
+    <tr><td>🟢 Buy</td><td>YoY growth accelerating, below +60%</td><td>Below 200-day MA or recovering</td><td>Accumulate / Long</td></tr>
+    <tr><td>🟡 Hold</td><td>YoY growth +60% to +120%, stable</td><td>Above 200-day, gap under +30%</td><td>Hold, no new adds</td></tr>
+    <tr><td>🟠 Reduce</td><td>YoY growth +120%+ or decelerating from peak</td><td>Gap to 200-day above +30%</td><td>Trim 25-50%</td></tr>
+    <tr style="background:#1a0005;"><td>🔴 Sell</td><td>YoY growth decelerating >10pp MoM from peak</td><td>SOX -5%+ from recent high</td><td>Cut / Short SOXL</td></tr>
+  </tbody>
+</table>
+
+<!-- NEXT DATA RELEASES -->
+<div class="section-title">Next Data Releases</div>
+<div style="margin-bottom:28px;">
+  <div class="calendar-item">
+    <div class="cal-date" style="color:#ff6600;font-weight:700;">May 21, 2026</div>
+    <div class="cal-event"><strong>Korea Customs Service — May 1-20 Flash Data</strong><br>First 20 days of May semiconductor export growth. If below +130% YoY, major deceleration signal. Released ~9 AM Seoul time (8 PM ET May 20).</div>
+  </div>
+  <div class="calendar-item">
+    <div class="cal-date">Jun 1, 2026</div>
+    <div class="cal-event"><strong>MOTIE — May 2026 Full Month Export Data</strong><br>Complete May figures including chip-specific breakdown. Usually released 1-2 days after month-end.</div>
+  </div>
+  <div class="calendar-item">
+    <div class="cal-date">Jun 21, 2026</div>
+    <div class="cal-event"><strong>Korea Customs — June 1-20 Flash Data</strong><br>Second-derivative read. By this point we'll know if April was the peak.</div>
+  </div>
+</div>
+
+<!-- SOURCE METHODOLOGY -->
+<div class="section-title">Data Sources</div>
+<table class="data-table">
+  <thead><tr><th>Source</th><th>Data</th><th>Frequency</th><th>Free?</th></tr></thead>
+  <tbody>
+    <tr><td>Korea Customs Service</td><td>20-day flash export data</td><td>21st of each month</td><td>✅ Free (press release)</td></tr>
+    <tr><td>MOTIE</td><td>Full monthly trade statistics</td><td>1st-2nd of each month</td><td>✅ Free (press release)</td></tr>
+    <tr><td>Reuters / Bloomberg</td><td>Same data, English coverage</td><td>Same day as release</td><td>✅ Reuters free</td></tr>
+    <tr><td>Korea data.go.kr API</td><td>HS code level (8541/8542)</td><td>Monthly</td><td>✅ Free (registration req)</td></tr>
+    <tr><td>Trading Economics</td><td>Historical time series</td><td>Monthly</td><td>⚠️ Paid for API</td></tr>
+  </tbody>
+</table>
+
+<div class="footer">
+  Research by Rebel Dividends Corporation &bull; updates.rebeldividends.com<br>
+  <strong>This is not financial advice.</strong> This is macroeconomic research for informational purposes only. Past correlations do not guarantee future results. South Korean export data is sourced from publicly available government statistics. SOX levels are approximate and for reference only.<br>
+  Page updates automatically when new data is available. Last manual update: May 18, 2026.
+</div>
+
+</div>
+</body>
+</html>
