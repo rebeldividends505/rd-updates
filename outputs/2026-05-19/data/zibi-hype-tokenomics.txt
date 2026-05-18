@@ -1,0 +1,36 @@
+Based on data from the Hyperliquid protocol and current market metrics as of May 17, 2026, here is the status of the **HYPE** token buyback-and-burn mechanism, supply, and staking.
+
+### **1. Buyback and Burn Status**
+Hyperliquid utilizes an automated "Auto-Fill" (AF) mechanism that uses protocol revenue to buy back HYPE from the open market and permanently burn it.
+
+*   **Total Burned:** Approximately **45.12 million HYPE** (roughly **14.5%** of the initial supply).
+*   **Burn Mechanism:** 
+    *   **Trading Fees:** ~97–100% of all perpetual and spot trading fees are directed toward buybacks.
+    *   **L1 Gas Fees:** 100% of HYPE used for gas on the HyperEVM Layer 1 is burned.
+    *   **Daily Burn Rate:** Currently averaging between **$824,000 and $1.5 million** worth of HYPE burned daily, fueled by nearly **$1 billion** in annual protocol revenue.
+
+### **2. Token Supply & Market Valuation**
+As of today, HYPE is trading at approximately **$43.46**.
+
+| Metric | Value |
+| :--- | :--- |
+| **Current Price** | $43.46 |
+| **Circulating Supply** | ~254.85 million HYPE |
+| **Total Supply** | ~955.17 million HYPE |
+| **Max Supply** | 1,000,000,000 HYPE |
+| **Market Cap (Circulating)** | **$11.08 Billion** |
+| **Fully Diluted Valuation (FDV)** | **$43.46 Billion** |
+
+### **3. Staking Statistics**
+HYPE staking secures the HyperCore (Layer 1) through a Delegated Proof-of-Stake (DPoS) model.
+
+*   **Staking APY:** Estimated at **2.25% – 2.30%**.
+*   **Total Tokens Staked:** ~114.9 million HYPE.
+*   **Staking Ratio:** ~45.15% of the eligible supply is currently staked.
+*   **Reward Source:** Rewards are paid from a dedicated **Future Emissions Reserve**, ensuring that trading fees can remain 100% dedicated to the deflationary burn mechanism.
+*   **Unstaking Period:** There is a **1-day** period to unstake from a validator, followed by an additional **~7-day** withdrawal window to move funds back to a spot account.
+
+### **Summary of Ecosystem Health**
+The "HYPE" ecosystem currently holds over **$5.49 Billion** in Total Value Locked (TVL) across its bridge, HLP vault, and spot orderbook. The aggressive buyback mechanism effectively makes HYPE a deflationary asset relative to protocol growth, with the burn rate scaling directly with trading volume.
+
+*Data Sources: DefiLlama, Hyperliquid Explorer, and Protocol Governance Records.*

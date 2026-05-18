@@ -1,0 +1,49 @@
+Hyperliquid’s HIP-2 (Hyperliquidity) spot markets have seen a massive performance surge in May 2026, driven by institutional adoption (ETFs) and a strategic pivot to USDC as the primary quote asset.
+
+### **Hyperliquid Spot Market Performance Overview**
+According to DefiLlama data, the Hyperliquid Spot Orderbook is currently processing over **$3.2 billion in monthly volume**, showing strong growth momentum.
+
+| Metric | Value | 7d Trend |
+| :--- | :--- | :--- |
+| **24h Volume** | $127.3M | — |
+| **30d Volume** | $3.21B | — |
+| **Volume Growth (7d)** | +77.1% | 📈 Strong Upward |
+| **Spot Market TVL** | $153.0M | 📈 Increasing |
+
+---
+
+### **Top Tokens by TVL & Volume**
+The ecosystem is currently dominated by native liquid staking and lending protocols, which provide the underlying liquidity for spot trading.
+
+**Top Ecosystem Protocols (by TVL):**
+1.  **Hyperliquid Bridge:** $1.22B (Primary gateway for USDC/ETH)
+2.  **Kinetiq kHYPE:** $778M (Leading liquid staking provider)
+3.  **HyperLend Pooled:** $393M (Core lending market)
+4.  **Hyperliquid HLP:** $388M (The protocol's native liquidity vault)
+
+**Most Active Spot Trading Pairs:**
+*   **HYPE/USDC:** The native utility token, currently testing the **$45–$47** range with a $10B+ market cap.
+*   **PURR/USDC:** The primary community/meme token.
+*   **UBTC & UETH:** Bridged "Unit" assets providing deep spot liquidity for majors.
+*   **KNTQ & HAR:** High-velocity ecosystem tokens from Kinetiq and Harmonix Finance.
+
+---
+
+### **Recent Launches & Narrative Shifts (May 2026)**
+The "Mega Month" of May 2026 introduced several high-impact developments:
+
+*   **Spot HYPE ETFs ($THYP, $BHYP):** 21Shares and Bitwise launched the first U.S. spot ETFs for the HYPE token. Notably, the Bitwise ETF includes **native staking rewards**, a first for U.S. institutional crypto products.
+*   **HIP-4 Outcome Markets:** Launched on May 2nd, this prediction market feature allows trading on real-world events (like BTC price direction) using unified cross-margin from spot and perp accounts.
+*   **The USDC Pivot:** Circle and Coinbase have officially partnered with Hyperliquid to establish **USDC as the Aligned Quote Asset (AQA)**. This has effectively phased out the older USDH stablecoin in favor of institutional-grade USDC liquidity.
+*   **SOVRN (Sovrun):** A major new ecosystem project that listed in mid-May and quickly rose into the top volume rankings.
+
+### **Summary Table: Top Hyperliquid Assets**
+| Asset | Category | TVL | Volume Status |
+| :--- | :--- | :--- | :--- |
+| **HYPE** | Native Token | $1.2B (Bridge) | #1 Volume |
+| **kHYPE** | Liquid Staking | $778M | High Utility |
+| **HLP** | LP Vault | $388M | Core Liquidity |
+| **SOVRN** | Ecosystem | New Launch | Trending |
+| **HAR** | Ecosystem | Trending | High Velocity |
+
+*Data as of May 17, 2026. Volumes and TVL sourced from DefiLlama and live market feeds.*

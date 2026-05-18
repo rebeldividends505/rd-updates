@@ -1,0 +1,591 @@
+{
+  "source": "Hyperliquid public API (api.hyperliquid.xyz)",
+  "fetchedAt": "2026-05-17",
+  "endpoints": [
+    "POST /info {type: 'meta'} \u2014 perp markets",
+    "POST /info {type: 'metaAndAssetCtxs'} \u2014 perp markets + live prices",
+    "POST /info {type: 'spotMeta'} \u2014 spot token registry",
+    "POST /info {type: 'spotMetaAndAssetCtxs'} \u2014 spot markets + live prices",
+    "POST /info {type: 'perpDexs'} \u2014 HIP-3 builder deployed perp DEXs"
+  ],
+  "perpetuals": {
+    "totalMarkets": 230,
+    "total24hVolumeUsd": 2010659595.0,
+    "totalOpenInterestUsd": 6207585101.0,
+    "top10ByVolume": [
+      {
+        "name": "BTC",
+        "vol24h": 943520240.0,
+        "oi": 2146541883.0,
+        "markPx": 78017.0
+      },
+      {
+        "name": "ETH",
+        "vol24h": 345055909.0,
+        "oi": 1297143035.0,
+        "markPx": 2181.6
+      },
+      {
+        "name": "HYPE",
+        "vol24h": 325730886.0,
+        "oi": 951488992.0,
+        "markPx": 43.504
+      },
+      {
+        "name": "ZEC",
+        "vol24h": 102531464.0,
+        "oi": 193043507.0,
+        "markPx": 514.44
+      },
+      {
+        "name": "SOL",
+        "vol24h": 94739451.0,
+        "oi": 363990878.0,
+        "markPx": 86.265
+      },
+      {
+        "name": "SUI",
+        "vol24h": 23164320.0,
+        "oi": 33196046.0,
+        "markPx": 1.0625
+      },
+      {
+        "name": "XRP",
+        "vol24h": 19345594.0,
+        "oi": 80934388.0,
+        "markPx": 1.4111
+      },
+      {
+        "name": "TON",
+        "vol24h": 15182618.0,
+        "oi": 72642606.0,
+        "markPx": 1.9111
+      },
+      {
+        "name": "VVV",
+        "vol24h": 15122506.0,
+        "oi": 36888622.0,
+        "markPx": 14.311
+      },
+      {
+        "name": "DOGE",
+        "vol24h": 14045046.0,
+        "oi": 60424962.0,
+        "markPx": 0.11002
+      }
+    ],
+    "top10ByOI": [
+      {
+        "name": "BTC",
+        "oi": 2146541883.0,
+        "vol24h": 943520240.0
+      },
+      {
+        "name": "ETH",
+        "oi": 1297143035.0,
+        "vol24h": 345055909.0
+      },
+      {
+        "name": "HYPE",
+        "oi": 951488992.0,
+        "vol24h": 325730886.0
+      },
+      {
+        "name": "SOL",
+        "oi": 363990878.0,
+        "vol24h": 94739451.0
+      },
+      {
+        "name": "ZEC",
+        "oi": 193043507.0,
+        "vol24h": 102531464.0
+      },
+      {
+        "name": "XRP",
+        "oi": 80934388.0,
+        "vol24h": 19345594.0
+      },
+      {
+        "name": "TON",
+        "oi": 72642606.0,
+        "vol24h": 15182618.0
+      },
+      {
+        "name": "ASTER",
+        "oi": 64494974.0,
+        "vol24h": 1141589.0
+      },
+      {
+        "name": "DOGE",
+        "oi": 60424962.0,
+        "vol24h": 14045046.0
+      },
+      {
+        "name": "AAVE",
+        "oi": 50911449.0,
+        "vol24h": 5810432.0
+      }
+    ]
+  },
+  "spotMeta": {
+    "summary": {
+      "totalSpotMarkets": 297,
+      "canonicalMarkets": 1,
+      "hipTwoNonCanonicalMarkets": 296,
+      "totalTokensRegistered": 458,
+      "activeMarketsWithVolume": 87,
+      "total24hVolumeUsd": 105394703.0,
+      "topMarket": "WOW/USDC",
+      "topMarketVol24h": 67726320.26
+    },
+    "top30ByVolume": [
+      {
+        "name": "@109",
+        "displayName": "WOW/USDC",
+        "index": 109,
+        "isCanonical": false,
+        "baseTokenName": "WOW",
+        "baseTokenIndex": 98,
+        "markPx": 43.484,
+        "prevDayPx": 40.843,
+        "pctChange24h": 6.47,
+        "dayNtlVlmUsd": 67726320.26,
+        "circulatingSupply": "298759076.7570492029"
+      },
+      {
+        "name": "@144",
+        "displayName": "NEKO/USDC",
+        "index": 144,
+        "isCanonical": false,
+        "baseTokenName": "NEKO",
+        "baseTokenIndex": 190,
+        "markPx": 78042.0,
+        "prevDayPx": 78176.0,
+        "pctChange24h": -0.17,
+        "dayNtlVlmUsd": 17232845.06,
+        "circulatingSupply": "20999999.9976587594"
+      },
+      {
+        "name": "@155",
+        "displayName": "QUANT/USDC",
+        "index": 155,
+        "isCanonical": false,
+        "baseTokenName": "QUANT",
+        "baseTokenIndex": 251,
+        "markPx": 2181.4,
+        "prevDayPx": 2174.1,
+        "pctChange24h": 0.34,
+        "dayNtlVlmUsd": 4414494.2,
+        "circulatingSupply": "99999999.9790751636"
+      },
+      {
+        "name": "@160",
+        "displayName": "BUDDY/USDC",
+        "index": 160,
+        "isCanonical": false,
+        "baseTokenName": "BUDDY",
+        "baseTokenIndex": 222,
+        "markPx": 86.259,
+        "prevDayPx": 86.624,
+        "pctChange24h": -0.42,
+        "dayNtlVlmUsd": 3140417.2,
+        "circulatingSupply": "499999999.8079088926"
+      },
+      {
+        "name": "@245",
+        "displayName": "NBT/USDC",
+        "index": 245,
+        "isCanonical": false,
+        "baseTokenName": "NBT",
+        "baseTokenIndex": 382,
+        "markPx": 1.0002,
+        "prevDayPx": 1.0002,
+        "pctChange24h": 0.0,
+        "dayNtlVlmUsd": 2502787.2,
+        "circulatingSupply": "99999999999.98097229"
+      },
+      {
+        "name": "@247",
+        "displayName": "FI/USDC",
+        "index": 247,
+        "isCanonical": false,
+        "baseTokenName": "FI",
+        "baseTokenIndex": 284,
+        "markPx": 43.475,
+        "prevDayPx": 40.849,
+        "pctChange24h": 6.43,
+        "dayNtlVlmUsd": 1768041.42,
+        "circulatingSupply": "298759076.7570492029"
+      },
+      {
+        "name": "@288",
+        "displayName": "QQQ/USDC",
+        "index": 288,
+        "isCanonical": false,
+        "baseTokenName": "QQQ",
+        "baseTokenIndex": 426,
+        "markPx": 514.37,
+        "prevDayPx": 503.24,
+        "pctChange24h": 2.21,
+        "dayNtlVlmUsd": 1748527.03,
+        "circulatingSupply": "20999999.9964661673"
+      },
+      {
+        "name": "@270",
+        "displayName": "SOON/USDC",
+        "index": 270,
+        "isCanonical": false,
+        "baseTokenName": "SOON",
+        "baseTokenIndex": 410,
+        "markPx": 0.14999,
+        "prevDayPx": 0.138,
+        "pctChange24h": 8.69,
+        "dayNtlVlmUsd": 1152487.56,
+        "circulatingSupply": "999999999.9320914745"
+      },
+      {
+        "name": "@173",
+        "displayName": "RUB/USDC",
+        "index": 173,
+        "isCanonical": false,
+        "baseTokenName": "RUB",
+        "baseTokenIndex": 277,
+        "markPx": 0.99968,
+        "prevDayPx": 0.99977,
+        "pctChange24h": -0.01,
+        "dayNtlVlmUsd": 1137516.16,
+        "circulatingSupply": "184467440737.0527648926"
+      },
+      {
+        "name": "@276",
+        "displayName": "GLD/USDC",
+        "index": 276,
+        "isCanonical": false,
+        "baseTokenName": "GLD",
+        "baseTokenIndex": 432,
+        "markPx": 393.56,
+        "prevDayPx": 387.02,
+        "pctChange24h": 1.69,
+        "dayNtlVlmUsd": 796762.7,
+        "circulatingSupply": "19999999.4213217087"
+      },
+      {
+        "name": "@250",
+        "displayName": "KHYPE/USDC",
+        "index": 250,
+        "isCanonical": false,
+        "baseTokenName": "KHYPE",
+        "baseTokenIndex": 121,
+        "markPx": 2181.0,
+        "prevDayPx": 2174.1,
+        "pctChange24h": 0.32,
+        "dayNtlVlmUsd": 620693.13,
+        "circulatingSupply": "99999999.9790751636"
+      },
+      {
+        "name": "@198",
+        "displayName": "WOULD/USDC",
+        "index": 198,
+        "isCanonical": false,
+        "baseTokenName": "WOULD",
+        "baseTokenIndex": 318,
+        "markPx": 0.0017462,
+        "prevDayPx": 0.0017528,
+        "pctChange24h": -0.38,
+        "dayNtlVlmUsd": 597809.89,
+        "circulatingSupply": "999999999839.271484375"
+      },
+      {
+        "name": "@249",
+        "displayName": "RISK/USDC",
+        "index": 249,
+        "isCanonical": false,
+        "baseTokenName": "RISK",
+        "baseTokenIndex": 260,
+        "markPx": 78026.0,
+        "prevDayPx": 78224.0,
+        "pctChange24h": -0.25,
+        "dayNtlVlmUsd": 470234.43,
+        "circulatingSupply": "20999999.9976587594"
+      },
+      {
+        "name": "PURR/USDC",
+        "displayName": "PURR/USDC",
+        "index": 0,
+        "isCanonical": true,
+        "baseTokenName": "PURR",
+        "baseTokenIndex": 1,
+        "markPx": 0.068384,
+        "prevDayPx": 0.062958,
+        "pctChange24h": 8.62,
+        "dayNtlVlmUsd": 405533.99,
+        "circulatingSupply": "595509378.131469965"
+      },
+      {
+        "name": "@153",
+        "displayName": "FEUSD/USDC",
+        "index": 153,
+        "isCanonical": false,
+        "baseTokenName": "FEUSD",
+        "baseTokenIndex": 241,
+        "markPx": 0.9999,
+        "prevDayPx": 1.0003,
+        "pctChange24h": -0.04,
+        "dayNtlVlmUsd": 260910.61,
+        "circulatingSupply": "100000000000.0"
+      },
+      {
+        "name": "@301",
+        "displayName": "RIVER/USDC",
+        "index": 301,
+        "isCanonical": false,
+        "baseTokenName": "RIVER",
+        "baseTokenIndex": 447,
+        "markPx": 0.009504,
+        "prevDayPx": 0.009478,
+        "pctChange24h": 0.27,
+        "dayNtlVlmUsd": 210814.49,
+        "circulatingSupply": "1006904799.4895919561"
+      },
+      {
+        "name": "@166",
+        "displayName": "USDT0/USDC",
+        "index": 166,
+        "isCanonical": false,
+        "baseTokenName": "USDT0",
+        "baseTokenIndex": 268,
+        "markPx": 0.19204,
+        "prevDayPx": 0.19326,
+        "pctChange24h": -0.63,
+        "dayNtlVlmUsd": 166066.38,
+        "circulatingSupply": "999999976.5536930561"
+      },
+      {
+        "name": "@272",
+        "displayName": "UZEC/USDC",
+        "index": 272,
+        "isCanonical": false,
+        "baseTokenName": "UZEC",
+        "baseTokenIndex": 419,
+        "markPx": 0.034044,
+        "prevDayPx": 0.033944,
+        "pctChange24h": 0.29,
+        "dayNtlVlmUsd": 161780.96,
+        "circulatingSupply": "184467440736.419708252"
+      },
+      {
+        "name": "@277",
+        "displayName": "BNB0/USDC",
+        "index": 277,
+        "isCanonical": false,
+        "baseTokenName": "BNB0",
+        "baseTokenIndex": 436,
+        "markPx": 0.003795,
+        "prevDayPx": 0.003645,
+        "pctChange24h": 4.12,
+        "dayNtlVlmUsd": 146463.44,
+        "circulatingSupply": "999999999.269477725"
+      },
+      {
+        "name": "@271",
+        "displayName": "HOOD/USDC",
+        "index": 271,
+        "isCanonical": false,
+        "baseTokenName": "HOOD",
+        "baseTokenIndex": 415,
+        "markPx": 43.445,
+        "prevDayPx": 40.814,
+        "pctChange24h": 6.45,
+        "dayNtlVlmUsd": 120242.39,
+        "circulatingSupply": "298759076.7570492029"
+      },
+      {
+        "name": "@191",
+        "displayName": "TRADE/USDC",
+        "index": 191,
+        "isCanonical": false,
+        "baseTokenName": "TRADE",
+        "baseTokenIndex": 281,
+        "markPx": 4537.7,
+        "prevDayPx": 4526.0,
+        "pctChange24h": 0.26,
+        "dayNtlVlmUsd": 93502.31,
+        "circulatingSupply": "184467440737.077331543"
+      },
+      {
+        "name": "@303",
+        "displayName": "TAO1/USDC",
+        "index": 303,
+        "isCanonical": false,
+        "baseTokenName": "TAO1",
+        "baseTokenIndex": 449,
+        "markPx": 0.062375,
+        "prevDayPx": 0.062649,
+        "pctChange24h": -0.44,
+        "dayNtlVlmUsd": 68617.96,
+        "circulatingSupply": "99999999999.8415679932"
+      },
+      {
+        "name": "@333",
+        "displayName": "MU/USDC",
+        "index": 333,
+        "isCanonical": false,
+        "baseTokenName": "MU",
+        "baseTokenIndex": 435,
+        "markPx": 0.12952,
+        "prevDayPx": 0.13559,
+        "pctChange24h": -4.48,
+        "dayNtlVlmUsd": 62538.39,
+        "circulatingSupply": "999999999.8126622438"
+      },
+      {
+        "name": "@223",
+        "displayName": "PUP/USDC",
+        "index": 223,
+        "isCanonical": false,
+        "baseTokenName": "PUP",
+        "baseTokenIndex": 356,
+        "markPx": 0.086025,
+        "prevDayPx": 0.086585,
+        "pctChange24h": -0.65,
+        "dayNtlVlmUsd": 57262.19,
+        "circulatingSupply": "9999999987.9648742676"
+      },
+      {
+        "name": "@217",
+        "displayName": "RZR/USDC",
+        "index": 217,
+        "isCanonical": false,
+        "baseTokenName": "RZR",
+        "baseTokenIndex": 348,
+        "markPx": 43.613,
+        "prevDayPx": 40.899,
+        "pctChange24h": 6.64,
+        "dayNtlVlmUsd": 51448.93,
+        "circulatingSupply": "298759076.7570492029"
+      },
+      {
+        "name": "@331",
+        "displayName": "ORCL/USDC",
+        "index": 331,
+        "isCanonical": false,
+        "baseTokenName": "ORCL",
+        "baseTokenIndex": 430,
+        "markPx": 0.012433,
+        "prevDayPx": 0.012566,
+        "pctChange24h": -1.06,
+        "dayNtlVlmUsd": 38226.32,
+        "circulatingSupply": "999998618.8836692572"
+      },
+      {
+        "name": "@182",
+        "displayName": "XAUT0/USDC",
+        "index": 182,
+        "isCanonical": false,
+        "baseTokenName": "XAUT0",
+        "baseTokenIndex": 297,
+        "markPx": 0.6506,
+        "prevDayPx": 0.6227,
+        "pctChange24h": 4.48,
+        "dayNtlVlmUsd": 34662.07,
+        "circulatingSupply": "20999999.6280112788"
+      },
+      {
+        "name": "@266",
+        "displayName": "GOOGL/USDC",
+        "index": 266,
+        "isCanonical": false,
+        "baseTokenName": "GOOGL",
+        "baseTokenIndex": 412,
+        "markPx": 44.264,
+        "prevDayPx": 41.601,
+        "pctChange24h": 6.4,
+        "dayNtlVlmUsd": 28373.82,
+        "circulatingSupply": "184467440584.8647766113"
+      },
+      {
+        "name": "@157",
+        "displayName": "RAT/USDC",
+        "index": 157,
+        "isCanonical": false,
+        "baseTokenName": "RAT",
+        "baseTokenIndex": 253,
+        "markPx": 0.99382,
+        "prevDayPx": 0.99487,
+        "pctChange24h": -0.11,
+        "dayNtlVlmUsd": 21355.37,
+        "circulatingSupply": "8888888885.8876113892"
+      },
+      {
+        "name": "@258",
+        "displayName": "STABLE/USDC",
+        "index": 258,
+        "isCanonical": false,
+        "baseTokenName": "STABLE",
+        "baseTokenIndex": 398,
+        "markPx": 0.027969,
+        "prevDayPx": 0.02772,
+        "pctChange24h": 0.9,
+        "dayNtlVlmUsd": 20358.14,
+        "circulatingSupply": "99999999991.3243713379"
+      }
+    ]
+  },
+  "hip3BuilderDexs": {
+    "note": "Builder-deployed perp DEXs on HyperCore via HIP-3",
+    "totalDexs": 8,
+    "dexList": [
+      {
+        "name": "xyz",
+        "fullName": "XYZ",
+        "assetsCount": 77,
+        "note": "Stocks, commodities, forex, crypto indices"
+      },
+      {
+        "name": "flx",
+        "fullName": "Felix Exchange",
+        "assetsCount": 15
+      },
+      {
+        "name": "vntl",
+        "fullName": "Ventuals",
+        "assetsCount": 15
+      },
+      {
+        "name": "hyna",
+        "fullName": "HyENA",
+        "assetsCount": 24
+      },
+      {
+        "name": "km",
+        "fullName": "Markets by Kinetiq",
+        "assetsCount": 22
+      },
+      {
+        "name": "abcd",
+        "fullName": "ABCDEx",
+        "assetsCount": 0
+      },
+      {
+        "name": "cash",
+        "fullName": "dreamcash",
+        "assetsCount": 15
+      },
+      {
+        "name": "para",
+        "fullName": "Paragon",
+        "assetsCount": 3
+      }
+    ]
+  },
+  "keyStats": {
+    "totalSpotMarketsListed": 297,
+    "totalSpotTokensRegistered": 458,
+    "activeSpotMarkets": 87,
+    "spot24hVolumeUsd": 105394703.0,
+    "perp24hVolumeUsd": 2010659595.0,
+    "perpOpenInterestUsd": 6207585101.0,
+    "totalPerpMarkets": 230,
+    "combinedVolumeUsd": 2116054298.0
+  }
+}

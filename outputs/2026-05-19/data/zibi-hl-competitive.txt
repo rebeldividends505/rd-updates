@@ -1,0 +1,34 @@
+In the last 30 days, **Hyperliquid** has significantly outperformed dYdX, GMX, and Vertex in trading volume and fee generation, establishing itself as the dominant decentralized perpetual exchange (Perp DEX) by a wide margin.
+
+### **30-Day Performance Comparison**
+*Data covers the 30-day period ending May 17, 2026.*
+
+| Metric | **Hyperliquid** | **dYdX (V4)** | **GMX (V2)** | **Vertex** |
+| :--- | :--- | :--- | :--- | :--- |
+| **Trading Volume** | **$175.30B** | $3.83B | $2.89B | $1.52B* |
+| **Fees Generated** | **$54.86M** | $0.30M | $2.06M | $0.45M* |
+| **Open Interest** | **$1.84B** | $0.24B | $0.21B | $0.06B* |
+| **Market Share (Vol)** | **~53.8%** | ~1.2% | ~0.9% | ~0.5% |
+
+*\*Vertex figures are estimated based on 7-day trailing averages due to limited 30-day API availability.*
+
+---
+
+### **Key Insights**
+
+#### **1. Volume & Market Dominance**
+Hyperliquid has separated itself from the pack, processing over **$175B** in volume over the last 30 days. This accounts for more than **half of the total Perp DEX market share** (approx. 53.8% of the ~$325B total sector volume). In contrast, dYdX and GMX, once the primary leaders, now represent roughly 1% of market share each.
+
+#### **2. Fee Efficiency**
+Hyperliquid generated **$54.86M** in fees, dwarfing the combined earnings of its competitors. GMX remains more "fee-dense" relative to its volume ($2.06M fees on $2.89B volume) compared to dYdX ($0.30M fees on $3.83B volume), reflecting GMX's higher take-rate model versus dYdX's high-throughput, lower-fee approach.
+
+#### **3. Open Interest (OI)**
+Hyperliquid's Open Interest stands at **$1.84B**, indicating deep liquidity and a high level of sustained trader positioning. This is nearly **8x higher** than dYdX and GMX, suggesting that Hyperliquid is not just capturing high-frequency wash trading but is the preferred venue for institutional-sized directional bets.
+
+#### **4. Ecosystem Trends**
+*   **Hyperliquid:** Continues to grow on its dedicated L1, benefiting from vertical integration.
+*   **dYdX:** Transitioning almost entirely to its V4 chain; V3 activity has largely dissipated.
+*   **GMX:** Volume is now almost entirely concentrated in V2 (Arbitrum and Avalanche), with V1 effectively sunsetting.
+*   **Vertex:** Maintains a steady but smaller niche on Arbitrum, trailing the leaders in absolute capital.
+
+**Methodology Note:** Market share is calculated against the total 30-day derivatives volume of $325.5B tracked by DefiLlama. All figures are in USD. Data fetched on May 17, 2026.

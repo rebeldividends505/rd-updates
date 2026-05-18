@@ -1,0 +1,29 @@
+As of May 17, 2026, Hyperliquid continues to be a dominant force in the perpetual exchange market. Based on data from DefiLlama and recent market reports, here is the breakdown of its current open interest and the largest liquidation events from the past week.
+
+### **Hyperliquid Total Open Interest**
+According to DefiLlama, the current total open interest (OI) for Hyperliquid is approximately **$8.71 billion**.
+
+While the API provides a protocol-wide total, the platform's open interest is heavily concentrated in major assets and its native ecosystem tokens. The primary contributors to this OI include:
+*   **Major Assets:** BTC and ETH perps consistently make up the bulk of the notional value.
+*   **Native Ecosystem:** The **HYPE** token has seen a massive surge in interest following the Nasdaq listing of the first spot Hyperliquid ETF (ticker: **THYP**) on May 12, 2026.
+*   **Interfaces:** Significant OI is also routed through various interfaces like **tradeXYZ** ($2.36B) and **HYENA** ($47.6M), which trade directly on the Hyperliquid L1.
+
+---
+
+### **Largest Liquidations (Past 7 Days)**
+The past week (May 10–17, 2026) was characterized by extreme volatility, leading to several high-profile "whale" liquidations as the market experienced a mid-week retracement.
+
+| Date | Asset(s) | Liquidation Value | Details |
+| :--- | :--- | :--- | :--- |
+| **May 14** | BTC & ETH | **$79.3 Million** | A single whale account saw the forced closure of long positions involving 8,872 ETH and 745.9 BTC. |
+| **May 14–15** | XYZ:COIN | **$2.94M – $29.37M*** | A single liquidation order on the XYZ:COIN-USD pair; reports on the final notional value vary between sources. |
+| **May 11** | HYPE | **$275,580 (Total)** | 24-hour liquidation volume for HYPE perps, with the largest single long order liquidated at **$143,850**. |
+
+*\*Note: High-end figures for the XYZ liquidation are cited by some on-chain monitors but haven't been universally confirmed across all data providers.*
+
+### **Current Risk Monitoring**
+As of today, May 17, market participants are closely watching several high-leverage positions that are nearing their "liquidation price" due to a 10% daily dip in ETH and HYPE:
+*   **Whale "Maji":** Currently holding an unrealized loss exceeding **$30 million**, including a 5,250 ETH long at 25x leverage.
+*   **HYPE Longs:** A notable **$7.78 million** long position in HYPE is currently at risk, with a liquidation trigger price of **$32.80**.
+
+Hyperliquid's daily liquidation totals have frequently exceeded **$400 million** this week during peak volatility, primarily impacting long positions.

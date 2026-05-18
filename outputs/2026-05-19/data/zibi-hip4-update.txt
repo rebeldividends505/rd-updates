@@ -1,0 +1,39 @@
+Hyperliquid **HIP-4 (Outcome Trading)** officially launched on the mainnet on **May 2, 2026**. It represents a native integration of prediction markets into Hyperliquid’s L1 infrastructure, allowing event-based contracts to be traded with the same speed and unified margin as perpetuals and spot assets.
+
+### **What are HIP-4 Prediction Markets?**
+HIP-4 introduces **Outcome Tokens**, which are fully collateralized binary contracts.
+*   **Settlement:** They settle at either 0 or 1 (representing a $0 to $1 range).
+*   **No Liquidation:** Unlike perpetuals, these are non-leveraged and carry no liquidation risk.
+*   **Unified Margin:** They are integrated into the user's primary margin pool, meaning you can use the same collateral to trade perps and hedge with prediction markets simultaneously.
+*   **Permissionless Deployment:** Any builder can deploy a market by staking **1 million HYPE** tokens.
+
+### **Live Markets**
+The ecosystem is currently anchored by builders like **Outcomexyz** and **Trade.xyz**. As of May 17, 2026, the active markets include:
+*   **Daily BTC Price:** "Will BTC be above $[Price] at 06:00 UTC?" (The most liquid market).
+*   **Macro Events:** Bets on Federal Reserve interest rate decisions and CPI data.
+*   **Crypto Milestones:** Predictions regarding ETH ETF inflows and specific protocol launches.
+*   **Sports:** Limited markets for major upcoming sporting events are beginning to roll out.
+
+### **Volume and Market Share**
+The launch saw immediate high-frequency activity due to the platform's low latency:
+*   **Opening Day Volume:** Recorded **6.05 million contracts** (~$6M USD notionally).
+*   **Market Share:** On launch, it captured approximately **0.7% of the total global prediction market share**.
+*   **Vertical Dominance:** In the specific niche of **BTC Price Prediction**, Hyperliquid's volume during its launch week was reportedly **3x higher** than the combined BTC binary volume of Polymarket and Kalshi.
+
+### **Current Performance & Strategic Shift**
+Hyperliquid is currently undergoing a major transition to boost the performance and liquidity of these markets:
+*   **Coinbase Partnership:** As of May 14, 2026, Coinbase became the official treasury deployer for **USDC** on Hyperliquid. 
+*   **Settlement Migration:** Markets are migrating from the native **USDH** settlement to **USDC**. This is expected to significantly reduce friction for new capital entering the prediction markets.
+*   **User Experience:** The platform's "zero-open-fee" model for outcome tokens has made it a preferred venue for high-frequency "event scalpers" compared to slower on-chain competitors.
+
+### **Summary Table: HIP-4 Status (May 17, 2026)**
+| Metric | Status / Value |
+| :--- | :--- |
+| **Launch Date** | May 2, 2026 |
+| **Opening Volume** | 6.05M Contracts |
+| **Key Advantage** | Unified margin with Perps/Spot |
+| **Settlement Asset** | USDC (Migrating from USDH) |
+| **Primary Builder** | Outcomexyz |
+| **HYPE Price Context** | ~$42.00 |
+
+*Note: While HIP-4 provides the infrastructure, the specific "front-ends" like Outcomexyz manage the order books. You can access these directly through the Hyperliquid interface under the "Outcome" or "Predictions" tab.*

@@ -1,0 +1,63 @@
+{
+  "query": "What are Hyperliquid HIP-4 prediction markets? How does HIP-4 work? What markets are currently active, what is the volume, and how are they performing?",
+  "source": "Web research (financefeeds.com, hyperpc.app, bitcoinfoundation.org) + Hyperliquid public API",
+  "note": "HeyZibi API returned 401 (auth required). Data sourced from web research instead. HIP-4 outcome contracts are relatively new (launched Feb 2026).",
+  "fetchedAt": "2026-05-17",
+  "hip4Overview": {
+    "what_is_hip4": "HIP-4 (Hyperliquid Improvement Proposal 4) introduces 'outcome trading' — fully-collateralized binary prediction market contracts on HyperCore L1. Users trade YES or NO outcome contracts on real-world events, governance milestones, and market outcomes.",
+    "announced": "February 2, 2026",
+    "went_live": "Testnet Feb 2026, mainnet May 2026",
+    "mechanics": {
+      "contract_type": "Binary options (YES/NO outcome contracts)",
+      "settlement": "On-chain deterministic settlement at expiry",
+      "collateral": "Fully collateralized — no liquidation risk",
+      "leverage": "None — pure directional binary bet",
+      "market_creation": "Permissionless — anyone can create a market by staking 1,000,000 HYPE",
+      "portfolio_margin": "HIP-4 positions integrate with portfolio margin — tradeable alongside perps and spot in same account",
+      "price_mechanics": "Price reflects market-implied probability (0-1), settles to 1 (YES wins) or 0 (NO wins)"
+    },
+    "vs_polymarket": "Hyperliquid differs fundamentally from Polymarket — launching a market requires only 1M HYPE stake (no platform approval needed). Fully on-chain with sub-second finality and near-zero fees."
+  },
+  "launchPerformance": {
+    "firstEventContract": "HIP-4 Event Contract (governance vote on HIP-4 sharding upgrade)",
+    "firstDayVolume": 6200000,
+    "firstDayContracts": 6050000,
+    "launchDate": "May 4, 2026",
+    "marketShareAtLaunch": "~0.7% of total daily prediction market volume on day one",
+    "significance": "Orders of magnitude higher than prior governance-related trading instruments on competing platforms"
+  },
+  "activeMarketsSnapshot": {
+    "note": "Public API does not expose a direct HIP-4 market list endpoint. Data from web research as of May 2026.",
+    "knownActiveMarkets": [
+      {
+        "name": "HIP-4 Governance Implementation",
+        "type": "Protocol governance outcome",
+        "launched": "May 4, 2026",
+        "opening24hVol": 6200000,
+        "description": "Will Hyperliquid successfully implement HIP-4 sharding by Q2 2026?"
+      }
+    ],
+    "marketCategories": [
+      "Protocol governance votes",
+      "Macro/regulatory outcomes",
+      "DeFi milestone events",
+      "Community proposals"
+    ]
+  },
+  "ecosystemImpact": [
+    "Expands Hyperliquid from pure perp DEX into comprehensive derivatives stack",
+    "Adds prediction market utility alongside perps, spot, and HIP-3 builder markets",
+    "HIP-4 positions can be held alongside leveraged perps in same portfolio (via portfolio margin)",
+    "Permissionless market creation differentiates from Polymarket's platform-approval model",
+    "Growing Hyperliquid into 'governance-as-an-asset' trading vertical",
+    "Potential bridge between crypto-native event trading and traditional finance (DTCC tokenization, Oct 2026)"
+  ],
+  "apiStatus": {
+    "publicApiSupport": "HIP-4 markets are not yet exposed via the standard /info API endpoints",
+    "tryEndpoints": [
+      "POST https://api.hyperliquid.xyz/info {type: 'predictiveMarkets'} → Failed (endpoint not found)",
+      "POST https://api.hyperliquid.xyz/info {type: 'outcomeMarkets'} → Failed (endpoint not found)"
+    ],
+    "recommendation": "Monitor Hyperliquid docs and gitbook for new HIP-4 API endpoints as the product matures"
+  }
+}

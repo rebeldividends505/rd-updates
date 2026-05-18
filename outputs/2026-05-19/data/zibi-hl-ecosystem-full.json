@@ -1,0 +1,164 @@
+{
+  "source": "Hyperliquid public API + web research (datawallet.com, financefeeds.com)",
+  "fetchedAt": "2026-05-17",
+  "summary": {
+    "description": "Total Hyperliquid L1 ecosystem activity across all product lines as of May 17, 2026",
+    "totalProducts": [
+      "Perpetuals (HyperCore native)",
+      "Spot markets (HIP-1/HIP-2)",
+      "Builder perp DEXs (HIP-3)",
+      "Prediction markets (HIP-4)",
+      "Staking",
+      "HyperEVM"
+    ],
+    "combinedInsight": "Hyperliquid has evolved from a single perp DEX into a comprehensive on-chain derivatives and trading stack"
+  },
+  "perpetuals": {
+    "what": "Native HyperCore perpetual futures \u2014 the flagship product",
+    "totalMarkets": 230,
+    "total24hVolumeUsd": 2010659595.0,
+    "totalOpenInterestUsd": 6207585101.0,
+    "marketShare": "31.9% of all perp DEX volume (30-day basis per DefiLlama, May 2026)",
+    "cumulativeVolumeAllTime": "4.4 trillion USD",
+    "top5Markets": [
+      {
+        "name": "BTC",
+        "vol24h": 943520240.0,
+        "oi": 2146541883.0,
+        "markPx": 78017.0
+      },
+      {
+        "name": "ETH",
+        "vol24h": 345055909.0,
+        "oi": 1297143035.0,
+        "markPx": 2181.6
+      },
+      {
+        "name": "HYPE",
+        "vol24h": 325730886.0,
+        "oi": 951488992.0,
+        "markPx": 43.504
+      },
+      {
+        "name": "ZEC",
+        "vol24h": 102531464.0,
+        "oi": 193043507.0,
+        "markPx": 514.44
+      },
+      {
+        "name": "SOL",
+        "vol24h": 94739451.0,
+        "oi": 363990878.0,
+        "markPx": 86.265
+      }
+    ]
+  },
+  "spotMarketsHIP2": {
+    "what": "HIP-1/HIP-2 native spot token listings with on-chain order book",
+    "totalMarketsListed": 297,
+    "totalTokensRegistered": 458,
+    "activeMarketsWithVolume": 87,
+    "total24hVolumeUsd": 105394703.0,
+    "topMarket": "WOW/USDC ($67.7M 24h volume)"
+  },
+  "builderPerpDexsHIP3": {
+    "what": "HIP-3 allows third-party developers to deploy custom perpetual markets on top of HyperCore",
+    "totalBuilderDexs": 8,
+    "totalAssetsAcrossBuilders": 171,
+    "activeDexs": [
+      {
+        "name": "xyz",
+        "fullName": "XYZ",
+        "deployer": "0x88806a71d74ad0a510b350545c9ae490912f0888",
+        "totalAssets": 77
+      },
+      {
+        "name": "flx",
+        "fullName": "Felix Exchange",
+        "deployer": "0x2fab552502a6d45920d5741a2f3ebf4c35536352",
+        "totalAssets": 15
+      },
+      {
+        "name": "vntl",
+        "fullName": "Ventuals",
+        "deployer": "0x8888888192a4a0593c13532ba48449fc24c3beda",
+        "totalAssets": 15
+      },
+      {
+        "name": "hyna",
+        "fullName": "HyENA",
+        "deployer": "0x53e655101ea361537124ef814ad4e654b54d0637",
+        "totalAssets": 24
+      },
+      {
+        "name": "km",
+        "fullName": "Markets by Kinetiq",
+        "deployer": "0x71f0019cc7fa79e4f42587fb7b9a817d8d2429ec",
+        "totalAssets": 22
+      },
+      {
+        "name": "abcd",
+        "fullName": "ABCDEx",
+        "deployer": "0x372c7f69d0ecc14f73f89bd8a7dfb41bdf29857c",
+        "totalAssets": 0
+      },
+      {
+        "name": "cash",
+        "fullName": "dreamcash",
+        "deployer": "0xffa8198c62adb1e811629bd54c9b646d726deef7",
+        "totalAssets": 15
+      },
+      {
+        "name": "para",
+        "fullName": "Paragon",
+        "deployer": "0x8888888c43cbb7e1c4132542e46831bffd866ed3",
+        "totalAssets": 3
+      }
+    ],
+    "examples": "XYZ (77 assets including AAPL, NVDA, GOLD, SP500), Felix Exchange, Ventuals, HyENA, Kinetiq Markets"
+  },
+  "predictionMarketsHIP4": {
+    "what": "HIP-4 binary outcome contracts \u2014 permissionless prediction markets on HyperCore",
+    "launchedMainnet": "May 4, 2026",
+    "firstContractVol": "$6.2M on day one",
+    "marketCreationCost": "1,000,000 HYPE stake",
+    "settlementType": "On-chain binary (YES=1, NO=0)",
+    "estimatedDailyVol": "~$1-6M (early stage, single contract active)"
+  },
+  "combinedEcosystemVolume": {
+    "perps24h": 2010659595.0,
+    "spot24h": 105394703.0,
+    "hip4Prediction24h": "~1000000 (estimated, early stage)",
+    "totalEstimated24h": 2117054298.0,
+    "perpsPctOfTotal": 95.0
+  },
+  "userActivityStats": {
+    "source": "datawallet.com research, May 2026",
+    "uniqueWallets30Day": "~300,000+ (based on industry estimates)",
+    "cumulativeUniqueUsers": "400,000+",
+    "note": "Exact unique user data not available from public API \u2014 stats-data.hyperliquid.xyz requires auth"
+  },
+  "protocolMetrics": {
+    "source": "datawallet.com, May 2026",
+    "cumulativePerpVolume": "$4.4 trillion",
+    "thirtyDayPerpVolume": "$172.6 billion",
+    "weeklyPerpVolume": "$47.54 billion",
+    "openInterest": "$9.13 billion",
+    "hypMarketCap": "$10.66 billion",
+    "hypDailyVolume": "$315.27 million",
+    "perpDexMarketShare": "31.9%",
+    "secondPlaceDex": "Aster ($52.7B 30d) \u2014 Hyperliquid leads by 3.3x"
+  },
+  "staking": {
+    "what": "HYPE token staking secures the L1 validator set",
+    "note": "Staking TVL not directly queryable from public endpoints in this pull"
+  },
+  "keyGrowthFactors": [
+    "Sub-second finality + near-zero fees enable HFT and institutional flows",
+    "HIP-3 turns Hyperliquid into a multi-DEX L1 \u2014 builders deploy custom markets",
+    "HIP-4 adds prediction markets \u2014 new TAM (Polymarket ~$100M/day in peak)",
+    "HyperEVM enables full composability between order book and smart contracts",
+    "HYPE buyback: $1.3B+ bought and burned, reducing supply while fee flow grows",
+    "388M HYPE in community rewards wallet \u2014 signals upcoming airdrop catalyst"
+  ]
+}

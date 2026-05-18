@@ -1,0 +1,29 @@
+Hyperliquid has evolved into one of the most performant Layer 1 blockchains in the DeFi ecosystem, utilizing its custom **HyperBFT** consensus mechanism to support sub-second high-frequency trading.
+
+Based on current network data as of May 2026, here are the core metrics and recent developments for the Hyperliquid L1:
+
+### **Core Blockchain Metrics**
+| Metric | Value |
+| :--- | :--- |
+| **Max Throughput (TPS)** | 100,000 – 200,000 orders/sec |
+| **Median Block Time** | ~0.2 seconds |
+| **Finality Time** | 0.07 – 0.1 seconds |
+| **Total Transactions (HyperEVM)** | > 138.5 Million |
+| **Active Validators** | 21 – 25 |
+| **Cumulative Trading Volume** | > $4.4 Trillion |
+
+### **Validator & Consensus Details**
+*   **HyperBFT:** A high-performance consensus engine based on the HotStuff algorithm. It is optimized specifically for the low-latency requirements of a fully on-chain order book.
+*   **Validator Set:** The network currently maintains a small, high-performance set of validators. While the protocol is permissionless, the extreme hardware requirements for sub-second consensus have naturally limited the set to roughly **25 active participants** to ensure network stability.
+*   **Staking (HYPE):** Native staking was introduced in May 2025, allowing HYPE token holders to delegate to validators to secure the L1 and earn a share of protocol fees.
+
+### **Recent Protocol Upgrades (2025–2026)**
+The network has transitioned from a pure derivatives exchange into a general-purpose L1 through several major "HIP" (Hyperliquid Improvement Proposal) upgrades:
+
+*   **HIP-4: Native Prediction Markets (May 2026):** Introduced "Outcome Contracts," enabling users to trade on sports, politics, and macro events using the same cross-margin system as perpetuals.
+*   **HIP-3: Growth Mode (Late 2025):** Slashed taker fees by 90% for newly created markets to incentivize the listing of long-tail assets and permissionless trading pairs.
+*   **HyperEVM Launch (Early 2025):** Integrated a high-performance, EVM-compatible layer directly into the L1. This allows developers to build lending protocols, GameFi, and AI-driven dApps that interact synchronously with Hyperliquid's core liquidity.
+
+### **Institutional Adoption**
+*   **BHYP ETF:** On May 15, 2026, Bitwise launched the first regulated Hyperliquid ETF on the NYSE, marking a significant milestone for institutional access to the ecosystem.
+*   **USDC Canonical Status:** Through a partnership with Circle and Coinbase, USDC is the official quote asset for the L1, ensuring deep liquidity and standardized settlement across all markets.

@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-17",
+  "symbols": {
+    "SLV": {
+      "ytd_pct": 7.17,
+      "last_price": 69.04
+    },
+    "GLD": {
+      "ytd_pct": 5.29,
+      "last_price": 417.29
+    },
+    "XLE": {
+      "ytd_pct": 33.81,
+      "last_price": 59.44
+    },
+    "NVDA": {
+      "ytd_pct": 20.82,
+      "last_price": 225.32
+    },
+    "SPY": {
+      "ytd_pct": 8.69,
+      "last_price": 739.17
+    },
+    "QQQ": {
+      "ytd_pct": 15.55,
+      "last_price": 708.93
+    },
+    "BTC-USD": {
+      "ytd_pct": -10.72,
+      "last_price": 78131.44
+    },
+    "SOXL": {
+      "ytd_pct": 290.63,
+      "last_price": 164.18
+    },
+    "TLT": {
+      "ytd_pct": -2.58,
+      "last_price": 83.66
+    },
+    "SMH": {
+      "ytd_pct": 54.48,
+      "last_price": 556.34
+    }
+  }
+}

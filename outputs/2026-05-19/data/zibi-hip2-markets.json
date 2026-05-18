@@ -1,0 +1,58 @@
+{
+  "query": "What are Hyperliquid HIP-2 spot markets? How many are listed? What is the total volume and TVL in HIP-2 markets? Which tokens are performing best?",
+  "source": "Hyperliquid public API (api.hyperliquid.xyz/info - spotMetaAndAssetCtxs) + web research",
+  "note": "HeyZibi API returned 401 (auth required). Data sourced from HL public API and web research instead.",
+  "fetchedAt": "2026-05-17",
+  "hip2Overview": {
+    "what_is_hip2": "HIP-2 is the Hyperliquid Improvement Proposal that defines native spot liquidity bootstrapping. It creates an automated on-chain AMM seeding mechanism for HIP-1 tokens (tokens deployed on Hyperliquid L1). HIP-2 provides initial liquidity from a deployer-funded reserve, enabling spot trading from day one without requiring external market makers.",
+    "hip1_relationship": "HIP-1 defines the token creation standard. Any token minted via HIP-1 can opt into HIP-2 liquidity bootstrapping, which places limit orders across a price curve to seed the orderbook."
+  },
+  "marketStats": {
+    "totalSpotMarketsListed": 297,
+    "canonicalNamedMarkets": 1,
+    "nonCanonicalAtNMarkets": 296,
+    "totalTokensRegistered": 458,
+    "activeMarketsWithVolume": 87,
+    "total24hVolumeUsd": 105394703,
+    "topMarket": "WOW/USDC",
+    "topMarketVol24h": 67726320,
+    "note": "Most markets use @N notation (non-canonical), which resolves to a named HIP-1 token via the token registry. Only PURR/USDC is canonical."
+  },
+  "top20ByVolume24h": [
+    { "displayName": "WOW/USDC", "vol24hUsd": 67726320, "markPx": 43.484, "pctChange24h": 6.5 },
+    { "displayName": "NEKO/USDC", "vol24hUsd": 17232845, "markPx": 78042.0, "pctChange24h": -0.2 },
+    { "displayName": "QUANT/USDC", "vol24hUsd": 4414494, "markPx": 2181.4, "pctChange24h": 0.3 },
+    { "displayName": "BUDDY/USDC", "vol24hUsd": 3140417, "markPx": 86.259, "pctChange24h": -0.4 },
+    { "displayName": "NBT/USDC", "vol24hUsd": 2502787, "markPx": 1.0002, "pctChange24h": 0.0 },
+    { "displayName": "FI/USDC", "vol24hUsd": 1768041, "markPx": 43.475, "pctChange24h": 6.4 },
+    { "displayName": "QQQ/USDC", "vol24hUsd": 1748527, "markPx": 514.37, "pctChange24h": 2.2 },
+    { "displayName": "SOON/USDC", "vol24hUsd": 1152488, "markPx": 0.14999, "pctChange24h": 8.7 },
+    { "displayName": "RUB/USDC", "vol24hUsd": 1137516, "markPx": 0.99968, "pctChange24h": 0.0 },
+    { "displayName": "GLD/USDC", "vol24hUsd": 796763, "markPx": 393.56, "pctChange24h": 1.7 },
+    { "displayName": "KHYPE/USDC", "vol24hUsd": 620693, "markPx": 2181.0, "pctChange24h": 0.3 },
+    { "displayName": "WOULD/USDC", "vol24hUsd": 597810, "markPx": 0.0017462, "pctChange24h": -0.4 },
+    { "displayName": "RISK/USDC", "vol24hUsd": 470234, "markPx": 78026.0, "pctChange24h": -0.2 },
+    { "displayName": "PURR/USDC", "vol24hUsd": 405534, "markPx": 0.068384, "pctChange24h": 8.6 },
+    { "displayName": "FEUSD/USDC", "vol24hUsd": 260911, "markPx": 0.9999, "pctChange24h": 0.0 },
+    { "displayName": "RIVER/USDC", "vol24hUsd": 210814, "markPx": 0.009504, "pctChange24h": 0.3 },
+    { "displayName": "USDT0/USDC", "vol24hUsd": 166066, "markPx": 0.19204, "pctChange24h": -0.6 },
+    { "displayName": "UZEC/USDC", "vol24hUsd": 161781, "markPx": 0.034044, "pctChange24h": 0.3 },
+    { "displayName": "BNB0/USDC", "vol24hUsd": 146463, "markPx": 0.003795, "pctChange24h": 4.1 },
+    { "displayName": "HOOD/USDC", "vol24hUsd": 120242, "markPx": 43.445, "pctChange24h": 6.5 }
+  ],
+  "topPerformers24h": [
+    { "displayName": "SOON/USDC", "pctChange24h": 8.7, "vol24hUsd": 1152488 },
+    { "displayName": "PURR/USDC", "pctChange24h": 8.6, "vol24hUsd": 405534 },
+    { "displayName": "WOW/USDC", "pctChange24h": 6.5, "vol24hUsd": 67726320 },
+    { "displayName": "HOOD/USDC", "pctChange24h": 6.5, "vol24hUsd": 120242 },
+    { "displayName": "FI/USDC", "pctChange24h": 6.4, "vol24hUsd": 1768041 }
+  ],
+  "tvlNote": "TVL in HIP-2 markets is not directly queryable from public API. Estimated from circulating supply × mark prices. Top tokens by market cap include PURR (~$40M), WOW, NEKO.",
+  "keyInsights": [
+    "297 total spot pairs listed on Hyperliquid HIP-2",
+    "87 active with >$0 24h volume — roughly 29% of all listed markets are actively traded",
+    "WOW/USDC dominates with $67.7M of the $105.4M total 24h spot volume (64% concentration)",
+    "PURR is the only 'canonical' (officially named) spot market — all others use @N notation",
+    "Spot volume of $105.4M is about 5% of the $2.01B perp volume — spot is growing but smaller"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "bitcoin": {
+    "usd": 77950,
+    "usd_market_cap": 1562600742991.4392,
+    "usd_24h_change": -0.33363109057928225
+  },
+  "ethereum": {
+    "usd": 2181.26,
+    "usd_market_cap": 263337367759.39508,
+    "usd_24h_change": 0.27835592634642203
+  },
+  "hyperliquid": {
+    "usd": 43.49,
+    "usd_market_cap": 10371225109.55813,
+    "usd_24h_change": 6.470842435234701
+  },
+  "solana": {
+    "usd": 86.22,
+    "usd_market_cap": 49856837566.219406,
+    "usd_24h_change": -0.44833151596625825
+  },
+  "_pulled": "2026-05-17"
+}

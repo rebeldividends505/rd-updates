@@ -1,0 +1,54 @@
+{
+  "date": "2026-05-17",
+  "usdjpy": {
+    "current": 158.731,
+    "change_1mo": -0.078
+  },
+  "dxy": {
+    "current": 99.27,
+    "change_1mo": 1.05
+  },
+  "us_10y": {
+    "current": 4.595,
+    "change_1mo": 0.286
+  },
+  "us_30y": {
+    "current": 5.128,
+    "change_1mo": 0.199
+  },
+  "vix": {
+    "current": 18.43,
+    "change_1mo": 0.49
+  },
+  "fed_funds": {
+    "latest": 3.64,
+    "date": "2026-04-01",
+    "prev": 3.64
+  },
+  "us_cpi": {
+    "latest": 332.407,
+    "date": "2026-04-01",
+    "prev": 330.293,
+    "yoy_pct": 3.78
+  },
+  "core_pce": {
+    "latest": 129.279,
+    "date": "2026-03-01",
+    "prev": 128.901
+  },
+  "us_m2": {
+    "latest": 22686.0,
+    "date": "2026-03-01",
+    "prev": 22627.3
+  },
+  "japan_10y": {
+    "latest": 2.515,
+    "date": "2026-04-01",
+    "prev": 2.345
+  },
+  "hy_oas": {
+    "latest": 2.76,
+    "date": "2026-05-14",
+    "prev": 2.82
+  }
+}

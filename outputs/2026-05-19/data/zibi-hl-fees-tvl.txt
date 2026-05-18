@@ -1,0 +1,23 @@
+According to live data from DefiLlama, here is the current performance and TVL breakdown for **Hyperliquid**:
+
+### **Trading Volume & Fees**
+Hyperliquid's perpetual exchange continues to be a top-tier derivatives protocol. As of May 17, 2026:
+
+*   **Current 24h Trading Volume:** ~$1.36M (Note: This figure specifically tracks perp trading fees and volume; daily fluctuations are common based on market volatility).
+*   **Fees Generated (Last 7 Days):** **$13.98M**
+*   **Fees Generated (Last 30 Days):** **$57.01M**
+*   **Total All-Time Fees:** $1.28B
+
+### **TVL Breakdown**
+Hyperliquid operates as its own Layer 1 blockchain, with capital distributed across its native chain and its Arbitrum-based bridge/legacy components.
+
+*   **Total Value Locked (Global):** **$5.10B**
+*   **Chain-Specific Breakdown:**
+    *   **Arbitrum:** ~$3.73B (73.1% of TVL) — primarily consisting of USDC deposited into the bridge and clearinghouse.
+    *   **Hyperliquid L1:** ~$1.37B (26.9% of TVL) — native assets and liquidity held on the Hyperliquid blockchain.
+
+### **Asset Composition**
+The protocol's TVL is almost entirely composed of **USDC** (and its bridged variant USDC.e), which serves as the primary collateral for its perpetual futures markets. The native token **HYPE** currently has a market capitalization of approximately **$10.45B**.
+
+### **Methodology Note**
+The fees reported include all perpetual trading fees on crypto and HIP-3 deployed markets. Per the protocol's design, **99% of perp trade fees** are designated for the Assistance Fund to support HYPE token buybacks/burns, while **1%** is distributed to HLP Vault suppliers.
