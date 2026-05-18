@@ -1,5 +1,18 @@
-SUBJECT: Gold already topped. Crypto hasn't moved. Live webinar today 3:30 ET.
+SUBJECT: SOXL -20% in two sessions. The AI Insider just shorted $8B in chips. Live today 3:30 ET.
 
-SMS: Rebel Dividends: $[PRICE] ([DAY%]). Dividend paid. Gold topped. AI infra correcting. Crypto is the last major asset that hasn't moved yet — and that's the setup. Live webinar TODAY 3:30 PM ET. rebeldividends.com/startwebinar Call Dean: 505-322-7515.
+SMS: Rebel Dividends: $[PRICE] today ([DAY%]). Dividend #108 paid. SOXL -10% Friday, -10% Monday. AI Insider Aschenbrenner just filed $8B in semi puts. Korea exports flag a SOX top, May 21 confirms. Live webinar TODAY 3:30 PM ET. rebeldividends.com/startwebinar Call Dean: 505-322-7515.
 
-⚠️ UPDATE PRICE + DAY% BEFORE SENDING — use morning Google Sheet price
+ALT SUBJECTS:
+- Korea semi exports just flagged the SOX top signal. May 21 confirms. Live today 3:30 PM ET.
+- Leopold Aschenbrenner just bet $8 Billion against the chip stocks. Live today 3:30 PM ET.
+- Gold topped. AI infra crashing. Crypto hasn't moved. Live today 3:30 ET.
+- SOXL down 20% in two days. RD paid dividend #108 on schedule. Live today 3:30 PM ET.
+
+ALT SMS (shorter, ~210 chars):
+Rebel Dividends: SOXL -20% in two sessions. AI insider shorted $8B in chips. Korea data flags the SOX top. Live webinar TODAY 3:30 PM ET. rebeldividends.com/startwebinar Call Dean: 505-322-7515.
+
+NOTES:
+- UPDATE [PRICE] and [DAY%] from Google Sheet Tuesday AM (auto-pulls at 6 AM cron)
+- SOXL Friday May 15 close and Monday May 18 close — verify Tuesday AM
+- Aschenbrenner $8B puts claim needs verification before send
+- Live Korea tracker: updates.rebeldividends.com/research/korea-semi-tracker.html
