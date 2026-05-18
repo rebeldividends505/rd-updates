@@ -1,269 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Rotation Thesis — Rebel Dividends | May 19, 2026</title>
-<style>
-body { margin:0; padding:0; background:#ffffff; font-family:Arial,'Helvetica Neue',sans-serif; font-size:16px; color:#1a1a1a; line-height:1.6; }
-.wrap { max-width:780px; margin:0 auto; padding:0 20px; }
-.header { background:#000; padding:28px 20px; border-bottom:4px solid #ff6600; text-align:center; }
-.header h1 { color:#fff; font-size:28px; margin:0 0 6px 0; letter-spacing:1px; }
-.header p { color:#ccc; font-size:15px; margin:0; }
-.stats { background:#111; display:flex; flex-wrap:wrap; gap:0; }
-.stat-box { flex:1; min-width:150px; text-align:center; padding:16px 12px; border-right:1px solid #222; }
-.stat-box:last-child { border-right:0; }
-.stat-label { font-size:11px; color:#999; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px; }
-.stat-val { font-size:26px; font-weight:700; color:#fff; }
-.stat-val.green { color:#4ade80; }
-.stat-val.gold { color:#ffd54a; }
-.stat-row-table { width:100%; border-collapse:collapse; background:#000; }
-.stat-row-table td { padding:10px 16px; font-size:14px; border-bottom:1px solid #222; color:#ccc; }
-.stat-row-table td:last-child { text-align:right; color:#4ade80; font-weight:600; }
-.hero { background:#0a4f1f; padding:32px 24px; text-align:center; }
-.hero .badge { display:inline-block; background:#000; color:#4ade80; font-size:11px; letter-spacing:2px; font-weight:700; padding:5px 14px; border-radius:3px; margin-bottom:14px; }
-.hero h2 { color:#fff; font-size:28px; font-weight:800; line-height:1.25; margin:0 0 14px 0; }
-.hero p { color:#fff; opacity:.95; font-size:15px; line-height:1.65; margin:0; text-align:left; max-width:680px; margin:0 auto; }
-.section { padding:32px 24px; }
-.section h2 { font-size:24px; font-weight:700; color:#000; margin:0 0 14px 0; line-height:1.3; }
-.section p { font-size:16px; line-height:1.7; color:#1a1a1a; margin:0 0 16px 0; }
-.label { font-size:11px; letter-spacing:2px; color:#0a7c42; font-weight:700; text-transform:uppercase; margin-bottom:8px; }
-.label.orange { color:#ff6600; }
-.label.red { color:#c41e3a; }
-.beat-header { background:#0a0a0a; padding:20px 22px; border-left:6px solid #ff6600; margin-bottom:20px; }
-.beat-header .beat-label { font-size:11px; letter-spacing:3px; color:#ff6600; font-weight:700; text-transform:uppercase; margin-bottom:4px; }
-.beat-header h3 { color:#fff; font-size:22px; font-weight:700; margin:0; line-height:1.3; }
-.highlight { border-left:4px solid #ff6600; background:#fff8f3; padding:14px 18px; margin:0 0 16px 0; font-size:15px; line-height:1.7; }
-.highlight.green { border-left-color:#0a7c42; background:#f0fff4; }
-.punchline-box { border:2px solid #92400e; background:#fffbeb; padding:22px 24px; margin:0 0 24px 0; }
-.punchline-box .box-label { font-size:11px; letter-spacing:2px; color:#92400e; font-weight:700; text-transform:uppercase; margin-bottom:6px; }
-.punchline-box h4 { font-size:18px; font-weight:700; color:#000; margin:0 0 10px 0; line-height:1.3; }
-.table-clean { width:100%; border-collapse:collapse; font-size:14px; margin-bottom:20px; }
-.table-clean th { background:#1a1a1a; color:#ccc; padding:10px; border:1px solid #333; font-weight:600; }
-.table-clean td { padding:10px; border:1px solid #e0e0e0; }
-.table-clean tr:nth-child(even) { background:#f8f8f8; }
-.table-clean td.green { color:#0a7c42; font-weight:700; }
-.table-clean td.red { color:#c41e3a; font-weight:600; }
-.table-clean tr.highlight-row td { background:#f0fff4; border-color:#0a7c42; font-weight:700; }
-.table-clean tr.highlight-row td.green { color:#0a7c42; }
-.div-table tr.current-month td { background:#fff4ed; border-color:#ff6600; font-weight:700; }
-.webinar-cta { background:#ff6600; padding:28px 24px; text-align:center; }
-.webinar-cta .pre { font-size:11px; letter-spacing:3px; color:rgba(255,255,255,.85); font-weight:700; text-transform:uppercase; margin-bottom:8px; }
-.webinar-cta h3 { color:#fff; font-size:26px; font-weight:800; margin:0 0 8px 0; line-height:1.2; }
-.webinar-cta p { color:#fff; font-size:15px; opacity:.95; margin:0 0 6px 0; }
-.webinar-cta .dean { color:#fff; font-size:15px; font-weight:700; margin-top:12px; }
-.footer { background:#0a0a0a; padding:22px 24px; }
-.footer .corp { text-align:center; color:#ccc; font-size:14px; padding-bottom:8px; }
-.footer .corp strong { color:#fff; }
-.footer .contact { text-align:center; color:#888; font-size:13px; padding-bottom:16px; }
-.footer .contact strong { color:#ff6600; }
-.footer .legal { font-size:11px; line-height:1.7; color:#555; }
-.footer .legal strong { color:#888; }
-.pull-quote { border-left:6px solid #ff6600; padding:16px 20px; background:#fffaf6; margin:0 0 24px 0; font-size:18px; font-style:italic; line-height:1.5; color:#0a0a0a; font-weight:600; }
-.back-link { text-align:center; padding:16px; font-size:14px; }
-.back-link a { color:#ff6600; text-decoration:none; font-weight:700; }
-img { max-width:100%; height:auto; display:block; border:0; }
-@media(max-width:600px) {
-  .stats { flex-direction:column; }
-  .stat-box { border-right:0; border-bottom:1px solid #222; }
-  .hero h2 { font-size:22px; }
-  .section h2 { font-size:20px; }
-  .beat-header h3 { font-size:18px; }
-}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Investor Update — Rebel Dividends | May 19, 2026 — The Rotation Is Here</title>
+<style type="text/css">
+body { margin:0; padding:0; background:#ffffff; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif; font-size:16px; color:#1a1a1a; line-height:1.6; }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>INVESTOR UPDATE</h1>
-  <p>Rebel Dividends &bull; May 19, 2026 &bull; Week 108 &bull; Webinar Day</p>
-</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+<tr><td align="center" bgcolor="#ffffff">
+<table width="680" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;width:100%;">
 
-<!-- STATS PANEL -->
-<div class="stats">
-  <div class="stat-box"><div class="stat-label">REBEL ROI (week)</div><div class="stat-val green">TBD ⚠️</div></div>
-  <div class="stat-box"><div class="stat-label">Dividend Today</div><div class="stat-val gold">$0.00002</div></div>
-  <div class="stat-box"><div class="stat-label">HYPE</div><div class="stat-val">$44.92</div></div>
-  <div class="stat-box"><div class="stat-label">Bitcoin</div><div class="stat-val">$76,291</div></div>
-</div>
-<table class="stat-row-table">
-  <!-- ⚠️ UPDATE share price and % before publishing -->
-  <tr><td>Share Price</td><td>$[PRICE] &nbsp;([DAY%])</td></tr>
-  <tr><td>Portfolio Value</td><td>~$14,812,018</td></tr>
-  <tr><td>Total Shares</td><td>7,878,733,108</td></tr>
-  <tr><td>Return Since April 2024 Pivot</td><td>+206% (reinvestor)</td></tr>
+<!-- ==================== HEADER STATS ==================== -->
+<tr><td bgcolor="#000000" style="background-color:#000000;padding:25px 20px;border-bottom:4px solid #ff6600;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000" style="background-color:#000000;font-size:26px;font-weight:700;color:#ffffff;text-align:center;letter-spacing:1px;padding-bottom:5px;">INVESTOR UPDATE</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;font-size:16px;color:#cccccc;text-align:center;padding-bottom:20px;">Rebel Dividends | May 19, 2026 &bull; Week 108</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="50%" bgcolor="#111111" style="background-color:#111111;text-align:center;padding:15px;">
+<div style="font-size:13px;color:#999999;margin-bottom:5px;">REBEL ROI (week)</div>
+<div style="font-size:32px;font-weight:700;color:#4ade80;">[WEEK%]</div>
+</td>
+<td width="50%" bgcolor="#111111" style="background-color:#111111;text-align:center;padding:15px;">
+<div style="font-size:13px;color:#999999;margin-bottom:5px;">Dividend Today</div>
+<div style="font-size:32px;font-weight:700;color:#ffd54a;">$0.00002</div>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;height:10px;font-size:1px;">&nbsp;</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#cccccc;font-size:14px;">Portfolio Value</td><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#4ade80;font-size:14px;font-weight:600;text-align:right;">$14,725,500</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#cccccc;font-size:14px;">Share Price</td><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#ffffff;font-size:14px;font-weight:600;text-align:right;">[PRICE] &nbsp;([DAY%])</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#cccccc;font-size:14px;">Weekly Dividend</td><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#ffd54a;font-size:14px;font-weight:600;text-align:right;">$0.00002</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#cccccc;font-size:14px;">Total Shares</td><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#ffffff;font-size:14px;font-weight:600;text-align:right;">7,984,576,136</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#cccccc;font-size:14px;">HYPE</td><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#ffffff;font-size:14px;font-weight:600;text-align:right;">$44.92</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#cccccc;font-size:14px;">Bitcoin</td><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;border-bottom:1px solid #333333;color:#ffffff;font-size:14px;font-weight:600;text-align:right;">$76,291</td></tr>
+<tr><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;color:#cccccc;font-size:14px;">Return Since April 2024 Pivot</td><td bgcolor="#000000" style="background-color:#000000;padding:10px 12px;color:#4ade80;font-size:14px;font-weight:700;text-align:right;">+209% (reinvestor)</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- ==================== YTD SCOREBOARD ==================== -->
+<tr><td bgcolor="#ffffff" style="background-color:#ffffff;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;background:#ffffff;">
+<tr><td style="padding:0 22px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Reinvestor vs Collector &bull; Since April 2024 Pivot</div>
+<img src="https://updates.rebeldividends.com/charts/2026-05-19/reinvest-since-pivot-may19.png" alt="RD Reinvestors +209% ($310K) vs Collectors +94% ($194K) since April 2024 pivot" width="632" style="width:100%;max-width:632px;height:auto;display:block;border:0;margin:8px 0;">
+</td></tr>
+<tr><td style="padding:24px 24px 8px 24px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:8px;">YTD Scoreboard &bull; Through May 19, 2026</div>
+<div style="font-size:22px;font-weight:700;color:#000000;line-height:1.3;margin-bottom:14px;">RD Reinvestors Beat Every YTD Winner. And The Biggest Move Is Still Ahead.</div>
+</td></tr>
+<tr><td style="padding:0 24px 8px 24px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;border:1px solid #e0e0e0;">
+<tr style="background:#f0fff4;"><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;font-weight:700;">RD Reinvestors (YTD 2026)</td><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;font-weight:700;color:#0a7c42;text-align:right;">+38.6% &#9650;</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;">Energy (XLE YTD)</td><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;color:#555555;text-align:right;font-weight:600;">+29.7% (war premium softening)</td></tr>
+<tr style="background:#f8f8f8;"><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;">NVDA / AI Infra (YTD)</td><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;color:#555555;text-align:right;font-weight:600;">+21% (correcting)</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;">Silver (SLV YTD)</td><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;color:#555555;text-align:right;font-weight:600;">+7% (peaked +23%, gave it back)</td></tr>
+<tr style="background:#f8f8f8;"><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;">Gold (GLD YTD)</td><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;color:#555555;text-align:right;font-weight:600;">+5% (peaked +25%, gave it back)</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;">S&amp;P 500 (SPY YTD)</td><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;color:#555555;text-align:right;font-weight:600;">+9%</td></tr>
+<tr style="background:#f8f8f8;"><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;">Bitcoin (YTD)</td><td style="padding:10px;border:1px solid #e0e0e0;font-size:14px;color:#c41e3a;text-align:right;font-weight:600;">-11% (lagging = the setup)</td></tr>
+</table>
+</td></tr>
+<tr><td style="padding:8px 24px 20px 24px;">
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;">RD reinvestors are leading the YTD scoreboard at +38.6% &mdash; ahead of every major asset. Since the April 2024 pivot, reinvestors have <strong>more than tripled their money (+209%)</strong> while collecting weekly cash. Bitcoin is still down -11% on the year. That gap doesn&rsquo;t stay open forever.</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- ==================== LIVE HERO BLOCK ==================== -->
+<tr><td bgcolor="#0a4f1f" style="background-color:#0a4f1f;padding:0 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#0a4f1f" style="background-color:#0a4f1f;padding:24px 0;text-align:center;">
+<div style="display:inline-block;background-color:#000000;color:#4ade80;font-size:11px;letter-spacing:2px;font-weight:700;padding:5px 14px;border-radius:3px;margin-bottom:12px;">Live today 3:30 PM ET &mdash; May 19, 2026</div>
+<div style="font-size:24px;font-weight:700;color:#ffffff;line-height:1.25;margin-bottom:12px;">Gold Already Topped. Silver Already Topped. AI Stocks Correcting. The Rotation Into Crypto Has Started.</div>
+<div style="font-size:15px;color:#ffffff;opacity:0.95;line-height:1.6;margin-bottom:14px;">The thesis we&rsquo;ve been building toward for months is happening right now. Capital is coming off the winning trades and flowing into the most undervalued major asset on the board. Today&rsquo;s broadcast covers every angle, every chart, and exactly what happens next for RD shareholders.</div>
+<div style="font-size:15px;color:#ffffff;opacity:0.95;line-height:1.6;"><strong>Call Dean: 505-322-7515</strong></div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- DIVIDER -->
+<tr><td bgcolor="#ffffff" style="background-color:#ffffff;height:8px;font-size:1px;">&nbsp;</td></tr>
+
+<!-- ==================== CONTENT AREA ==================== -->
+<tr><td bgcolor="#ffffff" style="background-color:#ffffff;padding:25px 20px;">
+
+<!-- ONE-PAGE EXECUTIVE SUMMARY -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:2px solid #ff6600;margin-bottom:25px;">
+<tr><td bgcolor="#0a0a0a" style="background-color:#0a0a0a;padding:14px 18px;">
+<div style="font-size:11px;letter-spacing:3px;color:#ff6600;font-weight:700;text-transform:uppercase;">Tuesday May 19, 2026 &bull; In One Page</div>
+<div style="font-size:19px;font-weight:700;color:#ffffff;margin-top:4px;">The Daily Update At A Glance</div>
+</td></tr>
+<tr><td bgcolor="#ffffff" style="background-color:#ffffff;padding:20px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td style="padding-bottom:14px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:6px;">The Thesis In One Sentence</div>
+<div style="font-size:16px;line-height:1.6;color:#0a0a0a;font-weight:600;">Gold, silver, energy, and AI infra ran hard in 2026 &mdash; those trades are done &mdash; and the capital rotating out of them is finding the most undervalued liquid asset on the board: crypto.</div>
+</td></tr>
+<tr><td style="padding-bottom:10px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:4px;">The Setup</div>
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;">Gold peaked at +25% YTD in January (spot hit $5,400/oz) and is now back to just +5%. Silver peaked at +23% and has given most of it back. SOX stretched to its widest 200-day gap since the March 2000 dot-com peak, then dropped 6% in one session. Every crowded winning trade has hit a wall simultaneously. <strong>That doesn&rsquo;t happen by accident &mdash; that&rsquo;s the rotation turn.</strong></div>
+</td></tr>
+<tr><td style="padding-bottom:10px;">
+<div style="font-size:11px;letter-spacing:2px;color:#fbbf24;font-weight:700;text-transform:uppercase;margin-bottom:4px;">New This Week</div>
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;">Two spot HYPE ETFs launched (21Shares THYP on Nasdaq, Bitwise BHYP on NYSE). Coinbase named as USDC partner on Hyperliquid &mdash; 500K HYPE staked, $140M+ projected new annualized revenue into the buyback engine. a16z bought $67.5M of HYPE ahead of the ETF launches. Senate Banking Committee voted 15-9 to advance the CLARITY Act. <strong>The institutional demand pipe for HYPE that didn&rsquo;t exist two weeks ago now exists.</strong></div>
+</td></tr>
+<tr><td style="padding-bottom:14px;">
+<div style="font-size:11px;letter-spacing:2px;color:#c41e3a;font-weight:700;text-transform:uppercase;margin-bottom:4px;">The Signal</div>
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;">This weekend, BTC and HYPE moved while gold, silver, energy, and AI stocks sat flat. That&rsquo;s the rotation signal &mdash; not a forecast, not a theory. <strong>BTC -11% YTD. HYPE 25% off its $59 ATH. The lagging asset with the best fundamentals in crypto is starting to move.</strong></div>
+</td></tr>
+<tr><td bgcolor="#f0fff4" style="background-color:#f0fff4;border-left:4px solid #0a7c42;padding:14px 18px 14px 20px;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:4px;">What We&rsquo;re Doing</div>
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;"><strong>Holding full position in spot HYPE.</strong> Reinvestors accumulating more shares before the rotation accelerates. Adding to HYPE on any weakness. The dividend engine keeps paying through every environment. <strong>Call Dean: 505-322-7515</strong></div>
+</td></tr>
+</table>
+</td></tr>
 </table>
 
-<!-- WEBINAR HERO -->
-<div class="webinar-cta" style="background:#0a4f1f;">
-  <div class="pre">ROTATION BEGINNING &mdash; WEBINAR TODAY &mdash; MAY 19</div>
-  <h3>Gold Already Topped. AI Stocks Correcting. Crypto Hasn&rsquo;t Moved Yet.</h3>
-  <p>Today&rsquo;s webinar walks through every number, every chart, and the complete case for why this is the most obvious rotation setup of the year.</p>
-  <p class="dean">Live 3:30 PM ET &bull; Call Dean: (505) 322-7515</p>
-</div>
-
-<!-- SECTION: YTD SCOREBOARD -->
-<div class="section">
-  <div class="label">YTD Scoreboard &bull; Through May 19, 2026</div>
-  <h2>RD Reinvestors Are Beating Every Major Asset YTD. And The Biggest Move Hasn&rsquo;t Happened Yet.</h2>
-  <p>Here&rsquo;s what the data actually shows. Gold peaked at roughly +25% in late January, then gave almost all of it back &mdash; currently just +5% YTD. Silver had an even bigger run and has since collapsed from its peak. Energy ran on the Iran war premium and is now stalling. AI infrastructure stocks stretched to the widest valuations since the dot-com era, and last week started correcting hard.</p>
-  <p>Meanwhile, RD Reinvestors are <strong>+38.6% YTD</strong> &mdash; beating every asset class on the list below. And neither BTC nor HYPE has participated in any of the 2026 runs.</p>
-
-  <table class="table-clean">
-    <tr><th>Asset</th><th style="text-align:right;">YTD 2026</th><th style="text-align:right;">Status</th></tr>
-    <tr class="highlight-row"><td><strong>RD Reinvestors</strong></td><td class="green" style="text-align:right;">+38.6% ▲</td><td style="text-align:right; color:#0a7c42; font-weight:700;">Beating the field</td></tr>
-    <tr><td>Energy (XLE)</td><td style="text-align:right; color:#555;">+29.7%</td><td style="text-align:right; color:#c41e3a;">Already topped</td></tr>
-    <tr><td>Silver (SLV)</td><td style="text-align:right; color:#555;">+7% (peaked +40%)</td><td style="text-align:right; color:#c41e3a;">Big run, gave it back</td></tr>
-    <tr><td>NVDA / AI Infra</td><td style="text-align:right; color:#555;">+21%</td><td style="text-align:right; color:#c41e3a;">Correcting</td></tr>
-    <tr><td>Gold (GLD)</td><td style="text-align:right; color:#555;">+5% (peaked +25%)</td><td style="text-align:right; color:#c41e3a;">Topped, fading</td></tr>
-    <tr><td>S&amp;P 500 (SPY)</td><td style="text-align:right; color:#555;">+9%</td><td style="text-align:right;">On $2.6T gamma trap</td></tr>
-    <tr><td>Bitcoin</td><td class="red" style="text-align:right;">-11%</td><td style="text-align:right; color:#0a7c42; font-weight:700;">Lagging = the setup</td></tr>
-  </table>
-</div>
-
-<!-- REINVESTOR CHART -->
-<div class="section" style="padding-top:0;">
-  <div class="label">Reinvestor vs Collector &bull; Since April 2024 Pivot</div>
-  <h2>$100K At The April 2024 Pivot: Reinvestor $306K (+206%). Collector $193K (+93%).</h2>
-  <img src="https://updates.rebeldividends.com/charts/2026-05-19/reinvest-since-pivot-may19.png" alt="RD Reinvestors +206% ($306K) vs Collectors +93% ($193K) since April 2024 pivot">
-  <p style="font-size:13px; color:#666; font-style:italic; margin-top:8px;">Reinvestors keep distributions in the fund, accumulating shares each week. Collectors take cash dividends out. Past performance does not guarantee future results.</p>
-</div>
-
-<!-- BEAT 1 -->
-<div class="section" style="padding-top:0;">
-<div class="beat-header">
-  <div class="beat-label">Beat 1 &bull; The Trades That Ran</div>
-  <h3>Gold, Silver, Energy, AI Infra. All Four Ran. All Four Are Now Topping.</h3>
-</div>
-
-<div class="label orange">Why These Trades Worked — And Why They&rsquo;re Done</div>
-<h2>Every Winning Trade of 2026 Has Now Hit a Wall.</h2>
-
-<p><strong>Gold and Silver</strong> ran because of war, inflation fear, and the Fed pausing. Gold peaked at +25% YTD in late January ($5,400/oz spot), then gave most of it back. Currently just +5% YTD. Silver had a similar pattern &mdash; ran hard, gave most of it back. <strong>The defensive-metal trade is done.</strong></p>
-<p><strong>Energy</strong> ran on the Iran war oil premium. When the war premium fades, energy stalls. XLE is holding its gains for now (+29.7% YTD) but the catalyst is softening.</p>
-<p><strong>AI Infrastructure</strong> ran to the widest 200-day gap since the dot-com peak. Last week, SOX dropped 6% in a single session and SOXL gave back 20%. That&rsquo;s not a dip &mdash; that&rsquo;s the stretched trade beginning to unwind. Retail poured $9.8B into SOXL over the past 12 months. When that positioning reverses, the exits are narrow.</p>
-
-<div class="pull-quote">&ldquo;Every major rotation follows the same pattern: crowded winning trades top out, capital rotates to the most undervalued liquid asset available. In 2026, that destination is crypto.&rdquo;</div>
-
-<table class="table-clean">
-  <tr><th>Trade</th><th style="text-align:right;">2026 Peak YTD</th><th style="text-align:right;">Current YTD</th><th>Catalyst Status</th></tr>
-  <tr><td><strong>Gold (GLD)</strong></td><td style="text-align:right;">+25%</td><td class="red" style="text-align:right;">+5%</td><td>Topped &amp; fading</td></tr>
-  <tr><td><strong>Silver (SLV)</strong></td><td style="text-align:right;">+40%+</td><td class="red" style="text-align:right;">+7%</td><td>Topped, gave it back</td></tr>
-  <tr><td><strong>Energy (XLE)</strong></td><td style="text-align:right;">+34%+</td><td style="text-align:right;">+29.7%</td><td>War premium softening</td></tr>
-  <tr><td><strong>AI Infra (SOX/NVDA)</strong></td><td style="text-align:right;">+54%+</td><td style="text-align:right;">+21%</td><td>Correcting hard</td></tr>
-  <tr class="highlight-row"><td><strong>Bitcoin</strong></td><td class="red" style="text-align:right;">-</td><td class="red" style="text-align:right;">-11%</td><td class="green">Lagging = opportunity</td></tr>
-</table>
-</div>
-
-<!-- BEAT 2 -->
-<div class="section" style="padding-top:0;">
-<div class="beat-header">
-  <div class="beat-label">Beat 2 &bull; The Rotation Signal</div>
-  <h3>This Weekend BTC and HYPE Moved While Everything Else Stalled. That&rsquo;s the Tell.</h3>
-</div>
-
-<div class="label">Reading the Weekend Tape</div>
-<h2>Rotations Don&rsquo;t Announce Themselves. You See Them in Price Action First.</h2>
-
-<p>Saturday and Sunday: gold flat. Energy flat. AI stocks flat. BTC moved. HYPE moved. That is the rotation tell. Capital is coming off the winning trades and finding the highest-conviction undervalued destination on the board. <strong>This is not a forecast &mdash; this is the tape.</strong></p>
-<p>HYPE specifically has every condition for this rotation to accelerate: real revenue ($50M+/month in protocol fees), mechanical buyback flywheel ($1.3B burned so far, 97% of fees), 70%+ market share in decentralized perps, and two new spot ETFs (21Shares THYP on Nasdaq, Bitwise BHYP on NYSE). Institutional access that didn&rsquo;t exist 10 days ago. <strong>The demand pipe just opened.</strong></p>
-
-<div class="punchline-box">
-  <div class="box-label">Two Paths. Same Destination.</div>
-  <h4>Either the war fades (gold/energy deflate, Fed cuts, BTC catches a bid) or AI capex cracks (semis correct, dollars rotate to next setup). Both paths lead to crypto.</h4>
-  <p style="font-size:14px; line-height:1.65; color:#1a1a1a; margin:0;"><strong>Path 1:</strong> War premium fades → Fed cuts → capital exits defensive metals → finds BTC and HYPE.<br><strong>Path 2:</strong> AI capex squeeze → SOX/SOXL correction continues → capital exits semis → finds the lagging asset. <strong>Same destination either way.</strong></p>
-</div>
-</div>
-
-<!-- BEAT 3 -->
-<div class="section" style="padding-top:0;">
-<div class="beat-header" style="border-left-color:#0a7c42;">
-  <div class="beat-label" style="color:#4ade80;">Beat 3 &bull; The Release</div>
-  <h3>$60 HYPE Is Just the ATH Reclaim. The Flywheel Is Still Running.</h3>
-</div>
-
-<div class="label">The Hyperliquid Flywheel</div>
-<h2>$1.3 Billion Bought Back and Burned. 97% of All Fees Flow Back to HYPE Holders.</h2>
-<p>Hyperliquid owns roughly 70% market share of decentralized perps. $180B+ in monthly volume. $50M+/month in protocol fees. $1.3B in HYPE bought back and burned (4.17% of supply). HIP-3 single-stock perps live (NVDA, AMD, S&amp;P 500). HIP-4 prediction markets live. Two spot HYPE ETFs just launched. Grayscale named as institutional custody partner. <strong>This is the cleanest fundamental story in crypto.</strong></p>
-<p>HYPE ATH: $59.37 on September 18, 2025. Current: $44.92. Down 24% from ATH. <strong>$60 is not a target &mdash; it&rsquo;s a reclaim.</strong></p>
-
-<table class="table-clean">
-  <tr><th>HYPE Target</th><th style="text-align:right;">Timeline</th><th style="text-align:right;">% from today</th><th>Anchor</th></tr>
-  <tr><td><strong>$60</strong></td><td style="text-align:right;">90 days</td><td class="green" style="text-align:right;">+34%</td><td>Sept 2025 ATH — already been there</td></tr>
-  <tr><td><strong>$90</strong></td><td style="text-align:right;">180 days</td><td class="green" style="text-align:right;">+100%</td><td>~32% of Ethereum, fee-justified</td></tr>
-  <tr><td><strong>$180</strong></td><td style="text-align:right;">1 year</td><td class="green" style="text-align:right;">+301%</td><td>~65% of Ethereum FDV</td></tr>
-  <tr><td><strong>$360</strong></td><td style="text-align:right;">2 years</td><td class="green" style="text-align:right;">+702%</td><td>Full-cycle bull / category winner</td></tr>
+<!-- ===== BEAT 1: THE TRADES THAT RAN ===== -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+<tr><td bgcolor="#0a0a0a" style="background-color:#0a0a0a;padding:20px 22px 20px 24px;border-left:6px solid #ff6600;">
+<div style="font-size:11px;letter-spacing:3px;color:#ff6600;font-weight:700;text-transform:uppercase;margin-bottom:4px;">Beat 1 &bull; The Setup</div>
+<div style="font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">Gold Peaked At +25%. Silver Peaked At +23%. SOX Stretched To A 25-Year Extreme. Every Winning Trade of 2026 Has Now Hit A Wall.</div>
+</td></tr>
 </table>
 
-<div class="highlight green">
-  <strong>The reinvestor math:</strong> Reinvestors hold full position + accumulate shares weekly. Every dividend that stays in the fund buys more shares at today&rsquo;s price. If HYPE reprices to $60, reinvestors who accumulated shares at $44 win significantly more than collectors. <strong>+206% since the pivot. The next leg compounds on that base.</strong>
-</div>
-</div>
-
-<!-- MONTHLY DIVIDEND TABLE -->
-<div class="section" style="padding-top:0;">
-<div class="label">Track Record</div>
-<h2>Every Week Since April 2024 &mdash; Without Interruption.</h2>
-<p style="font-size:15px; line-height:1.7; color:#1a1a1a; margin-bottom:16px;">Rebel Dividends has paid a dividend every single week since the April 2024 pivot. Every month, every close, every dividend is below.</p>
-
-<table class="table-clean div-table">
-  <tr><th>Month</th><th style="text-align:right;">Open</th><th style="text-align:right;">Close</th><th style="text-align:right;">Dividends</th><th style="text-align:right;">Mo. Return</th></tr>
-  <tr><td>Apr 2024</td><td style="text-align:right;">$0.00297</td><td style="text-align:right;">$0.00269</td><td style="text-align:right;">$0.00030</td><td class="red" style="text-align:right;">-9.4%</td></tr>
-  <tr><td>May 2024</td><td style="text-align:right;">$0.00265</td><td style="text-align:right;">$0.00353</td><td style="text-align:right;">$0.00055</td><td class="green" style="text-align:right;">+33.2%</td></tr>
-  <tr><td>Jun 2024</td><td style="text-align:right;">$0.00311</td><td style="text-align:right;">$0.00225</td><td style="text-align:right;">$0.00030</td><td class="red" style="text-align:right;">-27.7%</td></tr>
-  <tr><td>Jul 2024</td><td style="text-align:right;">$0.00238</td><td style="text-align:right;">$0.00234</td><td style="text-align:right;">$0.00042</td><td class="red" style="text-align:right;">-1.7%</td></tr>
-  <tr><td>Aug 2024</td><td style="text-align:right;">$0.00147</td><td style="text-align:right;">$0.00175</td><td style="text-align:right;">$0.00024</td><td class="green" style="text-align:right;">+19.0%</td></tr>
-  <tr><td>Sep 2024</td><td style="text-align:right;">$0.00154</td><td style="text-align:right;">$0.00153</td><td style="text-align:right;">$0.00009</td><td class="red" style="text-align:right;">-0.6%</td></tr>
-  <tr><td>Oct 2024</td><td style="text-align:right;">$0.00143</td><td style="text-align:right;">$0.00237</td><td style="text-align:right;">$0.00005</td><td class="green" style="text-align:right;">+65.7%</td></tr>
-  <tr><td>Nov 2024</td><td style="text-align:right;">$0.00241</td><td style="text-align:right;">$0.00275</td><td style="text-align:right;">$0.00007</td><td class="green" style="text-align:right;">+14.1%</td></tr>
-  <tr><td>Dec 2024</td><td style="text-align:right;">$0.00337</td><td style="text-align:right;">$0.00337</td><td style="text-align:right;">$0.00020</td><td style="text-align:right;">+0.0%</td></tr>
-  <tr><td>Jan 2025</td><td style="text-align:right;">$0.00367</td><td style="text-align:right;">$0.00302</td><td style="text-align:right;">$0.00010</td><td class="red" style="text-align:right;">-17.7%</td></tr>
-  <tr><td>Feb 2025</td><td style="text-align:right;">$0.00295</td><td style="text-align:right;">$0.00286</td><td style="text-align:right;">$0.00008</td><td class="red" style="text-align:right;">-3.1%</td></tr>
-  <tr><td>Mar 2025</td><td style="text-align:right;">$0.00246</td><td style="text-align:right;">$0.00182</td><td style="text-align:right;">$0.00010</td><td class="red" style="text-align:right;">-26.0%</td></tr>
-  <tr><td>Apr 2025</td><td style="text-align:right;">$0.00159</td><td style="text-align:right;">$0.00223</td><td style="text-align:right;">$0.00008</td><td class="green" style="text-align:right;">+40.3%</td></tr>
-  <tr><td>May 2025</td><td style="text-align:right;">$0.00246</td><td style="text-align:right;">$0.00408</td><td style="text-align:right;">$0.00009</td><td class="green" style="text-align:right;">+65.9%</td></tr>
-  <tr><td>Jun 2025</td><td style="text-align:right;">$0.00338</td><td style="text-align:right;">$0.00353</td><td style="text-align:right;">$0.00012</td><td class="green" style="text-align:right;">+4.4%</td></tr>
-  <tr><td>Jul 2025</td><td style="text-align:right;">$0.00406</td><td style="text-align:right;">$0.00364</td><td style="text-align:right;">$0.00008</td><td class="red" style="text-align:right;">-10.3%</td></tr>
-  <tr><td>Aug 2025</td><td style="text-align:right;">$0.00301</td><td style="text-align:right;">$0.00387</td><td style="text-align:right;">$0.00012</td><td class="green" style="text-align:right;">+28.6%</td></tr>
-  <tr><td>Sep 2025</td><td style="text-align:right;">$0.00400</td><td style="text-align:right;">$0.00352</td><td style="text-align:right;">$0.00008</td><td class="red" style="text-align:right;">-12.0%</td></tr>
-  <tr><td>Oct 2025</td><td style="text-align:right;">$0.00352</td><td style="text-align:right;">$0.00318</td><td style="text-align:right;">$0.00013</td><td class="red" style="text-align:right;">-9.7%</td></tr>
-  <tr><td>Nov 2025</td><td style="text-align:right;">$0.00278</td><td style="text-align:right;">$0.00191</td><td style="text-align:right;">$0.00018</td><td class="red" style="text-align:right;">-31.3%</td></tr>
-  <tr><td>Dec 2025</td><td style="text-align:right;">$0.00191</td><td style="text-align:right;">$0.00174</td><td style="text-align:right;">$0.00010</td><td class="red" style="text-align:right;">-8.9%</td></tr>
-  <tr><td>Jan 2026</td><td style="text-align:right;">$0.00174</td><td style="text-align:right;">$0.00131</td><td style="text-align:right;">$0.00008</td><td class="red" style="text-align:right;">-24.7%</td></tr>
-  <tr><td>Feb 2026</td><td style="text-align:right;">$0.00131</td><td style="text-align:right;">$0.00143</td><td style="text-align:right;">$0.00008</td><td class="green" style="text-align:right;">+9.2%</td></tr>
-  <tr><td>Mar 2026</td><td style="text-align:right;">$0.00143</td><td style="text-align:right;">$0.00180</td><td style="text-align:right;">$0.00010</td><td class="green" style="text-align:right;">+25.9%</td></tr>
-  <tr><td>Apr 2026</td><td style="text-align:right;">$0.00180</td><td style="text-align:right;">$0.00169</td><td style="text-align:right;">$0.00008</td><td class="red" style="text-align:right;">-1.6%</td></tr>
-  <tr class="current-month"><td><strong>May 2026 (MTD)</strong></td><td style="text-align:right;"><strong>$0.00169</strong></td><td style="text-align:right;"><strong>$0.00188</strong></td><td style="text-align:right;"><strong>$0.00004</strong></td><td class="green" style="text-align:right;"><strong>+11.2%</strong></td></tr>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+<tr><td style="padding:0;">
+<div style="font-size:11px;letter-spacing:2px;color:#c41e3a;font-weight:700;text-transform:uppercase;margin-bottom:4px;">Gold &amp; Silver: The Defensive-Metal Trade Is Done</div>
+<div style="font-size:20px;font-weight:700;color:#000000;margin-bottom:10px;line-height:1.3;">Gold Hit $5,400/oz In January &mdash; A New All-Time High. Today It&rsquo;s Back To +5% YTD. Smart Money Is Out.</div>
+<div style="font-size:15px;line-height:1.7;color:#1a1a1a;margin-bottom:12px;">The war started February 28. By late January, gold was up +25% YTD as capital fled to defensive assets. But the data shows those defensive metal catalysts are fading fast: war-driven inflation (it&rsquo;s almost all energy &mdash; +17.9% YoY from gasoline) fades when the war cools. The Fed can&rsquo;t fight oil supply-shock inflation with rate hikes. And gold at +25% is crowded. The reversal was swift and significant &mdash; from +25% in January to just +5% today.</div>
+<div style="font-size:15px;line-height:1.7;color:#1a1a1a;margin-bottom:12px;">Silver followed the same pattern but moved more violently &mdash; ran to +23% YTD in early May then collapsed back to +7%. <strong>The defensive-metal trade paid. It&rsquo;s paid. It&rsquo;s done.</strong></div>
+</td></tr>
 </table>
 
-<p style="text-align:center; font-size:14px; color:#666; margin-top:8px;">Total dividends distributed since inception: <strong style="color:#ff6600; font-size:18px;">$21,877,844+</strong></p>
-</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:25px;">
+<tr><td style="padding:0;">
+<div style="font-size:11px;letter-spacing:2px;color:#c41e3a;font-weight:700;text-transform:uppercase;margin-bottom:4px;">AI Infrastructure: The Widest 200-Day Gap Since Dot-Com</div>
+<div style="font-size:20px;font-weight:700;color:#000000;margin-bottom:10px;line-height:1.3;">SOXL Is Up +291% YTD. SOX Was +64% Above Its 200-Day Moving Average. Then It Dropped 6% In One Session.</div>
+<div style="font-size:15px;line-height:1.7;color:#1a1a1a;margin-bottom:12px;">The AI infrastructure trade ran harder than any defensive metal. SOXL up +291% YTD. The semiconductor index stretched to its widest gap above its 200-day moving average since the March 2000 dot-com peak &mdash; +64%. That is a 25-year extreme in positioning. Last week, SOX dropped -6% in a single session and SOXL gave back nearly 20% of its value. That&rsquo;s not a dip. That&rsquo;s the stretched trade beginning to unwind.</div>
+<div style="font-size:15px;line-height:1.7;color:#1a1a1a;margin-bottom:12px;">The input cost story also shifted: DRAM contract prices are up +90% in Q1 and another +58-63% expected in Q2. The hyperscalers committed $600B+ in 2026 capex. <strong>If memory costs are doubling and capex is already maxed, either prices break or capex breaks &mdash; both paths lead to the same correction.</strong></div>
+</td></tr>
+</table>
 
-<!-- WEBINAR CTA BOTTOM -->
-<div class="webinar-cta">
-  <div class="pre">Live Webinar &mdash; Today</div>
-  <h3>TUESDAY MAY 19 &mdash; 3:30 PM ET</h3>
-  <p>The full rotation thesis. Every chart. The target ladder. Why now. Don&rsquo;t miss this one.</p>
-  <p class="dean">Call Dean: (505) 322-7515</p>
-</div>
+<!-- DATA TABLE -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:25px;font-size:13px;">
+<tr bgcolor="#1a1a1a">
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;">Trade</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">2026 Peak</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Current YTD</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;">Status</td>
+</tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">Gold (GLD)</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">+25%</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:700;">+5%</td><td style="padding:10px;border:1px solid #e0e0e0;color:#c41e3a;">Topped and fading</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">Silver (SLV)</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">+23%</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#c41e3a;font-weight:700;">+7%</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;color:#c41e3a;">Big run, gave it back</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">Energy (XLE)</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">+34%</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#555555;font-weight:700;">+29.7%</td><td style="padding:10px;border:1px solid #e0e0e0;color:#c41e3a;">War premium softening</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">AI Infra (SOX/SOXL)</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">+291% (SOXL)</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#555555;font-weight:700;">+21% (NVDA)</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;color:#c41e3a;">SOX -6% last session</td></tr>
+<tr bgcolor="#f0fff4"><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;font-weight:700;">Bitcoin (BTC)</td><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;">—</td><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;text-align:right;color:#c41e3a;font-weight:700;">-11%</td><td bgcolor="#f0fff4" style="padding:10px;border:1px solid #0a7c42;border-top:3px solid #0a7c42;color:#0a7c42;font-weight:700;">Lagging = the entry</td></tr>
+</table>
 
-<div class="back-link">
-  <a href="https://www.rebeldividends.com/startwebinar/">Join the live webinar &rarr;</a>
-</div>
+<!-- DIVIDER -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#ff6600" style="background-color:#ff6600;height:4px;font-size:1px;">&nbsp;</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#ffffff" style="background-color:#ffffff;height:30px;font-size:1px;">&nbsp;</td></tr></table>
+
+<!-- ===== BEAT 2: THIS WEEK'S CATALYSTS ===== -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+<tr><td bgcolor="#0a0a0a" style="background-color:#0a0a0a;padding:20px 22px 20px 24px;border-left:6px solid #ff6600;">
+<div style="font-size:11px;letter-spacing:3px;color:#ff6600;font-weight:700;text-transform:uppercase;margin-bottom:4px;">Beat 2 &bull; New This Week</div>
+<div style="font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">Two HYPE ETFs. Coinbase As USDC Partner. a16z Buying $67.5M. The Institutional Infrastructure Just Arrived.</div>
+</td></tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+<tr><td style="padding:0;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:4px;">The ETFs</div>
+<div style="font-size:20px;font-weight:700;color:#000000;margin-bottom:10px;line-height:1.3;">For The First Time In History, Every U.S. Retirement Account Can Now Buy HYPE Through A Normal Brokerage Ticker.</div>
+<div style="font-size:15px;line-height:1.7;color:#1a1a1a;margin-bottom:14px;">21Shares THYP opened on Nasdaq. Bitwise BHYP opened on the NYSE. Until last week, there was no regulated U.S. wrapper for HYPE. Now there are two on the most prestigious exchanges in the country. Every advisor, every IRA, every 401(k) that couldn&rsquo;t touch HYPE before can now buy it through a normal ticker. <strong>That demand pipe didn&rsquo;t exist two weeks ago.</strong></div>
+</td></tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+<tr><td style="padding:0;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:4px;">Coinbase + Circle</div>
+<div style="font-size:20px;font-weight:700;color:#000000;margin-bottom:10px;line-height:1.3;">Coinbase Named Hyperliquid As The Official USDC Deployment Home. 500,000 HYPE Staked. $140M+ New Annualized Revenue Into The Buyback Engine.</div>
+<div style="font-size:15px;line-height:1.7;color:#1a1a1a;margin-bottom:14px;">There is already ~$5 billion of USDC circulating on Hyperliquid. The arrangement is expected to drive $140M+ of new annualized revenue &mdash; revenue that flows directly into the protocol&rsquo;s buy-and-burn engine. More USDC on-chain means more fees. More fees means more HYPE bought off the market and retired. <strong>The flywheel just got a significant new fuel source.</strong></div>
+</td></tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:2px solid #92400e;background:#fffbeb;margin-bottom:25px;">
+<tr><td bgcolor="#fffbeb" style="background-color:#fffbeb;padding:24px 26px;">
+<div style="font-size:11px;letter-spacing:2px;color:#92400e;font-weight:700;text-transform:uppercase;margin-bottom:6px;">The a16z Signal</div>
+<div style="font-size:18px;font-weight:700;color:#000000;margin-bottom:12px;line-height:1.3;">Andreessen Horowitz Bought $67.5M of HYPE Before The ETFs Launched. Then The Senate Advanced CLARITY.</div>
+<div style="font-size:14px;line-height:1.65;color:#1a1a1a;">On-chain wallets linked to a16z loaded $67.5M of HYPE in the month before the ETF launches. The Senate Banking Committee voted 15-9 to advance the CLARITY Act &mdash; the digital-asset market-structure bill. <strong>The biggest venture firm in technology bought ahead of the rule change and ahead of the wrappers. So did we. So did you.</strong></div>
+</td></tr>
+</table>
+
+<!-- DIVIDER -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#ff6600" style="background-color:#ff6600;height:4px;font-size:1px;">&nbsp;</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#ffffff" style="background-color:#ffffff;height:30px;font-size:1px;">&nbsp;</td></tr></table>
+
+<!-- ===== BEAT 3: THE RELEASE ===== -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+<tr><td bgcolor="#0a0a0a" style="background-color:#0a0a0a;padding:20px 22px 20px 24px;border-left:6px solid #0a7c42;">
+<div style="font-size:11px;letter-spacing:3px;color:#4ade80;font-weight:700;text-transform:uppercase;margin-bottom:4px;">Beat 3 &bull; The Release</div>
+<div style="font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">$60 HYPE Is Just The ATH Reclaim. $1.3B Already Bought Back. 97% Of Fees Flow Back. The Math Gets Interesting From There.</div>
+</td></tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:25px;">
+<tr><td style="padding:0;">
+<div style="font-size:11px;letter-spacing:2px;color:#0a7c42;font-weight:700;text-transform:uppercase;margin-bottom:4px;">The Flywheel</div>
+<div style="font-size:20px;font-weight:700;color:#000000;margin-bottom:10px;line-height:1.3;">Hyperliquid Generates $50M+/Month In Protocol Fees. 97% Goes To Buy Back And Burn HYPE. $1.3B Burned. 4.17% Of Supply Gone.</div>
+<div style="font-size:15px;line-height:1.7;color:#1a1a1a;margin-bottom:14px;">Hyperliquid controls 70-80% of on-chain perpetual futures volume. $172.6B in 30-day perp volume. $50M+/month in protocol fees ($600M+ annualized). Of that, 97% flows to HYPE buybacks. Cumulative HYPE bought back and burned: <strong>$1.3 billion, 4.17% of supply</strong>. This isn&rsquo;t theoretical &mdash; it&rsquo;s happening every day. HIP-3 single-stock perps live (NVDA, AMD, S&amp;P 500). HIP-4 prediction markets live. Grayscale named as institutional custody partner. Now two spot ETFs. <strong>Every new revenue stream makes the flywheel faster.</strong></div>
+</td></tr>
+</table>
+
+<!-- HYPE TARGET TABLE -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+<tr><td bgcolor="#0a7c42" style="background-color:#0a7c42;padding:20px 22px 20px 24px;border-left:6px solid #4ade80;">
+<div style="font-size:11px;letter-spacing:3px;color:#4ade80;font-weight:700;text-transform:uppercase;margin-bottom:4px;">The Target Ladder</div>
+<div style="font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">$60. $90. $180. $360. None Of These Requires A Miracle.</div>
+</td></tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;">
+<tr><td style="padding:0;font-size:15px;line-height:1.7;color:#1a1a1a;">$60 is a price HYPE <em>already touched</em> on September 18, 2025 ($59.37 all-time high). That&rsquo;s not a projection &mdash; it&rsquo;s a reclaim. $90 puts Hyperliquid at roughly Coinbase-level valuation on fee revenue. $180 assumes Hyperliquid captures meaningful CEX market share. $360 is the full-cycle bull case. <strong>None of these requires HYPE to be valued more aggressively than peers already are.</strong></td></tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:25px;font-size:13px;">
+<tr bgcolor="#1a1a1a">
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;">Scenario</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">Timeline</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:right;">% from $44.92</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:10px;border:1px solid #333333;color:#cccccc;font-weight:600;text-align:left;">Anchor</td>
+</tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$60</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">90 days</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+34%</td><td style="padding:10px;border:1px solid #e0e0e0;">Sept 2025 ATH &mdash; already been there</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$90</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">180 days</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+100%</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">~32% of Ethereum, fee-justified</td></tr>
+<tr><td style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$180</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;">1 year</td><td style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+301%</td><td style="padding:10px;border:1px solid #e0e0e0;">~65% of Ethereum</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;font-weight:700;">$360</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;">2 years</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;text-align:right;color:#0a7c42;font-weight:700;">+702%</td><td bgcolor="#f8f8f8" style="padding:10px;border:1px solid #e0e0e0;">Full-cycle bull / category winner</td></tr>
+</table>
+
+<!-- DIVIDER -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#ff6600" style="background-color:#ff6600;height:4px;font-size:1px;">&nbsp;</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#ffffff" style="background-color:#ffffff;height:25px;font-size:1px;">&nbsp;</td></tr></table>
+
+<!-- ==================== MONTHLY TRACK RECORD ==================== -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#ffffff" style="background-color:#ffffff;font-size:16px;line-height:1.7;color:#1a1a1a;padding-bottom:15px;">Since our April 2024 pivot, Rebel Dividends has paid a dividend every single week. Every month, every close, every dividend is below.</td></tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-size:13px;">
+<tr bgcolor="#1a1a1a">
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Month</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Open</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Close</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Dividends</td>
+<td bgcolor="#1a1a1a" style="background-color:#1a1a1a;padding:8px;border:1px solid #333333;color:#cccccc;font-weight:600;">Mo. Return</td>
+</tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00297</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00269</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00030</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-9.4%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">May 2024</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00265</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00353</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00055</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+33.2%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Jun 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00311</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00225</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00030</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-27.7%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jul 2024</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00238</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00234</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00042</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-1.7%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Aug 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00147</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00175</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00024</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+19.0%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Sep 2024</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00154</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00153</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00009</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-0.6%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Oct 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00237</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00005</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+65.7%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Nov 2024</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00241</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00275</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00007</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+14.1%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Dec 2024</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00337</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00337</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00020</td><td style="padding:8px;border:1px solid #e0e0e0;">+0.0%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jan 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00367</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00302</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-17.7%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Feb 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00295</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00286</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-3.1%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Mar 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00246</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00182</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-26.0%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00159</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00223</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+40.3%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">May 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00246</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00408</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00009</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+65.9%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Jun 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00338</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00353</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00012</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+4.4%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jul 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00406</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00364</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-10.3%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Aug 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00301</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00387</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00012</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+28.6%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Sep 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00400</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00352</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-12.0%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Oct 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00352</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00318</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00013</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-9.7%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Nov 2025</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00278</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00191</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00018</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-31.3%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Dec 2025</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00191</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00174</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-8.9%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Jan 2026</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00174</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00131</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-24.7%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Feb 2026</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00131</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+9.2%</td></tr>
+<tr bgcolor="#f8f8f8"><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">Mar 2026</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00143</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00180</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;">$0.00010</td><td bgcolor="#f8f8f8" style="padding:8px;border:1px solid #e0e0e0;color:#0a7c42;font-weight:600;">+25.9%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0;">Apr 2026</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00180</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.001691</td><td style="padding:8px;border:1px solid #e0e0e0;">$0.00008</td><td style="padding:8px;border:1px solid #e0e0e0;color:#c41e3a;font-weight:600;">-1.6%</td></tr>
+<tr bgcolor="#fff4ed"><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">May 2026 (MTD)</td><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.001691</td><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.00190</td><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;">$0.00004+</td><td bgcolor="#fff4ed" style="padding:8px;border:1px solid #ff6600;font-weight:700;color:#0a7c42;">+12.4% (MTD)</td></tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;margin-bottom:25px;">
+<tr><td bgcolor="#ffffff" style="background-color:#ffffff;text-align:center;padding:12px 0;">
+<div style="font-size:14px;color:#666666;margin-bottom:4px;">Total Dividends Distributed Since 2022</div>
+<div style="font-size:28px;font-weight:700;color:#ff6600;">$21,877,844+</div>
+</td></tr>
+</table>
+
+</td></tr>
+
+<!-- FOOTER WEBINAR CTA -->
+<tr><td bgcolor="#ff6600" style="background-color:#ff6600;padding:22px 24px;text-align:center;">
+<div style="font-size:11px;letter-spacing:3px;color:#ffffff;font-weight:700;text-transform:uppercase;margin-bottom:8px;opacity:0.9;">Live Webinar &mdash; Today</div>
+<div style="font-size:26px;font-weight:800;color:#ffffff;line-height:1.2;margin-bottom:6px;">TUESDAY MAY 19 &mdash; 3:30 PM ET</div>
+<div style="font-size:14.5px;color:#ffffff;opacity:0.95;line-height:1.55;">The rotation thesis. Every chart. The target ladder. Why now.</div>
+<div style="font-size:14px;color:#ffffff;font-weight:700;margin-top:12px;">Call Dean: <strong>(505) 322-7515</strong></div>
+</td></tr>
 
 <!-- FOOTER -->
-<div class="footer">
-  <div class="corp"><strong>Rebel Dividends Corporation</strong> &bull; <span style="color:#888;">Jason Cox</span></div>
-  <div class="contact">Questions? dean@rebeldividends.com &bull; <strong>(505) 322-7515</strong></div>
-  <div class="legal">
-    <strong>Forward-Looking Statements:</strong> Price targets including HYPE at $60, $90, $180, and $360 are hypothetical illustrations based on assumptions we believe to be reasonable. They are NOT predictions, recommendations, or guarantees. Actual results may differ materially. Past performance is not indicative of future results.<br><br>
-    <strong>Cryptocurrency Risk Disclosure:</strong> HYPE and BTC are digital assets subject to extreme price volatility, regulatory uncertainty, smart-contract risk, and the risk of total loss. This is not financial advice. Consult qualified advisors before making investment decisions.<br><br>
-    <strong>Historical Context:</strong> Prior to April 2024, Rebel Dividends operated a leveraged Ethereum strategy that resulted in significant losses for early investors. All performance figures reflect returns since the April 2024 pivot only. They do not include the prior period&rsquo;s losses.<br><br>
-    <strong>Tax Treatment:</strong> 2026 distributions classified as Return of Capital under IRC &sect;301(c)(2). Return of Capital reduces your adjusted cost basis. Consult your tax advisor.<br><br>
-    <strong>Fee Structure:</strong> Rebel Dividends Corporation charges a 20% management fee on all dividends distributed to shareholders.<br><br>
-    <strong>Unsubscribe:</strong> Reply STOP or contact dean@rebeldividends.com. Rebel Dividends Corporation, Albuquerque, NM.
-  </div>
-</div>
+<tr><td bgcolor="#0a0a0a" style="background-color:#0a0a0a;padding:22px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td style="text-align:center;padding-bottom:8px;">
+<div style="font-size:14px;color:#cccccc;"><strong style="color:#ffffff;">Rebel Dividends Corporation</strong> &nbsp;&bull;&nbsp; <span style="color:#888888;">Jason Cox</span></div>
+</td></tr>
+<tr><td style="text-align:center;padding-bottom:16px;">
+<div style="font-size:13px;color:#888888;">Questions? dean@rebeldividends.com &nbsp;&bull;&nbsp; <strong style="color:#ff6600;">(505) 322-7515</strong></div>
+</td></tr>
+<tr><td style="font-size:11px;line-height:1.7;color:#555555;text-align:left;">
+<strong style="color:#888888;">Forward-Looking Statements:</strong> Price targets including HYPE at $60, $90, $180, and $360 are hypothetical illustrations based on historical patterns and assumptions we believe reasonable. They are NOT predictions, recommendations, or guarantees. Actual results may differ materially. Past performance is not indicative of future results.<br><br>
+<strong style="color:#888888;">Cryptocurrency Risk Disclosure:</strong> HYPE and BTC are digital assets subject to extreme price volatility, regulatory uncertainty, and the risk of total loss. This is not financial advice. Consult qualified advisors before making investment decisions.<br><br>
+<strong style="color:#888888;">Historical Context:</strong> Prior to April 2024, Rebel Dividends operated a leveraged Ethereum strategy that resulted in significant losses for early investors. All performance figures reflect returns since the April 2024 pivot only.<br><br>
+<strong style="color:#888888;">Tax Treatment:</strong> 2026 distributions classified as Return of Capital under IRC &sect;301(c)(2). Consult your tax advisor.<br><br>
+<strong style="color:#888888;">Fee Structure:</strong> Rebel Dividends Corporation charges a 20% management fee on all dividends distributed to shareholders.<br><br>
+<strong style="color:#888888;">Unsubscribe:</strong> Reply STOP or contact dean@rebeldividends.com. Rebel Dividends Corporation, Albuquerque, NM.
+</td></tr>
+</table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
 
 </body>
 </html>
