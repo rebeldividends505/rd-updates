@@ -1,0 +1,45 @@
+Hyperliquid’s **HIP-4 (Hyperliquid Improvement Proposal 4)**, launched in May 2026, introduces **Outcome Trading**—a native primitive for prediction markets built directly on the HyperCore L1. It is designed not as a standalone app, but as a "Lego piece" that integrates prediction markets into the same high-performance order book and margin system as Hyperliquid’s perpetuals and spot markets.
+
+### **1. Mechanical Details: How it Works**
+HIP-4 treats "Outcome Contracts" as fully collateralized binary instruments that settle between **0 and 1 USDC**.
+
+*   **Merged Order Books:** This is the core innovation. The order books for "YES" and "NO" are mathematically linked. A buy order for "YES" at $0.60 is automatically treated as a sell order for "NO" at $0.40. This prevents liquidity fragmentation.
+*   **Split, Merge, and Negate:** 
+    *   **Split:** Users can "split" 1 USDC into one YES token and one NO token.
+    *   **Merge:** Users can redeem one YES and one NO token back for 1 USDC.
+    *   **Negate:** In multi-outcome markets (e.g., a 3-way race), holding a "NO" on every outcome is equivalent to holding the collateral, allowing for early redemption.
+*   **1x Isolated Margin:** Unlike perps, outcome contracts are **fully collateralized**. There is no leverage, no liquidation risk, and no funding rates.
+*   **Portfolio Margin:** While the contracts themselves aren't leveraged, your outcome positions sit in the same account as your perps. Their value can contribute to your overall margin, allowing for sophisticated cross-product hedging (e.g., using a prediction market to hedge a 50x long position).
+
+### **2. Revenue Model & Ecosystem**
+Hyperliquid's model is designed to drive value back to the **HYPE** token and the builders.
+
+*   **Builder Staking:** To deploy a permissionless outcome market, a builder must stake **1,000,000 HYPE**. This stake is slashable if the builder manipulates the oracle, acting as a high-integrity barrier to entry.
+*   **Fee Structure:** 
+    *   **Zero Open Fees:** To incentivize trading, there are **0% fees to open** a position. 
+    *   **Settlement/Close Fees:** Fees are charged only when closing a trade or at final settlement.
+    *   **HYPE Burn:** 97% of protocol-wide trading fees (including perps and outcomes) are used to **buy back and burn HYPE**, creating a deflationary flywheel.
+*   **Treasury Revenue:** The protocol generates an estimated **$160M/year** from the interest on the USDC collateral held in the margin system, which flows back to the HYPE ecosystem.
+
+### **3. Market Data & Comparison (May 2026)**
+
+Hyperliquid's HIP-4 is in its early adoption phase compared to the established giants, but it leads in capital efficiency.
+
+| Metric | Hyperliquid (HIP-4) | Polymarket | Kalshi |
+| :--- | :--- | :--- | :--- |
+| **Daily Volume** | ~$3M – $6M | ~$277M | ~$590M |
+| **Top Markets** | BTC Daily Binaries, HYPE Targets | 5-min Crypto Candles, Culture | US Elections, Macro, Sports |
+| **Fees** | 0% to Open | Maker/Taker Model | Variable Commission |
+| **Regulation** | Permissionless (DEX) | Permissionless (DEX) | **US Regulated (CFTC)** |
+| **Leverage** | 1x (but cross-margins perps) | 1x | 1x |
+| **Settlement** | Sub-second (On-chain) | ~Seconds (Polygon) | Centralized/T+1 |
+
+#### **Top Performing Markets (HIP-4):**
+1.  **BTC Daily Binaries:** "Will BTC close above $X at 06:00 UTC?" (highest recurring volume).
+2.  **HYPE Price Targets:** Binary bets on the native platform token performance.
+3.  **Hedging Markets:** Users buying "NO" outcomes on macro events specifically to hedge liquidation risk on their high-leverage perpetual positions.
+
+### **Summary of Differences**
+*   **Polymarket** is the "Social Leader," with the largest retail user base and a focus on cultural and narrative events.
+*   **Kalshi** is the "Institutional Leader," utilized by US traders for macro and political hedging due to its regulated status.
+*   **Hyperliquid (HIP-4)** is the "Trader's Choice." It offers the fastest execution (sub-second) and is the only platform where your prediction market bets directly interact with your perpetual futures margin, making it a powerful tool for professional DeFi strategies.

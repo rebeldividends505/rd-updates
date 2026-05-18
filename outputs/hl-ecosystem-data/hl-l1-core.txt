@@ -1,0 +1,44 @@
+Hyperliquid has evolved into a high-performance Layer 1 blockchain specifically engineered for low-latency financial applications. Below is the complete technical and operational breakdown of the network as of mid-2026.
+
+### **Core Performance Metrics**
+Hyperliquid utilizes a custom dual-engine architecture that separates the high-speed trading engine (**HyperCore**) from the general-purpose smart contract layer (**HyperEVM**).
+
+*   **TPS (Transactions Per Second):**
+    *   **HyperCore:** Capable of processing up to **200,000 orders per second**.
+    *   **HyperEVM:** Optimized for financial logic, with theoretical scalability projected toward **1 million TPS** as execution optimizations continue.
+*   **Block Time:** 
+    *   Core trading actions achieve block times of **0.1 to 0.2 seconds**.
+    *   **HyperEVM** employs a "dual block" system: "small blocks" every **1 second** for standard transactions and "large blocks" every **60 seconds** for heavy logic like contract deployments.
+*   **Finality:** Sub-second finality is the standard. Median finality is approximately **0.2s**, with the 99th percentile under **0.9s**.
+*   **Total Transactions:** The HyperEVM layer has processed approximately **138.5 million transactions** all-time. Cumulative trading volume on the L1 has surpassed **$4.4 trillion**.
+
+### **Consensus & Security (HyperBFT)**
+Hyperliquid does not use standard Tendermint or HotStuff; it uses **HyperBFT**, a custom consensus algorithm built from the ground up for trading.
+
+*   **Mechanism:** An optimized BFT algorithm inspired by HotStuff but with a decoupled consensus and networking stack. This allows the network to stay "ahead" of the execution, minimizing the latency between a trade being sent and its inclusion in a block.
+*   **Quorum:** Requires a **>2/3 majority** of the total stake to finalize a block.
+*   **Validator Count:** Currently **25–30 active validators**. The network is gradually expanding toward a target of **50+ validators** by the end of 2026 to increase decentralization.
+
+### **Staking & Tokenomics (HYPE)**
+Staking is the primary security mechanism for the L1, with the native **HYPE** token serving as the stake.
+
+*   **Total Staked:** Approximately **435 million HYPE**.
+*   **Validator Requirements:** A minimum self-delegation of **10,000 HYPE** is required to join the active set.
+*   **Staking Yield:** Currently ranges between **2.2% – 2.5% APR**.
+*   **Unstaking Period:** Tokens are subject to a **7-day withdrawal queue**, providing a balance between security and capital efficiency.
+
+### **2026 Protocol Upgrades & Roadmap**
+In 2026, Hyperliquid transitioned from a specialized perpetuals exchange into a full-scale financial L1 ecosystem.
+
+| Upgrade | Release | Impact |
+| :--- | :--- | :--- |
+| **HIP-4: Outcomes** | Q2 2026 | Native primitive for **Prediction Markets** and insurance products. |
+| **CoreWriter** | Q1 2026 | Enables HyperEVM smart contracts to **write directly to HyperCore**. This allows for automated vaults and lending protocols to trade on the DEX trustlessly. |
+| **Native Options** | Q3 2026 (Exp) | Launch of on-chain options markets to complement the existing perps and spot suites. |
+| **Forex & Commodities**| Ongoing | Introduction of Gold, Oil, and major Forex pairs as perpetual futures. |
+| **Multi-Chain Bridge**| Q2 2026 | A native bridge allowing direct deposits from major EVM chains (Base, Ethereum, etc.) to Hyperliquid L1. |
+| **HYPE Collateral** | Q1 2026 | Ability to use the native **HYPE** token as collateral for trading positions. |
+
+***
+
+**Data Source:** Web search results and protocol documentation as of May 2026. Metrics like TPS and validator counts are subject to real-time fluctuations based on network demand and governance votes.

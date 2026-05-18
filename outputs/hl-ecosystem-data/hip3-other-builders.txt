@@ -1,0 +1,29 @@
+Hyperliquid’s **HIP-3 (Hyperliquid Improvement Proposal 3)**, also known as "Builder-Deployed Perpetuals," allows developers to permissionlessly deploy their own perpetual futures markets. While **trade.xyz** is currently the most dominant builder (specializing in tokenized stocks and synthetic indices), several other builders are active or in the pipeline.
+
+### Known HIP-3 & Ecosystem Builders
+
+| Builder | Focus Area | Status | Volume / Metrics |
+| :--- | :--- | :--- | :--- |
+| **Trade.xyz** | **RWAs & Indices** (Tesla, Nvidia, $XYZ100) | **Active** (Live) | Dominates ~90% of HIP-3 Open Interest. |
+| **Based** (formerly Suberra) | **Consumer SuperApp / PerpDEX** (USDe quote) | **In Development** | Recently raised $11.5M; focus on high-leverage perps using Ethena's USDe. |
+| **Ventuals** | **Pre-IPO & Social Trading** | **Active** (Live) | TVL: ~$23.3M. Focuses on retail-friendly Pre-IPO equity perps. |
+| **Aura** | **Fixed Income RWAs** (U.S. Treasuries) | **In Development** | Focused on launching U.S. Treasury-linked perpetuals. |
+| **HyperBeat** | **Packaged Yield / Perps** | **Active** (Live) | TVL: ~$42.2M (combined Earn + LST). Simplifies perp bootstrapping. |
+| **Phantom** | **Wallet-Native Perps** (Frontend) | **Active** (Live) | One of the largest "Builder Code" frontends by volume. |
+| **PVP.trade** | **Social Trading & Automation** | **Active** (Live) | Generated >$7M in builder fee revenue via social trading tools. |
+
+### Supporting Infrastructure Builders
+These projects do not necessarily deploy perp markets themselves but provide the essential infrastructure for HIP-3 builders to launch and scale:
+
+*   **Kinetiq:** A liquid staking and "Exchange-as-a-Service" protocol. It allows retail users to pool **HYPE** to help builders meet the **500,000 HYPE** staking bond required to launch a new HIP-3 DEX. (TVL: ~$897M across kHYPE and Earn).
+*   **Hydromancer (HyperDash):** A data and API stack that provides full monitoring and orderbook data for HIP-3 DEXes.
+*   **Unit:** A liquidity management protocol supporting the deployment and staking requirements for new builders.
+
+### Key Requirements for HIP-3 Builders
+To deploy a new market on Hyperliquid, builders must adhere to the following framework:
+1.  **Staking Bond:** A mandatory **500,000 HYPE** tokens must be staked as a security/slashing bond.
+2.  **Asset Listing:** The first 3 assets are free; subsequent listings are determined via a **Dutch Auction**.
+3.  **Revenue Share:** Builders retain **50% of the trading fees** generated on their specific markets.
+4.  **Ownership:** Builders are responsible for their own front-end interfaces and oracle feed management.
+
+*Data sourced via DefiLlama and Hyper Foundation ecosystem reports as of May 2026.*

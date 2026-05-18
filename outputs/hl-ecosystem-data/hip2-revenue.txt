@@ -1,0 +1,28 @@
+As of May 2026, the Hyperliquid HIP-2 (Hyperliquidity) spot market functions as a core component of the protocol's "HYPE flywheel," integrating automated market-making directly into the L1's central limit order book.
+
+### 1. Revenue Model: HIP-2 Spot Markets
+The HIP-2 model is designed to provide "instant liquidity" for native tokens (HIP-1 assets) without requiring manual market makers.
+*   **Mechanism:** It is a protocol-level strategy that places resting bid and ask orders on the order book. It maintains a **0.3% spread** and updates every 3 seconds based on oracle prices.
+*   **Fee Structure:** Spot trades typically carry a **0.045% Taker fee** and a **0.015% Maker fee**. To incentivize spot adoption, trading volume on spot markets counts **2x** toward a user's volume-weighted fee discounts.
+*   **Asset Burning:** Fees collected in native HIP-1 tokens (like HYPE) are frequently **burned directly**, creating immediate deflationary pressure for those specific assets.
+
+### 2. Fee Revenue: Spot vs. Perps
+While the spot market is growing, Hyperliquid remains a perp-dominant platform. Based on the last 30 days of data, perp fees account for approximately **97%** of total protocol revenue.
+
+| Market Type | 24h Fees | 30d Fees | % of Total |
+| :--- | :--- | :--- | :--- |
+| **Perpetuals** | $1.44M | $53.51M | ~97.0% |
+| **Spot Orderbook** | $74.6K | $1.63M | ~3.0% |
+| **Total** | **$1.51M** | **$55.14M** | **100%** |
+
+### 3. Fee Distribution: Where the Money Goes
+Hyperliquid distributes **100% of protocol fees** to the ecosystem. The current distribution for standard markets is:
+
+*   **Assistance Fund (HYPE Buyback): 99%**
+    The vast majority of fees go to the Assistance Fund. This fund programmatically uses USDC revenue to buy back **HYPE** tokens from the spot market and **permanently burns** them.
+*   **HLP (Hyperliquidity Provider) Vault: 1%**
+    A small portion of trading fees is directed to HLP depositors to supplement their returns. (Note: This was reduced from 3% to 1% in late 2025).
+*   **Validators: 0% (Direct Trading Fees)**
+    Validators do not receive a share of the trading fees. Instead, they are compensated through **new token issuance (staking rewards)** and **network gas fees**. This separation ensures that trading revenue is fully utilized to support the HYPE token's value.
+
+*Data source: DefiLlama (May 18, 2026).*

@@ -1,0 +1,49 @@
+Hyperliquid's DeFi ecosystem has expanded significantly, with **HyperLend** currently serving as the flagship lending protocol on the network. As of May 18, 2026, the lending landscape on Hyperliquid is characterized by a mix of native money markets and multi-chain protocols that have expanded to the Hyperliquid L1.
+
+### **What is HyperLend?**
+HyperLend is the primary decentralized money market native to the Hyperliquid L1 (HyperEVM). It operates similarly to Aave, utilizing a pooled-to-peer model where users can supply assets to earn yield or use them as collateral to borrow. 
+
+**Key Features:**
+*   **Modular Architecture:** Consists of **Core (Pooled)** markets for major assets and **Isolated** markets for more niche or volatile assets.
+*   **Asset Alignment:** Recently transitioned to **native USDC** as its primary stablecoin quote asset following the integration of Circle's treasury on Hyperliquid.
+*   **Token ($HPL):** The native governance token, $HPL, allows for borrower rebates and interest rate discounts when staked.
+*   **TVL:** Currently holds approximately **$416.9M** in total value locked across its pooled and isolated versions.
+
+---
+
+### **Top Lending Protocols on Hyperliquid**
+According to DefiLlama data, there are several active lending markets. While HyperLend leads in native TVL, multi-chain protocols like Morpho and Euler have also established a presence.
+
+| Protocol | Category | TVL (on Hyperliquid) | 7d Change |
+| :--- | :--- | :--- | :--- |
+| **HyperLend (Pooled)** | Lending | $416.36M | +4.70% |
+| **Morpho Blue** | Lending | $311.05M | -3.58% |
+| **HypurrFi (Pooled)** | Lending | $20.76M | -34.21% |
+| **Euler V2** | Lending | $2.75M | -20.60% |
+| **Hyperdrive HL** | Lending | $1.67M | -11.44% |
+| **HyperLend (Isolated)**| Lending | $0.55M | -2.45% |
+
+---
+
+### **Market Stats: Assets & Rates**
+The lending markets primarily revolve around native Hyperliquid assets and major bridged tokens. Rates are dynamic based on utilization.
+
+**Available Assets:**
+*   **Stablecoins:** USDC (Primary), USDT.
+*   **Native/LSDs:** HYPE, WHYPE, wstHYPE, kHYPE.
+*   **Majors:** WETH, WBTC.
+
+**Estimated Live Rates (HyperLend):**
+| Asset | Supply APY | Borrow APY | Max LTV |
+| :--- | :--- | :--- | :--- |
+| **USDC** | ~4.06% | ~5.85% | 80% |
+| **HYPE** | ~0.60% | ~0.97% | 60% |
+| **WETH** | ~1.50% | ~2.10% | 82.5% |
+| **WBTC** | ~0.80% | ~1.25% | 75% |
+
+### **Analysis & Recent Developments**
+1.  **USDC Dominance:** The ecosystem has moved away from older stablecoins (like USDH) in favor of native USDC. Yield from the official USDC treasury on Hyperliquid is notably used for **HYPE buybacks**, creating a unique circular economy for lenders.
+2.  **Collateral Innovation:** HyperLend has begun supporting **ERC-4626 Tokenized Vaults**, allowing users to use their Hyperliquid DEX liquidity provider (HLP) positions as collateral.
+3.  **Efficiency Mode (E-Mode):** High-efficiency borrowing is available for correlated assets (e.g., HYPE vs. staked HYPE), allowing for LTVs as high as **81.5%**.
+
+*Note: TVL and rates are as of May 18, 2026. Rates fluctuate based on real-time market demand and protocol utilization.*

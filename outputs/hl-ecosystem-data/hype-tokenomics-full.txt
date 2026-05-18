@@ -1,0 +1,38 @@
+The **HYPE** token is the native asset of the **Hyperliquid** Layer-1 blockchain. It is characterized by its "Hyper-Sound" money model, which directs nearly all protocol revenue toward token burns.
+
+As of May 2026, here is the complete tokenomics breakdown:
+
+### **1. Supply and Burn Metrics**
+Hyperliquid utilizes an aggressive deflationary mechanism where 97%–99% of all protocol fees (trading, liquidations, and gas) are used to buy back and burn HYPE.
+
+*   **Maximum Supply:** 1,000,000,000 HYPE (Fixed cap).
+*   **Total Supply:** **~954,900,000 HYPE** (Reduced by ~4.5% via burns).
+*   **Circulating Supply:** **~254,400,000 HYPE** (~26% of total supply).
+*   **Total Burned to Date:** **>45,000,000 HYPE**.
+*   **Daily Burn Rate:** Approximately **17,000 – 46,000 HYPE per day** (roughly $800k–$1M+ in daily value, depending on network volume).
+
+### **2. Token Allocation**
+The HYPE launch was notable for having **zero VC or private investor allocations**. Over 70% of the supply is designated for the community.
+
+| Allocation | Percentage | Details |
+| :--- | :--- | :--- |
+| **Community Emissions** | 38.88% | Reserved for staking rewards and future incentives. |
+| **Genesis Distribution** | 31.00% | Airdropped to early users (Nov 2024). |
+| **Core Contributors** | 23.80% | 1-year lockup, then linear vesting until 2028. |
+| **Hyper Foundation** | 6.00% | Ecosystem development and operations. |
+| **Grants & HIP-2** | 0.312% | Small allocations for builders and liquidity. |
+
+### **3. Staking and Yield**
+Staking HYPE secures the network's HyperBFT consensus and grants users tiered trading fee discounts (up to 40%).
+
+*   **Staking Ratio:** **~45.15%** of circulating supply (~114.9M HYPE).
+*   **Current APY:** **2.2% – 2.37%**.
+*   **Yield Mechanism:** The APY is inversely proportional to the square root of the total amount staked; as more HYPE is staked, the APY gradually decreases.
+*   **Unstaking Period:** 1-day lock for delegation; **7-day waiting period** to withdraw to a spot account.
+
+### **4. Treasury and Wallets**
+*   **Hyperliquid Strategies Inc:** The primary treasury vehicle, which manages approximately **20 million HYPE** tokens and cash reserves for protocol growth.
+*   **Foundation Wallet:** Manages the 6% allocation ($60M HYPE) used for ecosystem grants and builder incentives.
+*   **Team Vesting:** Core contributor tokens began vesting in late 2025/early 2026 following their initial one-year lockup.
+
+*Data sourced from Hyperliquid protocol documentation and real-time on-chain metrics as of May 2026.*

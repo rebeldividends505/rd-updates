@@ -1,0 +1,43 @@
+Hyperliquid and GMX v2 represent the two dominant, yet fundamentally different, architectures for decentralized perpetual exchanges (Perp DEXs). According to data from DefiLlama, Hyperliquid has established a significant lead in trading activity, while GMX v2 remains a core primitive for the Arbitrum and multi-chain ecosystem.
+
+### **1. Key Metrics Comparison (30d Data)**
+
+| Metric | Hyperliquid (Perps + HLP) | GMX v2 |
+| :--- | :--- | :--- |
+| **30d Trading Volume** | ~$180.3B (est. based on 7d $42B) | ~$2.38B (est. based on 7d $554M) |
+| **30d Fees** | ~$53.5M | ~$2.03M |
+| **Total Value Locked (TVL)** | ~$388.3M (HLP Vault) | ~$202.0M (V2 Perps) |
+| **Token Performance (30d)** | **+66.7%** (HYPE) | **+4.9%** (GMX) |
+
+*Note: Hyperliquid's volume and fee data are significantly higher, reflecting its Central Limit Order Book (CLOB) efficiency and high-frequency trading activity.*
+
+---
+
+### **2. Revenue Model Differences**
+
+The two protocols utilize distinct mechanisms for capturing value and incentivizing liquidity:
+
+*   **Hyperliquid (Vertical Integration):**
+    *   **Model:** Operates as a purpose-built Layer 1 blockchain. It uses a **CLOB (Central Limit Order Book)** where makers and takers interact directly.
+    *   **Value Accrual:** Revenue is concentrated in the **HYPE** token. Approximately **99% of perp trade fees** are directed to an Assistance Fund for HYPE buybacks (as of 2026 projections/governance), while **1%** goes to the HLP (liquidity vault) suppliers.
+    *   **HLP Vault:** Unlike GMX's pools, HLP acts as a market maker of last resort and earns from trading PnL rather than a direct cut of every transaction fee.
+
+*   **GMX v2 (Isolated Pool Model):**
+    *   **Model:** Uses **isolated liquidity pools (GM pools)**. Traders trade against these pools rather than an order book.
+    *   **Value Accrual:** Follows a "Real Yield" distribution. Fees are split: **63% to LPs** (GM token holders), **27% to GMX stakers**, and **10% to the Treasury**.
+    *   **Risk Management:** v2 introduced isolated markets (e.g., SOL/USD, BTC/USD) to protect LPs from cross-market contagion, a shift from the single-pool "GLP" model of v1.
+
+---
+
+### **3. Competitive Positioning**
+
+*   **Hyperliquid: The "Binance of DeFi"**
+    *   **Positioning:** Targeted at professional traders and high-frequency firms. By owning the entire L1 stack, it offers sub-second finality and a CEX-like user experience.
+    *   **Moat:** Massive liquidity depth and a rapidly expanding ecosystem (HyperEVM). It is currently the market leader by volume, capturing the majority of "on-chain degen" and institutional perp flow.
+
+*   **GMX v2: The "Composable Liquidity Layer"**
+    *   **Positioning:** Positioned as the safest and most integrated yield-bearing primitive. It serves as a foundation for other DeFi protocols (like yield aggregators and delta-neutral vaults) that build on top of its GM pools.
+    *   **Moat:** Deep integration into the Arbitrum ecosystem and a "Real Yield" brand that attracts passive capital. It is often preferred by users who want to earn yield on their assets (BTC/ETH/USDC) with less active management than an order-book market maker would require.
+
+### **Summary**
+Hyperliquid is currently the **growth and volume leader**, with its HYPE token significantly outperforming GMX over the last 30 days. GMX v2 maintains its status as a **stable DeFi pillar**, focusing on sustainable yield for liquidity providers and multi-chain expansion.

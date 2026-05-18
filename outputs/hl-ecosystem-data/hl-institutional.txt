@@ -1,0 +1,34 @@
+As of mid-2026, Hyperliquid has evolved from a high-performance decentralized exchange into a cornerstone of the institutional DeFi ecosystem. The entry of major financial players and the launch of regulated investment vehicles have bridged the gap between Wall Street and the Hyperliquid L1.
+
+### **1. Spot Hyperliquid ETFs: THYP & BHYP**
+In May 2026, the first spot Hyperliquid ETFs launched on major U.S. exchanges, providing institutional and retail investors with regulated exposure to the HYPE token.
+
+| Ticker | Issuer | Exchange | Key Feature |
+| :--- | :--- | :--- | :--- |
+| **THYP** | 21Shares | Nasdaq | Uses **Figment** for institutional staking (30–70% of holdings) to provide yield to shareholders. |
+| **BHYP** | Bitwise | NYSE | Utilizes **Bitwise Onchain Solutions** for in-house validator management and staking. |
+| **TXXH** | 21Shares | Nasdaq | A leveraged product offering **2x daily exposure** to the HYPE token. |
+
+### **2. Institutional Custodians & Infrastructure**
+The approval of staking-enabled ETFs was made possible by partnerships with federally chartered institutions that meet SEC requirements for "qualified custodians."
+*   **Anchorage Digital Bank:** Serves as the primary digital asset custodian for both Bitwise and 21Shares, providing the OCC-chartered security required for institutional-grade products.
+*   **BNY Mellon:** The world’s largest custody bank acts as the **cash custodian, administrator, and transfer agent** for the ETFs, handling the TradFi side of the creation/redemption process.
+*   **BitGo:** Provides secondary custody and cold storage solutions for 21Shares' suite of Hyperliquid products.
+
+### **3. Market Makers & Liquidity Providers**
+Hyperliquid's deep liquidity, often exceeding **$30 billion in daily volume** by 2026, is supported by a roster of "Approved Participants" who facilitate ETF arbitrage and institutional block trading:
+*   **Primary Market Makers:** **Wintermute**, **Flowdesk**, **FalconX**, and **Nonco**.
+*   **Market Position:** These firms help maintain Hyperliquid's dominance, which currently accounts for over **70% of global on-chain derivatives open interest**.
+
+### **4. Validators and Staking**
+With the transition to a Proof-of-Stake (PoS) model, the validator set has professionalized significantly:
+*   **Institutional Validators:** Professional staking firms like **Figment** and **Bitwise Onchain Solutions** now secure the network.
+*   **Economic Model:** The protocol uses a high percentage of its trading revenue for **HYPE buybacks**, creating a direct link between platform volume and the yield earned by institutional stakers.
+
+### **5. Key Partnerships & Ecosystem Expansion (2025–2026)**
+Several milestones have solidified Hyperliquid's institutional appeal:
+*   **HyperEVM (2025):** The launch of an Ethereum-compatible execution layer allowed institutional-grade lending and borrowing dApps to deploy directly on the network.
+*   **Tokenized Real-World Assets (RWA):** In late 2025, Hyperliquid expanded into **tokenized commodities** (crude oil, gold) and **prediction markets** (Outcome Markets), attracting traditional commodity traders and macro funds.
+*   **Hyperion DeFi:** A publicly listed gateway company has emerged, providing a compliant vehicle for TradFi firms to access the full Hyperliquid stack, including liquid staking and yield strategies.
+
+By mid-2026, the **HYPE token** has consistently ranked among the top 10 cryptocurrencies by market capitalization, with a valuation exceeding **$11 billion**, reflecting its status as the primary infrastructure for on-chain institutional derivatives.

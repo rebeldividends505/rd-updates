@@ -1,0 +1,44 @@
+Trade.xyz functions as the primary decentralized interface for **Hyperliquid’s RWA (Real World Asset)** ecosystem. It operates under the **HIP-3** protocol, which allows for the creation of perpetual futures on traditional assets with on-chain order books.
+
+Below is the comprehensive profile based on on-chain data and market analysis.
+
+### 1. Trading Volume & Open Interest
+Trade.xyz's activity is captured within the broader Hyperliquid Perps statistics. As of mid-May 2026, Hyperliquid has become a dominant force in decentralized derivatives.
+
+| Metric | Value |
+| :--- | :--- |
+| **24h Trading Volume** | **$3.90B** |
+| **30d Trading Volume** | **~$118B** (Estimated based on current run-rate) |
+| **Total Fees (All-Time)** | **$1.28B** |
+| **Current Open Interest** | **$1.15B** (Hyperliquid network-wide) |
+
+### 2. Asset List (RWAs & Traditional Markets)
+Trade.xyz specializes in bringing TradFi liquidity to DeFi. Assets are traded as "Perpetual Futures," meaning you can go long or short with leverage without owning the underlying stock.
+
+*   **Stocks:** High-liquidity US equities including **NVDA, AAPL, AMZN, AMD, MSFT,** and **TSLA**.
+*   **Indices:** **XYZ100** (a native index of top 100 non-financial companies, similar to the Nasdaq-100) and **SP500**.
+*   **Commodities:** **Gold (GOLD), Silver (SILVER), WTI Oil (WTIOIL),** and **Brent Crude**.
+*   **Pre-IPO Markets:** Unique access to speculative markets like **SpaceX (SPCX)** and **Cerebras (CBRS)**.
+
+### 3. Revenue & Growth Trajectory
+Hyperliquid's revenue model is highly efficient, with 99% of protocol revenue currently directed toward the **HYPE** token ecosystem (via buybacks/burns).
+
+*   **24h Revenue:** **$1.38M**
+*   **30d Revenue:** **$49.7M**
+*   **Growth Trajectory:** Hyperliquid has seen parabolic growth in 2026. In early 2026, it began consistently generating more weekly fee revenue than the Ethereum mainnet. RWA trading via Trade.xyz now accounts for approximately **45–50%** of total network volume, marking a shift from purely crypto-native assets to global macro trading.
+*   **Active Users:** The Hyperliquid ecosystem reported over **1.4 million active wallets** as of late 2025/early 2026.
+
+### 4. Comparison: Trade.xyz vs. Traditional Brokers
+Trade.xyz offers a "gapless" trading experience that traditional brokers like Robinhood or Interactive Brokers cannot match.
+
+| Feature | Trade.xyz (Hyperliquid) | Traditional Brokers (e.g., Robinhood) |
+| :--- | :--- | :--- |
+| **Trading Hours** | **True 24/7/365** | 24/5 (Closed Weekends/Holidays) |
+| **Settlement** | **Instant (<1 second)** | T+1 (Standard) |
+| **Leverage** | Up to **20x** on Indices | Typically 2x - 4x |
+| **Transparency** | Fully On-Chain Order Book | Dark Pools / Internalized Flow |
+| **Access** | Permissionless (Global) | Region-locked / Strict KYC |
+
+**The 24/7 Advantage:** Traditional "24-hour" retail trading relies on private ATS (Alternative Trading Systems) which have thin liquidity and close on weekends. Trade.xyz uses an **8-hour EMA Oracle** to smooth price discovery during hours when the NYSE/CME are closed. This allows traders to react to global news on a Sunday morning that wouldn't be reflected in traditional markets until the Monday morning "gap" open.
+
+*Data Source: DefiLlama (May 18, 2026).*

@@ -1,0 +1,32 @@
+As of May 2026, the **Hyperliquid HyperEVM** ecosystem has matured into a multi-billion dollar Layer 1 environment. The ecosystem is uniquely characterized by its "precompile" architecture, which allows dApps on the EVM side to interact directly with the high-performance native perpetual order book (HyperCore).
+
+Total ecosystem TVL currently fluctuates around **$4.5B – $5.0B**, with approximately **1.4 million unique addresses** and **247,000 daily active users (DAU)**.
+
+### **HyperEVM dApp Ecosystem (May 2026)**
+
+| Category | Project | TVL (Est.) | Status / Token | Key Function |
+| :--- | :--- | :--- | :--- | :--- |
+| **Liquid Staking** | **Kinetiq** | $1.8B | Live ($KNTQ) | Issues **kHYPE**; the largest LST provider and highest TVL project. |
+| **DEX (HIP-3)** | **Markets** | $1.4B* | Live | First HIP-3 exchange; enables permissionless perps for **Equities, Gold, and Indices**. |
+| **Lending / CDP** | **Felix** | $500M | Live (Points) | Mints **USDH** (stablecoin); supports Ondo-backed RWA collateral. |
+| **Lending / Debt** | **HypurrFi** | $300M | Live (Points) | Full-suite debt management using Euler tech; issues **USDXL**. |
+| **Lending** | **HyperLend** | $150M | Live (Points) | Native money market with real-time leverage and dynamic rates. |
+| **Yield / Arb** | **Liminal** | $120M | Live | Automates delta-neutral funding arbitrage using HyperCore perps. |
+| **DEX (AMM)** | **Hyperswap** | $85M | Live | Primary spot AMM for ecosystem tokens and memecoin launches. |
+| **DeFi Hub** | **Hyperbeat** | $55M | Live | Yield aggregator and liquid staking (**beHYPE**) platform. |
+| **Tokenization** | **Unit** | $400M** | Live | Bridge/Gateway for native spot BTC, SOL, and ETH on Hyperliquid. |
+| **NFTs** | **Drip Trade** | $8M | Live | Marketplace for native collections (e.g., **Hypurrs**, **Hypepunks**). |
+| **Infrastructure** | **hlnames** | N/A | Live | Native naming service (e.g., `vitalik.hl`). |
+
+*\*Volume-based TVL (liquidity provided to HIP-3 markets).*  
+*\*\*Represents the value of bridged spot assets held in the protocol.*
+
+---
+
+### **Ecosystem Highlights & Metrics**
+*   **HyperEVM Maturity:** The ecosystem is in its "Post-Alpha Mainnet" stage. The **CoreWriter** upgrade (July 2025) is the backbone of these dApps, allowing them to execute trades on the order book with sub-second finality.
+*   **HYPE Token:** The native asset is trading between **$41.00 and $47.00** with a market cap of approximately **$11B**.
+*   **User Growth:** Activity is driven by **HIP-3 (Permissionless Markets)** and **HIP-4 (Prediction Markets)**. These protocols have transitioned Hyperliquid from a crypto-only perp DEX into a global trading layer for traditional finance (TradFi) assets like BABA, TSLA, and Commodities.
+*   **Dominant Strategy:** The most popular "money lego" involves staking HYPE on **Kinetiq** to get **kHYPE**, then depositing that kHYPE into **Felix** to mint **USDH**, which is then used to trade spot or provide liquidity on **Hyperswap**.
+
+**Data Note:** TVL figures are estimates based on integrated on-chain state and protocol-reported metrics as of mid-2026. User counts refer to unique signing addresses interacting with HyperEVM contracts.

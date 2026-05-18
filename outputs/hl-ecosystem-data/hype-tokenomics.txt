@@ -1,0 +1,31 @@
+According to the latest data from May 2026, the **HYPE** token (Hyperliquid) features a community-centric, deflationary model with zero VC or private sale allocations.
+
+### **Supply and Burn Metrics**
+| Metric | Value |
+| :--- | :--- |
+| **Total Supply** | 1,000,000,000 HYPE |
+| **Circulating Supply** | ~238,385,315 HYPE (approx. 23.8%) |
+| **Tokens Burned to Date** | **45,116,933 HYPE** |
+| **Burn Mechanism** | 100% of protocol revenue (trading fees) is used for HYPE buyback-and-burn. |
+| **Daily/Weekly Burn Rate** | Variable; based on 100% of Hyperliquid trading volume. |
+
+### **Staking and Yield**
+*   **Staking Ratio:** **45.15%** of the eligible supply is currently staked (~114.9M HYPE).
+*   **Staking APY:** Approximately **2.25% – 2.3%**. Note that rewards are funded by a dedicated *Future Emissions Reserve* rather than token inflation.
+*   **Lockup Period:** 1-day cooldown to unstake; ~7 days to transfer for trading.
+*   **Utility:** Used for L1 gas fees, PoS security, governance, and tiered trading fee discounts on the Hyperliquid exchange.
+
+### **Token Allocation Breakdown**
+| Category | Allocation (%) | Status / Notes |
+| :--- | :--- | :--- |
+| **Community (Genesis)** | 31.00% | Fully distributed to early users/points holders. |
+| **Future Emissions** | 38.89% | Reserved for staking rewards and future incentives. |
+| **Core Contributors (Team)** | 23.80% | 1-year cliff; linear vesting through 2028 (~1.2M/mo). |
+| **Hyper Foundation** | 6.00% | Operational treasury, legal, and ecosystem growth. |
+| **Community Grants** | 0.30% | Dedicated to developers and ecosystem builders. |
+| **Hyperliquidity (HIP-2)** | 0.01% | Initial liquidity parameters. |
+
+### **Treasury and Wallets**
+*   **Treasury (Hyper Foundation):** Manages the **6% Foundation budget** and the **38.89% Future Emissions** reserve. The Foundation has historically used its budget for "Assistance Fund" buybacks and strategic burns via governance.
+*   **Community Wallet:** The remaining community-facing allocations (Grants and Emissions) are held for long-term ecosystem distribution.
+*   **Team Vesting:** Team tokens are currently in a monthly release phase that began in January 2026 to ensure long-term alignment.

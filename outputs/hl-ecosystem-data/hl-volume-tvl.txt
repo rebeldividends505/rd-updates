@@ -1,0 +1,41 @@
+According to DefiLlama data, here is the breakdown of Hyperliquid's trading volume and TVL as of May 18, 2026.
+
+### 1. Total All-Time Cumulative Trading Volume
+Hyperliquid has surpassed **$1.5 Trillion** in total cumulative trading volume across its perp and spot products.
+
+| Product | All-Time Cumulative Volume |
+| :--- | :--- |
+| **Perpetuals (Perps)** | ~$1,350B+ (Estimated) |
+| **Spot Orderbook** | $149.3B |
+| **Total All-Time** | **~$1.5 Trillion** |
+
+*Note: While the Spot Orderbook's precise all-time total is tracked at $149.3B, the Perps volume is significantly larger, consistently processing billions in daily volume over the past year.*
+
+---
+
+### 2. Current 24h Volume Breakdown
+Hyperliquid processed approximately **$4.05 Billion** in the last 24 hours, with the vast majority coming from its perpetual futures markets.
+
+| Product | 24h Trading Volume | % of Total |
+| :--- | :--- | :--- |
+| **Perpetuals (Perps)** | $3.90 Billion | 96.3% |
+| **Spot Orderbook** | $150.65 Million | 3.7% |
+| **HIP-3 / HIP-4** | *Included in Perps/Spot* | — |
+| **Total 24h Volume** | **$4.05 Billion** | **100%** |
+
+---
+
+### 3. Total TVL Broken Down by Component
+The total Total Value Locked (TVL) in the Hyperliquid ecosystem is approximately **$5.52 Billion**. The majority of this value is held within the Hyperliquid Bridge, representing assets deposited onto the Hyperliquid L1.
+
+| Component | TVL | Description |
+| :--- | :--- | :--- |
+| **Hyperliquid Bridge** | $4.99 Billion | Assets bridged to Hyperliquid L1 (USDC, HYPE, etc.) |
+| **Hyperliquid HLP** | $388.26 Million | The protocol's native liquidity provider vault. |
+| **Spot Orderbook** | $146.54 Million | Liquidity specifically used for spot trading pairs. |
+| **Total Ecosystem TVL** | **$5.52 Billion** | |
+
+### Summary Insights
+*   **Dominance:** Hyperliquid continues to be dominated by its **Perpetual DEX**, which accounts for over 96% of its daily trading activity.
+*   **Growth:** The Spot Orderbook has shown significant growth, now contributing nearly $150B to the all-time volume total.
+*   **Liquidity:** With over **$5.5B in TVL**, Hyperliquid ranks as one of the most liquid decentralized trading environments in DeFi, largely supported by its custom L1 architecture.

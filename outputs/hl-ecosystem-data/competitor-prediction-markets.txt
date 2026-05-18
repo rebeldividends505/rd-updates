@@ -1,0 +1,44 @@
+The prediction market landscape in 2026 has been significantly reshaped by the introduction of **Hyperliquid’s HIP-4**, which brought native prediction markets directly into one of the world's most liquid decentralized derivatives ecosystems.
+
+While **Polymarket** remains the retail "source of truth" for global events and **Kalshi** leads in regulated U.S. markets, **Hyperliquid (HIP-4)** is carving out a niche for professional traders through deep capital efficiency and native composability.
+
+### **Market Comparison Snapshot (May 2026)**
+
+| Feature | Hyperliquid (HIP-4) | Polymarket | Kalshi |
+| :--- | :--- | :--- | :--- |
+| **Market Share** | ~1% (Rising fast in Crypto) | ~30% (Global leader) | ~62% (Regulated leader) |
+| **Primary Volume** | Crypto Price/Vol (Outcomexyz) | Politics, Culture, Global Events | Sports (89% of fees), Macro |
+| **Fees (Taker)** | **0% to open**; fees at settlement | Dynamic (Peak 1.8% Crypto) | Formulaic (~1.2% effective) |
+| **User Base** | 1.4M+ (On-chain traders) | Global Crypto-Native Retail | U.S. Regulated Retail (Robinhood) |
+| **Regulation** | Decentralized L1 (Non-US) | Decentralized (Offshore/L2) | **CFTC-Regulated** (U.S.) |
+| **Leverage** | No (Full collateral on Outcomes) | Up to 10x (New for 2026) | Yes (via "Timeless" perps) |
+
+---
+
+### **1. Volume & Adoption**
+*   **Polymarket:** Remains the heavyweight in pure event betting. According to DefiLlama data, **Polymarket International** generated over **$3.45B in volume** over the last 30 days, with a TVL of ~$478M. It is the "source of truth" for non-crypto events like elections and awards.
+*   **Hyperliquid HIP-4:** While HIP-4 markets are newer, they leverage Hyperliquid's massive existing infrastructure. Hyperliquid's **Spot Orderbook** (where prediction outcomes trade as assets) already does **$150M+ in daily volume**, recently surpassing Polymarket's daily volume on specific crypto-price prediction markets.
+*   **Kalshi:** Currently holds the largest overall market share (~62%), largely driven by its dominance in **regulated sports betting** following its CFTC approval, reaching an annualized volume of **$178B**.
+
+### **2. Fee Structures**
+*   **Hyperliquid:** Highly aggressive "Zero-Fee to Open" model. Traders pay nothing to enter a position; fees are only captured at settlement or when closing. Using the native **USDH** stablecoin provides a 20% discount on these taker fees.
+*   **Polymarket:** Uses a dynamic taker-fee model. Fees are highest (up to 1.8%) when uncertainty is at its peak (50/50 odds) and decrease as the outcome becomes more certain.
+*   **Kalshi:** Uses a formulaic approach (`0.07 x Contracts x Price x (1-Price)`). This results in an effective fee of roughly 1.2% of volume for retail traders, though institutional tiers are lower.
+
+### **3. Types of Markets**
+*   **Hyperliquid (HIP-4):** Primarily focused on **crypto-native outcomes** (price targets, volume milestones, protocol TVL). Because these are deployed on the Hyperliquid L1, they are "composable"—you can use your prediction market position as collateral or hedge it against your perpetual futures positions in a **single Unified Account**.
+*   **Polymarket:** The most diverse "culture" market. It covers everything from global politics and celebrity news to scientific breakthroughs and niche internet drama.
+*   **Kalshi:** Heavily skewed toward **Sports and Macroeconomics**. It is the primary venue for trading U.S. CPI data, Fed rate hikes, and regulated sports outcomes.
+
+### **4. Why HIP-4 is Positioned Differently**
+Hyperliquid's HIP-4 is not trying to be "Polymarket for everyone." It is positioned as the **professional's prediction venue**:
+1.  **Unified Liquidity:** Unlike Polymarket (where funds are locked in specific event pools), Hyperliquid allows you to trade predictions using the same margin as your BTC perps.
+2.  **Builder Incentives:** Anyone can stake 1M HYPE to deploy a market and earn 50% of the trading fees, turning prediction markets into a "permissionless primitive" for developers.
+3.  **Capital Efficiency:** By eliminating upfront fees, HIP-4 attracts high-frequency bots and market makers who provide the deep liquidity that retail-focused platforms often lack in niche markets.
+
+**Summary:** 
+*   Use **Hyperliquid** if you are a DeFi power user wanting to hedge crypto-specific risks with high capital efficiency.
+*   Use **Polymarket** for the widest variety of social and political markets.
+*   Use **Kalshi** if you are a U.S. resident seeking a fully regulated, legal platform.
+
+*Data sources: DefiLlama (TVL/Volume), Outcomexyz, and Google Search Grounding.*

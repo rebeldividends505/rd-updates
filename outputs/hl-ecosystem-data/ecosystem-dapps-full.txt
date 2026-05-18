@@ -1,0 +1,61 @@
+The Hyperliquid ecosystem has rapidly matured into a top-tier L1 "House of All Finance," particularly following the launch of HyperEVM and the permissionless market protocol (HIP-3).
+
+According to DefiLlama data and recent ecosystem developments as of May 2026, here is the breakdown of major protocols and dApps.
+
+### **1. Core Infrastructure & Derivatives**
+Hyperliquid is primarily known for its high-performance order book and perpetuals.
+
+| Protocol | Category | TVL | Note |
+| :--- | :--- | :--- | :--- |
+| **Hyperliquid DEX** | Derivatives / L1 | **$1.25B+** | The native L1 bridge and flagship order book. |
+| **Hyperliquid HLP** | Derivatives | **$388.3M** | The native vault providing liquidity for the perpetual exchange. |
+| **Hyperliquid Spot** | DEX (Spot) | **$146.5M** | Permissionless spot order book via HIP-3. |
+| **Derive V2** | Derivatives | **$34.6M** | High-performance perps and options suite. |
+
+### **2. Liquid Staking (LST)**
+Staking is central to the HYPE token economy.
+
+| Protocol | Token | TVL | Market Share |
+| :--- | :--- | :--- | :--- |
+| **Kinetiq** | kHYPE | **$818.7M** | Dominant LST provider in the ecosystem. |
+| **stHYPE (Valantis)** | stHYPE | **$156.0M** | Focused on high composability with DeFi. |
+| **Hyperbeat LST** | bHYPE | **$14.0M** | Emerging LST with integrated yield strategies. |
+
+### **3. Lending & Money Markets**
+Money markets have seen massive growth with the expansion of HyperEVM.
+
+| Protocol | Category | TVL | Note |
+| :--- | :--- | :--- | :--- |
+| **HyperLend Pooled** | Lending | **$416.4M** | The primary money market for HYPE and USDC. |
+| **Morpho Blue** | Lending | **$311.0M** | Permissionless lending vaults for specific asset pairs. |
+| **Felix CDP** | CDP | **$39.8M** | Protocol for minting native stablecoins. |
+| **Euler V2** | Lending | **$2.7M** | Recently deployed modular lending markets. |
+
+### **4. Yield & Asset Management**
+Vaults and aggregators that optimize for funding rates and basis trades.
+
+| Protocol | Category | TVL | Strategy |
+| :--- | :--- | :--- | :--- |
+| **Felix Vaults** | Capital Allocator | **$80.9M** | Strategy-driven vaults for the Felix ecosystem. |
+| **Kinetiq Earn** | Yield Aggregator | **$45.9M** | Auto-compounding and yield optimization. |
+| **Liminal Basis** | Basis Trading | **$21.1M** | Delta-neutral funding rate arbitrage. |
+| **Pendle** | Yield Trading | **$19.3M** | Yield stripping and fixed-rate markets for LSTs. |
+
+### **5. Wallets, Bridges & Tools**
+*   **Wallets:** **Rabby** is the widely cited favorite for power users due to its native HyperCore signing support. **Best Wallet** and **Phantom** also provide deep ecosystem integration.
+*   **Bridges:** 
+    *   **Native Bridge:** Official route from Arbitrum (USDC).
+    *   **Across Protocol:** Fast, intent-based bridging from 20+ chains.
+    *   **deBridge:** Sub-second transfers between Solana and Hyperliquid.
+*   **Aggregators:** **Jupiter** and **Rage Trade** route significant volume through Hyperliquid's deep liquidity pools.
+
+### **6. Emerging Categories (NFTs, Gaming, AI)**
+*   **NFTs:** **OmniX** is the primary omnichain NFT hub. **Hypurr** remains the most recognizable community badge/collection.
+*   **Gaming:** **Meme Punch** (PvP arena) and **Yushi Miner** (strategy) are the leading on-chain games leveraging the L1's sub-second finality.
+*   **AI Agents:** **Katoshi AI** and **Hyperbot** allow users to deploy autonomous trading agents that execute natural language commands directly on the order book.
+*   **RWA:** **Midas RWA** ($2.4M TVL) and **Trade[XYZ]** provide tokenized treasury bills and S&P 500 perpetuals.
+
+**Data Summary:**
+*   **Total Ecosystem TVL:** Over **$3.5B+** across all tracked protocols.
+*   **Volume:** The native DEX frequently processes **$1B - $3B in daily volume**, rivaling top-tier centralized exchanges.
+*   **Users:** Active addresses have surged past **500k+** following the permissionless HIP-3 era.

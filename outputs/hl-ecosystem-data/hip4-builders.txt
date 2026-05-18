@@ -1,0 +1,35 @@
+Hyperliquid **HIP-4** (Hyperliquid Improvement Proposal 4), launched on mainnet on **May 2, 2026**, is a major upgrade that introduces **Outcome Trading** (native prediction markets and binary options) to the Hyperliquid Layer 1 blockchain.
+
+### **1. Main Builders of HIP-4**
+The development of HIP-4 was a collaborative effort between the core protocol team and strategic ecosystem partners:
+
+*   **Hyperliquid Labs (Core Team):** Led by **Jeff Yan**, the core team designed the HyperCore infrastructure and the high-performance Central Limit Order Book (CLOB) that enables outcome contracts to be traded with the same speed and efficiency as perpetuals.
+*   **Outcomexyz:** The primary builder of the user-facing application layer for HIP-4. They focus on market creation, UI/UX, and establishing the "HyperOutcome" ecosystem.
+*   **Community Architects:** The proposal was influenced by research and momentum from **Framework Ventures**, **Kalshi** (specifically John Wang), and **Bedlam Research**, who were key proponents of bringing fully collateralized event contracts to the platform.
+
+### **2. What is Outcomexyz?**
+**Outcomexyz (Outcome.xyz)** is the flagship prediction market frontend built on the HIP-4 primitive. It functions similarly to Polymarket but is natively integrated into the Hyperliquid L1.
+
+*   **Native Integration:** Unlike other prediction markets, Outcomexyz shares the same account, margin, and collateral pool as Hyperliquid’s perp exchange. You can use your perp collateral to buy "Outcome" contracts without moving funds.
+*   **No Liquidation Risk:** Outcome contracts are fully collateralized, meaning they always trade between $0 and $1 and cannot be liquidated.
+*   **Zero-Fee Model:** At launch, it introduced a zero-fee-to-open structure to attract liquidity and compete with established players.
+*   **Primary Use Case:** It launched with daily Bitcoin price predictions and has expanded into macroeconomic events (Fed rates) and real-world outcomes.
+
+### **3. Comparison of Prediction Market Frontends**
+While Outcomexyz is the leader on Hyperliquid, the broader prediction market landscape is dominated by **Polymarket** (on Polygon) and **SX Bet** (on SX Rollup).
+
+According to DefiLlama data, here is how the top prediction market frontends compare by volume:
+
+| Platform | Main Chain | 24h Volume | 30d Volume | Total Volume (All-Time) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Polymarket (Intl)** | Polygon | $131.7M | $3.45B | $32.78B |
+| **Polymarket (US)** | Off-chain | $23.1M | $400.2M | $1.22B |
+| **SX Bet** | SX Rollup | $6.3M | $61.6M | $628.3M |
+| **Outcomexyz** | Hyperliquid | *$N/A\** | *$N/A\** | *$N/A\** |
+
+*\*Note: As a native L1 primitive on Hyperliquid, Outcomexyz's specific volume is often aggregated into the main Hyperliquid DEX volume in standard tracking. However, its launch markets (Daily BTC) have consistently seen millions in open interest since the May 2026 launch.*
+
+### **Key Takeaways**
+*   **Outcomexyz** is the "Polymarket of Hyperliquid," but with the advantage of being built into a professional-grade trading engine.
+*   **Polymarket** remains the global volume leader by a significant margin, driven by its established user base on Polygon.
+*   **HIP-4** represents a shift toward "Outcome Trading" as a core financial primitive, allowing traders to hedge perpetual positions with non-liquidatable binary options in a single click.

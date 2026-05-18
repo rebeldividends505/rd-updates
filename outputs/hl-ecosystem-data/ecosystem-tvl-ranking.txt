@@ -1,0 +1,42 @@
+The Hyperliquid ecosystem has evolved into a two-layer powerhouse: **HyperCore** (the high-performance trading engine) and **HyperEVM** (the general-purpose smart contract layer).
+
+As of May 2026, the ecosystem is dominated by native infrastructure and a rapidly growing suite of DeFi applications. Below are the top protocols by Total Value Locked (TVL) on the Hyperliquid L1.
+
+### **Top Hyperliquid Ecosystem Protocols (May 2026)**
+
+| Rank | Name | Category | TVL | 7d Growth* | Infrastructure | Key Features |
+|:---:|:---|:---|:---|:---:|:---:|:---|
+| 1 | **Hyperliquid Bridge** | Bridge | $1.25B | +1.48% | **HyperCore** | Gateway for USDC and assets from Arbitrum/Mainnet. |
+| 2 | **Kinetiq kHYPE** | Liquid Staking | $818.7M | +2.13% | **HyperEVM** | Leading LST for HYPE; used extensively as DeFi collateral. |
+| 3 | **HyperLend Pooled** | Lending | $416.4M | +4.70% | **HyperEVM** | Ecosystem money market; supports HYPE, USDC, and spot. |
+| 4 | **Hyperliquid HLP** | Derivatives | $388.3M | -0.68% | **HyperCore** | Native market-making vault; provides liquidity for perps. |
+| 5 | **Morpho Blue** | Lending | $311.0M | -3.58% | **HyperEVM** | Permissionless isolated lending markets for Hyperliquid assets. |
+| 6 | **stHYPE** | Liquid Staking | $156.0M | +9.78% | **HyperEVM** | Decentralized liquid staking alternative for the HYPE token. |
+| 7 | **Hyperliquid Spot** | DEX | $146.5M | +4.94% | **HyperCore** | Native on-chain order book for spot trading pairs. |
+| 8 | **Felix Vaults** | Capital Allocator| $80.9M | -4.66% | **HyperEVM** | Automated yield strategies and delta-neutral HYPE vaults. |
+| 9 | **Rysk V12** | Options | $59.1M | +19.04% | **HyperEVM** | On-chain options and volatility trading engine. |
+| 10 | **Kinetiq Earn** | Yield Aggregator| $45.9M | +9.31% | **HyperEVM** | Auto-compounding and yield optimization for HyperEVM assets. |
+
+*\*Note: 30-day growth data is currently unavailable for these specific protocols; 7-day trailing growth is provided as a proxy for recent momentum.*
+
+---
+
+### **Infrastructure Guide: HyperCore vs. HyperEVM**
+
+The Hyperliquid L1 uses a unique dual-architecture. While all data is secured by the same consensus, they serve different functional roles:
+
+*   **HyperCore (The Financial Hub):**
+    *   **Role:** High-speed execution engine for the order book.
+    *   **Protocols:** **HLP**, **Hyperliquid Spot**, and the **Native Bridge**.
+    *   **Tech:** Custom Rust-based VM; handles 200k+ orders per second with sub-second finality.
+*   **HyperEVM (The Application Layer):**
+    *   **Role:** Fully Ethereum-compatible smart contract environment.
+    *   **Protocols:** **Kinetiq**, **HyperLend**, **Felix**, and **Morpho**.
+    *   **Tech:** Solidity-based; allows DeFi protocols to compose directly with HyperCore liquidity via native "precompiles" (CoreReader).
+
+### **Key Ecosystem Insights**
+*   **LST Dominance:** Liquid staking (kHYPE and stHYPE) represents a massive portion of HyperEVM TVL, as users seek to earn staking rewards while keeping their HYPE liquid for lending or trading.
+*   **Native Liquidity:** The **HLP (Hyperliquid Liquidity Provider)** remains the most critical primitive, as it acts as the counterparty for traders on the perp exchange and yields a significant portion of protocol fees.
+*   **Expansion into Lending:** Protocols like **HyperLend** and **Morpho** have successfully captured the demand for leverage within the ecosystem, allowing users to borrow USDC against their HYPE holdings to "loop" their exposure.
+
+*Data source: DefiLlama (May 18, 2026).*

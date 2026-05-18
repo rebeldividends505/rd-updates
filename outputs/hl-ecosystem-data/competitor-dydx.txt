@@ -1,0 +1,43 @@
+As of mid-May 2026, **Hyperliquid (HL)** has established a dominant lead over **dYdX v4**, capturing the vast majority of retail and high-frequency trading activity. While dYdX v4 maintains a presence as a sovereign app-chain within the Cosmos ecosystem, Hyperliquid’s vertical integration and aggressive feature rollout have propelled it to the top of the Perp DEX rankings.
+
+### **Executive Summary Comparison**
+
+| Metric | Hyperliquid (HL) | dYdX v4 |
+| :--- | :--- | :--- |
+| **30d Trading Volume** | **~$180.2B** (est.) | **~$3.9B** (est.) |
+| **30d Fees Generated** | **$53.5M** | **$289.4K** |
+| **Open Interest (OI)** | **$9.1B** | **$450M** |
+| **Total Value Locked (TVL)** | **$5.52B** (Ecosystem Total) | **$99.3M** |
+| **Active Users (Monthly)** | **~274,500** | **~6,600** |
+| **Token Perf (30d)** | **+2.19% (HYPE)** | **-8.91% (DYDX)** |
+
+---
+
+### **1. Volume, Fees, and Market Share**
+Hyperliquid is currently operating at a scale roughly **45–50x larger** than dYdX v4 by volume. 
+*   **Fees:** HL generated over **$53M** in fees over the last 30 days, compared to just under **$300K** for dYdX v4. This reflects HL's significantly higher utilization and deeper liquidity pools.
+*   **Market Share:** In the Perp DEX sector, Hyperliquid's volume dominance is overwhelming, often accounting for **75%+ of all on-chain perp activity** on peak days, while dYdX v4 has seen its share compress as liquidity migrates to HL's more active order books.
+
+### **2. TVL and Ecosystem Health**
+*   **Hyperliquid ($5.52B TVL):** The majority of HL's TVL is held in the **Hyperliquid Bridge ($4.98B)** and the **HLP Vault ($388M)**. This massive capital base provides the necessary collateral for its deep liquidity.
+*   **dYdX v4 ($99.3M TVL):** dYdX's TVL is significantly lower, reflecting a more concentrated institutional user base rather than the broad retail deposit base seen on HL.
+
+### **3. Token Performance**
+*   **HYPE (Hyperliquid):** Has shown resilience with a **+2.19%** gain over the last 30 days. The token's value is supported by its integration into the "Assistance Fund," which uses 99% of protocol revenue for token buybacks.
+*   **DYDX (dYdX v4):** Has struggled recently, dropping **-8.91%** over the same period. While the token earns USDC rewards from protocol fees, the lower fee generation compared to HL has reduced its relative yield attractiveness.
+
+---
+
+### **4. Why Traders Prefer Hyperliquid**
+
+The migration of traders from dYdX to Hyperliquid is driven by four primary technical and economic factors:
+
+1.  **Speed & Execution:** Hyperliquid’s custom L1 (HyperBFT) provides **sub-second finality** (~0.2s), making it feel like a centralized exchange (CEX). dYdX v4, while fast, uses an off-chain validator orderbook that can occasionally suffer from synchronization latency during high-volatility events.
+2.  **Asset Variety (HIP-3/HIP-4):** HL lists over **230+ markets**, including "long-tail" altcoins that dYdX’s more conservative governance process often misses. Additionally, HL's native prediction markets (Outcome Contracts) allow traders to hedge real-world events alongside crypto perps.
+3.  **The HLP Vault:** Hyperliquid’s community-owned market-making vault (HLP) allows any user to provide liquidity and earn a share of trading fees. This has created a "liquidity flywheel" that professional market-making models on dYdX have found difficult to compete with.
+4.  **Zero-Gas Friction:** HL eliminates gas fees for all in-exchange trading activities. While dYdX v4 is also low-cost, HL's "all-in-one" vertical stack (Spot + Perps + Bridge) offers a more seamless user experience for retail traders.
+
+### **Conclusion**
+**Hyperliquid** has become the "Retail King" of DeFi perps, winning on speed, asset selection, and community liquidity. **dYdX v4** remains a respected institutional tool, but currently lacks the massive retail "velocity" and network effects that have made Hyperliquid the market leader in 2026.
+
+*Data sources: DefiLlama (TVL, Fees, Volume, Prices), Web Analysis (Active Users).*

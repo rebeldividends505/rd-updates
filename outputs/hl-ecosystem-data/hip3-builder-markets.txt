@@ -1,0 +1,41 @@
+Hyperliquid's **HIP-3 (Hyperliquid Improvement Proposal 3)**, also known as **"Builder-Deployed Perpetuals,"** is a protocol upgrade that allows independent developers to permissionlessly launch and manage their own perpetual futures markets. This shift transformed Hyperliquid from a single-venue exchange into a decentralized infrastructure layer for "Exchange-as-a-Service" (EaaS).
+
+### 1. What is HIP-3?
+HIP-3 enables anyone to become a **Market Deployer**. Unlike native Hyperliquid markets (which are validator-voted and use the protocol-wide HLP vault for liquidity), HIP-3 markets are isolated and managed by the builder. This allows for the listing of a wide variety of assets, including niche crypto tokens, pre-IPO stocks, commodities, and foreign exchange (FX) pairs.
+
+### 2. Market and Builder Statistics
+As of May 2026, the Hyperliquid ecosystem has expanded significantly through HIP-3.
+
+*   **Number of HIP-3 Markets:** There are currently dozens of active HIP-3 markets. While the exact number fluctuates as builders launch or decommission markets, the protocol supports hundreds of potential listing slots.
+*   **Top Builders/Integrators:**
+    *   **Kinetiq:** A leading EaaS provider that allows $HYPE holders to "crowdfund" the required 500,000 $HYPE staking bond for new markets in exchange for a share of the fees.
+    *   **Unit:** A major builder specializing in high-performance spot and perp markets on the Hyperliquid L1.
+    *   **Kinto:** An L2 that integrates with Hyperliquid for institutional-grade access.
+
+### 3. Volume and Revenue (30d & All-Time)
+According to DefiLlama data, Hyperliquid's perp and spot ecosystem generates massive activity. While the API aggregates builder and native volume under the main protocol slugs, the scale is as follows:
+
+| Metric | Perps (Native + HIP-3) | Spot Orderbook |
+| :--- | :--- | :--- |
+| **30d Volume** | ~$180B - $200B (est.) | $3.21B |
+| **All-Time Volume** | ~$2.5T+ | $149.30B |
+| **30d Fees/Revenue** | $53.51M | $1.63M |
+| **All-Time Fees** | $983.51M | $52.28M |
+
+*Note: HIP-3 builder markets typically contribute a significant portion of "Growth Mode" volume, where fees are lower but trading frequency is extremely high.*
+
+### 4. Revenue Sharing Mechanics
+The economic model of HIP-3 is designed to align builders with the protocol:
+
+*   **The 50/50 Split:** All trading fees generated on a HIP-3 market are split evenly:
+    *   **50% to the Builder (Market Deployer):** This incentivizes builders to attract liquidity and volume.
+    *   **50% to the Hyperliquid Protocol:** These funds typically go to the **Assistance Fund**, which uses the majority (~99%) of its revenue to buy back and burn/distribute the native **$HYPE** token.
+*   **Double Base Fees:** To ensure the protocol earns as much as it would on a native market, HIP-3 markets default to roughly double the standard fee rate (e.g., 9 bps taker).
+*   **Growth Mode:** Builders can choose to slash taker fees (often to <0.01%) to bootstrap their market. This reduces immediate revenue but is used to drive massive volume and capture market share.
+*   **Builder Codes:** Separate from HIP-3, any developer (even without a 500k $HYPE stake) can add a "Builder Fee" of up to **0.1%** on perp trades via their frontend or trading bot, which is paid directly to them by the user.
+
+### 5. Builder Requirements
+Launching a HIP-3 market is permissionless but requires a significant economic commitment:
+*   **Staking Bond:** A deployer must stake **500,000 $HYPE** tokens.
+*   **Slashing Risk:** This bond acts as collateral. If a builder mismanages their oracle or acts maliciously, validators can slash this stake.
+*   **Listing Auctions:** While the first few markets are free for a deployer, additional slots are secured via Dutch auctions paid in $HYPE.

@@ -1,0 +1,43 @@
+Liquid staking on the Hyperliquid L1 allows users to earn staking rewards on their **HYPE** tokens while maintaining liquidity to use in DeFi (lending, trading, or LPing). 
+
+The ecosystem is currently dominated by **Kinetiq**, which holds over 80% of the market share, followed by **stHYPE** (Valantis) and emerging protocols like **Hyperbeat** and **Kintsu**.
+
+### **1. Kinetiq: kHYPE and kmHYPE**
+Kinetiq is the primary liquid staking provider on Hyperliquid. It offers a **trustless** architecture using Hyperliquid’s native "CoreWriter" framework.
+
+*   **kHYPE**: The standard liquid staking token. It is a **non-rebasing** (value-accruing) token. Instead of your balance increasing, the value of kHYPE grows relative to HYPE as rewards accumulate.
+*   **kmHYPE**: A specialized version (often associated with Kinetiq's "Markets" or institutional-facing products) that operates similarly but may have different validator delegation strategies.
+*   **How it works**: When you deposit HYPE into Kinetiq, the protocol delegates it to a set of top-performing validators via **StakeHub**. You receive kHYPE in return, which can be swapped back to HYPE instantly on a DEX or unstaked with a 7-day waiting period.
+
+### **2. Other Liquid Staking Options**
+Beyond Kinetiq, several other protocols provide LSTs on Hyperliquid:
+
+*   **stHYPE (Valantis)**: The first LST to launch on Hyperliquid. It was recently acquired by Valantis Labs. It historically used a more trust-based delegation model (admin-keys) but is transitioning toward trustless vaults.
+*   **Hyperbeat LST**: A smaller, ecosystem-native LST that integrates with the Hyperbeat trading and yield platform.
+*   **Kintsu**: A multi-chain LST protocol that recently expanded to Hyperliquid and Monad.
+
+### **3. Comparison: TVL and Market Share**
+As of May 18, 2026, the distribution of liquid staked HYPE is as follows:
+
+| Protocol | Token | TVL (USD) | 7d Change | Trust Model |
+| :--- | :--- | :--- | :--- | :--- |
+| **Kinetiq** | kHYPE | **$818.7M** | +2.1% | Trustless |
+| **stHYPE** | stHYPE | **$156.0M** | +9.8% | Trust-based/Hybrid |
+| **Kinetiq** | kmHYPE | **$33.1M** | +8.2% | Trustless |
+| **Hyperbeat** | hLST | **$14.0M** | +0.2% | Protocol-specific |
+| **Kintsu** | kHYPE | **$2.8M** | -23.9% | Emerging |
+
+### **4. APYs and Mechanism**
+*   **Base Staking APY**: Currently, native HYPE staking yields approximately **2.3% – 2.5% APY**. 
+*   **LST Yields**: LSTs typically pass through these rewards minus a **10% performance fee**.
+*   **DeFi Stacking**: The real advantage of liquid staking is "stacking" yield. For example:
+    *   **Lending**: Deposit kHYPE on **Hyperlend** to earn an additional ~2-5% in supply APY + points.
+    *   **Looping**: Borrow HYPE against your kHYPE to stake more, effectively leveraging the staking yield.
+    *   **LPing**: Provide liquidity in kHYPE/HYPE pools on DEXes like **Hyperliquid Spot** or **Valantis** to earn trading fees.
+
+### **Summary: How to Choose?**
+*   **For Safety & Liquidity**: **kHYPE (Kinetiq)** is the "blue chip" option with the deepest liquidity and most integrations.
+*   **For Ecosystem Rewards**: **stHYPE** or **Hyperbeat** may offer specific incentives or higher yields if you are an active user of their respective DEX/yield platforms.
+*   **For Airdrop Speculation**: Newer protocols like **Kintsu** are often chosen by users looking to farm potential future governance token airdrops.
+
+*Data source: DefiLlama. All figures are current as of May 18, 2026.*

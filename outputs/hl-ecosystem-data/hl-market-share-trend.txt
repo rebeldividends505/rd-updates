@@ -1,0 +1,35 @@
+Hyperliquid has demonstrated explosive growth over the last 12 months, evolving from a competitive challenger into the dominant leader in the on-chain perpetuals market.
+
+### **Market Share and Volume**
+According to DefiLlama data, Hyperliquid currently holds the top position among all decentralized perpetual exchanges:
+
+*   **Market Share:** Hyperliquid controls approximately **25.9%** of all on-chain perpetual volume (based on a 24h total volume of ~$15.1B across 162 protocols).
+*   **Current Volume:** It recorded **$3.90B** in 24h volume and **$42.07B** over the last 7 days.
+*   **Dominance vs. Competitors:** It significantly outperforms its closest competitors in recent activity:
+    *   **Hyperliquid:** $3.90B (24h)
+    *   **Aster Perps:** $1.31B (24h)
+    *   **edgeX Perps:** $1.13B (24h)
+    *   **Apex Omni:** $1.06B (24h)
+
+### **Growth Trend (Last 12 Months)**
+The trajectory over the past year shows a massive scale-up in activity:
+*   **May 2025 (1 Year Ago):** Daily volumes were frequently in the **$500M – $800M** range.
+*   **Late 2025 Momentum:** Volume began consistently breaking the **$2B – $3B** per day mark around November 2024.
+*   **Current Baseline:** In mid-2026, the protocol regularly processes between **$4B and $10B** in daily volume, with peak days occasionally exceeding **$20B** (e.g., ~$24.7B on April 28, 2026).
+
+### **Trajectory Analysis**
+Hyperliquid's trajectory is characterized by **vertical scaling**:
+1.  **Ecosystem Expansion:** It has successfully transitioned from a standalone DEX to a dedicated **Layer 1 blockchain**, which has reduced latency and allowed for the launch of native tokens like **HYPE**.
+2.  **Product Depth:** The protocol's "Hyperliquidity" (HLP) and its internal oracle system have allowed it to list a wider variety of assets more aggressively than competitors like dYdX or GMX, capturing a larger share of speculative retail volume.
+3.  **Network Effects:** As liquidity has deepened, it has become the primary venue for price discovery for many long-tail assets, further cementing its lead over other perp DEXes.
+
+**Summary Table: Hyperliquid Performance Metrics**
+
+| Metric | Value (Current) | 7d Total | 30d Total |
+| :--- | :--- | :--- | :--- |
+| **Trading Volume** | $3.90B | $42.07B | $170.78B |
+| **Market Share** | ~25.9% | — | — |
+| **24h Change** | +17.76% | — | — |
+| **L1 Chain** | Hyperliquid L1 | — | — |
+
+*Data sourced from DefiLlama as of May 18, 2026.*

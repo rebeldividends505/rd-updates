@@ -1,0 +1,74 @@
+Hyperliquid's spot market, governed by **HIP-2 (Hyperliquidity)**, represents a paradigm shift from traditional Automated Market Makers (AMMs). It integrates a protocol-native liquidity engine directly into the L1 consensus, allowing the blockchain itself to act as an automated market maker within a Central Limit Order Book (CLOB).
+
+### **Hyperliquid Spot Market Data (as of May 2026)**
+
+Hyperliquid has evolved into a dominant DeFi hub, with its ecosystem TVL exceeding **$4.3 Billion**.
+
+| Metric | Value |
+| :--- | :--- |
+| **Total Markets Listed** | **148+ Protocols/Assets** |
+| **Total Ecosystem TVL** | **$4.30 Billion** |
+| **Spot Orderbook TVL** | **$146.5 Million** |
+| **Projected 24h Spot Volume** | **$1.5B – $2.5B** (Combined BTC, ETH, SOL, HYPE) |
+| **Projected 30d Spot Volume** | **$180 Billion+** |
+
+---
+
+### **Top Tokens & Ecosystem Assets**
+
+The Hyperliquid spot market is heavily driven by its native token, **HYPE**, and its unique liquid-staked and vault variants.
+
+#### **Top 20 Tokens by Volume (Projected 2026)**
+1.  **HYPE** (Native utility/gas token)
+2.  **BTC** (Wrapped/Native spot)
+3.  **ETH** (Wrapped/Native spot)
+4.  **SOL** (Wrapped/Native spot)
+5.  **feUSD** (Native stablecoin)
+6.  **steHYPE** (Liquid staked HYPE)
+7.  **HLP** (Hyperliquid LP Vault shares)
+8.  **PURP** (Ecosystem utility)
+9.  **NVDA** (HIP-3 Tokenized Stock)
+10. **Gold/Silver** (HIP-3 Commodities)
+11. **Pepeto** (Trending Meme-Hybrid)
+12. **kHYPE** (Kinetiq Liquid Staked HYPE)
+13. **HPL** (HyperLend Governance)
+14. **BlockDAG** (Ecosystem Infrastructure)
+15. **USDC** (Primary Bridge Asset)
+16. **ARB** (Bridged)
+17. **TIA** (Bridged)
+18. **JTO** (Bridged)
+19. **PYTH** (Oracle Utility)
+20. **Prediction Outcome Tokens** (HIP-4 Event Tokens)
+
+#### **Top 20 Tokens by Market Cap**
+HYPE is the dominant asset, with a projected market cap of **$10B–$12B**, consistently ranking in the global Top 15. The largest ecosystem assets by TVL are:
+1.  **Hyperliquid Bridge (HYPE/USDC):** $1.24B
+2.  **Kinetiq (kHYPE):** $818M
+3.  **HyperLend (HPL):** $416M
+4.  **Hyperliquid HLP Vault:** $388M
+5.  **Morpho Blue (Hyperliquid Deployment):** $311M
+6.  **stHYPE:** $155M
+7.  **Hyperliquid Spot Orderbook:** $146M
+
+---
+
+### **HIP-2: How Mechanical Bootstrapping Works**
+
+HIP-2, or **Hyperliquidity**, solves the "liquidity cold start" problem by embedding a market-making strategy into the **HyperCore** execution engine.
+
+#### **1. The Mechanics**
+Unlike Uniswap (which uses a passive $x \times y = k$ formula), HIP-2 operates on a **Central Limit Order Book (CLOB)**.
+*   **Automated Grid Trading:** The protocol automatically places a "grid" of limit orders around the current price.
+*   **3-Second Refresh:** Orders are canceled and replaced every block (approx. 3 seconds) to track price movements.
+*   **Recursive Pricing:** Price levels are defined geometrically ($px_i = px_{i-1} \times 1.003$), ensuring a consistent **0.3% spread**.
+
+#### **2. Liquidity Bootstrapping Process**
+When a new token launches (often via a **HIP-1 Dutch Auction**), HIP-2 provides instant liquidity:
+*   **Seeding the Buy Side:** A portion of the USDC raised in the token's initial auction is automatically deposited into HIP-2 to fund "bid" orders.
+*   **Seeding the Sell Side:** A portion of the token's total supply is allocated to the engine to fund "ask" orders.
+*   **Protocol-Owned Liquidity:** This liquidity is typically **permanently locked**, preventing "rug pulls" and ensuring there is always a "floor" for users to trade against.
+
+#### **3. Why It’s Unique**
+*   **Validator-Secured:** The market-making logic is part of the blockchain's L1 consensus, not a third-party bot.
+*   **Efficiency:** It provides the passive experience of an AMM for LPs but the execution efficiency of a professional market maker for traders.
+*   **Revenue Sharing:** 97% of the fees generated from these trades are used to **buy back and burn HYPE**, directly linking spot market activity to token value.

@@ -1,0 +1,1618 @@
+{
+  "total_perp_oi": 6088759810,
+  "total_24h_vol": 3766599340,
+  "perp_count": 230,
+  "pulled": "2026-05-17",
+  "assets": [
+    {
+      "name": "BTC",
+      "oi_usd": 2111921634,
+      "vol_24h_usd": 1626319561,
+      "mark_price": "77013.0",
+      "funding_rate": "0.0000098398"
+    },
+    {
+      "name": "ETH",
+      "oi_usd": 1148854065,
+      "vol_24h_usd": 728465206,
+      "mark_price": "2119.2",
+      "funding_rate": "-0.0000005361"
+    },
+    {
+      "name": "HYPE",
+      "oi_usd": 1033704301,
+      "vol_24h_usd": 714270840,
+      "mark_price": "45.785",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SOL",
+      "oi_usd": 327966445,
+      "vol_24h_usd": 173632091,
+      "mark_price": "85.013",
+      "funding_rate": "-0.0000101637"
+    },
+    {
+      "name": "ZEC",
+      "oi_usd": 243410142,
+      "vol_24h_usd": 187976870,
+      "mark_price": "526.49",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "TON",
+      "oi_usd": 77071885,
+      "vol_24h_usd": 32120982,
+      "mark_price": "1.9485",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "XRP",
+      "oi_usd": 75769200,
+      "vol_24h_usd": 34044020,
+      "mark_price": "1.3985",
+      "funding_rate": "-0.0000061753"
+    },
+    {
+      "name": "ASTER",
+      "oi_usd": 64096092,
+      "vol_24h_usd": 2941417,
+      "mark_price": "0.6526",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "DOGE",
+      "oi_usd": 56390744,
+      "vol_24h_usd": 29637301,
+      "mark_price": "0.10693",
+      "funding_rate": "-0.0000112192"
+    },
+    {
+      "name": "AAVE",
+      "oi_usd": 49927545,
+      "vol_24h_usd": 6717361,
+      "mark_price": "88.898",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "AVAX",
+      "oi_usd": 41096192,
+      "vol_24h_usd": 2840653,
+      "mark_price": "9.2079",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MON",
+      "oi_usd": 38701802,
+      "vol_24h_usd": 3952905,
+      "mark_price": "0.027162",
+      "funding_rate": "-0.0000472765"
+    },
+    {
+      "name": "VVV",
+      "oi_usd": 38532545,
+      "vol_24h_usd": 21904327,
+      "mark_price": "14.048",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "XMR",
+      "oi_usd": 36821364,
+      "vol_24h_usd": 3221812,
+      "mark_price": "387.11",
+      "funding_rate": "0.0000159872"
+    },
+    {
+      "name": "TAO",
+      "oi_usd": 35461369,
+      "vol_24h_usd": 7729978,
+      "mark_price": "262.85",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "LINK",
+      "oi_usd": 34913392,
+      "vol_24h_usd": 6452486,
+      "mark_price": "9.5544",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "LIT",
+      "oi_usd": 34678203,
+      "vol_24h_usd": 2206179,
+      "mark_price": "0.88449",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "PUMP",
+      "oi_usd": 31662325,
+      "vol_24h_usd": 5209801,
+      "mark_price": "0.001705",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SUI",
+      "oi_usd": 31466882,
+      "vol_24h_usd": 32099331,
+      "mark_price": "1.0509",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "PAXG",
+      "oi_usd": 31290566,
+      "vol_24h_usd": 4888716,
+      "mark_price": "4532.4",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ZRO",
+      "oi_usd": 31121063,
+      "vol_24h_usd": 1624416,
+      "mark_price": "1.2822",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BNB",
+      "oi_usd": 29602771,
+      "vol_24h_usd": 8868611,
+      "mark_price": "645.56",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "FARTCOIN",
+      "oi_usd": 29306324,
+      "vol_24h_usd": 9995460,
+      "mark_price": "0.18459",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "NEAR",
+      "oi_usd": 28906805,
+      "vol_24h_usd": 8732140,
+      "mark_price": "1.518",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ENA",
+      "oi_usd": 24008626,
+      "vol_24h_usd": 5775420,
+      "mark_price": "0.10583",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "kPEPE",
+      "oi_usd": 17378027,
+      "vol_24h_usd": 6870151,
+      "mark_price": "0.003677",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "TRX",
+      "oi_usd": 16017658,
+      "vol_24h_usd": 1670504,
+      "mark_price": "0.35516",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ADA",
+      "oi_usd": 15018910,
+      "vol_24h_usd": 3878323,
+      "mark_price": "0.25241",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "XPL",
+      "oi_usd": 14827021,
+      "vol_24h_usd": 3856351,
+      "mark_price": "0.083303",
+      "funding_rate": "-0.0000006095"
+    },
+    {
+      "name": "LTC",
+      "oi_usd": 12793862,
+      "vol_24h_usd": 1872720,
+      "mark_price": "54.19",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ONDO",
+      "oi_usd": 11474235,
+      "vol_24h_usd": 4773943,
+      "mark_price": "0.34215",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "PENDLE",
+      "oi_usd": 11204738,
+      "vol_24h_usd": 3068790,
+      "mark_price": "1.826",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "WLFI",
+      "oi_usd": 11177472,
+      "vol_24h_usd": 1638668,
+      "mark_price": "0.060032",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "VIRTUAL",
+      "oi_usd": 10648077,
+      "vol_24h_usd": 2158515,
+      "mark_price": "0.70178",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MEGA",
+      "oi_usd": 10413260,
+      "vol_24h_usd": 1399244,
+      "mark_price": "0.090156",
+      "funding_rate": "-0.0000000172"
+    },
+    {
+      "name": "CRV",
+      "oi_usd": 7491788,
+      "vol_24h_usd": 3219614,
+      "mark_price": "0.23172",
+      "funding_rate": "0.0000102074"
+    },
+    {
+      "name": "WLD",
+      "oi_usd": 7197217,
+      "vol_24h_usd": 2635914,
+      "mark_price": "0.23575",
+      "funding_rate": "-0.0000675214"
+    },
+    {
+      "name": "CHIP",
+      "oi_usd": 7172575,
+      "vol_24h_usd": 1820075,
+      "mark_price": "0.051243",
+      "funding_rate": "-0.0001946196"
+    },
+    {
+      "name": "UNI",
+      "oi_usd": 7083288,
+      "vol_24h_usd": 1798959,
+      "mark_price": "3.4565",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "CC",
+      "oi_usd": 7055986,
+      "vol_24h_usd": 273681,
+      "mark_price": "0.15331",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "PENGU",
+      "oi_usd": 6509247,
+      "vol_24h_usd": 6064414,
+      "mark_price": "0.00838",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "LDO",
+      "oi_usd": 6288600,
+      "vol_24h_usd": 848361,
+      "mark_price": "0.3514",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "TRUMP",
+      "oi_usd": 5998501,
+      "vol_24h_usd": 1799436,
+      "mark_price": "2.0907",
+      "funding_rate": "-0.0000034323"
+    },
+    {
+      "name": "ARB",
+      "oi_usd": 5608808,
+      "vol_24h_usd": 1849922,
+      "mark_price": "0.11724",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "APT",
+      "oi_usd": 5497574,
+      "vol_24h_usd": 1184747,
+      "mark_price": "0.9346",
+      "funding_rate": "0.0000064479"
+    },
+    {
+      "name": "BCH",
+      "oi_usd": 5332525,
+      "vol_24h_usd": 2099941,
+      "mark_price": "386.31",
+      "funding_rate": "-0.0000224734"
+    },
+    {
+      "name": "WIF",
+      "oi_usd": 5283583,
+      "vol_24h_usd": 1508189,
+      "mark_price": "0.1927",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "kBONK",
+      "oi_usd": 5246576,
+      "vol_24h_usd": 1222370,
+      "mark_price": "0.006043",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "JUP",
+      "oi_usd": 5198356,
+      "vol_24h_usd": 1814488,
+      "mark_price": "0.19538",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "HBAR",
+      "oi_usd": 4768049,
+      "vol_24h_usd": 321813,
+      "mark_price": "0.089993",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MORPHO",
+      "oi_usd": 4660960,
+      "vol_24h_usd": 611167,
+      "mark_price": "1.7728",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MNT",
+      "oi_usd": 4625255,
+      "vol_24h_usd": 401435,
+      "mark_price": "0.63536",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "IP",
+      "oi_usd": 4367328,
+      "vol_24h_usd": 270762,
+      "mark_price": "0.47555",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "STRK",
+      "oi_usd": 4317470,
+      "vol_24h_usd": 1006517,
+      "mark_price": "0.04102",
+      "funding_rate": "0.0000095894"
+    },
+    {
+      "name": "AERO",
+      "oi_usd": 4211491,
+      "vol_24h_usd": 553273,
+      "mark_price": "0.40972",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "STABLE",
+      "oi_usd": 3973007,
+      "vol_24h_usd": 811750,
+      "mark_price": "0.036766",
+      "funding_rate": "-0.0001269309"
+    },
+    {
+      "name": "ALGO",
+      "oi_usd": 3864740,
+      "vol_24h_usd": 377386,
+      "mark_price": "0.10796",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "DOT",
+      "oi_usd": 3776910,
+      "vol_24h_usd": 584167,
+      "mark_price": "1.2475",
+      "funding_rate": "0.0000073868"
+    },
+    {
+      "name": "SPX",
+      "oi_usd": 3744793,
+      "vol_24h_usd": 1858909,
+      "mark_price": "0.36358",
+      "funding_rate": "-0.0000165794"
+    },
+    {
+      "name": "ATOM",
+      "oi_usd": 3378481,
+      "vol_24h_usd": 1822396,
+      "mark_price": "2.0575",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "PURR",
+      "oi_usd": 3305884,
+      "vol_24h_usd": 980941,
+      "mark_price": "0.072108",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BIO",
+      "oi_usd": 3274357,
+      "vol_24h_usd": 1190041,
+      "mark_price": "0.03887",
+      "funding_rate": "-0.0001104468"
+    },
+    {
+      "name": "OP",
+      "oi_usd": 3273188,
+      "vol_24h_usd": 426197,
+      "mark_price": "0.128",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "AZTEC",
+      "oi_usd": 3168250,
+      "vol_24h_usd": 641848,
+      "mark_price": "0.020463",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "XLM",
+      "oi_usd": 3150758,
+      "vol_24h_usd": 528505,
+      "mark_price": "0.14981",
+      "funding_rate": "0.0000058353"
+    },
+    {
+      "name": "FET",
+      "oi_usd": 3131502,
+      "vol_24h_usd": 768004,
+      "mark_price": "0.18895",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ETHFI",
+      "oi_usd": 2859974,
+      "vol_24h_usd": 1282592,
+      "mark_price": "0.38025",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "LINEA",
+      "oi_usd": 2821632,
+      "vol_24h_usd": 240174,
+      "mark_price": "0.003394",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "TIA",
+      "oi_usd": 2748241,
+      "vol_24h_usd": 1083792,
+      "mark_price": "0.38526",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "CFX",
+      "oi_usd": 2744594,
+      "vol_24h_usd": 150732,
+      "mark_price": "0.060486",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "STBL",
+      "oi_usd": 2741029,
+      "vol_24h_usd": 262081,
+      "mark_price": "0.031273",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "APE",
+      "oi_usd": 2724775,
+      "vol_24h_usd": 1327076,
+      "mark_price": "0.14398",
+      "funding_rate": "-0.0000169925"
+    },
+    {
+      "name": "FIL",
+      "oi_usd": 2713672,
+      "vol_24h_usd": 522262,
+      "mark_price": "0.94802",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SYRUP",
+      "oi_usd": 2674330,
+      "vol_24h_usd": 108081,
+      "mark_price": "0.20985",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "TST",
+      "oi_usd": 2591412,
+      "vol_24h_usd": 57396,
+      "mark_price": "0.017784",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "DYDX",
+      "oi_usd": 2589562,
+      "vol_24h_usd": 372025,
+      "mark_price": "0.13432",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "KAS",
+      "oi_usd": 2582554,
+      "vol_24h_usd": 154784,
+      "mark_price": "0.033902",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "JTO",
+      "oi_usd": 2538158,
+      "vol_24h_usd": 552359,
+      "mark_price": "0.4326",
+      "funding_rate": "-0.0000215247"
+    },
+    {
+      "name": "EIGEN",
+      "oi_usd": 2429100,
+      "vol_24h_usd": 533509,
+      "mark_price": "0.1856",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BERA",
+      "oi_usd": 2392818,
+      "vol_24h_usd": 219025,
+      "mark_price": "0.35837",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SEI",
+      "oi_usd": 2294931,
+      "vol_24h_usd": 478939,
+      "mark_price": "0.061213",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "POPCAT",
+      "oi_usd": 2182588,
+      "vol_24h_usd": 271943,
+      "mark_price": "0.05671",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "RENDER",
+      "oi_usd": 2143081,
+      "vol_24h_usd": 703164,
+      "mark_price": "1.7864",
+      "funding_rate": "0.0000102191"
+    },
+    {
+      "name": "DASH",
+      "oi_usd": 2141255,
+      "vol_24h_usd": 932525,
+      "mark_price": "40.63",
+      "funding_rate": "0.0000059557"
+    },
+    {
+      "name": "POL",
+      "oi_usd": 2130124,
+      "vol_24h_usd": 378034,
+      "mark_price": "0.091407",
+      "funding_rate": "-0.0000265231"
+    },
+    {
+      "name": "INJ",
+      "oi_usd": 2032951,
+      "vol_24h_usd": 1378159,
+      "mark_price": "4.6504",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ENS",
+      "oi_usd": 1962087,
+      "vol_24h_usd": 157592,
+      "mark_price": "6.2167",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "RUNE",
+      "oi_usd": 1942425,
+      "vol_24h_usd": 2169722,
+      "mark_price": "0.44458",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "kSHIB",
+      "oi_usd": 1934681,
+      "vol_24h_usd": 1050102,
+      "mark_price": "0.00573",
+      "funding_rate": "-0.0000050471"
+    },
+    {
+      "name": "MET",
+      "oi_usd": 1883340,
+      "vol_24h_usd": 220540,
+      "mark_price": "0.14589",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SKY",
+      "oi_usd": 1832092,
+      "vol_24h_usd": 212493,
+      "mark_price": "0.069755",
+      "funding_rate": "-0.0000150987"
+    },
+    {
+      "name": "REZ",
+      "oi_usd": 1814376,
+      "vol_24h_usd": 834453,
+      "mark_price": "0.005069",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "KAITO",
+      "oi_usd": 1737800,
+      "vol_24h_usd": 1576517,
+      "mark_price": "0.47026",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "APEX",
+      "oi_usd": 1737680,
+      "vol_24h_usd": 79168,
+      "mark_price": "0.27731",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "IMX",
+      "oi_usd": 1689201,
+      "vol_24h_usd": 167104,
+      "mark_price": "0.17155",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ICP",
+      "oi_usd": 1682110,
+      "vol_24h_usd": 572505,
+      "mark_price": "2.5517",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "HEMI",
+      "oi_usd": 1666627,
+      "vol_24h_usd": 107169,
+      "mark_price": "0.007816",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "kLUNC",
+      "oi_usd": 1657648,
+      "vol_24h_usd": 1071708,
+      "mark_price": "0.074957",
+      "funding_rate": "-0.0000884225"
+    },
+    {
+      "name": "GRASS",
+      "oi_usd": 1506773,
+      "vol_24h_usd": 184756,
+      "mark_price": "0.29936",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MANTA",
+      "oi_usd": 1416254,
+      "vol_24h_usd": 268715,
+      "mark_price": "0.07977",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ZK",
+      "oi_usd": 1376771,
+      "vol_24h_usd": 374529,
+      "mark_price": "0.01524",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ETC",
+      "oi_usd": 1363472,
+      "vol_24h_usd": 209442,
+      "mark_price": "8.8926",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "NXPC",
+      "oi_usd": 1329151,
+      "vol_24h_usd": 68339,
+      "mark_price": "0.33124",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "2Z",
+      "oi_usd": 1259738,
+      "vol_24h_usd": 156269,
+      "mark_price": "0.088238",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "AXS",
+      "oi_usd": 1140805,
+      "vol_24h_usd": 226401,
+      "mark_price": "1.1411",
+      "funding_rate": "0.0000061335"
+    },
+    {
+      "name": "PYTH",
+      "oi_usd": 1073190,
+      "vol_24h_usd": 231921,
+      "mark_price": "0.04361",
+      "funding_rate": "0.0000029713"
+    },
+    {
+      "name": "LAYER",
+      "oi_usd": 1033466,
+      "vol_24h_usd": 424684,
+      "mark_price": "0.0898",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "CAKE",
+      "oi_usd": 1011082,
+      "vol_24h_usd": 202597,
+      "mark_price": "1.4439",
+      "funding_rate": "-0.0000406031"
+    },
+    {
+      "name": "S",
+      "oi_usd": 957311,
+      "vol_24h_usd": 229936,
+      "mark_price": "0.044003",
+      "funding_rate": "0.0000101887"
+    },
+    {
+      "name": "ZORA",
+      "oi_usd": 935249,
+      "vol_24h_usd": 116094,
+      "mark_price": "0.010735",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ORDI",
+      "oi_usd": 912352,
+      "vol_24h_usd": 451134,
+      "mark_price": "4.1215",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "COMP",
+      "oi_usd": 897102,
+      "vol_24h_usd": 161082,
+      "mark_price": "21.317",
+      "funding_rate": "0.0000023214"
+    },
+    {
+      "name": "W",
+      "oi_usd": 847691,
+      "vol_24h_usd": 207009,
+      "mark_price": "0.01252",
+      "funding_rate": "0.0000093569"
+    },
+    {
+      "name": "XAI",
+      "oi_usd": 840201,
+      "vol_24h_usd": 18753,
+      "mark_price": "0.01031",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BLUR",
+      "oi_usd": 828943,
+      "vol_24h_usd": 238912,
+      "mark_price": "0.022623",
+      "funding_rate": "0.0000115164"
+    },
+    {
+      "name": "POLYX",
+      "oi_usd": 806269,
+      "vol_24h_usd": 363214,
+      "mark_price": "0.05238",
+      "funding_rate": "-0.0000218679"
+    },
+    {
+      "name": "GRIFFAIN",
+      "oi_usd": 799989,
+      "vol_24h_usd": 203544,
+      "mark_price": "0.011337",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "AVNT",
+      "oi_usd": 797680,
+      "vol_24h_usd": 143867,
+      "mark_price": "0.13661",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BSV",
+      "oi_usd": 742385,
+      "vol_24h_usd": 198861,
+      "mark_price": "15.133",
+      "funding_rate": "-0.0000762219"
+    },
+    {
+      "name": "MOODENG",
+      "oi_usd": 742131,
+      "vol_24h_usd": 334028,
+      "mark_price": "0.050741",
+      "funding_rate": "-0.0000351351"
+    },
+    {
+      "name": "NIL",
+      "oi_usd": 736425,
+      "vol_24h_usd": 214676,
+      "mark_price": "0.048031",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BLAST",
+      "oi_usd": 736254,
+      "vol_24h_usd": 26840,
+      "mark_price": "0.00045",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MELANIA",
+      "oi_usd": 716269,
+      "vol_24h_usd": 139327,
+      "mark_price": "0.09614",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "AIXBT",
+      "oi_usd": 669017,
+      "vol_24h_usd": 576181,
+      "mark_price": "0.031045",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "VINE",
+      "oi_usd": 667629,
+      "vol_24h_usd": 77162,
+      "mark_price": "0.017816",
+      "funding_rate": "-0.0000441361"
+    },
+    {
+      "name": "ALT",
+      "oi_usd": 653767,
+      "vol_24h_usd": 94818,
+      "mark_price": "0.006653",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "RESOLV",
+      "oi_usd": 653049,
+      "vol_24h_usd": 97410,
+      "mark_price": "0.029508",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "STX",
+      "oi_usd": 597622,
+      "vol_24h_usd": 184017,
+      "mark_price": "0.23382",
+      "funding_rate": "-0.0000169379"
+    },
+    {
+      "name": "FOGO",
+      "oi_usd": 594790,
+      "vol_24h_usd": 227770,
+      "mark_price": "0.016836",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ZETA",
+      "oi_usd": 580459,
+      "vol_24h_usd": 95996,
+      "mark_price": "0.05011",
+      "funding_rate": "0.0000096091"
+    },
+    {
+      "name": "SNX",
+      "oi_usd": 577289,
+      "vol_24h_usd": 123971,
+      "mark_price": "0.30676",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "CHILLGUY",
+      "oi_usd": 571138,
+      "vol_24h_usd": 181627,
+      "mark_price": "0.013722",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "kFLOKI",
+      "oi_usd": 547007,
+      "vol_24h_usd": 120635,
+      "mark_price": "0.03041",
+      "funding_rate": "0.0000035369"
+    },
+    {
+      "name": "DOOD",
+      "oi_usd": 543747,
+      "vol_24h_usd": 135181,
+      "mark_price": "0.00275",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "PNUT",
+      "oi_usd": 508285,
+      "vol_24h_usd": 317372,
+      "mark_price": "0.05798",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MINA",
+      "oi_usd": 502220,
+      "vol_24h_usd": 115518,
+      "mark_price": "0.057958",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "AR",
+      "oi_usd": 501053,
+      "vol_24h_usd": 278087,
+      "mark_price": "2.1051",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "TRB",
+      "oi_usd": 486341,
+      "vol_24h_usd": 172210,
+      "mark_price": "16.958",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MERL",
+      "oi_usd": 481442,
+      "vol_24h_usd": 115505,
+      "mark_price": "0.029379",
+      "funding_rate": "-0.000028925"
+    },
+    {
+      "name": "GMX",
+      "oi_usd": 466049,
+      "vol_24h_usd": 102929,
+      "mark_price": "6.6175",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SAGA",
+      "oi_usd": 460873,
+      "vol_24h_usd": 348676,
+      "mark_price": "0.021",
+      "funding_rate": "-0.0000310687"
+    },
+    {
+      "name": "GOAT",
+      "oi_usd": 450627,
+      "vol_24h_usd": 200317,
+      "mark_price": "0.018662",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "MEME",
+      "oi_usd": 446866,
+      "vol_24h_usd": 480621,
+      "mark_price": "0.000511",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SUSHI",
+      "oi_usd": 427408,
+      "vol_24h_usd": 104472,
+      "mark_price": "0.20816",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ZEN",
+      "oi_usd": 425308,
+      "vol_24h_usd": 127561,
+      "mark_price": "5.8348",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "IO",
+      "oi_usd": 418720,
+      "vol_24h_usd": 120012,
+      "mark_price": "0.1334",
+      "funding_rate": "0.0000051861"
+    },
+    {
+      "name": "0G",
+      "oi_usd": 405816,
+      "vol_24h_usd": 38876,
+      "mark_price": "0.4873",
+      "funding_rate": "-0.0000579779"
+    },
+    {
+      "name": "DYM",
+      "oi_usd": 401674,
+      "vol_24h_usd": 87918,
+      "mark_price": "0.02169",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SAND",
+      "oi_usd": 400602,
+      "vol_24h_usd": 118116,
+      "mark_price": "0.071",
+      "funding_rate": "-0.0000163689"
+    },
+    {
+      "name": "ACE",
+      "oi_usd": 399275,
+      "vol_24h_usd": 70501,
+      "mark_price": "0.116",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "INIT",
+      "oi_usd": 397625,
+      "vol_24h_usd": 195629,
+      "mark_price": "0.084453",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "YGG",
+      "oi_usd": 388923,
+      "vol_24h_usd": 99912,
+      "mark_price": "0.036454",
+      "funding_rate": "0.0000013744"
+    },
+    {
+      "name": "MOVE",
+      "oi_usd": 371304,
+      "vol_24h_usd": 104188,
+      "mark_price": "0.016724",
+      "funding_rate": "-0.0000642957"
+    },
+    {
+      "name": "BANANA",
+      "oi_usd": 362251,
+      "vol_24h_usd": 104905,
+      "mark_price": "3.886",
+      "funding_rate": "-0.0004052014"
+    },
+    {
+      "name": "BABY",
+      "oi_usd": 359989,
+      "vol_24h_usd": 327563,
+      "mark_price": "0.016912",
+      "funding_rate": "-0.0000784637"
+    },
+    {
+      "name": "SUPER",
+      "oi_usd": 358256,
+      "vol_24h_usd": 99459,
+      "mark_price": "0.11368",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "kNEIRO",
+      "oi_usd": 357539,
+      "vol_24h_usd": 242439,
+      "mark_price": "0.08724",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SKR",
+      "oi_usd": 351485,
+      "vol_24h_usd": 52286,
+      "mark_price": "0.014475",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "NEO",
+      "oi_usd": 329918,
+      "vol_24h_usd": 59874,
+      "mark_price": "2.8409",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ANIME",
+      "oi_usd": 324636,
+      "vol_24h_usd": 140723,
+      "mark_price": "0.004357",
+      "funding_rate": "-0.0000361481"
+    },
+    {
+      "name": "UMA",
+      "oi_usd": 310707,
+      "vol_24h_usd": 22427,
+      "mark_price": "0.45353",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "FTT",
+      "oi_usd": 300575,
+      "vol_24h_usd": 15067,
+      "mark_price": "0.34169",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BOME",
+      "oi_usd": 297986,
+      "vol_24h_usd": 163951,
+      "mark_price": "0.000573",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "CELO",
+      "oi_usd": 292261,
+      "vol_24h_usd": 145887,
+      "mark_price": "0.080907",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "IOTA",
+      "oi_usd": 290376,
+      "vol_24h_usd": 40331,
+      "mark_price": "0.055012",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "PROVE",
+      "oi_usd": 288709,
+      "vol_24h_usd": 66185,
+      "mark_price": "0.2312",
+      "funding_rate": "0.0000053294"
+    },
+    {
+      "name": "GAS",
+      "oi_usd": 271597,
+      "vol_24h_usd": 59384,
+      "mark_price": "1.5462",
+      "funding_rate": "0.0000011278"
+    },
+    {
+      "name": "NOT",
+      "oi_usd": 270624,
+      "vol_24h_usd": 153782,
+      "mark_price": "0.000487",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "GMT",
+      "oi_usd": 266901,
+      "vol_24h_usd": 51615,
+      "mark_price": "0.010528",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "SOPH",
+      "oi_usd": 263109,
+      "vol_24h_usd": 73165,
+      "mark_price": "0.007879",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "GALA",
+      "oi_usd": 253498,
+      "vol_24h_usd": 115531,
+      "mark_price": "0.003323",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "TURBO",
+      "oi_usd": 248381,
+      "vol_24h_usd": 80870,
+      "mark_price": "0.001128",
+      "funding_rate": "-0.0000133013"
+    },
+    {
+      "name": "WCT",
+      "oi_usd": 245492,
+      "vol_24h_usd": 73649,
+      "mark_price": "0.059834",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "USUAL",
+      "oi_usd": 242859,
+      "vol_24h_usd": 91689,
+      "mark_price": "0.0138",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "HYPER",
+      "oi_usd": 237176,
+      "vol_24h_usd": 88409,
+      "mark_price": "0.10684",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BRETT",
+      "oi_usd": 221585,
+      "vol_24h_usd": 89967,
+      "mark_price": "0.007647",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "BIGTIME",
+      "oi_usd": 185045,
+      "vol_24h_usd": 76871,
+      "mark_price": "0.012234",
+      "funding_rate": "0.000000669"
+    },
+    {
+      "name": "ME",
+      "oi_usd": 178030,
+      "vol_24h_usd": 108469,
+      "mark_price": "0.0972",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "HMSTR",
+      "oi_usd": 164604,
+      "vol_24h_usd": 15729,
+      "mark_price": "0.000149",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "RSR",
+      "oi_usd": 157824,
+      "vol_24h_usd": 13710,
+      "mark_price": "0.001744",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "TNSR",
+      "oi_usd": 117793,
+      "vol_24h_usd": 29761,
+      "mark_price": "0.03766",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "PEOPLE",
+      "oi_usd": 99779,
+      "vol_24h_usd": 91942,
+      "mark_price": "0.006896",
+      "funding_rate": "0.0000125"
+    },
+    {
+      "name": "ARK",
+      "oi_usd": 98514,
+      "vol_24h_usd": 57537,
+      "mark_price": "0.16352",
+      "funding_rate": "-0.0000274578"
+    },
+    {
+      "name": "MATIC",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.37621",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "RNDR",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "6.8952",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "FTM",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.71688",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "MKR",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "1831.5",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "FXS",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.65538",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "HPOS",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.041873",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "RLB",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.071",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "UNIBOT",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "7.636",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "OX",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.007459",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "FRIEND",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "4.72",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "SHIA",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.000621",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "CYBER",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "1.0415",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "BLZ",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.070043",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "LOOM",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.071161",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "OGN",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.055683",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "RDNT",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.018328",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "BNT",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.38287",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "CANTO",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.066",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "REQ",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.15473",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "ORBS",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.01939",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "STG",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.15387",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "STRAX",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "1.5829",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "BADGER",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.88823",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "ILV",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "12.118",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "USTC",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.007534",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "NFTI",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "6.5609",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "NTRN",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.1238",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "MAV",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.015456",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "MAVIA",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.03725",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "PANDORA",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "3026.3",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "PIXEL",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.024027",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "AI",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.12555",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "MYRO",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.015813",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "OMNI",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "4.1915",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "LISTA",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.12466",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "MEW",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.00064",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "kDOGS",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.13659",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "CATI",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.082821",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "SCR",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.04737",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "NEIROETH",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.01808",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "AI16Z",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.06157",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "ZEREBRO",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.032083",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "JELLY",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.037555",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "OM",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.06527",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "PROMPT",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.03661",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "LAUNCHCOIN",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.060367",
+      "funding_rate": "0.0"
+    },
+    {
+      "name": "YZY",
+      "oi_usd": 0,
+      "vol_24h_usd": 0,
+      "mark_price": "0.31107",
+      "funding_rate": "0.0"
+    }
+  ]
+}

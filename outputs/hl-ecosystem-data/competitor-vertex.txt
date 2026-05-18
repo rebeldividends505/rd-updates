@@ -1,0 +1,37 @@
+As of May 2026, the competitive landscape between **Hyperliquid** and **Vertex Protocol** has shifted significantly. Hyperliquid has consolidated its position as a sovereign Layer 1 powerhouse, while Vertex has evolved through its integration into the Kraken-backed **Ink** Layer 2 ecosystem.
+
+### **1. Market Share & Volume Analysis**
+Hyperliquid is currently the dominant force in decentralized derivatives, capturing a massive share of the perpetuals market.
+
+| Metric (24h) | Hyperliquid (Perps) | Vertex Protocol (Nado on Ink) |
+| :--- | :--- | :--- |
+| **Trading Volume** | **$3.90 Billion** | ~$450 Million (Est.) |
+| **Weekly Volume** | **$42.07 Billion** | ~$3.1 Billion (Est.) |
+| **Market Share** | ~25.8% of DEX Perp Volume | ~3.0% of DEX Perp Volume |
+| **Protocol Fees** | **$1.44 Million** | ~$110,000 (Est.) |
+
+*   **Hyperliquid's Dominance:** Hyperliquid accounts for over **25% of the total daily volume** across all 300+ tracked derivatives protocols. Its vertical integration as a sovereign L1 allows it to process high-frequency trades with institutional-grade depth.
+*   **Vertex's Evolution:** Following its 2025 migration from Arbitrum to the **Ink L2** (Kraken’s Optimism-stack network), Vertex now operates primarily as the liquidity engine for **Nado**. While its absolute volume is lower than Hyperliquid's, it serves as the primary on-ramp for Kraken's 10M+ users.
+
+### **2. Fee Structure & Revenue**
+*   **Hyperliquid:** Directs **97% of trading fees** toward the buyback and permanent burn of its native **HYPE** token. In the last 30 days alone, the protocol generated **$53.5M in fees**, significantly outperforming most decentralized and even some mid-tier centralized exchanges.
+*   **Vertex (Ink):** Operates with a hybrid fee model. On-chain settlement fees are paid in **INK** (the native gas token of the Ink L2), while trading fees are integrated into the Kraken ecosystem rewards program.
+
+### **3. Unique Features & Technology**
+#### **Hyperliquid (The Sovereign Giant)**
+*   **HyperBFT Consensus:** A custom-built L1 capable of sub-second finality, allowing for a fully on-chain order book that rivals CEX performance.
+*   **Outcome Markets (HIP-4):** A new 2026 feature allowing users to trade real-world event predictions (politics, sports) using the same cross-margin account as their crypto perps.
+*   **HIP-3 TradFi Bridge:** Offers perpetual trading on non-crypto assets like Gold, Oil, and S&P 500, which now account for nearly **27% of its total open interest**.
+
+#### **Vertex Protocol / Ink (The Exchange Hub)**
+*   **Kraken Pipeline:** Offers zero-fee, sub-second transfers between Kraken’s CEX and the Ink L2, making it the most accessible DEX for retail users.
+*   **Universal Cross-Margin 2.0:** Unlike Hyperliquid’s perp-centric margin, Ink allows users to use a wide variety of collateral, including staked ETH, spot assets, and even verified RWA (Real World Asset) tokens.
+*   **Off-Chain Matching Engine:** Uses a high-speed sequencer for order matching with on-chain settlement, providing a "best of both worlds" experience for latency-sensitive traders.
+
+### **4. Competitive Analysis: 2026 Verdict**
+
+*   **For Institutional & Pro Traders:** **Hyperliquid** is the clear winner. Its $6B+ in TVL and deep liquidity on its sovereign chain make it the only decentralized venue capable of handling massive whale orders without significant slippage.
+*   **For Retail & CEX Users:** **Vertex (Ink)** holds the advantage. Its integration with Kraken removes the "DeFi friction" (wallet management, gas bridging) that typically prevents retail adoption.
+*   **Asset Performance:** The **HYPE** token has become a premier deflationary asset due to the massive fee-burn mechanism. In contrast, the **INK** token serves a broader utility role across the entire Kraken on-chain ecosystem.
+
+**Data Summary:** Hyperliquid currently leads in volume and fee generation by a factor of nearly **10x**, though Vertex’s new position as the core of the Ink ecosystem provides it with a unique growth trajectory through exchange-backed onboarding.

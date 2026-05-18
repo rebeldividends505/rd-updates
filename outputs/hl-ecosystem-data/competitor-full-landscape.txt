@@ -1,0 +1,55 @@
+As of May 2026, **Hyperliquid** has evolved into a full-stack financial infrastructure, successfully competing across four distinct sectors. Its competitive edge lies in its custom **HyperCore L1** blockchain, which offers CEX-like performance (sub-second finality) while maintaining DeFi transparency.
+
+According to DefiLlama data and current market analysis, here is the comprehensive competitive landscape:
+
+### 1. Perps DEX (Decentralized Perpetuals)
+Hyperliquid is currently the **dominant leader** in the on-chain derivatives space, often accounting for over 30% of total DEX perp volume.
+
+| Protocol | 24h Volume | Main Advantage vs. Hyperliquid |
+| :--- | :--- | :--- |
+| **Hyperliquid Perps** | **$3.90B** | **Native L1, Vertical Integration** |
+| **Aster Perps** | $1.30B | Multi-chain aggregation |
+| **edgeX Perps** | $1.12B | High-leverage niche markets |
+| **Apex Omni** | $1.06B | Cross-margining across multiple ecosystems |
+| **dYdX (V4)** | ~$900M | Established institutional brand and SDK |
+
+**Key Dynamic:** While dYdX was the historical incumbent, Hyperliquid has captured the majority of the "power user" and HFT (High-Frequency Trading) demographic due to its superior UI and native orderbook efficiency.
+
+### 2. Spot DEX (Orderbook vs. AMM)
+Hyperliquid competes here by offering a **CLOB (Central Limit Orderbook)**, which is rare in DeFi compared to the dominant AMM (Automated Market Maker) model.
+
+| Protocol | 24h Volume | Model |
+| :--- | :--- | :--- |
+| **Uniswap (V3/V4)** | ~$760M (combined) | AMM (Passive LP) |
+| **PancakeSwap V3** | $384M | AMM (Multi-chain) |
+| **Aerodrome** | $284M | AMM (Base Ecosystem) |
+| **Hyperliquid Spot** | **$150M** | **CLOB (Active Market Making)** |
+
+**Analysis:** Hyperliquid’s spot volume is lower than major AMMs but highly concentrated in its native tokens (e.g., $PURR, $HYPE) and major pairs, serving as the primary liquidity hub for the Hyperliquid L1 ecosystem.
+
+### 3. Prediction Markets
+With the implementation of **HIP-4**, Hyperliquid has entered the prediction market space, directly challenging incumbents by allowing "outcome contracts" to be traded with the same leverage and engine as perps.
+
+*   **Primary Competitor:** **Polymarket** ($478M TVL). 
+*   **Hyperliquid Edge:** While Polymarket is the "cultural leader" for political and social events, Hyperliquid captures the **trader-centric** prediction volume. Traders use Hyperliquid for its leverage (up to 50x on some outcomes) and the ability to use the same collateral pool for both perps and predictions.
+
+### 4. L1 Blockchain Performance
+Hyperliquid is no longer just an app; it is a specialized Layer 1. Its "HyperCore" consensus engine competes with high-throughput chains.
+
+| Blockchain | TVL | Primary Focus |
+| :--- | :--- | :--- |
+| **Ethereum** | $43.3B | General Purpose / Security |
+| **Solana** | $5.94B | Retail / High Speed |
+| **Hyperliquid (Bridge)**| **$4.98B** | **App-Specific / DeFi Trading** |
+| **Arbitrum** | $2.4B | L2 Scaling |
+
+**Analysis:** Hyperliquid's bridge TVL (~$5B) now puts it in the same tier as **Solana** and **BSC** in terms of capital committed to the ecosystem, despite having a much narrower focus on trading.
+
+### 5. CEX Market Share Capture
+Hyperliquid is the first DEX to meaningfully erode the market share of top-tier Centralized Exchanges (CEXs).
+
+*   **Binance vs. Hyperliquid:** Binance remains the giant (~$5T quarterly volume), but its dominance has slipped. Hyperliquid now represents approximately **10% of the volume** that a Tier-1 CEX like Binance processes in derivatives.
+*   **Bybit & OKX:** These are Hyperliquid's most direct victims. Bybit’s professional trader base has seen the most significant migration to Hyperliquid, as the "self-custody + CEX speed" value proposition eliminates the counterparty risk associated with centralized entities.
+*   **Open Interest (OI):** Hyperliquid’s Open Interest (~$9.1B) has recently surpassed several mid-tier CEXs, signaling that capital is "sticking" on-chain rather than just cycling through for short-term trades.
+
+**Summary:** Hyperliquid’s competitive landscape has shifted from "DEX vs. DEX" to **"On-chain Stack vs. Centralized Stack."** Its primary competitors are no longer just Uniswap or dYdX, but rather the institutional engines of **Binance** and the high-speed infrastructure of **Solana**.

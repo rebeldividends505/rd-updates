@@ -1,0 +1,30 @@
+HyperEVM is the **Ethereum Virtual Machine (EVM)-compatible** execution layer of the **Hyperliquid** Layer 1 blockchain. Launched on mainnet in early 2025, it allows developers to deploy permissionless Solidity smart contracts that operate alongside Hyperliquid’s high-performance trading engine.
+
+### 1. Integration with HyperCore
+HyperEVM and **HyperCore** (the specialized engine for perps and spot trading) are not separate chains; they are two specialized layers of the same L1, unified by the **HyperBFT** consensus mechanism.
+
+*   **Zero Bridging Risk:** Because they share the same state, assets move between the trading engine and EVM contracts instantly via a "spotSend" action. There is no external bridge or waiting period.
+*   **Dual-Block Architecture:** The network produces **Small Blocks** (~1s) for rapid user transactions and **Macro Blocks** (~1 min) for resource-heavy operations like contract deployments, ensuring smart contracts don't slow down high-speed trading.
+*   **Native Interoperability (Precompiles):** HyperEVM contracts can "read" live data from HyperCore (like order book depth or prices) and "write" orders directly to the exchange. This enables on-chain trading bots and automated vaults to execute trades directly on the native CLOB.
+*   **Unified Token (HYPE):** The **HYPE** token serves as the native gas for HyperEVM, the staking asset for consensus, and a tradable spot asset on HyperCore.
+
+### 2. dApps Built on HyperEVM
+Since its launch, a robust ecosystem of native dApps has emerged:
+
+| Category | Key dApps |
+| :--- | :--- |
+| **DEX / AMM** | **HyperSwap** (primary swap), **KittenSwap** (ve(3,3) model), **Mizu Labs** |
+| **Lending** | **HyperLend** (Aave-style money market), **Felix Protocol** (HYPE-backed stablecoin) |
+| **Liquid Staking** | **Kinetiq** (kHYPE), **StakedHYPE** (stHYPE), **LoopedHYPE** |
+| **Yield / Vaults** | **Harmonix Finance**, **Liminal** (market-neutral strategies) |
+| **Launchpads** | **HypurrFun**, **HyperMoon.Fun** (memecoin launchpads) |
+| **NFTs / Social** | **Drip Trade** (marketplace), **PvP.trade**, **hlnames** (.hl domains) |
+
+### 3. EVM-Native Protocol Deployments
+While much of the activity is currently driven by Hyperliquid-native projects, several established EVM-native infrastructure and cross-chain protocols have deployed to support the ecosystem:
+
+*   **Cross-Chain Interoperability:** **LayerZero**, **Hyperlane**, and **deBridge** have all integrated with HyperEVM, allowing users to move assets from Ethereum, Arbitrum, and Solana directly into the ecosystem.
+*   **Asset Gateways:** **HyperUnit (Unit)** acts as a primary gateway for tokenizing and bridging major assets like BTC, ETH, and SOL into the HyperEVM environment.
+*   **Infrastructure:** Standard EVM tools like **Safe** (multisig) and **Etherscan-style explorers** (Purrsec) are fully operational on the network.
+
+**Summary:** HyperEVM transforms Hyperliquid from a specialized trading platform into a general-purpose DeFi hub, where general smart contracts (EVM) can programmatically leverage the world-class liquidity and speed of a professional-grade trading engine (HyperCore).

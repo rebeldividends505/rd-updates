@@ -1,0 +1,255 @@
+{
+  "token_count": 458,
+  "pairs": [
+    {
+      "index": 107,
+      "mark_price": "45.783",
+      "vol_24h": 131674457
+    },
+    {
+      "index": 142,
+      "mark_price": "77016.0",
+      "vol_24h": 19585664
+    },
+    {
+      "index": 151,
+      "mark_price": "2119.3",
+      "vol_24h": 8506981
+    },
+    {
+      "index": 156,
+      "mark_price": "85.04",
+      "vol_24h": 4694771
+    },
+    {
+      "index": 272,
+      "mark_price": "526.31",
+      "vol_24h": 4461490
+    },
+    {
+      "index": 232,
+      "mark_price": "45.773",
+      "vol_24h": 4390200
+    },
+    {
+      "index": 230,
+      "mark_price": "1.0003",
+      "vol_24h": 4243687
+    },
+    {
+      "index": 234,
+      "mark_price": "76995.0",
+      "vol_24h": 3037917
+    },
+    {
+      "index": 312,
+      "mark_price": "0.97616",
+      "vol_24h": 1449372
+    },
+    {
+      "index": 235,
+      "mark_price": "2118.8",
+      "vol_24h": 1422957
+    },
+    {
+      "index": 166,
+      "mark_price": "0.99982",
+      "vol_24h": 1351624
+    },
+    {
+      "index": 0,
+      "mark_price": "0.072238",
+      "vol_24h": 1199929
+    },
+    {
+      "index": 260,
+      "mark_price": "387.01",
+      "vol_24h": 1141224
+    },
+    {
+      "index": 311,
+      "mark_price": "0.02384",
+      "vol_24h": 1049893
+    },
+    {
+      "index": 254,
+      "mark_price": "0.159",
+      "vol_24h": 1009699
+    },
+    {
+      "index": 188,
+      "mark_price": "0.0017053",
+      "vol_24h": 803208
+    },
+    {
+      "index": 150,
+      "mark_price": "0.9999",
+      "vol_24h": 388149
+    },
+    {
+      "index": 162,
+      "mark_price": "0.18464",
+      "vol_24h": 373654
+    },
+    {
+      "index": 305,
+      "mark_price": "0.070592",
+      "vol_24h": 300900
+    },
+    {
+      "index": 207,
+      "mark_price": "45.841",
+      "vol_24h": 261606
+    },
+    {
+      "index": 255,
+      "mark_price": "45.809",
+      "vol_24h": 253030
+    },
+    {
+      "index": 284,
+      "mark_price": "0.009424",
+      "vol_24h": 237300
+    },
+    {
+      "index": 243,
+      "mark_price": "0.027197",
+      "vol_24h": 185346
+    },
+    {
+      "index": 261,
+      "mark_price": "0.003935",
+      "vol_24h": 173579
+    },
+    {
+      "index": 210,
+      "mark_price": "0.083303",
+      "vol_24h": 165204
+    },
+    {
+      "index": 256,
+      "mark_price": "0.033684",
+      "vol_24h": 160739
+    },
+    {
+      "index": 182,
+      "mark_price": "4535.7",
+      "vol_24h": 152352
+    },
+    {
+      "index": 286,
+      "mark_price": "0.061218",
+      "vol_24h": 107283
+    },
+    {
+      "index": 317,
+      "mark_price": "0.86557",
+      "vol_24h": 94619
+    },
+    {
+      "index": 153,
+      "mark_price": "0.99513",
+      "vol_24h": 68440
+    },
+    {
+      "index": 184,
+      "mark_price": "0.008374",
+      "vol_24h": 67077
+    },
+    {
+      "index": 316,
+      "mark_price": "0.874045",
+      "vol_24h": 64295
+    },
+    {
+      "index": 296,
+      "mark_price": "0.12843",
+      "vol_24h": 61079
+    },
+    {
+      "index": 290,
+      "mark_price": "0.70166",
+      "vol_24h": 38669
+    },
+    {
+      "index": 294,
+      "mark_price": "0.012438",
+      "vol_24h": 37407
+    },
+    {
+      "index": 320,
+      "mark_price": "0.998485",
+      "vol_24h": 35717
+    },
+    {
+      "index": 174,
+      "mark_price": "0.6018",
+      "vol_24h": 34118
+    },
+    {
+      "index": 250,
+      "mark_price": "46.619",
+      "vol_24h": 33056
+    },
+    {
+      "index": 304,
+      "mark_price": "0.000521",
+      "vol_24h": 32256
+    },
+    {
+      "index": 1,
+      "mark_price": "9.8426",
+      "vol_24h": 24613
+    },
+    {
+      "index": 193,
+      "mark_price": "0.3637",
+      "vol_24h": 23994
+    },
+    {
+      "index": 85,
+      "mark_price": "2.8863",
+      "vol_24h": 23918
+    },
+    {
+      "index": 194,
+      "mark_price": "0.00000604",
+      "vol_24h": 20145
+    },
+    {
+      "index": 267,
+      "mark_price": "1.3967",
+      "vol_24h": 20082
+    },
+    {
+      "index": 318,
+      "mark_price": "0.13443",
+      "vol_24h": 19018
+    },
+    {
+      "index": 4,
+      "mark_price": "2.1027",
+      "vol_24h": 16395
+    },
+    {
+      "index": 242,
+      "mark_price": "0.039",
+      "vol_24h": 16263
+    },
+    {
+      "index": 295,
+      "mark_price": "0.01327",
+      "vol_24h": 14706
+    },
+    {
+      "index": 292,
+      "mark_price": "0.026221",
+      "vol_24h": 12510
+    },
+    {
+      "index": 228,
+      "mark_price": "0.088244",
+      "vol_24h": 11537
+    }
+  ]
+}
