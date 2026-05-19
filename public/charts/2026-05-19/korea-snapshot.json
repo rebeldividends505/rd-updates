@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-05-18T20:02:51.268710",
+  "source": "MOTIE press releases + Reuters + research data",
+  "march_2026": {
+    "usd_bn": 32.83,
+    "yoy_pct": 151.4,
+    "note": "All-time monthly record"
+  },
+  "april_2026_flash_1_20": {
+    "yoy_pct": 182.5,
+    "note": "20-day flash released Apr 21"
+  },
+  "april_2026_full": {
+    "usd_bn": 42.71,
+    "yoy_pct_ict": 125.9,
+    "total_yoy_pct": 48.0,
+    "note": "First MoM YoY decel from flash"
+  },
+  "may_2026_flash": {
+    "status": "PENDING",
+    "release_date": "2026-05-21",
+    "note": "May 1-20 flash drops ~8PM ET May 20"
+  },
+  "historical": {
+    "2022_peak": {
+      "month": "2022-04",
+      "yoy_pct": 42.0,
+      "sox_outcome": "SOX peaked 1 month later, SOXL -90% over 12 months"
+    },
+    "2023_trough": {
+      "month": "2023-04",
+      "yoy_pct": -42.0,
+      "sox_outcome": "SOX bottomed same month, recovery began"
+    }
+  }
+}

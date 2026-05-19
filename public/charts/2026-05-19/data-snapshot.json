@@ -36,5 +36,27 @@
       "peak_date": "2026-05-14"
     }
   },
-  "hype_build_delta_pct": 5.8548530721282175
+  "hype_build_delta_pct": 5.8548530721282175,
+  "btc_ytd_pct": -12.7,
+  "btc_jan1_price": 88732.0,
+  "btc_peak_price": 96929.0,
+  "btc_peak_date": "2026-01-14",
+  "verified_peaks": {
+    "SLV": {
+      "peak_ytd_pct": 60.6,
+      "peak_date": "2026-01-28",
+      "current_ytd_pct": 6.4
+    },
+    "SOXL": {
+      "peak_ytd_pct": 303.1,
+      "peak_date": "2026-05-11",
+      "current_ytd_pct": 221.2
+    },
+    "BTC": {
+      "ytd_pct": -12.7,
+      "peak": 96929.0,
+      "peak_date": "2026-01-14"
+    }
+  },
+  "updated_at": "2026-05-18T20:02:51.268710"
 }
