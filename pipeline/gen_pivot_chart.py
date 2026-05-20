@@ -196,52 +196,49 @@ def draw_chart(points: list[MonthlyPoint], run_date: date, out_paths: list[str])
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %y"))
     fig.autofmt_xdate(rotation=0, ha="center")
 
-    # ATH annotation (pick reinvestor peak after first month)
-    body = points[1:]  # skip pivot anchor
-    ath_idx = max(range(len(body)), key=lambda i: body[i].reinvestor_value)
-    ath_pt = body[ath_idx]
-    ath_coll = ath_pt.collector_value
-    ath_text = (
-        f"ATH {ath_pt.label}\n"
-        f"Reinvestor ${ath_pt.reinvestor_value/1000:,.0f}k\n"
-        f"Collector ${ath_coll/1000:,.0f}k"
-    )
-    ax.annotate(
-        ath_text,
-        xy=(ath_pt.end_date, ath_pt.reinvestor_value),
-        xytext=(20, 18),
-        textcoords="offset points",
-        fontsize=8.5,
-        color=text,
-        bbox=dict(boxstyle="round,pad=0.4", fc="#1e293b", ec=green, lw=1),
-        arrowprops=dict(arrowstyle="->", color=green, lw=1),
-    )
-
-    # "Today" marker + current return annotation on endpoint
+    # Endpoint markers and annotations — one box per line at the final point
     today = points[-1]
     reinv_pct_now = (today.reinvestor_value / INITIAL_CAPITAL - 1) * 100
-    coll_pct_now = (today.collector_value / INITIAL_CAPITAL - 1) * 100
+    coll_pct_now  = (today.collector_value  / INITIAL_CAPITAL - 1) * 100
+
+    # Green dot on reinvestor endpoint
     ax.plot([run_date], [today.reinvestor_value], "o", ms=9,
             mfc=green, mec="white", mew=1.3, zorder=5)
-    today_text = (
-        f"Today {run_date.strftime('%b %d')}\n"
-        f"Reinvestor  ${today.reinvestor_value/1000:,.0f}k  (+{reinv_pct_now:.0f}%)\n"
-        f"Collector   ${today.collector_value/1000:,.0f}k  (+{coll_pct_now:.0f}%)"
-    )
+    # Orange dot on collector endpoint
+    ax.plot([run_date], [today.collector_value], "o", ms=9,
+            mfc=orange, mec="white", mew=1.3, zorder=5)
+
+    # Reinvestor annotation box — points to green endpoint
     ax.annotate(
-        today_text,
+        f"Reinvestor — {run_date.strftime('%b %d')}\n"
+        f"${today.reinvestor_value/1000:,.0f}k  (+{reinv_pct_now:.0f}%)",
         xy=(run_date, today.reinvestor_value),
-        xytext=(-195, -68),
+        xytext=(-155, 22),
         textcoords="offset points",
-        fontsize=8.5,
+        fontsize=9,
         color=text,
-        bbox=dict(boxstyle="round,pad=0.4", fc="#1e293b", ec=green, lw=1),
-        arrowprops=dict(arrowstyle="->", color=green, lw=1),
+        fontweight="bold",
+        bbox=dict(boxstyle="round,pad=0.45", fc="#1e293b", ec=green, lw=1.4),
+        arrowprops=dict(arrowstyle="->", color=green, lw=1.2),
+    )
+
+    # Collector annotation box — points to orange endpoint
+    ax.annotate(
+        f"Collector — {run_date.strftime('%b %d')}\n"
+        f"${today.collector_value/1000:,.0f}k  (+{coll_pct_now:.0f}%)",
+        xy=(run_date, today.collector_value),
+        xytext=(-155, -62),
+        textcoords="offset points",
+        fontsize=9,
+        color=text,
+        fontweight="bold",
+        bbox=dict(boxstyle="round,pad=0.45", fc="#1e293b", ec=orange, lw=1.4),
+        arrowprops=dict(arrowstyle="->", color=orange, lw=1.2),
     )
 
     # $100K start label
     ax.annotate(
-        "$100K start (April 2024 pivot)",
+        "$100K start — April 2024",
         xy=(dates[0], INITIAL_CAPITAL),
         xytext=(8, -16),
         textcoords="offset points",
