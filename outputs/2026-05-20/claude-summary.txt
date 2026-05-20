@@ -1,0 +1,5 @@
+Generated Wednesday May 20, 2026 investor update package for Rebel Dividends.
+
+HYPE is at $49.91 (+3.5% on the day), putting it roughly 20% from the $60 September 2025 ATH — the Wednesday replay-recap angle writes itself. Email and elementor lead with the momentum read, pivot to the $60 revisit math (spot 1:1 exposure, no leverage), recap Week 106 dividend confirmation from Tuesday's webinar, reinforce the Reinvestor compounding advantage ($277K vs $196K from $100K at pivot), and close with the webinar replay CTA. SMS is 198 characters (well within the 320-char two-segment limit). One notable data point flagged in deploy-notes: BTC is at $77,553, meaningfully below the $96K level in current-week.md (written May 4) — HYPE is outperforming BTC today. The current-week.md breaking-news field should be refreshed Monday.
+
+Files written: email.html, elementor.html, sms.txt, deploy-notes.md, claude-summary.txt
