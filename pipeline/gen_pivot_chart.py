@@ -217,38 +217,26 @@ def draw_chart(points: list[MonthlyPoint], run_date: date, out_paths: list[str])
         arrowprops=dict(arrowstyle="->", color=green, lw=1),
     )
 
-    # Jan 2026 low annotation (find reinvestor min in 2026)
-    candidates_2026 = [p for p in body if p.end_date.year == 2026 and p.end_date.month <= 4]
-    if candidates_2026:
-        low_pt = min(candidates_2026, key=lambda p: p.reinvestor_value)
-        low_text = (
-            f"{low_pt.label} low\n"
-            f"Reinvestor ${low_pt.reinvestor_value/1000:,.0f}k\n"
-            f"Collector ${low_pt.collector_value/1000:,.0f}k"
-        )
-        ax.annotate(
-            low_text,
-            xy=(low_pt.end_date, low_pt.reinvestor_value),
-            xytext=(-130, -55),
-            textcoords="offset points",
-            fontsize=8.5,
-            color=text,
-            bbox=dict(boxstyle="round,pad=0.4", fc="#1e293b", ec=muted, lw=1),
-            arrowprops=dict(arrowstyle="->", color=muted, lw=1),
-        )
-
-    # "Today" marker on endpoint
+    # "Today" marker + current return annotation on endpoint
     today = points[-1]
+    reinv_pct_now = (today.reinvestor_value / INITIAL_CAPITAL - 1) * 100
+    coll_pct_now = (today.collector_value / INITIAL_CAPITAL - 1) * 100
     ax.plot([run_date], [today.reinvestor_value], "o", ms=9,
             mfc=green, mec="white", mew=1.3, zorder=5)
+    today_text = (
+        f"Today {run_date.strftime('%b %d')}\n"
+        f"Reinvestor  ${today.reinvestor_value/1000:,.0f}k  (+{reinv_pct_now:.0f}%)\n"
+        f"Collector   ${today.collector_value/1000:,.0f}k  (+{coll_pct_now:.0f}%)"
+    )
     ax.annotate(
-        f"Today {run_date.strftime('%b %d')}",
+        today_text,
         xy=(run_date, today.reinvestor_value),
-        xytext=(-58, 14),
+        xytext=(-195, -68),
         textcoords="offset points",
-        fontsize=9,
+        fontsize=8.5,
         color=text,
-        fontweight="bold",
+        bbox=dict(boxstyle="round,pad=0.4", fc="#1e293b", ec=green, lw=1),
+        arrowprops=dict(arrowstyle="->", color=green, lw=1),
     )
 
     # $100K start label
