@@ -1,0 +1,12 @@
+Thursday May 21, 2026 — Package Summary
+
+Generated the standard Thursday investor update package for Rebel Dividends. HYPE printed $57.80 (+3.6%) today, putting it 3.8% from the $60 September 2025 all-time high. The day's angle is momentum building toward the $60 retest — a level HYPE already proved it could reach — with the Tuesday webinar replay still live as the primary CTA.
+
+Files written:
+- email.html: Full Brevo/iContact email following the Thursday template structure. Header shows $0.00214 / +3.6% in green (#4ade80). H2 leads with the $57.80/$60 proximity angle. Five paragraphs cover the retest thesis, Hyperliquid fundamentals ($1.3B buybacks, 70% DEX market share), Tuesday replay recap, four reinvestor bullet points, and the compounding math (106 consecutive dividends, ~177% reinvestor return since pivot). Green CTA button links to /startwebinar/. Chart image uses the verbatim URL provided. Dean contact box and full three-paragraph disclaimer included.
+- elementor.html: Clean web fragment version of the same content, styled for the Elementor widget. Drops email table boilerplate, same copy and structure.
+- sms.txt: 214 characters (under 320 two-segment limit). Leads with "Rebel Dividends:" per locked formula, includes HYPE price, day %, proximity to $60 ATH, dividend count, updates.rebeldividends.com, Dean CTA, and opt-out.
+- deploy-notes.md: Key numbers, subject line, CTA, chart URL, and three Dean talking points. Notes the BTC price discrepancy between the prices JSON ($77,211) and current-week.md context ($96K range) — JSON used as source of truth per pipeline rules.
+- claude-summary.txt: This file.
+
+No Tuesday package generated — today is Thursday.
