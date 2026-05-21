@@ -1,23 +1,206 @@
 {
-  "_comment": "Live data override — May 20, 2026. Keys: 'MACRO:<id>' or '<SYM>:<signalId>'. Only included fields override the seed.",
-  "asof": "2026-05-20",
+  "asof": "2026-05-21",
   "readings": {
-    "MACRO:dram_contract": { "reading": "+58–63% Q2 (decel from +90–95% Q1); PC DRAM slowed Apr — deceleration is the tell", "status": "watch" },
-    "MACRO:cap_react":     { "reading": "Meta −9% on raised guide; regime shifting — market no longer uniformly rewarding capex", "status": "watch" },
-    "MACRO:cap_sales":     { "reading": "ORCL ~86%, META ~54%, MSFT ~47% capex/sales — FCF reckoning approaching", "status": "watch" },
-
-    "NVDA:data-center-seq-growth": { "reading": "Q1 FY27 REPORTS TOMORROW (May 21 AH) — prior qtr +20% QoQ; consensus ~$43B DC rev; high bar", "status": "watch" },
-    "NVDA:gross-margin-trend":     { "reading": "~74.9% prior qtr; Q1 FY27 print TOMORROW — any guide compression off 74–75% is the Tier-1 trigger", "status": "watch" },
-    "NVDA:expectations-vs-guide":  { "reading": "Street above mgmt guide; Q1 FY27 prints TOMORROW May 21 AH — unmeetable bar = fade-risk setup", "status": "watch" },
-    "NVDA:ytd":                    { "reading": "≈ +75–85% YTD (price ~$1,138; massive run in '26)", "status": "watch" },
-    "NVDA:ma200":                  { "reading": "Est. ~30–35% above 200-day avg at $1,138 — extended heading into earnings", "status": "watch" },
-    "NVDA:react":                  { "reading": "Beat-and-fade 4 of last 5 prints; EARNINGS TOMORROW May 21 AH — this is the key catalyst print", "status": "watch" },
-
-    "MU:cycle-pricing-roll-see-m": { "reading": "Contract +58–63% Q2 (decel from +90–95% Q1); PC DRAM slowed Apr; HBM still firm — spot is the leading indicator to watch", "status": "watch" },
-    "MU:gross-margin-direction":   { "reading": "~81% guided (Q2 FY26) — near all-time peak; Q3 FY26 print ~late June is next check; first seq. dip = trigger", "status": "intact" },
-
-    "AMD:mi-series-share-wins":    { "reading": "MI300X/325X winning MSFT, Meta, GOOG sockets; AMD DC rev ~$3.7B Q1 FY26 (+57% YoY) — growing fast but NVDA still ~5–6x AMD AI rev", "status": "watch" },
-    "AMD:gross-margin":            { "reading": "~53% Q1 FY26; flat QoQ — healthy but 20+ pts below NVDA; MI-series mix-shift is the gross margin lever", "status": "intact" },
-    "AMD:ytd":                     { "reading": "≈ +45–60% YTD (~$165; AI GPU demand tailwind)", "status": "watch" }
-  }
+    "MU:ytd": {
+      "reading": "+132% YTD (auto)",
+      "status": "watch"
+    },
+    "MU:ma200": {
+      "reading": "+132% vs 200-day avg (auto)",
+      "status": "short"
+    },
+    "MU:si": {
+      "reading": "SI 3.3% of float \u2014 squeeze risk (auto)",
+      "status": "intact"
+    },
+    "MU:target": {
+      "reading": "price +19% vs mean target $613 (auto)",
+      "status": "short"
+    },
+    "MU:issuance": {
+      "reading": "No recent issuance filings (auto)",
+      "status": "intact"
+    },
+    "SNDK:ytd": {
+      "reading": "+406% YTD (auto)",
+      "status": "short"
+    },
+    "SNDK:ma200": {
+      "reading": "+215% vs 200-day avg (auto)",
+      "status": "short"
+    },
+    "SNDK:si": {
+      "reading": "SI 11.4% of float \u2014 squeeze risk (auto)",
+      "status": "watch"
+    },
+    "SNDK:target": {
+      "reading": "price -7% vs mean target $1493 (auto)",
+      "status": "watch"
+    },
+    "SNDK:issuance": {
+      "reading": "S-3ASR filed 2026-02-17 (equity issuance near highs)",
+      "status": "short"
+    },
+    "WDC:ytd": {
+      "reading": "+145% YTD (auto)",
+      "status": "watch"
+    },
+    "WDC:ma200": {
+      "reading": "+112% vs 200-day avg (auto)",
+      "status": "short"
+    },
+    "WDC:si": {
+      "reading": "SI 9.5% of float \u2014 squeeze risk (auto)",
+      "status": "watch"
+    },
+    "WDC:target": {
+      "reading": "price -9% vs mean target $508 (auto)",
+      "status": "watch"
+    },
+    "WDC:issuance": {
+      "reading": "No recent issuance filings (auto)",
+      "status": "intact"
+    },
+    "STX:ytd": {
+      "reading": "+162% YTD (auto)",
+      "status": "watch"
+    },
+    "STX:ma200": {
+      "reading": "+117% vs 200-day avg (auto)",
+      "status": "short"
+    },
+    "STX:si": {
+      "reading": "SI 4.4% of float \u2014 squeeze risk (auto)",
+      "status": "intact"
+    },
+    "STX:target": {
+      "reading": "price -8% vs mean target $815 (auto)",
+      "status": "watch"
+    },
+    "STX:issuance": {
+      "reading": "No recent issuance filings (auto)",
+      "status": "intact"
+    },
+    "NVDA:ytd": {
+      "reading": "+18% YTD (auto)",
+      "status": "intact"
+    },
+    "NVDA:ma200": {
+      "reading": "+20% vs 200-day avg (auto)",
+      "status": "intact"
+    },
+    "NVDA:si": {
+      "reading": "SI 1.2% of float \u2014 squeeze risk (auto)",
+      "status": "intact"
+    },
+    "NVDA:target": {
+      "reading": "price -20% vs mean target $278 (auto)",
+      "status": "intact"
+    },
+    "NVDA:issuance": {
+      "reading": "No recent issuance filings (auto)",
+      "status": "intact"
+    },
+    "AVGO:ytd": {
+      "reading": "+20% YTD (auto)",
+      "status": "intact"
+    },
+    "AVGO:ma200": {
+      "reading": "+20% vs 200-day avg (auto)",
+      "status": "intact"
+    },
+    "AVGO:si": {
+      "reading": "SI 1.1% of float \u2014 squeeze risk (auto)",
+      "status": "intact"
+    },
+    "AVGO:target": {
+      "reading": "price -13% vs mean target $480 (auto)",
+      "status": "intact"
+    },
+    "AVGO:issuance": {
+      "reading": "No recent issuance filings (auto)",
+      "status": "intact"
+    },
+    "AMD:ytd": {
+      "reading": "+100% YTD (auto)",
+      "status": "watch"
+    },
+    "AMD:ma200": {
+      "reading": "+96% vs 200-day avg (auto)",
+      "status": "short"
+    },
+    "AMD:si": {
+      "reading": "SI 2.2% of float \u2014 squeeze risk (auto)",
+      "status": "intact"
+    },
+    "AMD:target": {
+      "reading": "price -5% vs mean target $472 (auto)",
+      "status": "watch"
+    },
+    "AMD:issuance": {
+      "reading": "No recent issuance filings (auto)",
+      "status": "intact"
+    },
+    "AEHR:ytd": {
+      "reading": "+272% YTD (auto)",
+      "status": "short"
+    },
+    "AEHR:ma200": {
+      "reading": "+123% vs 200-day avg (auto)",
+      "status": "short"
+    },
+    "AEHR:si": {
+      "reading": "SI 15.8% of float \u2014 squeeze risk (auto)",
+      "status": "watch"
+    },
+    "AEHR:target": {
+      "reading": "price +29% vs mean target $64 (auto)",
+      "status": "short"
+    },
+    "AEHR:issuance": {
+      "reading": "424B5 filed 2026-04-08 (equity issuance near highs)",
+      "status": "short"
+    },
+    "CIEN:ytd": {
+      "reading": "+125% YTD (auto)",
+      "status": "watch"
+    },
+    "CIEN:ma200": {
+      "reading": "+107% vs 200-day avg (auto)",
+      "status": "short"
+    },
+    "CIEN:si": {
+      "reading": "SI 4.9% of float \u2014 squeeze risk (auto)",
+      "status": "intact"
+    },
+    "CIEN:target": {
+      "reading": "price +26% vs mean target $441 (auto)",
+      "status": "short"
+    },
+    "CIEN:issuance": {
+      "reading": "No recent issuance filings (auto)",
+      "status": "intact"
+    },
+    "INTC:ytd": {
+      "reading": "+202% YTD (auto)",
+      "status": "short"
+    },
+    "INTC:ma200": {
+      "reading": "+158% vs 200-day avg (auto)",
+      "status": "short"
+    },
+    "INTC:si": {
+      "reading": "SI 2.8% of float \u2014 squeeze risk (auto)",
+      "status": "intact"
+    },
+    "INTC:target": {
+      "reading": "price +35% vs mean target $88 (auto)",
+      "status": "short"
+    },
+    "INTC:issuance": {
+      "reading": "424B5 filed 2026-04-29 (equity issuance near highs)",
+      "status": "short"
+    }
+  },
+  "_generated_by": "update_signals.py"
 }

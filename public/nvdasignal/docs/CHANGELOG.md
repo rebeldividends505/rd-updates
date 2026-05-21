@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v5 — 2026-05-21 — automation: live data fetcher
+**Added**
+- `automation/update_signals.py` — pulls YTD, distance-above-200dma, short interest, and price-vs-target (yfinance) + scans SEC EDGAR for equity-issuance filings, maps to statuses via `thresholds.json`, and writes `data/live.json`.
+- `automation/cik_map.json` — bundled, SEC-verified ticker→CIK map (all 10 names) so issuance scanning doesn't depend on SEC's rate-limited ticker file.
+- Shipped a freshly generated `data/live.json` (asof 2026-05-21) so the dashboard shows live froth data out of the box.
+- `automation/README.md` + cron schedule.
+**Validated live**
+- Fetcher auto-corrected stale seeds with real data: SNDK +406% YTD (cooled from 509%), MU +132%, AEHR +272%, NVDA +18%, AMD +96% vs 200dma.
+- Issuance scan caught real filings: SNDK S-3ASR (Feb 17), AEHR 424B5 (Apr 8).
+- Tier-1 drivers remain feed/earnings-driven, so no false "confirmed short" from froth.
+
+
 ## v4 — 2026-05-20 — "complex-wide" expansion + deployable package
 **Added**
 - Full static web app (no build step): macro/cycle regime layer + 10 tickers across 4 short-thesis archetypes (cyclical-peak memory/storage, secular-growth GPU/ASIC, parabolic momentum, turnaround/foundry).

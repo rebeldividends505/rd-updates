@@ -1,0 +1,16 @@
+{
+  "sec_user_agent": "RebelDividends ShortSignalSystem ai@rebeldividends.com",
+  "ytd":               { "short": 200, "watch": 100 },
+  "ma200_pct":         { "short": 60,  "watch": 30 },
+  "target_gap":        { "short": 0,   "watch": -10 },
+  "short_interest_pct":{ "watch": 8 },
+  "issuance_lookback_days": 120,
+  "issuance_forms": ["424B5", "424B4", "424B3", "424B2", "S-3", "S-3ASR", "FWP"],
+  "_notes": {
+    "ytd": "% YTD gain; >=short => 'short' froth, >=watch => 'watch'",
+    "ma200_pct": "% above 200-day average; extension gauge",
+    "target_gap": "price vs mean analyst target; >=0% (price at/above target) => re-rating spent",
+    "short_interest_pct": "high SI is squeeze RISK for a short => caution 'watch', not a trigger",
+    "issuance_forms": "equity-issuance form types; a recent one sets the 'issuance' signal to 'short'"
+  }
+}
