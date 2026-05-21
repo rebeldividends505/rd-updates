@@ -63,7 +63,7 @@ MONTHLY_DATA = [
     {"label": "Mar 2026", "year": 2026, "month":  3, "open": 0.00143, "close": 0.00180, "monthly_div": 0.00010, "weeks": 4},
     {"label": "Apr 2026", "year": 2026, "month":  4, "open": 0.00180, "close": 0.001691, "monthly_div": 0.00008, "weeks": 4},
     # last row = current MTD; close + monthly_div override-able via CLI
-    {"label": "May 2026 MTD", "year": 2026, "month": 5, "open": 0.001691, "close": 0.00164, "monthly_div": 0.00004, "weeks": 2},
+    {"label": "May 2026 MTD", "year": 2026, "month": 5, "open": 0.001691, "close": 0.00214, "monthly_div": 0.00006, "weeks": 3},
 ]
 
 PIVOT_PRICE = 0.00297
