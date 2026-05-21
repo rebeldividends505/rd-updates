@@ -1,0 +1,161 @@
+{
+  "asof": "2026-05-21",
+  "macro_score": 20,
+  "tickers": {
+    "MU": {
+      "score": 32,
+      "verdict": "EARLY WATCH",
+      "tier1_signals": [
+        {
+          "id": "cycle-pricing-roll-see-m",
+          "name": "Cycle pricing roll (see macro chain)",
+          "status": "watch"
+        },
+        {
+          "id": "gross-margin-direction",
+          "name": "Gross-margin direction",
+          "status": "intact"
+        }
+      ]
+    },
+    "SNDK": {
+      "score": 50,
+      "verdict": "WATCH \u2014 building",
+      "tier1_signals": [
+        {
+          "id": "nand-pricing-momentum",
+          "name": "NAND pricing momentum",
+          "status": "intact"
+        },
+        {
+          "id": "gross-margin-direction",
+          "name": "Gross-margin direction",
+          "status": "watch"
+        }
+      ]
+    },
+    "WDC": {
+      "score": 31,
+      "verdict": "EARLY WATCH",
+      "tier1_signals": [
+        {
+          "id": "hdd-sold-out-ltas",
+          "name": "HDD sold-out / LTAs",
+          "status": "intact"
+        },
+        {
+          "id": "gross-margin-direction",
+          "name": "Gross-margin direction",
+          "status": "watch"
+        }
+      ]
+    },
+    "STX": {
+      "score": 21,
+      "verdict": "EARLY WATCH",
+      "tier1_signals": [
+        {
+          "id": "hdd-sold-out-ltas",
+          "name": "HDD sold-out / LTAs",
+          "status": "intact"
+        },
+        {
+          "id": "gross-margin-direction",
+          "name": "Gross-margin direction",
+          "status": "intact"
+        }
+      ]
+    },
+    "NVDA": {
+      "score": 15,
+      "verdict": "EARLY WATCH",
+      "tier1_signals": [
+        {
+          "id": "data-center-seq-growth",
+          "name": "Data-center seq. growth",
+          "status": "intact"
+        },
+        {
+          "id": "gross-margin-trend",
+          "name": "Gross margin trend",
+          "status": "intact"
+        }
+      ]
+    },
+    "AVGO": {
+      "score": 0,
+      "verdict": "NO SHORT SIGNAL",
+      "tier1_signals": [
+        {
+          "id": "custom-asic-bookings",
+          "name": "Custom-ASIC bookings",
+          "status": "intact"
+        },
+        {
+          "id": "gross-operating-margin",
+          "name": "Gross/operating margin",
+          "status": "intact"
+        }
+      ]
+    },
+    "AMD": {
+      "score": 39,
+      "verdict": "WATCH \u2014 building",
+      "tier1_signals": [
+        {
+          "id": "mi-series-share-wins",
+          "name": "MI-series share / wins",
+          "status": "na"
+        },
+        {
+          "id": "gross-margin",
+          "name": "Gross margin",
+          "status": "na"
+        }
+      ]
+    },
+    "AEHR": {
+      "score": 63,
+      "verdict": "WATCH \u2014 building",
+      "tier1_signals": [
+        {
+          "id": "order-booking-run-rate",
+          "name": "Order / booking run-rate",
+          "status": "intact"
+        },
+        {
+          "id": "revenue-vs-stock",
+          "name": "Revenue vs stock",
+          "status": "watch"
+        }
+      ]
+    },
+    "CIEN": {
+      "score": 38,
+      "verdict": "WATCH \u2014 building",
+      "tier1_signals": [
+        {
+          "id": "optical-order-momentum",
+          "name": "Optical order momentum",
+          "status": "intact"
+        }
+      ]
+    },
+    "INTC": {
+      "score": 77,
+      "verdict": "WATCH \u2014 building",
+      "tier1_signals": [
+        {
+          "id": "foundry-milestones-yield",
+          "name": "Foundry milestones / yields",
+          "status": "na"
+        },
+        {
+          "id": "gross-margin-recovery",
+          "name": "Gross-margin recovery",
+          "status": "na"
+        }
+      ]
+    }
+  }
+}
