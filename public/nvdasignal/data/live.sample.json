@@ -1,0 +1,9 @@
+{
+  "_comment": "Rename to live.json (served over http) to override seeded readings from automation. Keys: 'MACRO:<id>' or '<SYM>:<signalId>'. Signal ids are stable (run the map command in DEPLOY.md). Numeric index also accepted. Only include fields to overwrite.",
+  "asof": "2026-05-20",
+  "readings": {
+    "MACRO:dram_spot": { "reading": "Spot -2% w/w (first soft print)", "status": "watch" },
+    "MU:gross-margin-direction": { "reading": "Guide implies first seq. dip", "status": "watch" },
+    "SNDK:nand-pricing-momentum": { "reading": "NAND +12% (decelerating)", "status": "watch" }
+  }
+}

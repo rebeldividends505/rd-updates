@@ -1,0 +1,23 @@
+{
+  "_comment": "Live data override — May 20, 2026. Keys: 'MACRO:<id>' or '<SYM>:<signalId>'. Only included fields override the seed.",
+  "asof": "2026-05-20",
+  "readings": {
+    "MACRO:dram_contract": { "reading": "+58–63% Q2 (decel from +90–95% Q1); PC DRAM slowed Apr — deceleration is the tell", "status": "watch" },
+    "MACRO:cap_react":     { "reading": "Meta −9% on raised guide; regime shifting — market no longer uniformly rewarding capex", "status": "watch" },
+    "MACRO:cap_sales":     { "reading": "ORCL ~86%, META ~54%, MSFT ~47% capex/sales — FCF reckoning approaching", "status": "watch" },
+
+    "NVDA:data-center-seq-growth": { "reading": "Q1 FY27 REPORTS TOMORROW (May 21 AH) — prior qtr +20% QoQ; consensus ~$43B DC rev; high bar", "status": "watch" },
+    "NVDA:gross-margin-trend":     { "reading": "~74.9% prior qtr; Q1 FY27 print TOMORROW — any guide compression off 74–75% is the Tier-1 trigger", "status": "watch" },
+    "NVDA:expectations-vs-guide":  { "reading": "Street above mgmt guide; Q1 FY27 prints TOMORROW May 21 AH — unmeetable bar = fade-risk setup", "status": "watch" },
+    "NVDA:ytd":                    { "reading": "≈ +75–85% YTD (price ~$1,138; massive run in '26)", "status": "watch" },
+    "NVDA:ma200":                  { "reading": "Est. ~30–35% above 200-day avg at $1,138 — extended heading into earnings", "status": "watch" },
+    "NVDA:react":                  { "reading": "Beat-and-fade 4 of last 5 prints; EARNINGS TOMORROW May 21 AH — this is the key catalyst print", "status": "watch" },
+
+    "MU:cycle-pricing-roll-see-m": { "reading": "Contract +58–63% Q2 (decel from +90–95% Q1); PC DRAM slowed Apr; HBM still firm — spot is the leading indicator to watch", "status": "watch" },
+    "MU:gross-margin-direction":   { "reading": "~81% guided (Q2 FY26) — near all-time peak; Q3 FY26 print ~late June is next check; first seq. dip = trigger", "status": "intact" },
+
+    "AMD:mi-series-share-wins":    { "reading": "MI300X/325X winning MSFT, Meta, GOOG sockets; AMD DC rev ~$3.7B Q1 FY26 (+57% YoY) — growing fast but NVDA still ~5–6x AMD AI rev", "status": "watch" },
+    "AMD:gross-margin":            { "reading": "~53% Q1 FY26; flat QoQ — healthy but 20+ pts below NVDA; MI-series mix-shift is the gross margin lever", "status": "intact" },
+    "AMD:ytd":                     { "reading": "≈ +45–60% YTD (~$165; AI GPU demand tailwind)", "status": "watch" }
+  }
+}
